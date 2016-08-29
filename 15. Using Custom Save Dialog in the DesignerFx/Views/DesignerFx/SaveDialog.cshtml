@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "Custom Save Dialog";
+}
+
+<h2>Custom Save Dialog</h2>
+
+@using (Html.BeginForm("SaveReportFromDialog", "DesignerFx", FormMethod.Post))
+{
+    <fieldset>
+        Report file name:<br />
+        <input name="filename" type="text" value="MyReport.mrt" width="100" /><br /><br />
+        <input type="submit" value="Save" />
+    </fieldset>
+}

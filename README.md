@@ -18,6 +18,7 @@ This repository has some examples (Visual Studio Projects) each in different fol
 * 12. Using the Viewer and Designer in One Project
 * 13. Edit Report in the DesignerFx
 * 14. Using Localizations in the DesignerFx
+* 15. Using Custom Save Dialog in the DesignerFx
 
 They are all combined in a Visual Studio solution (.sln-file).
 
