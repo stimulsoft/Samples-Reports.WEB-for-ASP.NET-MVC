@@ -1,0 +1,40 @@
+﻿@using Stimulsoft.Report.Mvc;
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Show Report in the Viewer</h2>
+
+<table>
+    <tr>
+        <td class="reports" valign="top">
+            <div style="width: 150px;">
+                @Html.ActionLink("Simple List", "Index", new { id = "1" })
+                <br />Report Snapshot
+
+                <br /><br />
+                @Html.ActionLink("Two Simple Lists", "Index", new { id = "2" })
+                <br />Report Template
+
+                <br /><br />
+                @Html.ActionLink("Master Detail", "Index", new { id = "3" })
+                <br />Compiled Report Class
+
+                <br /><br />
+                @Html.ActionLink("Selecting Country", "Index", new { id = "4" })
+                <br />Compiled Report Class
+            </div>
+        </td>
+        <td style="width: 100%;" valign="top">
+            @Html.Stimulsoft().StiMvcViewer(new StiMvcViewerOptions()
+                {
+                    Actions =
+                        {
+                            GetReportSnapshot = "GetReportSnapshot",
+                            ViewerEvent = "ViewerEvent"
+                        }
+                })
+        </td>
+    </tr>
+</table>

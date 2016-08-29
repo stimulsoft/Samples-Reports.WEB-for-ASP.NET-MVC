@@ -1,0 +1,18 @@
+﻿@using Stimulsoft.Report.Mvc;
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Manage Report Printing and Exporting</h2>
+
+@Html.Stimulsoft().StiMvcViewer(new StiMvcViewerOptions()
+{
+    Actions =
+        {
+            GetReportSnapshot = "GetReportSnapshot",
+            ViewerEvent = "ViewerEvent",
+            PrintReport = "PrintReport",
+            ExportReport = "ExportReport"
+        }
+})
