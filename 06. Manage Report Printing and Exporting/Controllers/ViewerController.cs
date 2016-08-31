@@ -16,7 +16,7 @@ namespace HTML_Samples.Controllers
             return View();
         }
 
-        public ActionResult GetReportSnapshot(int? id)
+        public ActionResult GetReportSnapshot()
         {
             // Create the report object
             StiReport report = new StiReport();

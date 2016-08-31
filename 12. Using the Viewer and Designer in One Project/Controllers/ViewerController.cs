@@ -16,7 +16,7 @@ namespace HTML_Samples.Controllers
             return View();
         }
 
-        public ActionResult GetReportSnapshot(int? id)
+        public ActionResult GetReportSnapshot()
         {
             StiReport report = new StiReport();
             report.Load(Server.MapPath("~/Content/Reports/TwoSimpleLists.mrt"));
