@@ -41,9 +41,9 @@ namespace HTML_Samples.Controllers
             StiEmailOptions options = StiMvcViewer.GetEmailOptions();
 
             options.AddressFrom = "admin@test.com";
-            options.AddressTo = "manager@test.com";
-            options.Subject = "Quarterly Report";
-            options.Body = "Quarterly report on arrival of the goods.";
+            //options.AddressTo = "manager@test.com";
+            //options.Subject = "Quarterly Report";
+            //options.Body = "Quarterly report on arrival of the goods.";
 
             options.Host = "smtp.test.com";
             //options.Port = 465;
