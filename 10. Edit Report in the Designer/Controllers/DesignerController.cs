@@ -33,7 +33,7 @@ namespace HTML_Samples.Controllers
 
             report.RegData(data);
 
-            return StiMvcMobileDesigner.GetReportSnapshotResult(HttpContext);
+            return StiMvcMobileDesigner.GetReportSnapshotResult(HttpContext, report);
         }
 
         public ActionResult DesignerEvent()

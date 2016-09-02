@@ -20,18 +20,20 @@ namespace HTML_Samples.Controllers
         {
             StiReport report = new StiReport();
             report.Load(Server.MapPath("~/Content/Reports/TwoSimpleLists.mrt"));
+            
+            return StiMvcMobileDesigner.GetReportTemplateResult(HttpContext, report);
+        }
+
+        public ActionResult GetReportSnapshot()
+        {
+            StiReport report = StiMvcMobileDesigner.GetReportObject(HttpContext);
 
             DataSet data = new DataSet("Demo");
             data.ReadXml(Server.MapPath("~/Content/Data/Demo.xml"));
 
             report.RegData(data);
 
-            return StiMvcMobileDesigner.GetReportTemplateResult(HttpContext, report);
-        }
-
-        public ActionResult GetReportSnapshot()
-        {
-            return StiMvcMobileDesigner.GetReportSnapshotResult(HttpContext);
+            return StiMvcMobileDesigner.GetReportSnapshotResult(HttpContext, report);
         }
 
         public ActionResult SaveReportTemplate()
