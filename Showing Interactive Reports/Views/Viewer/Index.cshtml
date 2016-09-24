@@ -1,0 +1,44 @@
+﻿@using Stimulsoft.Report.Mvc;
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Showing Interactive Reports</h2>
+
+<table>
+    <tr>
+        <td class="reports" valign="top">
+            <div style="width: 180px;">
+                @Html.ActionLink("Sorting", "Index", new { id = "1" })
+                <br />Report with dynamic sorting
+
+                <br /><br />
+                @Html.ActionLink("List Of Products", "Index", new { id = "2" })
+                <br />Report with drill down
+
+                <br /><br />
+                @Html.ActionLink("Group With Collapsing", "Index", new { id = "3" })
+                <br />Report with collapsing
+
+                <br /><br />
+                @Html.ActionLink("Master Detail", "Index", new { id = "4" })
+                <br />Report with bookmarks
+
+                <br /><br />
+                @Html.ActionLink("Selecting Country", "Index", new { id = "5" })
+                <br />Report with parameters
+            </div>
+        </td>
+        <td style="width: 100%;" valign="top">
+            @Html.Stimulsoft().StiMvcViewer(new StiMvcViewerOptions()
+                {
+                    Actions =
+                    {
+                        GetReportSnapshot = "GetReportSnapshot",
+                        ViewerEvent = "ViewerEvent"
+                    }
+                })
+        </td>
+    </tr>
+</table>
