@@ -3,16 +3,20 @@ using Stimulsoft.Report;
 using Stimulsoft.Report.Mvc;
 using System;
 using System.Collections.Generic;
-using System.Data;
-using System.Linq;
 using System.Reflection;
-using System.Web;
 using System.Web.Mvc;
 
 namespace HTML_Samples.Controllers
 {
     public class ViewerController : Controller
     {
+        static ViewerController()
+        {
+            //Stimulsoft.Base.StiLicense.Key = "6vJhGtLLLz2GNviWmUTrhSqnO...";
+            //Stimulsoft.Base.StiLicense.LoadFromFile("license.key");
+            //Stimulsoft.Base.StiLicense.LoadFromStream(stream);
+        }
+
         public ActionResult Index()
         {
             return View();
@@ -28,24 +32,24 @@ namespace HTML_Samples.Controllers
             return View("ViewITypedList");
         }
         
-        public ActionResult GetReportSnapshotIEnumerable()
+        public ActionResult GetReportIEnumerable()
         {
             StiReport report = new StiReport();
             report.Load(Server.MapPath("~/Content/Reports/BusinessObjects_IEnumerable.mrt"));
             report.RegData("EmployeeIEnumerable", CreateBusinessObjectsIEnumerable.GetEmployees());
             CheckReference(report);
 
-            return StiMvcViewer.GetReportSnapshotResult(report);
+            return StiMvcViewer.GetReportResult(report);
         }
 
-        public ActionResult GetReportSnapshotITypedList()
+        public ActionResult GetReportITypedList()
         {
             StiReport report = new StiReport();
             report.Load(Server.MapPath("~/Content/Reports/BusinessObjects_ITypedList.mrt"));
             report.RegData("EmployeeITypedList", CreateBusinessObjectsITypedList.GetEmployees());
             CheckReference(report);
 
-            return StiMvcViewer.GetReportSnapshotResult(report);
+            return StiMvcViewer.GetReportResult(report);
         }
 
         private void CheckReference(StiReport report)

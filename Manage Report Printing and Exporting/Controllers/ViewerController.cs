@@ -1,22 +1,27 @@
 ﻿using Stimulsoft.Report;
 using Stimulsoft.Report.Mvc;
+using Stimulsoft.Report.Web;
 using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
 namespace HTML_Samples.Controllers
 {
     public class ViewerController : Controller
     {
+        static ViewerController()
+        {
+            //Stimulsoft.Base.StiLicense.Key = "6vJhGtLLLz2GNviWmUTrhSqnO...";
+            //Stimulsoft.Base.StiLicense.LoadFromFile("license.key");
+            //Stimulsoft.Base.StiLicense.LoadFromStream(stream);
+        }
+
         public ActionResult Index()
         {
             return View();
         }
 
-        public ActionResult GetReportSnapshot()
+        public ActionResult GetReport()
         {
             // Create the report object
             StiReport report = new StiReport();
@@ -28,7 +33,7 @@ namespace HTML_Samples.Controllers
 
             report.RegData(data);
             
-            return StiMvcViewer.GetReportSnapshotResult(report);
+            return StiMvcViewer.GetReportResult(report);
         }
 
         public ActionResult ViewerEvent()
@@ -48,9 +53,9 @@ namespace HTML_Samples.Controllers
         public ActionResult ExportReport()
         {
             StiReport report = StiMvcViewer.GetReportObject();
-            StiJavascriptParameters vars = StiMvcViewer.GetViewerParameters();
+            StiRequestParams parameters = StiMvcViewer.GetRequestParams();
 
-            if (vars.Options.ExportFormat == StiExportFormat.Pdf)
+            if (parameters.ExportFormat == StiExportFormat.Pdf)
             {
                 // Some actions with report when exporting to PDF
             }

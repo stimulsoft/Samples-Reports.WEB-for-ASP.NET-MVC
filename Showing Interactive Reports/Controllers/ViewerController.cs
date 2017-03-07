@@ -2,22 +2,26 @@
 using Stimulsoft.Report.Mvc;
 using StiReports;
 using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
 namespace HTML_Samples.Controllers
 {
     public class ViewerController : Controller
     {
+        static ViewerController()
+        {
+            //Stimulsoft.Base.StiLicense.Key = "6vJhGtLLLz2GNviWmUTrhSqnO...";
+            //Stimulsoft.Base.StiLicense.LoadFromFile("license.key");
+            //Stimulsoft.Base.StiLicense.LoadFromStream(stream);
+        }
+
         public ActionResult Index()
         {
             return View();
         }
 
-        public ActionResult GetReportSnapshot(int? id)
+        public ActionResult GetReport(int? id)
         {
             // Create the report object
             StiReport report = new StiReport();
@@ -60,7 +64,7 @@ namespace HTML_Samples.Controllers
             report.Dictionary.Databases.Clear();
             report.RegData(data);
 
-            return StiMvcViewer.GetReportSnapshotResult(report);
+            return StiMvcViewer.GetReportResult(report);
         }
 
         public ActionResult ViewerEvent()
