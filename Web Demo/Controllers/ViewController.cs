@@ -18,20 +18,6 @@ namespace Web_Demo.Controllers
             return View();
         }
 
-        private string GetReportName()
-        {
-            RouteValueDictionary routeValues = StiMvcViewer.GetRouteValues();
-            string reportName = routeValues["id"].ToString();
-            string query = Request.UrlReferrer.Query;
-            if (!string.IsNullOrEmpty(query) && query.IndexOf("reportname") > 0)
-            {
-                var oldReportName = query.Substring(query.IndexOf("=") + 1);
-                if (!string.IsNullOrEmpty(oldReportName)) reportName = oldReportName;
-            }
-
-            return reportName;
-        }
-
         public ActionResult GetReport(string id)
         {
             // Create the report object and load data from xml file

@@ -1,0 +1,20 @@
+﻿@using Stimulsoft.Report.Mvc;
+@using System.Web.UI.WebControls;
+
+@{
+    ViewBag.Title = "Stimulsoft Reports.Web DemoFx";
+}
+
+@Html.Stimulsoft().StiMvcDesignerFx("StiMvcDesignerFx1", new StiMvcDesignerFxOptions()
+{
+    Actions =
+    {
+        GetReport = "GetReportTemplate",
+        PreviewReport = "PreviewReport",
+        SaveReport = "SaveReportTemplate",
+        DesignerEvent = "DesignerEvent",
+        Exit = "ExitDesigner"
+    },
+    Width = Unit.Percentage(100),
+    Height = Unit.Percentage(100)
+})

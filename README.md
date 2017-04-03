@@ -20,6 +20,7 @@ This repository has some examples (Visual Studio Projects) each in different fol
 * Using Localizations in the DesignerFx
 * Using the Viewer and Designer in One Project
 * Web Demo
+* Web DemoFx
 
 They are all combined in a Visual Studio solution (.sln-file).
 
