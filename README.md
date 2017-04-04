@@ -7,6 +7,7 @@ This repository has some examples (Visual Studio Projects) each in different fol
 * Change the Viewer Theme
 * Edit Report in the Designer
 * Edit Report in the DesignerFx
+* Export and Print Report from Code
 * Full Screen Mode in Viewer
 * Localizing the Viewer
 * Manage Report Printing and Exporting
