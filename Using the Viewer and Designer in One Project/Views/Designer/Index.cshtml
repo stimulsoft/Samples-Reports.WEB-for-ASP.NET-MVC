@@ -1,4 +1,4 @@
-﻿@using Stimulsoft.Report.MvcMobile;
+﻿@using Stimulsoft.Report.Mvc;
 
 @{
     ViewBag.Title = "Index";
@@ -6,10 +6,13 @@
 
 <h2>Edit Report in the Designer</h2>
 
-@Html.Stimulsoft().StiMvcMobileDesigner("StiMvcDesigner1", new StiMvcMobileDesignerOptions()
+@Html.Stimulsoft().StiMvcDesigner(new StiMvcDesignerOptions()
+{
+    Actions =
     {
-        ActionGetReportTemplate = "GetReportTemplate",
-        ActionGetReportSnapshot = "GetReportSnapshot",
-        ActionSaveReportTemplate = "SaveReportTemplate",
-        ActionDesignerEvent = "DesignerEvent"
-    })
+        GetReport = "GetReport",
+        PreviewReport = "PreviewReport",
+        SaveReport = "SaveReport",
+        DesignerEvent = "DesignerEvent"
+    }
+})

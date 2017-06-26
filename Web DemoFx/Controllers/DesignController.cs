@@ -1,10 +1,7 @@
 ﻿using Stimulsoft.Report;
 using Stimulsoft.Report.Mvc;
 using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
 namespace Web_DemoFx.Controllers
@@ -17,7 +14,7 @@ namespace Web_DemoFx.Controllers
             return View();
         }
 
-        public ActionResult GetReportTemplate(string id)
+        public ActionResult GetReport(string id)
         {
             // Create the report object and load data from xml file
             var report = new StiReport();
@@ -26,7 +23,7 @@ namespace Web_DemoFx.Controllers
             return StiMvcDesignerFx.GetReportResult(report);
         }
 
-        public ActionResult SaveReportTemplate()
+        public ActionResult SaveReport()
         {
             StiReport report = StiMvcDesignerFx.GetReportObject();
 

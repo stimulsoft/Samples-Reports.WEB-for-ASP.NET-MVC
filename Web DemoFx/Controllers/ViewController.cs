@@ -1,12 +1,8 @@
 ﻿using Stimulsoft.Report;
 using Stimulsoft.Report.Mvc;
 using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
-using System.Web.Routing;
 
 namespace Web_DemoFx.Controllers
 {

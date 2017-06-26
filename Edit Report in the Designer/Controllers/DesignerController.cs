@@ -1,6 +1,5 @@
 ﻿using Stimulsoft.Report;
-using Stimulsoft.Report.MvcMobile;
-using System;
+using Stimulsoft.Report.Mvc;
 using System.Data;
 using System.Web.Mvc;
 
@@ -20,29 +19,28 @@ namespace HTML_Samples.Controllers
             return View();
         }
 
-        public ActionResult GetReportTemplate()
+        public ActionResult GetReport()
         {
             StiReport report = new StiReport();
             report.Load(Server.MapPath("~/Content/Reports/TwoSimpleLists.mrt"));
             
-            return StiMvcMobileDesigner.GetReportTemplateResult(HttpContext, report);
+            return StiMvcDesigner.GetReportResult(report);
         }
 
-        public ActionResult GetReportSnapshot()
+        public ActionResult PreviewReport()
         {
-            StiReport report = StiMvcMobileDesigner.GetReportObject(HttpContext);
-
             DataSet data = new DataSet("Demo");
             data.ReadXml(Server.MapPath("~/Content/Data/Demo.xml"));
 
+            StiReport report = StiMvcDesigner.GetActionReportObject();
             report.RegData(data);
 
-            return StiMvcMobileDesigner.GetReportSnapshotResult(HttpContext, report);
+            return StiMvcDesigner.PreviewReportResult(report);
         }
 
         public ActionResult DesignerEvent()
         {
-            return StiMvcMobileDesigner.DesignerEventResult(HttpContext);
+            return StiMvcDesigner.DesignerEventResult();
         }
     }
 }

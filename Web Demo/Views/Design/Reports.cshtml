@@ -1,14 +1,21 @@
-﻿@using Stimulsoft.Report.MvcMobile;
+﻿@using Stimulsoft.Report.Mvc;
 
 @{
     ViewBag.Title = "Stimulsoft Reports.Web Demo";
 }
 
-@Html.Stimulsoft().StiMvcMobileDesigner("StiMvcMobileDesigner1", new StiMvcMobileDesignerOptions()
+@Html.Stimulsoft().StiMvcDesigner("StiMvcDesigner1", new StiMvcDesignerOptions()
 {
-    ActionGetReportTemplate = "GetReportTemplate",
-    ActionGetReportSnapshot = "GetReportSnapshot",
-    ActionSaveReportTemplate = "SaveReportTemplate",
-    ActionDesignerEvent = "DesignerEvent",
-    ActionExitDesigner = "ExitDesigner"
+    Actions =
+    {
+        GetReport = "GetReport",
+        PreviewReport = "PreviewReport",
+        SaveReport = "SaveReport",
+        DesignerEvent = "DesignerEvent",
+        Exit = "ExitDesigner"
+    },
+    FileMenu =
+    {
+        ShowExit = true
+    }
 })

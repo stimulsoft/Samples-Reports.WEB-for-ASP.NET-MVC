@@ -1,10 +1,7 @@
 ﻿using Stimulsoft.Report;
-using Stimulsoft.Report.MvcMobile;
+using Stimulsoft.Report.Mvc;
 using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
 namespace Web_Demo.Controllers
@@ -17,18 +14,18 @@ namespace Web_Demo.Controllers
             return View();
         }
 
-        public ActionResult GetReportTemplate(string id)
+        public ActionResult GetReport(string id)
         {
             // Create the report object and load data from xml file
             var report = new StiReport();
             report.Load(Server.MapPath("~/Content/ReportTemplates/" + id + ".mrt"));
 
-            return StiMvcMobileDesigner.GetReportTemplateResult(this.HttpContext, report);
+            return StiMvcDesigner.GetReportResult(report);
         }
 
-        public ActionResult SaveReportTemplate()
+        public ActionResult SaveReport()
         {
-            StiReport report = StiMvcMobileDesigner.GetReportObject(this.HttpContext);
+            StiReport report = StiMvcDesigner.GetReportObject();
 
             // string packedReport = report.SavePackedReportToString();
             // ...
@@ -36,13 +33,13 @@ namespace Web_Demo.Controllers
             // ...
 
             // Completion of the report saving without dialog box
-            return StiMvcMobileDesigner.SaveReportTemplateResult(this.HttpContext);
+            return StiMvcDesigner.SaveReportResult();
         }
 
-        public ActionResult GetReportSnapshot()
+        public ActionResult PreviewReport()
         {
             // Get the report template
-            StiReport report = StiMvcMobileDesigner.GetReportObject(this.HttpContext);
+            StiReport report = StiMvcDesigner.GetActionReportObject();
 
             // Register data, if necessary
             var data = new DataSet("Demo");
@@ -51,12 +48,12 @@ namespace Web_Demo.Controllers
             report.RegData(data);
 
             // Return the report snapshot result to the client
-            return StiMvcMobileDesigner.GetReportSnapshotResult(this.HttpContext, report);
+            return StiMvcDesigner.PreviewReportResult(report);
         }
 
         public ActionResult DesignerEvent()
         {
-            return StiMvcMobileDesigner.DesignerEventResult(this.HttpContext);
+            return StiMvcDesigner.DesignerEventResult();
         }
 
         public ActionResult ExitDesigner(string id)
