@@ -38,3 +38,5 @@ Read more about [Stimulsoft Reports.Web](https://www.stimulsoft.com/en/products/
 [Free Download](https://www.stimulsoft.com/en/downloads)
 
 [NuGet](https://www.nuget.org/packages/Stimulsoft.Reports.Web)
+
+[License](LICENSE.md)
