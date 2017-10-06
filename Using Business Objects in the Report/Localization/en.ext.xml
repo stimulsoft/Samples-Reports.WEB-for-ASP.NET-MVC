@@ -3,7 +3,8 @@
   <CheckActions>
     <ApplyEngineV2Long>Set the EngineVersion property of a page to EngineV2 to get access to all reporting tool features.</ApplyEngineV2Long>
     <Change>Change</Change>
-    <Code>Code</Code>
+    <ChangeReportToInterpretationMode>Change the report to the interpretation mode</ChangeReportToInterpretationMode>
+	<Code>Code</Code>
     <Convert>Convert</Convert>
     <Delete>Delete</Delete>
     <Edit>Edit</Edit>
@@ -55,7 +56,7 @@
     <StiVerySmallSizesOfComponentsLong>The size of a component will be increased to the GridSize value of a report. This operation does not guarantee the 100% correct fix!</StiVerySmallSizesOfComponentsLong>
     <StiVerySmallSizesOfComponentsShort>Increase size</StiVerySmallSizesOfComponentsShort>
     <StiWordWrapCanGrowTextDoesNotFitActionLong>Set the value of the CanGrow property of the component to true.</StiWordWrapCanGrowTextDoesNotFitActionLong>
-    <Zero>Zero</Zero>
+	<Zero>Zero</Zero>
   </CheckActions>
   <CheckComponent>
     <StiAllowHtmlTagsInTextCheckLong>HTML tags are used in the text. But the AllowHtmlTags property is set to false. The content of the {0} component will be printed incorrectly.</StiAllowHtmlTagsInTextCheckLong>
@@ -161,6 +162,8 @@
   <CheckConnection>
     <StiUndefinedConnectionCheckLong>Undefined '{0}' connection is found. The reporting tool cannot correctly process such type of connection with the database! May be the customer types of connections are used in the report. This report cannot be rendered!</StiUndefinedConnectionCheckLong>
     <StiUndefinedConnectionCheckShort>Undefined type of connection</StiUndefinedConnectionCheckShort>
+    <StiUnsupportedConnectionCheckLong>The report contains the connection '{0}' that is not supported in the selected platform. Please change the options for this connection.</StiUnsupportedConnectionCheckLong>
+    <StiUnsupportedConnectionCheckShort>Unsupported connection type</StiUnsupportedConnectionCheckShort>
   </CheckConnection>
   <CheckDataRelation>
     <StiDifferentAmountOfKeysInDataRelationCheckLong>The number of parent keys of the '{0}' relation does not correspond to the number of child keys. The following relation cannot be created when rendering a report!</StiDifferentAmountOfKeysInDataRelationCheckLong>
@@ -212,6 +215,8 @@
     <StiDuplicatedNameCheckShort>The components with duplicate names are found</StiDuplicatedNameCheckShort>
     <StiDuplicatedNameInSourceInDataRelationReportCheckLong>The '{0}' relations are found in the report. They have equal ('{1}') values in the NameInSource. All values in the NameInSource should be unique in the range of one relation to one database! It is necessary to correct these fields of relations.</StiDuplicatedNameInSourceInDataRelationReportCheckLong>
     <StiDuplicatedNameInSourceInDataRelationReportCheckShort>Duplicates in relations</StiDuplicatedNameInSourceInDataRelationReportCheckShort>
+	<StiCloudCompilationModeCheckShort>This report is in the compilation mode</StiCloudCompilationModeCheckShort>
+	<StiCloudCompilationModeCheckLong>Stimulsoft Cloud cannot preview this report in the compilation mode. Change the report to the interpretation mode.</StiCloudCompilationModeCheckLong>
   </CheckReport>
   <CheckVariable>
     <StiVariableRecursionCheckLong>The '{0}' variable has a expression with recursion. It's impossible to refer to the Variable in its own expression.</StiVariableRecursionCheckLong>
@@ -1481,6 +1486,7 @@
   <StiRichText>
     <BackColor>A back color.</BackColor>
     <DataColumn>A name of the column that contains the RTF text.</DataColumn>
+    <DataUrl>The expression to fill a component RTF text.</DataUrl>
     <DetectUrls>Detection of urls.</DetectUrls>
     <FullConvertExpression>A value indicates that it is necessary to fully convert the expression to the RTF format. Full convertion of expressions slows down the report rendering.</FullConvertExpression>
     <Margins>Text margins.</Margins>
@@ -1826,4 +1832,69 @@
     <Key>A Key which will be used in variables when user select associated with it Value in GUI.</Key>
     <Value>A Value which will be displayed instead of the Key value in GUI.</Value>
   </Universal>
+  <Publish>
+    <DeployReportPlatform>Deploy Report to Platform:</DeployReportPlatform>
+    <PublishType>Report Publish Type:</PublishType>
+    <PublishTypeProject>Project</PublishTypeProject>
+    <PublishTypeStandalone>Standalone</PublishTypeStandalone>
+    <IncludeLibrariesToStandalone>Include Stimulsoft Libraries to the Executable File</IncludeLibrariesToStandalone>
+    <GetLibrariesFrom>Get Stimulsoft Libraries from {0}</GetLibrariesFrom>
+    <JavaScriptFramework>Framework Type:</JavaScriptFramework>
+    <LoadReport>Load Report from:</LoadReport>
+    <LoadReportFile>File</LoadReportFile>
+    <LoadReportString>String</LoadReportString>
+    <LoadReportHyperlink>Hyperlink</LoadReportHyperlink>
+    <LoadReportStream>Stream</LoadReportStream>
+    <LoadReportByteArray>Byte Array</LoadReportByteArray>
+    <LoadReportResource>Resource</LoadReportResource>
+    <LoadReportClass>Class</LoadReportClass>
+    <LoadReportAssembly>Assembly</LoadReportAssembly>
+    <UseCompilationCache>Use Compilation Cache</UseCompilationCache>
+    <IncludeReportPackedStringToCode>Include Report as Packed String to Code</IncludeReportPackedStringToCode>
+    <ReportAction>What to do with Report:</ReportAction>
+    <ActionShow>Show</ActionShow>
+    <ActionExport>Export</ActionExport>
+    <ActionDesign>Design</ActionDesign>
+    <FullScreenViewer>Display the Viewer in Full Browser Window</FullScreenViewer>
+    <UseWpfDesignerV2>Use the Designer V2</UseWpfDesignerV2>
+    <ExportFormat>Export Report to:</ExportFormat>
+    <ExportFormatData>Data</ExportFormatData>
+    <ExportFormatImage>Image</ExportFormatImage>
+    <ExportFormatDataType>Data Type:</ExportFormatDataType>
+    <ExportFormatImageType>Image Type:</ExportFormatImageType>
+    <ConnectionsFromReport>Use Connection from Report</ConnectionsFromReport>
+    <ConnectionsReplace>Replace Connection String</ConnectionsReplace>
+    <ConnectionsRegData>Register Data from Code</ConnectionsRegData>
+    <RegDataSynchronize>Synchronize Report Dictionary</RegDataSynchronize>
+    <RegDataOnlyForPreview>Use Only for Report Preview</RegDataOnlyForPreview>
+    <ParametersFromReport>Use Value from Report</ParametersFromReport>
+    <ParametersReplace>Replace Value from Code</ParametersReplace>
+    <ParametersRequestFromUser>Request from User</ParametersRequestFromUser>
+    <IncludeLicenseKey>Include License Key</IncludeLicenseKey>
+    <LicenseKeyTypeString>String</LicenseKeyTypeString>
+    <LicenseKeyTypeFile>File</LicenseKeyTypeFile>
+    <IncludeLocalization>Include Localization</IncludeLocalization>
+    <IncludeFonts>Include Fonts</IncludeFonts>
+    <IncludeUITheme>Include UI Theme</IncludeUITheme>
+    <ThemeStyle>Theme Style:</ThemeStyle>
+    <ThemeBackground>Background:</ThemeBackground>
+    <UseCompressedScripts>Use Compressed Scripts</UseCompressedScripts>
+    <ShowOptions>Show Options</ShowOptions>
+    <HideOptions>Hide Options</HideOptions>
+    <Close>Close</Close>
+    <Copy>Copy</Copy>
+    <ShowMore>Show More</ShowMore>
+    <SaveStandalone>Save Standalone</SaveStandalone>
+    <SaveStandalonePackage>Save Standalone Package</SaveStandalonePackage>
+    <SaveProjectPackage>Save Project Package</SaveProjectPackage>
+    <TrialVersion>Trial Version</TrialVersion>
+    <GroupConnections>Data Connections</GroupConnections>
+    <GroupParameters>Report Parameters</GroupParameters>
+    <GroupAddons>Addons</GroupAddons>
+    <ReadMore>Read More</ReadMore>
+    <ReportErrors>Unfortunately, due to errors, this report cannot be published!</ReportErrors>
+    <SearchLibraries>Search for libraries...</SearchLibraries>
+    <DownloadingLibraries>Downloading libraries...</DownloadingLibraries>
+    <CopyingLibraries>Copying project files...</CopyingLibraries>
+  </Publish>
 </Localization>

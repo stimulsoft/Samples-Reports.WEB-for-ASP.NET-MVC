@@ -111,6 +111,7 @@
     <Ok>&amp;ОК</Ok>
     <Open>Открыть</Open>
     <Print>Печать</Print>
+    <Publish>Опубликовать</Publish>
     <QuickPrint>Быстрая печать</QuickPrint>
     <Remove>Удалить</Remove>
     <RemoveAll>Удалить все</RemoveAll>
@@ -343,7 +344,7 @@
     <CreateError>Ошибка при создании отчета!</CreateError>
     <CreateNewCollection>Создать новую коллекцию</CreateNewCollection>
     <CreatingReport>Создание отчета...</CreatingReport>
-    <DashboardWindowTitleNew>Новая панель инструментов</DashboardWindowTitleNew>
+    <DashboardWindowTitleNew>Новая панель индикаторов</DashboardWindowTitleNew>
     <DeleteFile>Удалить файл</DeleteFile>
     <ExecutionError>Ошибка запуска</ExecutionError>
     <ExpiredDate>Дата истечения срока</ExpiredDate>
@@ -357,7 +358,7 @@
     <HyperlinkAlreadyHaveAccount>Уже есть аккаунт</HyperlinkAlreadyHaveAccount>
     <HyperlinkForgotPassword>Забыл пароль</HyperlinkForgotPassword>
     <HyperlinkHavePassword>У меня есть пароль</HyperlinkHavePassword>
-    <HyperlinkRegisterAccount>Создать аккаунт</HyperlinkRegisterAccount>
+    <HyperlinkRegisterAccount>Создать аккаунт бесплатно</HyperlinkRegisterAccount>
     <labelCollectionName>Наименование коллекции:</labelCollectionName>
     <LabelCreated>Создан:</LabelCreated>
     <LabelCreateFolder>Папка для размещения в ней других элементов.</LabelCreateFolder>
@@ -404,6 +405,7 @@
     <RefreshList>Обновить список</RefreshList>
     <ReportDocumentFormatNotRecognized>Формат файла '{0}' не распознан как формат построенного отчета!</ReportDocumentFormatNotRecognized>
     <ReportTemplateFormatNotRecognized>Формат файла '{0}' не распознан как формат шаблона отчета!</ReportTemplateFormatNotRecognized>
+    <RequestChangesWhenSavingToCloud>Показывать окно изменений при сохранении в облако</RequestChangesWhenSavingToCloud>
     <RibbonButtonAddRole>Добавить роль</RibbonButtonAddRole>
     <RibbonButtonAddUser>Добавить пользователя</RibbonButtonAddUser>
     <RibbonButtonAddWorkspace>Добавить рабочее пространство</RibbonButtonAddWorkspace>
@@ -424,6 +426,7 @@
     <TextActivationDate>Дата активации</TextActivationDate>
     <TextDelete>Удаление</TextDelete>
     <TextDeletingItems>Удаление элементов...</TextDeletingItems>
+    <TextDescriptionChanges>Пожалуйста, опишите изменения</TextDescriptionChanges>
     <TextFirstName>Имя</TextFirstName>
     <TextFromTo>От {0} до {1} (Всего - {2})</TextFromTo>
     <TextItemsWorkspace>Рабочее пространство</TextItemsWorkspace>
@@ -473,6 +476,7 @@
     <ToolTipThumbnailMode>В виде эскизов</ToolTipThumbnailMode>
     <ToolTipViewFile>Показать выделенный файл.</ToolTipViewFile>
     <ToolTipViewReport>Отобразить выделенный отчет во вьювере.</ToolTipViewReport>
+    <WeDidntFindAnything>Ничего не найдено.</WeDidntFindAnything>
     <WindowDescriptionDelete>Вы уверены, что хотите удалить выделенные элементы?</WindowDescriptionDelete>
     <WindowDescriptionRecover>Элементы, которые были выделены будут восстановлены из корзины.</WindowDescriptionRecover>
     <WindowTitleDelete>Удалить элементы</WindowTitleDelete>
@@ -521,6 +525,7 @@
     <StiCrossSummaryHeader>Кросс-заголовок суммы</StiCrossSummaryHeader>
     <StiCrossTab>Кросс-таблица</StiCrossTab>
     <StiCrossTitle>Кросс-заголовок</StiCrossTitle>
+    <StiDashboard>Панель индикаторов</StiDashboard>
     <StiDataBand>Данные</StiDataBand>
     <StiEmptyBand>Пустые данные</StiEmptyBand>
     <StiFooterBand>Итог данных</StiFooterBand>
@@ -553,6 +558,22 @@
     <StiWinControl>Win компонент</StiWinControl>
     <StiZipCode>Почтовый индекс</StiZipCode>
   </Components>
+  <Dashboard>
+    <ChangeChartType>Изменить тип диаграммы</ChangeChartType>
+    <ChangeMapType>Изменить тип карты</ChangeMapType>
+    <ClearFilterFrom>Очистить фильтр от '{0}'</ClearFilterFrom>
+    <DataNotDefined>Данные не указаны</DataNotDefined>
+    <Dimension>Измерение</Dimension>
+    <Dimensions>Измерения</Dimensions>
+    <DragDropDataFromDictionary>Перетащите данные из Словаря данных</DragDropDataFromDictionary>
+    <EmptyDashboardFooter>Перетащите компонент из Инструментария или данные из Словаря данных</EmptyDashboardFooter>
+    <EmptyDashboardHeader>Пустая панель индикаторов</EmptyDashboardHeader>
+    <ImageNotSpecified>Изображение не выбрано</ImageNotSpecified>
+    <Measure>Показатель</Measure>
+    <Measures>Показатели</Measures>
+    <NumberFilters>Числовые фильтры</NumberFilters>
+    <StringFilters>Строковые фильтры</StringFilters>
+  </Dashboard>
   <Database>
     <Connection>Соединение</Connection>
     <Database>{0} соединение</Database>
@@ -827,12 +848,14 @@
     <Zoom>Масштаб:</Zoom>
   </Export>
   <FileFilters>
+    <AllFiles>Все файлы</AllFiles>
     <AllImageFiles>Все файлы изображений</AllImageFiles>
     <BitmapFiles>Двоичные изображения</BitmapFiles>
     <BmpFiles>BMP изображения (*.bmp)|*.bmp</BmpFiles>
     <BusinessIntelligence>Business Intelligence (*.sbi)|*.sbi</BusinessIntelligence>
     <CalcFiles>OpenDocument Calc файлы (*.ods)|*.ods</CalcFiles>
     <CsvFiles>CSV файлы (*.csv)|*.csv</CsvFiles>
+    <DashboardTemplates>Шаблоны панелей индикаторов (*.sbi)|*.sbi</DashboardTemplates>
     <DataSetXmlData>DataSet XML данные (*.xml)|*.xml</DataSetXmlData>
     <DataSetXmlSchema>DataSet XML схема (*.xsd)|*.xsd</DataSetXmlSchema>
     <DbfFiles>DBF файл (*.dbf)|*.dbf</DbfFiles>
@@ -969,6 +992,7 @@
   </FormCrossTabDesigner>
   <FormDatabaseEdit>
     <ConnectionString>Строка соединения:</ConnectionString>
+    <DashboardConnections>Соединения панели индикаторов</DashboardConnections>
     <DB2Edit>Новое IBM DB2 соединение</DB2Edit>
     <DB2New>Изменение IBM DB2 соединения</DB2New>
     <EditConnection>Изменение {0} соединения</EditConnection>
@@ -1057,8 +1081,11 @@
     <CategoryNew>Новая категория</CategoryNew>
     <ChildOfBusinessObject>Подчиненный бизнес-объект</ChildOfBusinessObject>
     <ChildSource>Подчиненный источник данных:</ChildSource>
+    <ClickHere>Нажмите здесь</ClickHere>
     <ColumnEdit>Изменение колонки</ColumnEdit>
     <ColumnNew>Новая колонка</ColumnNew>
+    <CreateNewDataSource>чтобы создать новый источник данных</CreateNewDataSource>
+    <CreateNewReport>для создания нового источника данных</CreateNewReport>
     <CsvSeparatorComma>Запятая</CsvSeparatorComma>
     <CsvSeparatorOther>Другой</CsvSeparatorOther>
     <CsvSeparatorSemicolon>Точка с запятой</CsvSeparatorSemicolon>
@@ -1079,6 +1106,8 @@
     <DictionaryNew>Новый словарь...</DictionaryNew>
     <DictionaryOpen>Открыть словарь...</DictionaryOpen>
     <DictionarySaveAs>Сохранить словарь как...</DictionarySaveAs>
+    <DragNewDataSource>перетащите данные на эту панель</DragNewDataSource>
+    <DragNewReport>перетащите отчет на эту панель</DragNewReport>
     <EditQuery>Изменить запрос</EditQuery>
     <ExecutedSQLStatementSuccessfully>Запрос SQL выполнен успешно</ExecutedSQLStatementSuccessfully>
     <ExpressionNew>Новое выражение</ExpressionNew>
@@ -1554,6 +1583,7 @@
     <StiHierarchicalBand>Бэнд выводится столько раз, сколько строк в источнике данных, который связан с ним. Данные выводятся в виде дерева.</StiHierarchicalBand>
     <StiHorizontalLinePrimitive>Геометрический примитив - горизонтальная линия. Используется для визуального оформления отчетов.</StiHorizontalLinePrimitive>
     <StiImage>Этот компонент используется для вывода изображений. Он поддерживает следующие графические форматы: BMP, JPG, JPEG, GIF, TIFF, PNG, ICO, WMF, EMF.</StiImage>
+    <StiMap>Этот компонент используется для отображения данных, привязанных к географическим локациям.</StiMap>
     <StiOverlayBand>Этот бэнд используется для вывода водяных знаков на странице.</StiOverlayBand>
     <StiPageFooterBand>Бэнд итог страницы используется для вывода информации в нижней части каждой страницы, и используется для вывода номеров страниц, дат и другой дополнительной информации.</StiPageFooterBand>
     <StiPageHeaderBand>Бэнд используется для вывода заголовка страницы. Он выводится в верхней части каждой страницы, и используется для вывода номеров страниц, дат и другой дополнительной информации.</StiPageHeaderBand>
@@ -1824,6 +1854,15 @@
     <ZoomTwoPages>Установить такой масштаб отображения отчета, чтобы в окне просмотра отображались две страницы рядом.</ZoomTwoPages>
     <ZoomTxt>Размер (масштаб) отчета: X - изменить масштаб по горизонтали, Y - изменить масштаб по вертикали.</ZoomTxt>
   </HelpViewer>
+  <Infographics>
+    <Arguments>Аргументы</Arguments>
+    <ChangeChartType>Изменить тип диаграммы</ChangeChartType>
+    <ChangeMapType>Изменить тип карты</ChangeMapType>
+    <DataNoDefined>Данные не заданы</DataNoDefined>
+    <ImageNotSpecified>Изображение не задано</ImageNotSpecified>
+    <Series>Серии</Series>
+    <Values>Значения</Values>
+  </Infographics>
   <Interface>
     <Mouse>Мышь</Mouse>
     <MouseDescription>Оптимизировано для использования мыши.</MouseDescription>
@@ -1873,7 +1912,9 @@
     <menuEditViewData>Просмотр данных...</menuEditViewData>
     <menuFile>&amp;Файл</menuFile>
     <menuFileClose>&amp;Закрыть</menuFileClose>
-    <menuFileDashboardNew>Новая панель инструментов</menuFileDashboardNew>
+    <menuFileDashboardNew>Новая панель индикаторов</menuFileDashboardNew>
+    <menuFileDashboardOpen>&amp;Открыть панель индикаторов...</menuFileDashboardOpen>
+    <menuFileDashboardSaveAs>Со&amp;хранить панель индикаторов как...</menuFileDashboardSaveAs>
     <menuFileExit>В&amp;ыход</menuFileExit>
     <menuFileExportXMLSchema>Экспортировать XML схему...</menuFileExportXMLSchema>
     <menuFileFormNew>Создать форму</menuFileFormNew>
@@ -1961,6 +2002,7 @@
   </Messages>
   <Notices>
     <AccessDenied>Доступ запрещен!</AccessDenied>
+    <AccountLocked>Ваш аккаунт заблокирован! Для решения проблемы, отправьте запрос на sales@stimulsoft.com!</AccountLocked>
     <ActivationExpiriedBeforeFirstRelease>Ваша Программа Подписки для Stimulsoft Reports.Ultimate истекла раньше даты первого релиза Stimulsoft Reports.Server!</ActivationExpiriedBeforeFirstRelease>
     <ActivationLicenseIsNotCorrect>Файл лицензии не корректен! Пожалуйста свяжитесь с нашим отделом продаж на sales@stimulsoft.com!</ActivationLicenseIsNotCorrect>
     <ActivationLockedAccount>Ваш аккаунт заблокирован. Пожалуйста, свяжитесь с нашим отделом продаж по sales@stimulsoft.com!</ActivationLockedAccount>
@@ -2004,11 +2046,13 @@
     <AuthUserNameShouldLookLikeAnEmailAddress>Необходимо указать Email адрес для имени пользователя!</AuthUserNameShouldLookLikeAnEmailAddress>
     <AuthWorkspaceNameAlreadyInUse>Наименование рабочего пространства уже используется!</AuthWorkspaceNameAlreadyInUse>
     <CommandTimeOut>Время ожидания выполнения команды истекло!</CommandTimeOut>
+    <Congratulations>Поздравления!</Congratulations>
     <EndDateShouldBeGreaterThanCurrentDate>Дата завершения должна быть больше текущей даты!</EndDateShouldBeGreaterThanCurrentDate>
     <EndDateShouldBeGreaterThanStartDate>Дата завершения должна быть больше даты начала!</EndDateShouldBeGreaterThanStartDate>
     <EnterCurrentPassword>Введите текущий пароль!</EnterCurrentPassword>
     <EnterNewPassword>Введите новый пароль!</EnterNewPassword>
     <ExecutionError>Ошибка запуска</ExecutionError>
+    <IsIdentical>"{0}" и "{1}" идентичны."</IsIdentical>
     <IsNotAuthorized>Нет доступа к "{0}"!</IsNotAuthorized>
     <IsNotCorrect>"{0}" указан неверно!</IsNotCorrect>
     <IsNotDeleted>"{0}" не удален!</IsNotDeleted>
@@ -2023,6 +2067,7 @@
     <ItemCantBeMovedToSpecifiedPlace>Элемент не может быть перемещен в указанное место!</ItemCantBeMovedToSpecifiedPlace>
     <ItemDoesNotSupport>Элемент не поддерживает "{0}"!</ItemDoesNotSupport>
     <KeyAndToKeyAreEqual>Key и ToKey равны!</KeyAndToKeyAreEqual>
+    <NewProduct>К Вашей подписке добавлен новый продукт!</NewProduct>
     <NotificationFailed>Неверный результат!</NotificationFailed>
     <NotificationFilesUploadingComplete>Файлы успешно загружены.</NotificationFilesUploadingComplete>
     <NotificationFileUploading>Загружается "{0}".</NotificationFileUploading>
@@ -2074,7 +2119,7 @@
     <QuotaAvailableSpaceAmountExceeded>Доступное пространство исчерпано!</QuotaAvailableSpaceAmountExceeded>
     <QuotaMaximumBandwidthExceeded>Достигнут лимит по трафику.</QuotaMaximumBandwidthExceeded>
     <QuotaMaximumComputingCyclesCountExceeded>Лимит на циклы вычислений превышен.</QuotaMaximumComputingCyclesCountExceeded>
-    <QuotaMaximumDashboardsCountExceeded>Достигнут лимит на количество панелей инструментов!</QuotaMaximumDashboardsCountExceeded>
+    <QuotaMaximumDashboardsCountExceeded>Достигнут лимит на количество панелей индикаторов!</QuotaMaximumDashboardsCountExceeded>
     <QuotaMaximumDataRowsCountExceeded>Достигнут лимит на количество строк данных в одном источнике данных!</QuotaMaximumDataRowsCountExceeded>
     <QuotaMaximumDataSourceItemCountExceeded>Максимальное количество источников данных превышено.</QuotaMaximumDataSourceItemCountExceeded>
     <QuotaMaximumDataSourcesCountExceeded>Достигнут лимит на количество источников данных!</QuotaMaximumDataSourcesCountExceeded>
@@ -2097,6 +2142,11 @@
     <SessionTimeOut>Время сессии истекло</SessionTimeOut>
     <SnapshotAlreadyProcessed>Снимок отчета уже обработан!</SnapshotAlreadyProcessed>
     <SpecifiedItemIsNot>Указанный элемент не "{0}"!</SpecifiedItemIsNot>
+    <SubscriptionExpired>Срок действия Вашей подписки истек!</SubscriptionExpired>
+    <SubscriptionsOut10>10 дней осталось, до завершения срока действия подписки!</SubscriptionsOut10>
+    <SubscriptionsOut20>Срок действия подписки истекает через 20 дней!</SubscriptionsOut20>
+    <SuccessfullyRenewed>Ваша подписка была успешно обновлена!</SuccessfullyRenewed>
+    <TrialToLicense>Спасибо, что выбрали Stimulsoft!</TrialToLicense>
     <VersionCopyFromItem>Копия элемента "{0}".</VersionCopyFromItem>
     <VersionCreatedFromFile>Создано из файла "{0}".</VersionCreatedFromFile>
     <VersionCreatedFromItem>Создано из элемента "{0}".</VersionCreatedFromItem>
@@ -3019,6 +3069,7 @@
     <Area>Область</Area>
     <Argument>Аргумент</Argument>
     <ArgumentDataColumn>Колонка данных аргументов</ArgumentDataColumn>
+    <Arguments>Аргументы</Arguments>
     <ArrowHeight>Высота пера</ArrowHeight>
     <ArrowStyle>Стиль стрелки</ArrowStyle>
     <ArrowWidth>Ширина пера</ArrowWidth>
@@ -3157,6 +3208,7 @@
     <DataSources>Источники данных</DataSources>
     <DataTextField>Поле данных</DataTextField>
     <DataType>Тип данных</DataType>
+    <DataUrl>URL данных</DataUrl>
     <DateInfo>Информация о датах</DateInfo>
     <DateTimeStep>Шаг времени</DateTimeStep>
     <Default>По умолчанию</Default>
@@ -3508,6 +3560,7 @@
     <ProcessAt>Обработать в</ProcessAt>
     <ProcessAtEnd>Обработать в конце</ProcessAtEnd>
     <ProcessingDuplicates>Обработка дубликатов</ProcessingDuplicates>
+    <ProcessTilde>Обрабатывать Tilde</ProcessTilde>
     <ProductHomePage>Домашняя страница</ProductHomePage>
     <RadarStyle>Стиль лепестков</RadarStyle>
     <Radius>Радиус</Radius>
@@ -3657,6 +3710,8 @@
     <StretchToPrintArea>Растянуть на область печати</StretchToPrintArea>
     <StripBrush>Кисть полосы</StripBrush>
     <Strips>Полосы</Strips>
+    <StructuredAppendPosition>Structured Append Position</StructuredAppendPosition>
+    <StructuredAppendTotal>StructuredAppendTotal</StructuredAppendTotal>
     <Style>Стиль</Style>
     <StyleColors>Цвета стиля</StyleColors>
     <Styles>Стили</Styles>
@@ -3753,6 +3808,7 @@
     <Watermark>Водяной знак</Watermark>
     <Weight>Вес</Weight>
     <WeightDataColumn>Колонка значений веса</WeightDataColumn>
+    <Weights>Веса</Weights>
     <Width>Ширина</Width>
     <WindowState>Состояние окна</WindowState>
     <WordWrap>Перенос текста</WordWrap>
@@ -3896,7 +3952,7 @@
     <CreateNewReportPageForm>Создать новый отчет, добавить страницу или форму</CreateNewReportPageForm>
     <CreatingReport>Создание отчета</CreatingReport>
     <CrossBands>Кросс</CrossBands>
-    <Dashboard>Панель инструментов</Dashboard>
+    <Dashboard>Панель индикаторов</Dashboard>
     <Dialogs>Элементы управления</Dialogs>
     <EditStyles>[Редактировать стили]</EditStyles>
     <Enhancements>Улучшения</Enhancements>
@@ -3945,8 +4001,7 @@
     <LabelValue>Значение:</LabelValue>
     <LoadingReport>Загрузка отчета</LoadingReport>
     <nameAssembly>Сборка</nameAssembly>
-    <NewFeatures>Новые возможности
-Новые возможности</NewFeatures>
+    <NewFeatures>Новые возможности</NewFeatures>
     <No>Нет</No>
     <NoFixes>Исправления или обновления для этой версии отсутствуют!</NoFixes>
     <NoIssues>Нет проблем</NoIssues>
@@ -4173,6 +4228,7 @@
     <title>Инструментарий</title>
   </Toolbox>
   <Wizards>
+    <BlankDashboard>Пустая панель индикаторов</BlankDashboard>
     <BlankReport>Пустой отчет</BlankReport>
     <ButtonBack>&lt; &amp;Назад</ButtonBack>
     <ButtonCancel>Отмена</ButtonCancel>
@@ -4186,6 +4242,7 @@
     <DefaultThemes>Встроенные темы</DefaultThemes>
     <Filters>Фильтры</Filters>
     <FromReportTemplate>Отчет из шаблона</FromReportTemplate>
+    <groupCreateNewDashboard>Создать новую панель индикаторов</groupCreateNewDashboard>
     <groupCreateNewPageOrForm>Создать страницу или форму</groupCreateNewPageOrForm>
     <groupCreateNewReport>Создать новый отчет</groupCreateNewReport>
     <Groups>Группировки</Groups>
@@ -4222,7 +4279,7 @@
     <MarkAll>Отметить &amp;Все</MarkAll>
     <MasterDetailReport>Master-Detail отчет</MasterDetailReport>
     <NoFunction>[Нет]</NoFunction>
-    <OpenExistingReport>Открыть отчет</OpenExistingReport>
+    <OpenExistingReport>Открыть файл</OpenExistingReport>
     <Preview>Предварительный просмотр</Preview>
     <Reset>&amp;Сбросить</Reset>
     <Results>Результаты</Results>

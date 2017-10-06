@@ -111,6 +111,7 @@
     <Ok>&amp;ОК</Ok>
     <Open>Адкрыць</Open>
     <Print>Друк</Print>
+    <Publish>Апублікаваць</Publish>
     <QuickPrint>Хуткі друк</QuickPrint>
     <Remove>Выдаліць</Remove>
     <RemoveAll>Выдаліць усё</RemoveAll>
@@ -152,7 +153,7 @@
     <ConstantLine>Канстантная лінія</ConstantLine>
     <ConstantLinesEditorForm>Рэдактар канстантных ліній</ConstantLinesEditorForm>
     <DataColumns>Калонкі дадзеных</DataColumns>
-    <Doughnut>Колцавая</Doughnut>
+    <Doughnut>Кальцавая</Doughnut>
     <Financial>Фінансавая</Financial>
     <FullStackedArea>Нармаваная вобласць</FullStackedArea>
     <FullStackedBar>Нармаваная лінейкавая</FullStackedBar>
@@ -404,6 +405,7 @@
     <RefreshList>Абнавіць спіс</RefreshList>
     <ReportDocumentFormatNotRecognized>Фармат файла '{0}' не распазнаны як фармат пабудаванай справаздачы!</ReportDocumentFormatNotRecognized>
     <ReportTemplateFormatNotRecognized>Фармат файла '{0}' не распазнаны як фармат шаблона справаздачы!</ReportTemplateFormatNotRecognized>
+    <RequestChangesWhenSavingToCloud>Паказваць акно змен пры захаванні ў воблака</RequestChangesWhenSavingToCloud>
     <RibbonButtonAddRole>Дадаць ролю</RibbonButtonAddRole>
     <RibbonButtonAddUser>Дадаць карыстальніка</RibbonButtonAddUser>
     <RibbonButtonAddWorkspace>Дадаць працоўную прастору</RibbonButtonAddWorkspace>
@@ -424,6 +426,7 @@
     <TextActivationDate>Дата актывацыі</TextActivationDate>
     <TextDelete>Выдаленне</TextDelete>
     <TextDeletingItems>Выдаленне элементаў...</TextDeletingItems>
+    <TextDescriptionChanges>Калі ласка, апішыце змены</TextDescriptionChanges>
     <TextFirstName>Імя</TextFirstName>
     <TextFromTo>Ад {0} да {1} (Усяго - {2})</TextFromTo>
     <TextItemsWorkspace>Працоўная прастора</TextItemsWorkspace>
@@ -473,6 +476,7 @@
     <ToolTipThumbnailMode>У выглядзе эскізаў</ToolTipThumbnailMode>
     <ToolTipViewFile>Паказаць вылучаны файл.</ToolTipViewFile>
     <ToolTipViewReport>Адлюстраваць выдзелены справаздачу ва вьюверы.</ToolTipViewReport>
+    <WeDidntFindAnything>Нічога не знойдзена.</WeDidntFindAnything>
     <WindowDescriptionDelete>Вы ўпэўненыя, што жадаеце выдаліць вылучаныя элементы?</WindowDescriptionDelete>
     <WindowDescriptionRecover>Элементы, якія былі вылучаныя будуць адноўлены са Сметніку</WindowDescriptionRecover>
     <WindowTitleDelete>Выдаліць элементы</WindowTitleDelete>
@@ -521,6 +525,7 @@
     <StiCrossSummaryHeader>Крос-загаловак сумы</StiCrossSummaryHeader>
     <StiCrossTab>Крос-табліца</StiCrossTab>
     <StiCrossTitle>Крос-загаловак</StiCrossTitle>
+    <StiDashboard>Панэль індыкатараў</StiDashboard>
     <StiDataBand>Дадзеныя</StiDataBand>
     <StiEmptyBand>Пустыя дадзеныя</StiEmptyBand>
     <StiFooterBand>Падрахунак дадзеных</StiFooterBand>
@@ -553,6 +558,23 @@
     <StiWinControl>Win кампанент</StiWinControl>
     <StiZipCode>Паштовы індэкс</StiZipCode>
   </Components>
+  <Dashboard>
+    <ChangeChartType>Змяніць тып дыяграмы</ChangeChartType>
+    <ChangeMapType>Змяніць тып карты</ChangeMapType>
+    <ClearFilterFrom>Ачысціць фільтр ад '{0}'</ClearFilterFrom>
+    <DataNotDefined>Дадзеныя не абраны</DataNotDefined>
+    <Dimension>Вымярэнне</Dimension>
+    <Dimensions>Вымярэнні</Dimensions>
+    <DragDropDataFromDictionary>Перацягнеце дадзеныя са Слоўніка дадзеных</DragDropDataFromDictionary>
+    <EmptyDashboardFooter>Перацягнеце кампанент з Інструментара ці крыніцу дадзеных са Слоўніка дадзеных</EmptyDashboardFooter>
+    <EmptyDashboardHeader>Пустая панэль індыкатараў</EmptyDashboardHeader>
+    <ImageNotSpecified>Выява не абрана</ImageNotSpecified>
+    <Measure>Паказнік</Measure>
+    <Measures>Паказнікі</Measures>
+    <NotDefined>Не паказаны</NotDefined>
+    <NumberFilters>Лікавыя фільтры</NumberFilters>
+    <StringFilters>Радковыя фільтры</StringFilters>
+  </Dashboard>
   <Database>
     <Connection>Злучэнне</Connection>
     <Database>{0} злучэнне</Database>
@@ -827,12 +849,14 @@
     <Zoom>Маштаб:</Zoom>
   </Export>
   <FileFilters>
+    <AllFiles>Усе файлы</AllFiles>
     <AllImageFiles>Усе файлы малюнкаў</AllImageFiles>
     <BitmapFiles>Бітавыя малюнкі</BitmapFiles>
     <BmpFiles>BMP малюнак (*.bmp)|*.bmp</BmpFiles>
     <BusinessIntelligence>Business Intelligence (*.sbi)|*.sbi</BusinessIntelligence>
     <CalcFiles>OpenDocument Calc файлы (*.ods)|*.ods</CalcFiles>
     <CsvFiles>CSV файлы (*.csv)|*.csv</CsvFiles>
+    <DashboardTemplates>Шаблоны панэляў індыкатараў (*.sbi)|*.sbi</DashboardTemplates>
     <DataSetXmlData>DataSet XML дадзеныя (*.xml)|*.xml</DataSetXmlData>
     <DataSetXmlSchema>DataSet XML схема(*.xsd)|*.xsd</DataSetXmlSchema>
     <DbfFiles>DBF файл (*.dbf)|*.dbf</DbfFiles>
@@ -969,6 +993,7 @@
   </FormCrossTabDesigner>
   <FormDatabaseEdit>
     <ConnectionString>Радок злучэння:</ConnectionString>
+    <DashboardConnections>Злучэнні панэлі індыкатараў</DashboardConnections>
     <DB2Edit>Новае IBM DB2 злучэнне</DB2Edit>
     <DB2New>Змена IBM DB2 злучэнні</DB2New>
     <EditConnection>Змяненне {0} злучэння</EditConnection>
@@ -1057,8 +1082,11 @@
     <CategoryNew>Новая катэгорыя</CategoryNew>
     <ChildOfBusinessObject> Падначалены бізнес-аб'екта</ChildOfBusinessObject>
     <ChildSource>Падпарадкаваная крыніца дадзеных:</ChildSource>
+    <ClickHere>Націсніце тут</ClickHere>
     <ColumnEdit>Змена калонкі</ColumnEdit>
     <ColumnNew>Новая калонка</ColumnNew>
+    <CreateNewDataSource>каб стварыць новую крыніцу дадзеных</CreateNewDataSource>
+    <CreateNewReport>для стварэння новай крыніцы дадзеных</CreateNewReport>
     <CsvSeparatorComma>Коска</CsvSeparatorComma>
     <CsvSeparatorOther>Іншы</CsvSeparatorOther>
     <CsvSeparatorSemicolon>Кропка з коскай</CsvSeparatorSemicolon>
@@ -1079,6 +1107,8 @@
     <DictionaryNew>Новы слоўнік...</DictionaryNew>
     <DictionaryOpen>Адкрыць слоўнік...</DictionaryOpen>
     <DictionarySaveAs>Захаваць слоўнік як...</DictionarySaveAs>
+    <DragNewDataSource>перацягнеце дадзеныя на гэту панэль</DragNewDataSource>
+    <DragNewReport>перацягнеце справаздачу на гэту панэль</DragNewReport>
     <EditQuery>Змяніць запыт</EditQuery>
     <ExecutedSQLStatementSuccessfully>Запыт SQL выкананы паспяхова</ExecutedSQLStatementSuccessfully>
     <ExpressionNew>Новы выраз</ExpressionNew>
@@ -1555,6 +1585,7 @@
     <StiHierarchicalBand>Бэнд выводзіцца столькі разоў, колькі радкоў у крыніцы дадзеных, які звязаны з ім. Дадзеныя выводзяцца ў выглядзе дрэва.</StiHierarchicalBand>
     <StiHorizontalLinePrimitive>Геаметрычны прымiтыў - гарызантальная лінія. Выкарыстоўваецца для візуальнага афармлення справаздач.</StiHorizontalLinePrimitive>
     <StiImage>Гэты кампанент выкарыстоўваецца для вываду малюнкаў. Ён падтрымлівае наступныя графічныя фарматы: BMP, JPG, JPEG, GIF, TIFF, PNG, ICO, WMF, EMF.</StiImage>
+    <StiMap>Гэты кампанент выкарыстоўваецца для адлюстравання дадзеных, прывязаных да геаграфічных лакацый.</StiMap>
     <StiOverlayBand>Гэты бэнд выкарыстоўваецца для вываду вадзяных знакаў на старонцы.</StiOverlayBand>
     <StiPageFooterBand>Бэнд вынік старонкі выкарыстоўваецца для вываду інфармацыі ў ніжняй частцы кожнай старонкі, і выкарыстоўваецца для вываду нумароў старонак, дат і іншай дадатковай інфармацыі.</StiPageFooterBand>
     <StiPageHeaderBand>Бэнд выкарыстоўваецца для вываду загалоўку старонкі. Ён выводзіцца ў верхняй частцы кожнай старонкі, і выкарыстоўваецца для вываду нумароў старонак, дат і іншай дадатковай інфармацыі.</StiPageHeaderBand>
@@ -1825,6 +1856,16 @@
     <ZoomTwoPages>Устанавіць такі маштаб адлюстравання справаздачы, каб у акне прагляду паказваліся дзве старонкі побач.</ZoomTwoPages>
     <ZoomTxt>Памер (маштаб) справаздачы: X - змяніць маштаб па гарызанталі, IE - змяніць маштаб па вертыкалі.</ZoomTxt>
   </HelpViewer>
+  <Infographics>
+    <Arguments>Аргументы</Arguments>
+    <ChangeChartType>Змяніць тып дыяграмы</ChangeChartType>
+    <ChangeMapType>Змяніць тып карты</ChangeMapType>
+    <DataNoDefined>Дадзеныя не зададзены
+Дадзеныя не зададзены</DataNoDefined>
+    <ImageNotSpecified>Выява не абрана</ImageNotSpecified>
+    <Series>Серыі</Series>
+    <Values>Значэнні</Values>
+  </Infographics>
   <Interface>
     <Mouse>Мыш</Mouse>
     <MouseDescription>Аптымізавана для выкарыстання мышы.</MouseDescription>
@@ -1875,6 +1916,8 @@
     <menuFile>&amp;Файл</menuFile>
     <menuFileClose>&amp;Зачынiць</menuFileClose>
     <menuFileDashboardNew>Новая панэль індыкатараў</menuFileDashboardNew>
+    <menuFileDashboardOpen>&amp;Адкрыць панэль індыкатараў...</menuFileDashboardOpen>
+    <menuFileDashboardSaveAs>&amp;Захоўваць панэль індыкатараў як...</menuFileDashboardSaveAs>
     <menuFileExit>В&amp;ыхад</menuFileExit>
     <menuFileExportXMLSchema>Экспартаваць XML схему...</menuFileExportXMLSchema>
     <menuFileFormNew>Стварыць форму</menuFileFormNew>
@@ -1962,6 +2005,7 @@
   </Messages>
   <Notices>
     <AccessDenied>Доступ забаронены!</AccessDenied>
+    <AccountLocked>Ваш акаўнт заблакаваны! Калі ласка, адпраўце запыт на sales@stimulsoft.com!</AccountLocked>
     <ActivationExpiriedBeforeFirstRelease>Ваша Праграма Падпіскі для Stimulsoft Reports.Ultimate мінула раней даты першага рэлізу Stimulsoft Reports.Server!</ActivationExpiriedBeforeFirstRelease>
     <ActivationLicenseIsNotCorrect>Файл ліцэнзіі не карэктны! Калі ласка звяжыцеся з нашым аддзелам продажаў на sales@stimulsoft.com!</ActivationLicenseIsNotCorrect>
     <ActivationLockedAccount>Ваш рахунак заблякаваны. Калі ласка, звяжыцеся з нашым аддзелам продажаў па sales@stimulsoft.com!</ActivationLockedAccount>
@@ -2005,11 +2049,14 @@
     <AuthUserNameShouldLookLikeAnEmailAddress>Неабходна паказаць Email адрас для імя карыстальніка!</AuthUserNameShouldLookLikeAnEmailAddress>
     <AuthWorkspaceNameAlreadyInUse>Найменне працоўнай прасторы ўжо выкарыстоўваецца!</AuthWorkspaceNameAlreadyInUse>
     <CommandTimeOut>Час чакання выканання каманды скончыўся!</CommandTimeOut>
+    <Congratulations>Віншаванні!
+Віншаванні!</Congratulations>
     <EndDateShouldBeGreaterThanCurrentDate>Дата завяршэння павінна быць больш бягучай даты!</EndDateShouldBeGreaterThanCurrentDate>
     <EndDateShouldBeGreaterThanStartDate>Дата завяршэння павінна быць больш даты пачатку!</EndDateShouldBeGreaterThanStartDate>
     <EnterCurrentPassword>Увядзіце бягучы пароль!</EnterCurrentPassword>
     <EnterNewPassword>Увядзіце новы пароль!</EnterNewPassword>
     <ExecutionError>Памылка запуску</ExecutionError>
+    <IsIdentical>"{0}" і "{1}" ідэнтычныя."</IsIdentical>
     <IsNotAuthorized>Няма доступу да "{0}"!</IsNotAuthorized>
     <IsNotCorrect>"{0}" паказаны няправільна!</IsNotCorrect>
     <IsNotDeleted>"{0}" ня выдалены!</IsNotDeleted>
@@ -2024,6 +2071,7 @@
     <ItemCantBeMovedToSpecifiedPlace>Элемент не можа быць перамешчаны ў паказаны месца!</ItemCantBeMovedToSpecifiedPlace>
     <ItemDoesNotSupport>Элемент не падтрымлівае "{0}"!</ItemDoesNotSupport>
     <KeyAndToKeyAreEqual>Key і ToKey роўныя!</KeyAndToKeyAreEqual>
+    <NewProduct>Да Вашай падпіскі дададзены новы прадукт!</NewProduct>
     <NotificationFailed>Няправільны вынік!</NotificationFailed>
     <NotificationFilesUploadingComplete>Файлы паспяхова загружаны.</NotificationFilesUploadingComplete>
     <NotificationFileUploading>Загружаецца "{0}".</NotificationFileUploading>
@@ -2098,6 +2146,11 @@
     <SessionTimeOut>Час сесіі скончыўся</SessionTimeOut>
     <SnapshotAlreadyProcessed>Здымак справаздачы ўжо апрацаваны!</SnapshotAlreadyProcessed>
     <SpecifiedItemIsNot>Указаны элемент не "{0}"!</SpecifiedItemIsNot>
+    <SubscriptionExpired>Тэрмін дзеяння Вашай падпіскі мінуў!</SubscriptionExpired>
+    <SubscriptionsOut10>10 дзён засталося, да завяршэння тэрміну дзеяння падпіскі!</SubscriptionsOut10>
+    <SubscriptionsOut20>Тэрмін дзеяння падпіскі мінае праз 20 дзён!</SubscriptionsOut20>
+    <SuccessfullyRenewed>Ваша падпіска была паспяхова абноўлена!</SuccessfullyRenewed>
+    <TrialToLicense>Дзякуй, што выбралі Stimulsoft!</TrialToLicense>
     <VersionCopyFromItem>Копія элемента "{0}".</VersionCopyFromItem>
     <VersionCreatedFromFile>Створана з файла "{0}".</VersionCreatedFromFile>
     <VersionCreatedFromItem>Створана з элемента "{0}".</VersionCreatedFromItem>
@@ -3026,6 +3079,7 @@
     <Area>Вобласць</Area>
     <Argument>Аргумент</Argument>
     <ArgumentDataColumn>Калонка дадзеных аргументаў</ArgumentDataColumn>
+    <Arguments>Аргументы</Arguments>
     <ArrowHeight>Вышыня пяра</ArrowHeight>
     <ArrowStyle>Стыль стрэлкі</ArrowStyle>
     <ArrowWidth>Шырыня пяра</ArrowWidth>
@@ -3164,6 +3218,7 @@
     <DataSources>Крыніцы дадзеных</DataSources>
     <DataTextField>Поле дадзеных</DataTextField>
     <DataType>Тып дадзеных</DataType>
+    <DataUrl>URL дадзеных</DataUrl>
     <DateInfo>Інфармацыя аб датах</DateInfo>
     <DateTimeStep>Крок часу</DateTimeStep>
     <Default>Па змаўчанні</Default>
@@ -3517,6 +3572,7 @@
     <ProcessAt>Апрацаваць ў</ProcessAt>
     <ProcessAtEnd>Апрацаваць у канцы</ProcessAtEnd>
     <ProcessingDuplicates>Апрацоўка дублікатаў</ProcessingDuplicates>
+    <ProcessTilde>Апрацоўваць Tilde</ProcessTilde>
     <ProductHomePage>Хатняя старонка</ProductHomePage>
     <RadarStyle>Стыль пялёсткаў</RadarStyle>
     <Radius>Радыус</Radius>
@@ -3666,6 +3722,8 @@
     <StretchToPrintArea>Расцягнуць на вобласць друку</StretchToPrintArea>
     <StripBrush>Пэндзаль паласы</StripBrush>
     <Strips>Палосы</Strips>
+    <StructuredAppendPosition>Structured Append Position</StructuredAppendPosition>
+    <StructuredAppendTotal>StructuredAppendTotal</StructuredAppendTotal>
     <Style>Стыль</Style>
     <StyleColors>Колеры стылю</StyleColors>
     <Styles>Стылі</Styles>
@@ -3762,6 +3820,7 @@
     <Watermark>Вадзяны знак</Watermark>
     <Weight>Вага</Weight>
     <WeightDataColumn>Калонка значэнняў вагі</WeightDataColumn>
+    <Weights>Вагі</Weights>
     <Width>Шырыня</Width>
     <WindowState>Стан акна</WindowState>
     <WordWrap>Перанос тэксту</WordWrap>
@@ -4181,6 +4240,7 @@
     <title>Інструментар</title>
   </Toolbox>
   <Wizards>
+    <BlankDashboard>Пустая панэль індыкатараў</BlankDashboard>
     <BlankReport>Пустая справаздача</BlankReport>
     <ButtonBack>&lt; &amp;Назад</ButtonBack>
     <ButtonCancel>Адмена</ButtonCancel>
@@ -4194,6 +4254,7 @@
     <DefaultThemes>Убудаваныя тэмы</DefaultThemes>
     <Filters>Фільтры</Filters>
     <FromReportTemplate>Справаздача з шаблону</FromReportTemplate>
+    <groupCreateNewDashboard>Стварыць новую панэль індыкатараў</groupCreateNewDashboard>
     <groupCreateNewPageOrForm>Стварыць новую старонку або форму</groupCreateNewPageOrForm>
     <groupCreateNewReport>Стварыць новую справаздачу</groupCreateNewReport>
     <Groups>Групоўкі</Groups>

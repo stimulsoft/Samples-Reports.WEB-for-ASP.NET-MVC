@@ -161,6 +161,8 @@
   <CheckConnection>
     <StiUndefinedConnectionCheckLong>В отчете найдено соединение '{0}' неизвестного типа. Генератор отчетов не сможет корректно обработать такой тип соединения с базой данных! Возможно в отчете используются пользовательские типы соединения. Такой отчет не может быть построен!</StiUndefinedConnectionCheckLong>
     <StiUndefinedConnectionCheckShort>Неизвестный тип соединения</StiUndefinedConnectionCheckShort>
+    <StiUnsupportedConnectionCheckLong>В отчете найдено соединение '{0}', которое не поддерживается в выбранной платформе. Пожалуйста, измените параметры указанного соединения.</StiUnsupportedConnectionCheckLong>
+    <StiUnsupportedConnectionCheckShort>Неподдерживаемый тип соединения</StiUnsupportedConnectionCheckShort>
   </CheckConnection>
   <CheckDataRelation>
     <StiDifferentAmountOfKeysInDataRelationCheckLong>У связи '{0}' количество parent ключей не совпадает с количеством child ключей. Данная связь не может быть создана при построении отчета!</StiDifferentAmountOfKeysInDataRelationCheckLong>
@@ -1283,6 +1285,7 @@
   <StiRichText>
     <BackColor>Цвет фона.</BackColor>
     <DataColumn>Имя колонки, которая содержит RTF текст.</DataColumn>
+    <DataUrl>Выражение для заполнения RTF текста по гипер-ссылке.</DataUrl>
     <DetectUrls>Определение гипер-ссылок в Rich тексте.</DetectUrls>
     <FullConvertExpression>Значение определяет, что необходимо полностью конвертировать выражение в формат RTF. Полная конверсия выражений замедляет построение отчета.</FullConvertExpression>
     <Margins>Границы текста.</Margins>
@@ -1588,4 +1591,69 @@
     <Key>Ключ, который будет использоваться в переменных, когда пользователь при помощи интерфейса выбрал значение элемента.</Key>
     <Value>Значение, которое будет отображаться вместо ключа в интерфейсе работы с параметрами.</Value>
   </Universal>
+  <Publish>
+    <DeployReportPlatform>Платформа для развертывания отчета:</DeployReportPlatform>
+    <PublishType>Тип развертывания:</PublishType>
+    <PublishTypeProject>Проект</PublishTypeProject>
+    <PublishTypeStandalone>Автономное приложение</PublishTypeStandalone>
+    <IncludeLibrariesToStandalone>Добавить библиотеки Stimulsoft в исполняемый файл</IncludeLibrariesToStandalone>
+    <GetLibrariesFrom>Подключить библиотеки Stimulsoft из {0}</GetLibrariesFrom>
+    <JavaScriptFramework>Тип фрэймворка:</JavaScriptFramework>
+    <LoadReport>Загружать отчет как:</LoadReport>
+    <LoadReportFile>Файл</LoadReportFile>
+    <LoadReportString>Строка</LoadReportString>
+    <LoadReportHyperlink>Ссылка</LoadReportHyperlink>
+    <LoadReportStream>Поток</LoadReportStream>
+    <LoadReportByteArray>Байтовый массив</LoadReportByteArray>
+    <LoadReportResource>Ресурс</LoadReportResource>
+    <LoadReportClass>Класс</LoadReportClass>
+    <LoadReportAssembly>Сборка</LoadReportAssembly>
+    <UseCompilationCache>Использовать компиляцию для кэширования</UseCompilationCache>
+    <IncludeReportPackedStringToCode>Добавить отчет в код в виде упакованной строки</IncludeReportPackedStringToCode>
+    <ReportAction>Действие над отчетом:</ReportAction>
+    <ActionShow>Отобразить</ActionShow>
+    <ActionExport>Экспортировать</ActionExport>
+    <ActionDesign>Редактировать</ActionDesign>
+    <FullScreenViewer>Отобразить вьювер на все окно Web-браузера</FullScreenViewer>
+    <UseWpfDesignerV2>Использовать дизайнер V2</UseWpfDesignerV2>
+    <ExportFormat>Формат экспорта:</ExportFormat>
+    <ExportFormatData>Данные</ExportFormatData>
+    <ExportFormatImage>Изображение</ExportFormatImage>
+    <ExportFormatDataType>Тип данных:</ExportFormatDataType>
+    <ExportFormatImageType>Тип изображения:</ExportFormatImageType>
+    <ConnectionsFromReport>Использовать заданное в отчете подключение</ConnectionsFromReport>
+    <ConnectionsReplace>Заменить строку подключения</ConnectionsReplace>
+    <ConnectionsRegData>Подключить данные из кода</ConnectionsRegData>
+    <RegDataSynchronize>Синхронизировать словарь данных отчета</RegDataSynchronize>
+    <RegDataOnlyForPreview>Использовать только для предварительного просмотра отчета</RegDataOnlyForPreview>
+    <ParametersFromReport>Использовать заданное в отчете значение</ParametersFromReport>
+    <ParametersReplace>Заменить значение из кода</ParametersReplace>
+    <ParametersRequestFromUser>Запрашивать у пользователя</ParametersRequestFromUser>
+    <IncludeLicenseKey>Добавить лицензионный ключ</IncludeLicenseKey>
+    <LicenseKeyTypeString>Строка</LicenseKeyTypeString>
+    <LicenseKeyTypeFile>Файл</LicenseKeyTypeFile>
+    <IncludeLocalization>Добавить локализацию</IncludeLocalization>
+    <IncludeFonts>Добавить шрифты</IncludeFonts>
+    <IncludeUITheme>Добавить тему оформления</IncludeUITheme>
+    <ThemeStyle>Стиль оформления:</ThemeStyle>
+    <ThemeBackground>Фоновый цвет:</ThemeBackground>
+    <UseCompressedScripts>Использовать сжатые скрипты</UseCompressedScripts>
+    <ShowOptions>Показать опции</ShowOptions>
+    <HideOptions>Скрыть опции</HideOptions>
+    <Close>Закрыть</Close>
+    <Copy>Копировать</Copy>
+    <ShowMore>Показать еще</ShowMore>
+    <SaveStandalone>Сохранить автономный</SaveStandalone>
+    <SaveStandalonePackage>Сохранить автономный пакет</SaveStandalonePackage>
+    <SaveProjectPackage>Сохранить пакет проекта</SaveProjectPackage>
+    <TrialVersion>Пробная версия</TrialVersion>
+    <GroupConnections>Подключения к данным</GroupConnections>
+    <GroupParameters>Параметры отчета</GroupParameters>
+    <GroupAddons>Дополнительно</GroupAddons>
+    <ReadMore>Подробнее</ReadMore>
+    <ReportErrors>К сожалению, этот отчет не может быть опубликован из-за наличия ошибок!</ReportErrors>
+    <SearchLibraries>Поиск библиотек...</SearchLibraries>
+    <DownloadingLibraries>Загрузка библиотек...</DownloadingLibraries>
+    <CopyingLibraries>Копирование файлов проекта...</CopyingLibraries>
+  </Publish>
 </Localization>
