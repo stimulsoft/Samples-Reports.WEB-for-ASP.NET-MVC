@@ -24,6 +24,7 @@ namespace HTML_Samples.Controllers
         {
             StiReport report = new StiReport();
             report.Load(Server.MapPath("~/Content/Reports/TwoSimpleLists.mrt"));
+            report.Dictionary.Databases.Clear();
             
             return StiMvcDesigner.GetReportResult(report);
         }
@@ -37,7 +38,7 @@ namespace HTML_Samples.Controllers
 
             report.RegData(data);
 
-            return StiMvcDesigner.GetReportResult();
+            return StiMvcDesigner.GetReportResult(report);
         }
 
         public ActionResult SaveReport()

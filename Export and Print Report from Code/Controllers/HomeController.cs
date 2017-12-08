@@ -1,4 +1,5 @@
 ﻿using Stimulsoft.Report;
+using Stimulsoft.Report.Mvc;
 using Stimulsoft.Report.Web;
 using System;
 using System.Collections.Generic;
@@ -54,36 +55,31 @@ namespace HTML_Samples.Controllers
         public ActionResult PrintPdf()
         {
             StiReport report = this.GetReport();
-            StiReportResponse.PrintAsPdf(report);
-            return View();
+            return StiMvcReportResponse.PrintAsPdf(report);
         }
 
         public ActionResult PrintHtml()
         {
             StiReport report = this.GetReport();
-            StiReportResponse.PrintAsHtml(report);
-            return View();
+            return StiMvcReportResponse.PrintAsHtml(report);
         }
 
         public ActionResult ExportPdf()
         {
             StiReport report = this.GetReport();
-            StiReportResponse.ResponseAsPdf(report);
-            return View();
+            return StiMvcReportResponse.ResponseAsPdf(report);
         }
 
         public ActionResult ExportHtml()
         {
             StiReport report = this.GetReport();
-            StiReportResponse.ResponseAsHtml(report);
-            return View();
+            return StiMvcReportResponse.ResponseAsHtml(report);
         }
 
         public ActionResult ExportXls()
         {
             StiReport report = this.GetReport();
-            StiReportResponse.ResponseAsXls(report);
-            return View();
+            return StiMvcReportResponse.ResponseAsXls(report);
         }
     }
 }
