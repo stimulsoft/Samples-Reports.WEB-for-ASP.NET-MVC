@@ -813,7 +813,6 @@ namespace StiReports
             this.StyleData2.AllowUseBorderSides = false;
             this.StyleData2.AllowUseFont = false;
             this.StyleData2.AllowUseTextBrush = false;
-            this.StyleData2.AllowUseTextOptions = false;
             this.StyleData2.Description = "";
             this.StyleData2.Name = "Data2";
             this.StyleData2.Border = new Stimulsoft.Base.Drawing.StiBorder(Stimulsoft.Base.Drawing.StiBorderSides.None, System.Drawing.Color.Black, 1, Stimulsoft.Base.Drawing.StiPenStyle.Solid, false, 4, new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black), false);
