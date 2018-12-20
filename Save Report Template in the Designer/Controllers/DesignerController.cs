@@ -10,6 +10,7 @@ namespace HTML_Samples.Controllers
     {
         static DesignerController()
         {
+            // How to Activate
             //Stimulsoft.Base.StiLicense.Key = "6vJhGtLLLz2GNviWmUTrhSqnO...";
             //Stimulsoft.Base.StiLicense.LoadFromFile("license.key");
             //Stimulsoft.Base.StiLicense.LoadFromStream(stream);
@@ -37,7 +38,7 @@ namespace HTML_Samples.Controllers
 
             report.RegData(data);
 
-            return StiMvcDesigner.GetReportResult(report);
+            return StiMvcDesigner.PreviewReportResult(report);
         }
 
         public ActionResult SaveReport()
