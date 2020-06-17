@@ -6,6 +6,7 @@
 This repository has some examples (Visual Studio Projects) each in different folders:
 * Add Custom Function to the Designer
 * Change the Viewer Theme
+* Connect to Data from the Code
 * Edit Report in the Designer
 * Export and Print Report from Code
 * Full Screen Mode in Viewer

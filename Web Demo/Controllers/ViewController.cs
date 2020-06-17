@@ -18,7 +18,7 @@ namespace Web_Demo.Controllers
             return View();
         }
 
-        public ActionResult GetReport(string id)
+        public ActionResult GetReport(string id = "SimpleList")
         {
             // Create the report object and load data from xml file
             var report = new StiReport();
@@ -60,7 +60,7 @@ namespace Web_Demo.Controllers
 
         public ActionResult Design(string id)
         {
-            return RedirectToAction("Reports", "Design", new { id = id });
+            return RedirectToAction("Reports", "Design", new { id });
         }
     }
 }

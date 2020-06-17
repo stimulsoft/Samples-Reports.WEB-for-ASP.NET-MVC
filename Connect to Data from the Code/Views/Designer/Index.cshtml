@@ -1,0 +1,17 @@
+﻿@using Stimulsoft.Report.Mvc;
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Connect to Data from the Code</h2>
+
+@Html.Stimulsoft().StiMvcDesigner(new StiMvcDesignerOptions()
+{
+    Actions =
+    {
+        GetReport = "GetReport",
+        PreviewReport = "PreviewReport",
+        DesignerEvent = "DesignerEvent"
+    }
+})

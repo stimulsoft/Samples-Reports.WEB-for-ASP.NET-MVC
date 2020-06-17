@@ -35,7 +35,7 @@ namespace HTML_Samples.Controllers
         
         public ActionResult GetReportIEnumerable()
         {
-            StiReport report = new StiReport();
+            var report = new StiReport();
             report.Load(Server.MapPath("~/Content/Reports/BusinessObjects_IEnumerable.mrt"));
             report.RegData("EmployeeIEnumerable", CreateBusinessObjectsIEnumerable.GetEmployees());
             CheckReference(report);
@@ -45,7 +45,7 @@ namespace HTML_Samples.Controllers
 
         public ActionResult GetReportITypedList()
         {
-            StiReport report = new StiReport();
+            var report = new StiReport();
             report.Load(Server.MapPath("~/Content/Reports/BusinessObjects_ITypedList.mrt"));
             report.RegData("EmployeeITypedList", CreateBusinessObjectsITypedList.GetEmployees());
             CheckReference(report);
@@ -55,8 +55,8 @@ namespace HTML_Samples.Controllers
 
         private void CheckReference(StiReport report)
         {
-            string assemblyName = Assembly.GetExecutingAssembly().ManifestModule.Name;
-            List<string> refs = new List<string>(report.ReferencedAssemblies);
+            var assemblyName = Assembly.GetExecutingAssembly().ManifestModule.Name;
+            var refs = new List<string>(report.ReferencedAssemblies);
             if (!refs.Contains(assemblyName))
             {
                 refs.Add(assemblyName);

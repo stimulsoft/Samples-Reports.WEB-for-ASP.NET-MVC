@@ -41,45 +41,40 @@ namespace HTML_Samples.Controllers
 
         private StiReport GetReport()
         {
-            string reportPath = Server.MapPath("~/Content/Reports/TwoSimpleLists.mrt");
+            var reportPath = Server.MapPath("~/Content/Reports/TwoSimpleLists.mrt");
             var report = new StiReport();
             report.Load(reportPath);
-
-            string dataPath = Server.MapPath("~/Content/Data/Demo.xml");
-            var data = new DataSet("Demo");
-            data.ReadXml(dataPath);
-            report.RegData(data);
 
             return report;
         }
 
         public ActionResult PrintPdf()
         {
-            StiReport report = this.GetReport();
+            var report = this.GetReport();
             return StiMvcReportResponse.PrintAsPdf(report);
         }
 
         public ActionResult PrintHtml()
         {
-            StiReport report = this.GetReport();
+            var report = this.GetReport();
             return StiMvcReportResponse.PrintAsHtml(report);
         }
 
         public ActionResult ExportPdf()
         {
-            StiReport report = this.GetReport();
+            var report = this.GetReport();
             return StiMvcReportResponse.ResponseAsPdf(report);
         }
 
         public ActionResult ExportHtml()
         {
-            StiReport report = this.GetReport();
+            var report = this.GetReport();
             return StiMvcReportResponse.ResponseAsHtml(report);
         }
 
         public ActionResult ExportXls()
         {
-            StiReport report = this.GetReport();
+            var report = this.GetReport();
             return StiMvcReportResponse.ResponseAsXls(report);
         }
     }

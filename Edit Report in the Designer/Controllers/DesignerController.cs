@@ -22,21 +22,10 @@ namespace HTML_Samples.Controllers
 
         public ActionResult GetReport()
         {
-            StiReport report = new StiReport();
+            var report = new StiReport();
             report.Load(Server.MapPath("~/Content/Reports/TwoSimpleLists.mrt"));
             
             return StiMvcDesigner.GetReportResult(report);
-        }
-
-        public ActionResult PreviewReport()
-        {
-            DataSet data = new DataSet("Demo");
-            data.ReadXml(Server.MapPath("~/Content/Data/Demo.xml"));
-
-            StiReport report = StiMvcDesigner.GetActionReportObject();
-            report.RegData(data);
-
-            return StiMvcDesigner.PreviewReportResult(report);
         }
 
         public ActionResult DesignerEvent()

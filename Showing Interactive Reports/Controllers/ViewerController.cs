@@ -22,26 +22,26 @@ namespace HTML_Samples.Controllers
             return View();
         }
 
-        public ActionResult GetReport(int? id)
+        public ActionResult GetReport(int id = 1)
         {
             // Create the report object
-            StiReport report = new StiReport();
+            var report = new StiReport();
 
             switch (id)
             {
                 // Dynamic sorting
                 case 1:
-                    report.Load(Server.MapPath("~/Content/Reports/DrillDownSorting.mrt"));
+                    report.Load(Server.MapPath("~/Content/Reports/Sorting.mrt"));
                     break;
 
                 // Drill down
                 case 2:
-                    report.Load(Server.MapPath("~/Content/Reports/DrillDownListOfProducts.mrt"));
+                    report.Load(Server.MapPath("~/Content/Reports/ListOfProducts.mrt"));
                     break;
 
                 // Collapsing
                 case 3:
-                    report.Load(Server.MapPath("~/Content/Reports/DrillDownGroupWithCollapsing.mrt"));
+                    report.Load(Server.MapPath("~/Content/Reports/GroupWithCollapsing.mrt"));
                     break;
 
                 // Bookmarks
@@ -53,14 +53,10 @@ namespace HTML_Samples.Controllers
                 case 5:
                     report = new StiParametersSelectingCountryReport();
                     break;
-
-                default:
-                    report.Load(Server.MapPath("~/Content/Reports/DrillDownSorting.mrt"));
-                    break;
             }
 
             // Load data from XML file for report template
-            DataSet data = new DataSet("Demo");
+            var data = new DataSet("Demo");
             data.ReadXml(Server.MapPath("~/Content/Data/Demo.xml"));
             report.Dictionary.Databases.Clear();
             report.RegData(data);

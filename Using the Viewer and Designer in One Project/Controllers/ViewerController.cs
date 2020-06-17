@@ -23,13 +23,8 @@ namespace HTML_Samples.Controllers
 
         public ActionResult GetReport()
         {
-            StiReport report = new StiReport();
+            var report = new StiReport();
             report.Load(Server.MapPath("~/Content/Reports/TwoSimpleLists.mrt"));
-
-            DataSet data = new DataSet("Demo");
-            data.ReadXml(Server.MapPath("~/Content/Data/Demo.xml"));
-
-            report.RegData(data);
 
             return StiMvcViewer.GetReportResult(report);
         }

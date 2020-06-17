@@ -62,17 +62,6 @@ namespace Add_Custom_Function_to_the_Designer.Controllers
             return StiMvcDesigner.GetReportResult(report);
         }
 
-        public ActionResult PreviewReport()
-        {
-            var data = new DataSet("Demo");
-            data.ReadXml(Server.MapPath("~/Content/Data/Demo.xml"));
-
-            var report = StiMvcDesigner.GetActionReportObject();
-            report.RegData(data);
-
-            return StiMvcDesigner.PreviewReportResult(report);
-        }
-
         public ActionResult DesignerEvent()
         {
             return StiMvcDesigner.DesignerEventResult();

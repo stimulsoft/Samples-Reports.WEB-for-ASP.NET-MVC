@@ -23,7 +23,7 @@ namespace HTML_Samples.Controllers
 
         public ActionResult GetReport()
         {
-            StiReport report = new StiReport();
+            var report = new StiReport();
             report.Load(Server.MapPath("~/Content/Reports/TwoSimpleLists.mrt"));
             report.Dictionary.Databases.Clear();
             
@@ -32,11 +32,10 @@ namespace HTML_Samples.Controllers
 
         public ActionResult PreviewReport()
         {
-            StiReport report = StiMvcDesigner.GetActionReportObject();
-
-            DataSet data = new DataSet("Demo");
+            var data = new DataSet("Demo");
             data.ReadXml(Server.MapPath("~/Content/Data/Demo.xml"));
 
+            var report = StiMvcDesigner.GetActionReportObject();
             report.RegData(data);
 
             return StiMvcDesigner.PreviewReportResult(report);
@@ -44,7 +43,7 @@ namespace HTML_Samples.Controllers
 
         public ActionResult SaveReport()
         {
-            StiReport report = StiMvcDesigner.GetReportObject();
+            var report = StiMvcDesigner.GetReportObject();
             report.Save(Server.MapPath("~/Content/Reports/TwoSimpleLists.mrt"));
             
             return StiMvcDesigner.SaveReportResult();

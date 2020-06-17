@@ -23,30 +23,18 @@ namespace HTML_Samples.Controllers
 
         public ActionResult GetReport()
         {
-            StiReport report = new StiReport();
+            var report = new StiReport();
             report.Load(Server.MapPath("~/Content/Reports/TwoSimpleLists.mrt"));
             
             return StiMvcDesigner.GetReportResult(report);
         }
 
-        public ActionResult PreviewReport()
-        {
-            StiReport report = StiMvcDesigner.GetActionReportObject();
-
-            DataSet data = new DataSet("Demo");
-            data.ReadXml(Server.MapPath("~/Content/Data/Demo.xml"));
-
-            report.RegData(data);
-
-            return StiMvcDesigner.PreviewReportResult(report);
-        }
-
         public ActionResult SaveReport()
         {
-            StiReport report = StiMvcDesigner.GetReportObject();
+            var report = StiMvcDesigner.GetReportObject();
             
             // Save the report template, for example to JSON string
-            string json = report.SaveToJsonString();
+            var json = report.SaveToJsonString();
             
             return StiMvcDesigner.SaveReportResult();
         }

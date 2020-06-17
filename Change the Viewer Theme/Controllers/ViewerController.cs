@@ -22,7 +22,7 @@ namespace HTML_Samples.Controllers
 
         public ActionResult GetReport()
         {
-            StiReport report = new StiReport();
+            var report = new StiReport();
             report.LoadDocument(Server.MapPath("~/Content/Reports/SimpleList.mdc"));
             
             return StiMvcViewer.GetReportResult(report);

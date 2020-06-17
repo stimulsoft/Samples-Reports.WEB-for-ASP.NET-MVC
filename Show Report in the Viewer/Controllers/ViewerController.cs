@@ -22,10 +22,10 @@ namespace HTML_Samples.Controllers
             return View();
         }
 
-        public ActionResult GetReport(int? id)
+        public ActionResult GetReport(int id = 1)
         {
             // Create the report object
-            StiReport report = new StiReport();
+            var report = new StiReport();
 
             // Load report
             switch (id)
@@ -49,17 +49,12 @@ namespace HTML_Samples.Controllers
                 case 4:
                     report = new StiParametersSelectingCountryReport();
                     break;
-
-                // Load report snapshot
-                default:
-                    report.LoadDocument(Server.MapPath("~/Content/Reports/SimpleList.mdc"));
-                    break;
             }
 
             // Load data from XML file for report template
             if (!report.IsDocument)
             {
-                DataSet data = new DataSet("Demo");
+                var data = new DataSet("Demo");
                 data.ReadXml(Server.MapPath("~/Content/Data/Demo.xml"));
 
                 report.RegData(data);

@@ -25,14 +25,8 @@ namespace HTML_Samples.Controllers
         public ActionResult GetReport()
         {
             // Create the report object
-            StiReport report = new StiReport();
+            var report = new StiReport();
             report.Load(Server.MapPath("~/Content/Reports/TwoSimpleLists.mrt"));
-
-            // Load data from XML file for report template
-            DataSet data = new DataSet("Demo");
-            data.ReadXml(Server.MapPath("~/Content/Data/Demo.xml"));
-
-            report.RegData(data);
             
             return StiMvcViewer.GetReportResult(report);
         }
@@ -44,7 +38,7 @@ namespace HTML_Samples.Controllers
 
         public ActionResult EmailReport()
         {
-            StiEmailOptions options = StiMvcViewer.GetEmailOptions();
+            var options = StiMvcViewer.GetEmailOptions();
 
             options.AddressFrom = "admin@test.com";
             //options.AddressTo = "manager@test.com";

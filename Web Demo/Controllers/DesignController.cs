@@ -14,11 +14,11 @@ namespace Web_Demo.Controllers
             return View();
         }
 
-        public ActionResult GetReport(string id)
+        public ActionResult GetReport(string id = "SimpleList")
         {
             // Create the report object and load data from xml file
             var report = new StiReport();
-            report.Load(Server.MapPath("~/Content/ReportTemplates/" + id + ".mrt"));
+            report.Load(Server.MapPath($"~/Content/ReportTemplates/{id}.mrt"));
 
             return StiMvcDesigner.GetReportResult(report);
         }
@@ -39,7 +39,7 @@ namespace Web_Demo.Controllers
         public ActionResult PreviewReport()
         {
             // Get the report template
-            StiReport report = StiMvcDesigner.GetActionReportObject();
+            var report = StiMvcDesigner.GetActionReportObject();
 
             // Register data, if necessary
             var data = new DataSet("Demo");
@@ -58,7 +58,7 @@ namespace Web_Demo.Controllers
 
         public ActionResult ExitDesigner(string id)
         {
-            return RedirectToAction("Reports", "View", new { id = id });
+            return RedirectToAction("Reports", "View", new { id });
         }
     }
 }
