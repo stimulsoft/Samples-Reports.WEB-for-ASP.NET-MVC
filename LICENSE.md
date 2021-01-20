@@ -135,18 +135,10 @@ All stimulsoft-\*.jar product files
 All .xml localization files
 
 **PHP**  
-designer.html  
-viewer.html  
-DesignerFx_PHP.swf  
-ViewerFx_PHP.swf  
 All stimulsoft.\*.js scripts files  
 All stimulsoft.\*.ts definitions files  
 All stimulsoft.\*.css styles files  
 All .php product files  
-All .xml localization files
-
-**Flex**  
-All Stimulsoft_\*.swc flex files  
 All .xml localization files
 
 #### Stimulsoft Reports.Web
@@ -242,18 +234,10 @@ All stimulsoft-\*.jar product files
 All .xml localization files
 
 #### Stimulsoft Reports.PHP
-designer.html  
-viewer.html  
-DesignerFx_PHP.swf  
-ViewerFx_PHP.swf  
 All stimulsoft.\*.js scripts files  
 All stimulsoft.\*.ts definitions files  
 All stimulsoft.\*.css styles files  
 All .php product files  
-All .xml localization files
-
-#### Stimulsoft Reports.Flex
-All Stimulsoft_\*.swc flex files  
 All .xml localization files
 
 #### Stimulsoft Dashboards.JS
