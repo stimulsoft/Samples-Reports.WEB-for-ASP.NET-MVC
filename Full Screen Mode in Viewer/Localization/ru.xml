@@ -404,6 +404,8 @@
     <HyperlinkHavePassword>У меня есть пароль</HyperlinkHavePassword>
     <HyperlinkRegisterAccount>Создать аккаунт бесплатно</HyperlinkRegisterAccount>
     <InstallSamples>Установить примеры</InstallSamples>
+    <Invitations>Приглашения</Invitations>
+    <Invite>Пригласить</Invite>
     <LabelAddCloudFolder>Папка в Stimulsoft Cloud для размещения в ней отчетов и панелей индикаторов.</LabelAddCloudFolder>
     <LabelAddFolder>Локальная папка для размещения в ней отчетов и панелей индикаторов.</LabelAddFolder>
     <labelCollectionName>Наименование коллекции:</labelCollectionName>
@@ -419,6 +421,7 @@
     <LabelForeground>Передний план:</LabelForeground>
     <LabelFromReport>Из отчета</LabelFromReport>
     <LabelFromReportCode>Из отчета (задано в коде)</LabelFromReportCode>
+    <LabelInviteUser>Пригласите новых пользователей в свою команду. Отправьте им приглашения по email.</LabelInviteUser>
     <LabelLastLogin>Последний вход:</LabelLastLogin>
     <LabelLastTime>Последний раз:</LabelLastTime>
     <LabelModified>Изменен:</LabelModified>
@@ -569,6 +572,7 @@
   </Cloud>
   <Components>
     <StiBarCode>Штрих-код</StiBarCode>
+    <StiButton>Кнопка</StiButton>
     <StiChart>Диаграмма</StiChart>
     <StiCheckBox>Флажок</StiCheckBox>
     <StiChildBand>Подчиненный</StiChildBand>
@@ -607,6 +611,7 @@
     <StiIndicator>Индикатор</StiIndicator>
     <StiListBox>Список</StiListBox>
     <StiMap>Карта</StiMap>
+    <StiMathFormula>Математическая формула</StiMathFormula>
     <StiOnlineMap>Онлайн-карта</StiOnlineMap>
     <StiOverlayBand>Водяной знак</StiOverlayBand>
     <StiPage>Страница</StiPage>
@@ -949,6 +954,7 @@
     <DotMatrixMode>Матричный режим</DotMatrixMode>
     <EmbeddedFonts>Встроить шрифты</EmbeddedFonts>
     <EmbeddedImageData>Внедрить изображение</EmbeddedImageData>
+    <EnableAnimation>Включить анимацию</EnableAnimation>
     <Encoding>Кодировка:</Encoding>
     <EncryptionError>Ошибка шифрования на шаге</EncryptionError>
     <EscapeCodes>Управляющие коды</EscapeCodes>
@@ -1205,10 +1211,15 @@
   </FormCrossTabDesigner>
   <FormDatabaseEdit>
     <AccessToken>Токен доступа</AccessToken>
+    <AccountKey>Ключ аккаунта</AccountKey>
+    <AccountName>Наименование аккаунта</AccountName>
     <AuthorizationCode>Код авторизации</AuthorizationCode>
+    <BlobContentType>Тип содержимого Blob</BlobContentType>
+    <BlobName>Наименование Blob</BlobName>
     <ClientId>Идентификатор клиента</ClientId>
     <ClientSecret>Секрет клиента</ClientSecret>
     <ConnectionString>Строка соединения:</ConnectionString>
+    <ContainerName>Наименование контейнера</ContainerName>
     <DashboardConnections>Соединения панели индикаторов</DashboardConnections>
     <DatabaseSecret>Секрет базы данных</DatabaseSecret>
     <DB2Edit>Новое IBM DB2 соединение</DB2Edit>
@@ -1255,6 +1266,7 @@
     <RelationDirection>Направление связи:</RelationDirection>
     <ReportConnections>Соединения отчета</ReportConnections>
     <SelectData>Выберите данные</SelectData>
+    <ServiceAccountKeyFile>Файл ключа сервисного аккаунта</ServiceAccountKeyFile>
     <SpreadsheetId>Идентификатор таблицы</SpreadsheetId>
     <SqlCeEdit>Редактировать SQLServerCE соединение</SqlCeEdit>
     <SqlCeNew>Новое SQLServerCE соединение</SqlCeNew>
@@ -1348,6 +1360,7 @@
     <ExecutedSQLStatementSuccessfully>Запрос SQL выполнен успешно</ExecutedSQLStatementSuccessfully>
     <ExpressionNew>Новое выражение</ExpressionNew>
     <GetColumnsFromAssembly>Взять колонки из сборки</GetColumnsFromAssembly>
+    <HideUnsupportedDatabases>Скрыть неподдерживаемые источники данных</HideUnsupportedDatabases>
     <ImportRelations>Импортировать связи</ImportRelations>
     <LabelSeparator>Разделитель:</LabelSeparator>
     <MarkUsedItems>Пометить используемые элементы</MarkUsedItems>
@@ -2279,9 +2292,17 @@
     <LinkDataForm>Данные</LinkDataForm>
     <MapEditorForm>Редактор карт</MapEditorForm>
   </Map>
+  <MathFormula>
+    <Alphabets>Алфавиты</Alphabets>
+    <Arrows>Стрелки</Arrows>
+    <Formulas>Формулы</Formulas>
+    <Maths>Математические</Maths>
+    <Operators>Операторы</Operators>
+  </MathFormula>
   <Messages>
     <ChangeRequestTimeout>Время ожидания для SQL запросов превышает время ожидания запросов дизайнера. Установите время ожидания запросов дизайнера не менее {0} секунд.</ChangeRequestTimeout>
     <DoNotShowAgain>Не показывать снова</DoNotShowAgain>
+    <LatexFormat>Для отображения математических формул используется формат LaTeX.</LatexFormat>
     <MessageTimeOutExpired>Истекло время ожидания исполнения команды!</MessageTimeOutExpired>
     <RenderingWillOccurInTheInterpretationMode>При просмотре отчета c общим доступом его построение будет происходить в режиме интерпретации!</RenderingWillOccurInTheInterpretationMode>
     <ResourceCannotBeDeleted>Ресурс "{0}" не может быть удален, т.к. он используется в отчете!</ResourceCannotBeDeleted>
@@ -2950,6 +2971,11 @@
     <StiCrossHorAlignmentLeft>По левому краю</StiCrossHorAlignmentLeft>
     <StiCrossHorAlignmentNone>Нет</StiCrossHorAlignmentNone>
     <StiCrossHorAlignmentRight>По правому краю</StiCrossHorAlignmentRight>
+    <StiDashboardContentAlignmentCenter>По центру</StiDashboardContentAlignmentCenter>
+    <StiDashboardContentAlignmentLeft>Слева</StiDashboardContentAlignmentLeft>
+    <StiDashboardContentAlignmentRight>Справа</StiDashboardContentAlignmentRight>
+    <StiDashboardContentAlignmentStretchX>Растянуть по X</StiDashboardContentAlignmentStretchX>
+    <StiDashboardContentAlignmentStretchXY>Растянуть по XY</StiDashboardContentAlignmentStretchXY>
     <StiDateSelectionModeAutoRange>Автодиапазон</StiDateSelectionModeAutoRange>
     <StiDateSelectionModeRange>Диапазон</StiDateSelectionModeRange>
     <StiDateSelectionModeSingle>Один</StiDateSelectionModeSingle>
@@ -3629,6 +3655,7 @@
     <ConnectOnStart>Соединяться при запуске</ConnectOnStart>
     <ConstantLines>Константные линии</ConstantLines>
     <Container>Контейнер</Container>
+    <ContentAlignment>Выровнять содержимое</ContentAlignment>
     <ContinuousText>Непрерывный текст</ContinuousText>
     <ContourColor>Цвет контура</ContourColor>
     <Converting>Конвертация</Converting>
@@ -3797,6 +3824,7 @@
     <GroupDataColumn>Колонка данных групп</GroupDataColumn>
     <GroupMeter>Группа-измерение</GroupMeter>
     <GrowToHeight>Расти в высоту</GrowToHeight>
+    <Heatmap>Тепловая карта</Heatmap>
     <HeaderBackColor>Цвет заголовка</HeaderBackColor>
     <HeaderCanBreak>Заголовок может разрываться</HeaderCanBreak>
     <HeaderCanGrow>Заголовок может расти</HeaderCanGrow>
@@ -4096,6 +4124,7 @@
     <ProcessingDuplicates>Обработка дубликатов</ProcessingDuplicates>
     <ProcessTilde>Обрабатывать Tilde</ProcessTilde>
     <ProductHomePage>Домашняя страница</ProductHomePage>
+    <Provider>Провайдер</Provider>
     <RadarStyle>Стиль лепестков</RadarStyle>
     <RadialBarBorderBrush>Кисть границы радиальной панели</RadialBarBorderBrush>
     <RadialBarBrush>Кисть радиальной панели</RadialBarBrush>
@@ -4413,6 +4442,7 @@
     <XTopAxis>Ось X Верхняя</XTopAxis>
     <YAxis>Ось Y</YAxis>
     <YRightAxis>Ось Y Правая</YRightAxis>
+    <ZeroColor>Нулевой цвет</ZeroColor>
     <Zoom>Масштаб</Zoom>
   </PropertyMain>
   <PropertySystemColors>

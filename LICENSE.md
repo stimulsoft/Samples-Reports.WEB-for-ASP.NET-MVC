@@ -78,6 +78,7 @@ Stimulsoft.Report.Mvc.NetCore.dll
 Stimulsoft.Report.Web.dll  
 Stimulsoft.Report.WebDesign.dll  
 Stimulsoft.System.dll  
+Stimulsoft.System.Web.dll  
 All .xml localization files
 
 **ASP.NET, ASP.NET MVC**  
@@ -94,6 +95,19 @@ Stimulsoft.Report.Helper.dll
 Stimulsoft.Report.Mvc.dll  
 Stimulsoft.Report.Web.dll  
 Stimulsoft.Report.WebDesign.dll  
+All .xml localization files
+
+**Blazor**  
+Stimulsoft.Base.dll  
+Stimulsoft.Data.dll  
+Stimulsoft.Report.dll  
+Stimulsoft.Report.Blazor.dll  
+Stimulsoft.Report.Check.dll  
+Stimulsoft.Report.Helper.dll  
+Stimulsoft.Report.Web.dll  
+Stimulsoft.Report.WebDesign.dll  
+Stimulsoft.System.dll  
+Stimulsoft.System.Web.dll  
 All .xml localization files
 
 **WPF**  
@@ -154,6 +168,20 @@ Stimulsoft.Report.Mvc.NetCore.dll
 Stimulsoft.Report.Web.dll  
 Stimulsoft.Report.WebDesign.dll  
 Stimulsoft.System.dll  
+Stimulsoft.System.Web.dll  
+All .xml localization files
+
+#### Stimulsoft Reports.Blazor
+Stimulsoft.Base.dll  
+Stimulsoft.Data.dll  
+Stimulsoft.Report.dll  
+Stimulsoft.Report.Blazor.dll  
+Stimulsoft.Report.Check.dll  
+Stimulsoft.Report.Helper.dll  
+Stimulsoft.Report.Web.dll  
+Stimulsoft.Report.WebDesign.dll  
+Stimulsoft.System.dll  
+Stimulsoft.System.Web.dll  
 All .xml localization files
 
 #### Stimulsoft Reports.Net
@@ -261,6 +289,7 @@ Stimulsoft.Report.Mvc.NetCore.dll
 Stimulsoft.Report.Web.dll  
 Stimulsoft.Report.WebDesign.dll  
 Stimulsoft.System.dll  
+Stimulsoft.System.Web.dll  
 All .xml localization files
 
 #### Stimulsoft Dashboards.WIN

@@ -404,6 +404,7 @@
     <HyperlinkHavePassword>Have password</HyperlinkHavePassword>
     <HyperlinkRegisterAccount>Register FREE account</HyperlinkRegisterAccount>
     <InstallSamples>Install Samples</InstallSamples>
+    <Invitations>Invitations</Invitations>
     <Invite>Invite</Invite>
     <LabelAddCloudFolder>Connect your Stimulsoft Cloud folder with reports and dashboards.</LabelAddCloudFolder>
     <LabelAddFolder>Add your local folder with reports and dashboards.</LabelAddFolder>
@@ -570,6 +571,7 @@
   </Cloud>
   <Components>
     <StiBarCode>Bar Code</StiBarCode>
+    <StiButton>Button</StiButton>
     <StiChart>Chart</StiChart>
     <StiCheckBox>Check Box</StiCheckBox>
     <StiChildBand>Child</StiChildBand>
@@ -608,6 +610,7 @@
     <StiIndicator>Indicator</StiIndicator>
     <StiListBox>List Box</StiListBox>
     <StiMap>Map</StiMap>
+    <StiMathFormula>Math Formula</StiMathFormula>
     <StiOnlineMap>Online Map</StiOnlineMap>
     <StiOverlayBand>Overlay</StiOverlayBand>
     <StiPage>Page</StiPage>
@@ -852,6 +855,7 @@
     <StiTreeViewControl>Tree View</StiTreeViewControl>
   </Dialogs>
   <Editor>
+    <AllowSQLFormatting>Allow SQL Formatting</AllowSQLFormatting>
     <CantFind>Cannot find the data you're searching for.</CantFind>
     <CollapseToDefinitions>C&amp;ollapse to Definitions</CollapseToDefinitions>
     <Column>Column: {0}</Column>
@@ -950,6 +954,7 @@
     <DotMatrixMode>Dot-Matrix Mode</DotMatrixMode>
     <EmbeddedFonts>Embedded Fonts</EmbeddedFonts>
     <EmbeddedImageData>Embedded Image Data</EmbeddedImageData>
+    <EnableAnimation>Enable Animation</EnableAnimation>
     <Encoding>Encoding:</Encoding>
     <EncryptionError>Encryption error at step</EncryptionError>
     <EscapeCodes>Escape Codes</EscapeCodes>
@@ -1047,6 +1052,7 @@
     <UseUnicode>Use Unicode</UseUnicode>
     <X>X:</X>
     <Y>Y:</Y>
+    <ZeroColor>Zero Color</ZeroColor>
     <Zoom>Zoom:</Zoom>
   </Export>
   <FileFilters>
@@ -1205,14 +1211,18 @@
   </FormCrossTabDesigner>
   <FormDatabaseEdit>
     <AccessToken>Access token</AccessToken>
-    <AuthorizationCode>Authorization Code</AuthorizationCode>    
-	<ClientId>Client Id</ClientId>
+	<AccountKey>Account Key</AccountKey>
+	<AccountName>Account Name</AccountName>
+    <AuthorizationCode>Authorization Code</AuthorizationCode>
+	<BlobContentType>Blob Content Type</BlobContentType>
+	<BlobName>Blob Name</BlobName>
+    <ClientId>Client Id</ClientId>
     <ClientSecret>Client Secret</ClientSecret>
     <ConnectionString>Connection String:</ConnectionString>
+	<ContainerName>Container Name</ContainerName>
     <DashboardConnections>Dashboard Connections</DashboardConnections>
     <DatabaseSecret>Database Secret</DatabaseSecret>
-    <DatasetId>Dataset Id</DatasetId>
-	<DB2Edit>Edit IBM DB2 Connection</DB2Edit>
+    <DB2Edit>Edit IBM DB2 Connection</DB2Edit>
     <DB2New>New IBM DB2 Connection</DB2New>
     <EditConnection>Edit {0} Connection</EditConnection>
     <Favorites>Favorites</Favorites>
@@ -1249,7 +1259,6 @@
     <PostgreSQLEdit>Edit PostgreSQL Connection</PostgreSQLEdit>
     <PostgreSQLNew>New PostgreSQL Connection</PostgreSQLNew>
     <PromptUserNameAndPassword>Prompt User Name and Password</PromptUserNameAndPassword>
-	<ProjectId>Project Id</ProjectId>
     <RecentConnections>Recent</RecentConnections>
     <RedirectUrl>Redirect URL</RedirectUrl>
     <RefreshAccessToken>Refresh access token</RefreshAccessToken>
@@ -1257,7 +1266,7 @@
     <RelationDirection>Relation Direction:</RelationDirection>
     <ReportConnections>Report Connections</ReportConnections>
     <SelectData>Select Data</SelectData>
-	<ServiceAccountKeyFile>Service Account Key File</ServiceAccountKeyFile>
+    <ServiceAccountKeyFile>Service Account Key File</ServiceAccountKeyFile>
     <SpreadsheetId>Spreadsheet Id</SpreadsheetId>
     <SqlCeEdit>Edit SQLServerCE Connection</SqlCeEdit>
     <SqlCeNew>New SQLServerCE Connection</SqlCeNew>
@@ -1350,7 +1359,8 @@
     <EditQuery>Edit Query</EditQuery>
     <ExecutedSQLStatementSuccessfully>SQL statement executed successfully</ExecutedSQLStatementSuccessfully>
     <ExpressionNew>New Expression</ExpressionNew>
-    <GetColumnsFromAssembly>Get Columns from Assembly</GetColumnsFromAssembly>
+    <HideUnsupportedDatabases>Hide Unsupported Data Sources</HideUnsupportedDatabases>
+	<GetColumnsFromAssembly>Get Columns from Assembly</GetColumnsFromAssembly>
     <ImportRelations>Import Relations</ImportRelations>
     <LabelSeparator>Separator:</LabelSeparator>
     <MarkUsedItems>Mark Used Items</MarkUsedItems>
@@ -1733,6 +1743,7 @@
     <barsys_autohide_tooltip>Auto-Hide</barsys_autohide_tooltip>
     <barsys_close_tooltip>Close</barsys_close_tooltip>
     <barsys_customize_tooltip>Customize</barsys_customize_tooltip>
+    <ClickAndDragPickColor>Click and Drag to pick color</ClickAndDragPickColor>
     <colorpicker_morecolors>&amp;More Colors...</colorpicker_morecolors>
     <colorpicker_nofill>&amp;No Fill</colorpicker_nofill>
     <colorpicker_standardcolorslabel>Standard Colors</colorpicker_standardcolorslabel>
@@ -2269,7 +2280,15 @@
     <LinkDataForm>Link Data</LinkDataForm>
     <MapEditorForm>Map Editor</MapEditorForm>
   </Map>
+  <MathFormula>
+    <Alphabets>Alphabets</Alphabets>
+    <Arrows>Arrows</Arrows>
+    <Formulas>Formulas</Formulas>
+    <Maths>Maths</Maths>
+    <Operators>Operators</Operators>
+  </MathFormula>
   <Messages>
+    <LatexFormat>The LaTeX format is used to display mathematical formulas.</LatexFormat>
     <ChangeRequestTimeout>The request timeout for SQL queries exceeds the request timeout of the report designer. Set the request timeout for the designer component in no less than {0} seconds.</ChangeRequestTimeout>
     <DoNotShowAgain>Do not show again</DoNotShowAgain>
     <MessageTimeOutExpired>Command timeout has expired!</MessageTimeOutExpired>
@@ -2903,6 +2922,11 @@
     <StiCrossHorAlignmentLeft>Left</StiCrossHorAlignmentLeft>
     <StiCrossHorAlignmentNone>None</StiCrossHorAlignmentNone>
     <StiCrossHorAlignmentRight>Right</StiCrossHorAlignmentRight>
+    <StiDashboardContentAlignmentCenter>Center</StiDashboardContentAlignmentCenter>
+    <StiDashboardContentAlignmentLeft>Left</StiDashboardContentAlignmentLeft>
+    <StiDashboardContentAlignmentRight>Right</StiDashboardContentAlignmentRight>
+    <StiDashboardContentAlignmentStretchX>Stretch X</StiDashboardContentAlignmentStretchX>
+    <StiDashboardContentAlignmentStretchXY>Stretch XY</StiDashboardContentAlignmentStretchXY>
     <StiDateSelectionModeAutoRange>Auto Range</StiDateSelectionModeAutoRange>
     <StiDateSelectionModeRange>Range</StiDateSelectionModeRange>
     <StiDateSelectionModeSingle>Single</StiDateSelectionModeSingle>
@@ -3578,6 +3602,7 @@
     <ConstantLines>Constant Lines</ConstantLines>
     <Container>Container</Container>
     <ContinuousText>Continuous Text</ContinuousText>
+	<ContentAlignment>Content Alignment</ContentAlignment>
     <ContourColor>Contour Color</ContourColor>
     <Converting>Converting</Converting>
     <ConvertNulls>Convert Nulls</ConvertNulls>
@@ -3744,6 +3769,7 @@
     <GroupDataColumn>Group Data Column</GroupDataColumn>
     <GroupMeter>Group Meter</GroupMeter>
     <GrowToHeight>Grow to Height</GrowToHeight>
+    <Heatmap>Heatmap</Heatmap>
     <HeaderBackColor>Header Back Color</HeaderBackColor>
     <HeaderCanBreak>Header Can Break</HeaderCanBreak>
     <HeaderCanGrow>Header Can Grow</HeaderCanGrow>
@@ -3851,6 +3877,7 @@
     <LargeHeight>Large Height</LargeHeight>
     <LargeHeightFactor>Large Height Factor</LargeHeightFactor>
     <Latitude>Latitude</Latitude>
+    <LaTexExpression>LaTex Expression</LaTexExpression>
     <Layout>Layout</Layout>
     <Left>Left</Left>
     <LeftSide>Left Side</LeftSide>
@@ -4041,6 +4068,7 @@
     <ProcessingDuplicates>Processing Duplicates</ProcessingDuplicates>
     <ProcessTilde>Process Tilde</ProcessTilde>
     <ProductHomePage>Product Home Page</ProductHomePage>
+    <Provider>Provider</Provider>
     <RadarStyle>Radar Style</RadarStyle>
     <RadialBarBorderBrush>Radial Bar Border Brush</RadialBarBorderBrush>
     <RadialBarBrush>Radial Bar Brush</RadialBarBrush>
@@ -4343,6 +4371,7 @@
     <VertSpacing>Vertical Spacing</VertSpacing>
     <ViewMode>View Mode</ViewMode>
     <Visible>Visible</Visible>
+    <VisualStates>Visual States</VisualStates>
     <Watermark>Watermark</Watermark>
     <Weight>Weight</Weight>
     <WeightDataColumn>Weight Data Column</WeightDataColumn>
