@@ -33,6 +33,11 @@ namespace HTML_Samples.Controllers
             return View("ViewIEnumerable");
         }
 
+        public ActionResult ActionITypedListBO()
+        {
+            return View("ViewITypedListBO");
+        }
+
         public ActionResult ActionIEnumerableBO()
         {
             return View("ViewIEnumerableBO");
@@ -53,6 +58,17 @@ namespace HTML_Samples.Controllers
             var report = new StiReport();
             report.Load(Server.MapPath("~/Content/Reports/BusinessObjects_IEnumerable.mrt"));
             report.RegData("EmployeeIEnumerable", CreateBusinessObjectsIEnumerable.GetEmployees());
+            CheckReference(report);
+
+            return StiMvcViewer.GetReportResult(report);
+        }
+
+        public ActionResult GetReportITypedListBO()
+        {
+            var report = new StiReport();
+            report.Load(Server.MapPath("~/Content/Reports/BusinessObjects_ITypedList_BO.mrt"));
+            report.RegBusinessObject("EmployeeITypedList", CreateBusinessObjectsITypedList.GetEmployees());
+            report.Dictionary.SynchronizeBusinessObjects(2);
             CheckReference(report);
 
             return StiMvcViewer.GetReportResult(report);
