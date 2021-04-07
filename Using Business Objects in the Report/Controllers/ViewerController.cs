@@ -23,16 +23,31 @@ namespace HTML_Samples.Controllers
             return View();
         }
 
+        public ActionResult ActionITypedList()
+        {
+            return View("ViewITypedList");
+        }
+
         public ActionResult ActionIEnumerable()
         {
             return View("ViewIEnumerable");
         }
 
-        public ActionResult ActionITypedList()
+        public ActionResult ActionIEnumerableBO()
         {
-            return View("ViewITypedList");
+            return View("ViewIEnumerableBO");
         }
-        
+
+        public ActionResult GetReportITypedList()
+        {
+            var report = new StiReport();
+            report.Load(Server.MapPath("~/Content/Reports/BusinessObjects_ITypedList.mrt"));
+            report.RegData("EmployeeITypedList", CreateBusinessObjectsITypedList.GetEmployees());
+            CheckReference(report);
+
+            return StiMvcViewer.GetReportResult(report);
+        }
+
         public ActionResult GetReportIEnumerable()
         {
             var report = new StiReport();
@@ -43,11 +58,12 @@ namespace HTML_Samples.Controllers
             return StiMvcViewer.GetReportResult(report);
         }
 
-        public ActionResult GetReportITypedList()
+        public ActionResult GetReportIEnumerableBO()
         {
             var report = new StiReport();
-            report.Load(Server.MapPath("~/Content/Reports/BusinessObjects_ITypedList.mrt"));
-            report.RegData("EmployeeITypedList", CreateBusinessObjectsITypedList.GetEmployees());
+            report.Load(Server.MapPath("~/Content/Reports/BusinessObjects_IEnumerable_BO.mrt"));
+            report.RegBusinessObject("EmployeeIEnumerable", CreateBusinessObjectsIEnumerable.GetEmployees());
+            report.Dictionary.SynchronizeBusinessObjects(2);
             CheckReference(report);
 
             return StiMvcViewer.GetReportResult(report);
