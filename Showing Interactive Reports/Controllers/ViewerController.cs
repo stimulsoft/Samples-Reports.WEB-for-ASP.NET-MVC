@@ -1,6 +1,5 @@
 ﻿using Stimulsoft.Report;
 using Stimulsoft.Report.Mvc;
-using StiReports;
 using System;
 using System.Data;
 using System.Web.Mvc;
@@ -46,20 +45,14 @@ namespace HTML_Samples.Controllers
 
                 // Bookmarks
                 case 4:
-                    report = new StiMasterDetail();
+                    report.Load(Server.MapPath("~/Content/Reports/MasterDetail.mrt"));
                     break;
 
                 // Parameters
                 case 5:
-                    report = new StiParametersSelectingCountryReport();
+                    report.Load(Server.MapPath("~/Content/Reports/ParametersSelectingCountry.mrt"));
                     break;
             }
-
-            // Load data from XML file for report template
-            var data = new DataSet("Demo");
-            data.ReadXml(Server.MapPath("~/Content/Data/Demo.xml"));
-            report.Dictionary.Databases.Clear();
-            report.RegData(data);
 
             return StiMvcViewer.GetReportResult(report);
         }

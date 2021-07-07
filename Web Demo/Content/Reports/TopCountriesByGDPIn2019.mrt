@@ -1,0 +1,2864 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <CalculationMode>Interpretation</CalculationMode>
+  <DashboardViewerSettings>ShowRefreshButton, ShowOpenButton, ShowFullScreenButton, ShowMenuButton, ShowEditButton, ShowReportSnapshots, ShowExports</DashboardViewerSettings>
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="1">
+      <TopGDPofCountriesin2019 Ref="2" type="Stimulsoft.Report.Dictionary.StiExcelDatabase" isKey="true">
+        <Alias>TopGDPofCountriesin2019</Alias>
+        <Key>8a8d3d4453d94fa78ce39c84e53c3afa</Key>
+        <Name>TopGDPofCountriesin2019</Name>
+        <PathData>resource://Top GDP of Countries in 2019</PathData>
+      </TopGDPofCountriesin2019>
+    </Databases>
+    <DataSources isList="true" count="2">
+      <Statistics Ref="3" type="DataTableSource" isKey="true">
+        <Alias>Statistics</Alias>
+        <Columns isList="true" count="7">
+          <value>ORIGINAL,Country,Country,Country,System.String,_x0034_90105ece6a242bd909e1b027a2d963b</value>
+          <value>ORIGINAL,GDP,GDP,GDP,System.Double,_x0038_e22e7a30e244852b8fbe9289667e411</value>
+          <value>ORIGINAL,GDP_x0020_per_x0020_Capita,GDP_x0020_per_x0020_Capita,GDP_x0020_per_x0020_Capita,System.Double,_x0039_043596643904ffc8d3a6a3fdaaac1d6</value>
+          <value>ORIGINAL,Population,Population,Population,System.Double,f7cb8a024ce1437c94aa6464fc128337</value>
+          <value>ORIGINAL,GDP_x0028_PPP_x0029_,GDP_x0028_PPP_x0029_,GDP_x0028_PPP_x0029_,System.Double,_x0034_84675dd72d34146b3a399ac7c110f90</value>
+          <value>ORIGINAL,GDP_x0020__x0028_PPP_x0029__x0020_per_x0020_Capita,GDP_x0020__x0028_PPP_x0029__x0020_per_x0020_Capita,GDP_x0020__x0028_PPP_x0029__x0020_per_x0020_Capita,System.Double,_x0034_b508cec2cd34f668c1f93563cea330c</value>
+          <value>ORIGINAL,Share_x0020_of_x0020_GDP_x0028_PPP_x0029_,Share_x0020_of_x0020_GDP_x0028_PPP_x0029_,Share_x0020_of_x0020_GDP_x0028_PPP_x0029_,System.Object,a427794ac7e34444a338db5ab9268907</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Key>64d897a2dea448fd98cd92fc49aae325</Key>
+        <Name>Statistics</Name>
+        <NameInSource>TopGDPofCountriesin2019.Statistics</NameInSource>
+      </Statistics>
+      <Historical_x0020_Data Ref="4" type="DataTableSource" isKey="true">
+        <Alias>Historical Data</Alias>
+        <Columns isList="true" count="3">
+          <value>Country,System.String</value>
+          <value>Year,System.Double</value>
+          <value>GDP_x0020_per_x0020_Capita,System.Double</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Key>a02c47a60d0a4c318354b7d7187baac7</Key>
+        <Name>Historical Data</Name>
+        <NameInSource>TopGDPofCountriesin2019.Historical Data</NameInSource>
+      </Historical_x0020_Data>
+    </DataSources>
+    <Relations isList="true" count="1">
+      <Stats Ref="5" type="DataRelation" isKey="true">
+        <Active>True</Active>
+        <Alias>Stats</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>Country</value>
+        </ChildColumns>
+        <ChildSource isRef="4" />
+        <Dictionary isRef="1" />
+        <Key>37b200ec963a4380b9f0e512091024a6</Key>
+        <Name>Stats</Name>
+        <NameInSource>Relation</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>Country</value>
+        </ParentColumns>
+        <ParentSource isRef="3" />
+      </Stats>
+    </Relations>
+    <Report isRef="0" />
+    <Resources isList="true" count="1">
+      <value>Name=Top_x0020_GDP_x0020_of_x0020_Countries_x0020_in_x0020_2019, Alias=Top_x0020_GDP_x0020_of_x0020_Countries_x0020_in_x0020_2019, Key=dda9dcbb82b245c7922680a7f112178f, Type=Excel, Content=KPy_x002B_D03oFpHrmjS8V8WJY0zG4Fs1C8j8Su_x002F_sT1rTSnmVVJpDmNF0JNDgYE6eDNIIpegZwuldw_x002F_W0_x002F_KwNvHF2kG_x002B_Udyp6HDzqwtURXfjdZB13o5VOuHXcm1Wan31G57JdT_x002F_JP8LSqd7QyQclmeD9wseZp_x002B_mW9h0H_x002B_SJH1Kg4aY4EH8FQxPUEY9J_x002B_IQS68gX8RPxwLJ_x002B_Lw5NFtrY6TQrEQbwoIUCbRiU1BP7ZHN62hrlnRZ2JRQ_x002B_w5STwtD0Qu4RXcLJbzFB_x002B_GsuLw0J1QcYF1bDI10JWH1TQKdJJuDqFYJTkOc_x002B_44Y9msdu5n_x002B_mioMl7OIr9BEqUsGmGl5J13Yf3BEqLaqdoGGCCwJULPRQzuxn8Y4sLs9x_x002B_CSumuYeY_x002B_E_x002B_76Teyur1bMENsolS7TizUbM_x002F_o47Z0tv4PeWzdBWvLEQuCLl4QjhvgIS_x002B_kiGVPV6Ln3rdqhyNTuzc3O4yJetpDqaFJ6_x002F_y_x002B_noHotiHX41X540lqUELhcoEpoqxSh3gQ86cBCFvMwRpPJMXI_x002B_wOMqr7mF3QzNbEv8K1gqrKDhB0qsYSgdPooQOZ1_x002F__x002F_EWOEOjHZEY2of4pMsnBcLKkLEX7WRPRkD74wHFBKKMZomk5LfKKBIsMU38ZWV1m97wL1_x002F_xBUL63MILAoKiUGaK_x002B_x3DSJePCWNkIi89h3MOsNPWJG_x002B_vpe6U_x002B_Y7vBCo4rEj4p9Vm7ZeUwyRmzRg83ETEGtovRTdWQuv9OH4iJkCBweF9L6Pa_x002B_ByJZtFVxjdgt90wXJn9ndMc39ooYyhyTgX071ZjJUYPIt61IZrJWFnwQFta3eaeZoJq_x002F_CJvxyxbfxwrkeF_x002B_e_x002B_ETaQzIOy0GPNusBqLWGqh0dpzW9EPUKg6JqZTjY0WX03MYgtskIRq901G7_x002B_YTKntRnKYLr2cpdBioxf0kkCI1PJ1gPzbwt_x002F_HaCIYMgQNFY97lYl_x002B_sABQh92Tgo50abfYGayZTjGfd01AxojoFlz5fJuLXgabnCwyozpgp2iw7LGscH5GF8Qun1d8lZaDIC3A6OTRhB9qd3SMIGSIaqHPSJBXUtMPvkzgNnzyVOFpBaFcapvnihgoHVMVqLZM6ZWxZoCRpFCMkPu0HjGN4RCYSKKavTtddB17By947yKbSYjx7_x002B_TabTWnVTtX_x002B_9pLOxScIuZD88aCHD7WovVH3fPP7rlswg7haE_x002B_r_x002F_gsxarnxwWuiz1sDjqeFIW5_x002B_zx_x002F_WYOCznsNU_x002F_eh3_x002B_otqgzjldTPtct78UficniJwaS9chLySGLrfvgTkndAZ6VZs0Pu5tEfj0GCNEzqWrarnFZkoWu1tg0VZppCedFUdE222JYiFJpYagdZ94SH_x002B_lQ8vLSbqkkfR5zZjB8tb2IroJ1MvMlDjMzuoo6FN_x002F_DowUgsFwylHFbCmV9kT6Yes5dUiECOot3brHUyoqlId9UWwtVYLHAPUwLn2G4jgJrHRc2aVeLl8VzusSUpW_x002F_TrdhNu8BiiYBWK_x002B_E_x002B_EBbMb8ocWEBVL8mMgaGvvq9AWa5j6GFphcpoKia8HAp4jQLckH8Iz81pzUqn0tEhnDRj09KpwHDwIo_x002B_3lfHhds76WjLiCUM1pGriPj_x002B_y0h7knl8VpJ39R32942X6Ojv119490EuR2tb7ahaurEbBbHUK8JIwnkQ4c_x002B_pp5fmd7kEmb55ZT1PcKbcoYKPY7xdnjnNKVf3VF78a_x002B_hwtnTwd56Rj8B950SNV3o5FE2TtUmvK9B4QEeX0gmE44ndhwVj5h_x002B_6qpSkrRAx5CQJXcQSS6gkU6vSNNmvCKx5B6gj_x002F_lyUhRGItVSy2YJS2_x002B_zd1d3xtuQZext_x002F_jmu9y18JjihjvqpeRh3SquutjdpONipc7nrhqzJUOv_x002B_W3jeyX30ypmilq6VpxITVfk5F1NCG6m48HI5TJIoHPQXY825lqnYiYLMnuLcj4vCLpU6gSQZTQXg_x002B_4tKDmo_x002B_j5_x002F_csToV8pRfkxaSmaztk2EDwSCztC481Qkjl4diLqEnCfD9pblsBUST07TBdgG29hALHfDDaV5V5QrDm5HMv58k_x002F_JNQ2koUOMRBAMGb2mDjO5gom76rUx2E0AHa_x002F_q6Vwtl5TYFpKx0jArkbQZS3ofg1i5idQ7_x002B__x002F_B4IQiR_x002F_kJjJqneo4umokjYhaOfUoiqZfCIE9PFkXEuznldniHUVlC92oUb7fTfSAt_x002B_RZYUxkAaNRcvYp7DpMpowdyKIUarPYvw5MQVMgujs2digKODWEtrSHujTezE3_x002F_T60UYfOJHXpgfGr_x002F_BGvpP_x002B_vS_x002F_yVF_x002B_barCz1jdxmVej6xwOc6zLtgsfS_x002F_et9hZxN6WCBI6oZskDORLNU3B4zfy08thtqaCkoUJdz7aQfkDKi6S_x002B_K_x002F_C1BHHuL_x002F_iyfYw4kLzRh0hYuKxPfWwWxVdwitNio_x002B_MqA0gVpR_x002B_AV7JVDXMZnET5n0pAxX97HhuUfn14mI2IWBz8sRv6TFreXW_x002F_N6WDLCQbvp_x002F_KyUFiZLBjbVSUQeFB83CcpnL3Ul6zS2psDLOm_x002F_kJHZMMsES5tr6L5n_x002F_P216IRUvzK_x002F_r4LJQgQK3E9Tt9JbOEQZqUpoZ5L_x002B_r8rVmUgfKOTI2FPgckfZ9NbdidK_x002B_bv11I_x002B_M8hG95bnPA_x002F_oVX6ibOmDwOpC4zIvx1hvrPEA34qjQrX5MvUqegyTfhElF7_x002F_o_x002F_CAm0c5TOnAcbIviN71UYa6xkBJG75T78pcsqy2JnWvo_x002B_hh1r9XNmXxCevqHnscsc98jdz6hvB6GKOg1gY_x002F_foUYq8cYY_x002B_O_x002F_wJGBSFRvr_x002B_nIZ6i2Fbr78430HuFQKv5FmNr_x002B_jeo7iQzyZsqFSdnjep9NBGXt7uvs2VQR8y7ilN5Fhh50lmuJBRfOmabWlQQW_x002B_NNEf1ZwnaUhXT_x002F_gco8L87PrXQMZivQgo8_x002B_11fd2TfXU3VSmojlSv9DFrKpzYS_x002F_co5TCIUARL9G_x002B_NSFW8qCkvuVEyScRWlyA7ld16CTxHm_x002B_Z22fNT_x002B_NiBMqqRPpjE92XzkkaVYk_x002B_SQPbMOfeJP23gtYOQdTm85Xe1HNpb4racYo8D22NdWh8KaKgLswRWbshcTSFEaIfF83AWif4HUzojci93MOCD80vTf_x002F_IUMeETdwtIRG_x002B_9IpUt5nhJPNV2MqaW602tMv_x002B_aek9P6_x002B_rcnTkenay5RldsY_x002F_wlh3mnoPKlrNcqzBhzzYiAnwtvu3eoUNvJXXPT22ZITXc5KqxLEtuM4p1R0OXTniEg1RQMHzfkDWEhjLzsEK_x002F_85rh45B_x002B__x002B_A2K6oLlNGJGD4OWLApqfu6hZCeNby9JeewOg2EPOnD9KMk8aqB7LBpPs73U_x002F_fKLEGv1FNogoJ3ytODWZzCxYV21JFWuiJacN_x002F_Gr9QMU6iZgE2Id7Ikm420AArWo8ntVGIqVMlPtiWKCDjJmDOQAXdMtYtXmnL1R7lluQRMNL0wlaIU0FF1Mzalkjq_x002B_rVijY9dXsKjcLO960IpavsvkHDG1yslkrhv2yq96djVy1VvZY5WKewiQ4C9_x002B_sQym1bbkrc4Gh6D8PI0LnXFkGcH_x002B_Qr5SguCu1SvhKqOz08bVcFweh6OwCslj3FMMjffhdTvPugnm_x002B_6EjNzkXbrBR0jMQcWowK0JE2DUXhIs9sv0Funzh3OaFJr1yGhrs3uG0t31t5EOyMKgx4rNWcloGrSCLMRtTXgr_x002F_bq8ShGWUblLyIUOLODCSCadZhN_x002B_guu0CM47NhY_x002B_PGWbn1MII5x_x002B_jNKe03lcCl7SKGeN9wk8psSmdevuDd42JuiAvzpSDcHNjm8_x002B_QXEhmF3KZsMzo_x002B_UJJ03i0HnjP5bD2dAn0k6fpTdyRQKyTQyX_x002F_w8DFu3lVeJlp86mY0HXh9_x002F_SbTcWaCQthLA0fFAWct7Zu1uUyDbW8va2fPg8sBNgL_x002F_kgXpz09OlbqXXd_x002F_ecYHYzKY6LFCsA05NlIjdVU3O4DTaxfsnalQeeojFQMHGam14P2EsS7XgQ8jDfCgQQBuK07BDgJdNgNF823xBCR4qLm_x002F_o8R5dmYW_x002B_NgOECJHIY75CRnvNnMxLeRwGP6dkWmfA09ITUGVMyM4WJt5zFcWZrfmwYlo843L_x002F_mC3AboTPStd94L70bkwxwWcyuFZ58KpwGJGDqOZLLjiinRRCKE9SRx1PvDU2369P8PvDoNXfJvu8kFo_x002F_rtQeSSwCoKMyv1AbFD0p78cr3Z0tlygZ9qImQkusmJH7NIc1H8mfRee03_x002B_nCbjJIAp9mcJPJIYZSKEh1xab4UfbDvEka8ksF2up6WrKMkubIxLNvisW_x002B__x002F_hoQ03jHqT_x002B_te6ShmpFD4GWGxFvS3nkBHQ6cGwd_x002F_HThMI8WDBgj9nia1WXr7uXsUlF7_x002B_Mtc5XPEQemIzsOrlUEvpvl2UG4_x002F_kdDSU9NjtqkExp1wuvStbk2Ibq8ootSdvNnL6EPXITccI8vpq_x002B_IjPA0DcHy582IAG_x002F_FzmE0mFtbtpovecr1poD87s2gagOLobkvTPXfqFOeLX7szA_x002B_MqXk78TOC_x002B_rjrOw_x002B_UR3PUAx5o_x002B_JGTGXJgb100tEMUJR_x002F_BB0GnKohHs_x002B_nCQ2rMHf53rZYyLZX8AbexYMm4QCfzx9PIk8WB_x002F_fosv_x002F_iGpfEsbdDG7_x002B_sX0HY0x_x002F_2x8oOTfESClK3qb0Cwb2ZfLho3BOERv59Ig0wJHKb7JMuc6D3RhwMZdcXNQAJIFFETt58LmvYCd_x002B_ulNaCPKEw5ncAILr2iHSrSBenT2g1jRTT6QlKQEsxDz93NspN7_x002B_N6SXIKtI6EnyHTIO_x002F_kl_x002B_KPZItHpOFUA7HhL9s_x002F_dACU3EJfoYbQI1iN5glcRQ_x002F_b39tKcITfemOTUsJgkQ2xb9vqi_x002B_P5pxegBmlVHdVUzKElXtT6_x002F_ZUVkgQW0XgfSgG6nAOzs_x002B_VGkHlrQu7wFG0Hov_x002B_BPopOzVUxMk0yQWsoRNos6ZRLL15Pfhi3QA4dqi5VKH5bAKT9NBrQzrTBpBgHUSYPnqowHQGcCStb7h_x002B_UrbtCSSyVJT8QilzrkIHKoVGYvmvpHkOrKJEUimC70H_x002F__x002B_dYkn9yCl3lMXoiozxq6gfFfoxJN38vFONdgy1DGqSJ0dBoizl_x002F_FyB6ttTimzzjB0L2wnAPa4lSNzdbyNZDDiFuRKljQzmTqDGL07nFKRPgoPsIXXYXZwh_x002F_gTJQjC6nWreO68Bi586mFVPagP8P_x002B__x002B_r0dX_x002F_s3C158giz_x002B_SsGgAMMS7nKZYWu4e1RNWZ4UGge_x002B_flJjun5CC4bEp6QyXdvab29HK5PXBZJiX5nBaxvdCWa0KfGAL4TmqhpjaRlVeYWoHEuFSAV1qdKWlKCdXjNALy6XMHmw4nZFo6NdYLCt_x002B_mVi0vzTIflqj0IukP9cPVb4RnoKjalsVpEQzKT7XpZpmfvDcOjHWl3E9RVc_x002F_c7aIYtENwGouzzCub1izDR8on_x002B_h3dqhptZjMRIZEz8_x002F_aZouCkChF9n5E41GCdxrjkIM1c71hRlFYVreAV8N6M8KyLMFXYTUJSYF_x002F_I0PkRuDaErQcVYQBbPq4z6AGje64_x002B_EBnlyLbC6vOLA5A9scUA0fjeVS5nQy6021627tESIYUw2nNpHnSpztiTjJSE1COswhtGu7OoA_x002F_C9wu4L7UddEpXP1ej6tmTAZLd6fSY9jfOil8_x002B__x002F_mA5tM0YWLTZQVt2pb88y9IjTh8ZsyCwQ4pMf27C5779_x002B_B4KT0WXbE5Xo0Vyx5EGrkUU8ZzngXXMMtIT4vCvp7kuF72C19TsjK_x002F_qsNokthvKgVLqFONdAjgtNr1cwCjQWvIeBNaBBHVJWpNFPi3XARjmomkLXSD8szycNJ1GXesStfp1qpcxG_x002F_Y_x002B_lcNDoHON67vpjvp_x002F_60ma2ieL0bBMh8kyuHk52aI97uZ3BwSyDLBj1uB2XWjQxrAHZ9E0OMpMxCK1XpgH9BT524XKJ9lt0X9WwHFKYDPo0IV_x002F_iIRiKemwSV40mkbcE6ZynP1BYQqD3Zw2ziis0IJqWJn2XXt8ZDN_x002F_uTUJlhu0z96uWD8FQ3Npy1mbRYqC4txeBabRNy0m95R6iqFJpxD1f2uYo8WhaZfzhNhpQ3steu_x002B_NcCSo_x002F_msyLb1ayPDgpaLSddK_x002B_9okd4QxmE7fhBVZJrcxN9K2ERteSVXgBGw2bhzOgFpir057ohmgM4d2RWl_x002F_388yGPQUgCvrCt6VDrxBtsxb_x002F_ZnNJh64F8ryueA7ktekQdRCCrEmsS510fAahG9QdD2HIQu44ds1Di0igJ8lI9Vy36qPAfizJlpALwSLXAop6nKM7MQW_x002F_5xDbJe0_x002F_5vxW9GQrQQNB8Sutn2kfjPM_x002F_d4NNbtSTZAcnmgnbQzc8CgOmn3VUBgLnEWZQONT49q5Q93Y09llw8a0Nq_x002B_ax_x002F__x002B_GStExRLFKssNjqIBXlc4wJh1u_x002B_Q73AjcjPi6gOnVo5CTxpQLln_x002F_L3IakCImKJKomcXzPkXiQVaeGDhep5Dv6YQeYpkHrYQmXEmKV9vZXmJQe_x002B_47OxZ26CBa6veDVkSlQAIai5Rp2_x002B_cP0G286QLm8nlz_x002F_EjuWT9jkKZabX2FJCq_x002F_I1KeHbESS_x002F_7_x002B_5Yl9NRdFipb3rBo9w_x002F__x002B_Jy30_x002F_c1nRsBFPIUL1fVg8xBbEsfxUBXrfWabbzZ28vBrPJ1i_x002F_5Ye_x002B_0dXnf6Mm0hQ3iGA56nAV2Ao2suSsj236FnMLK_x002B_LwcX1AIOiZAz7uZgAJGB8hSjbgj4atHxH69mKdFp_x002F_qcd4gmAdsFNQqNJuwJVR_x002B_5q_x002B_xdEVzw5VExrPZHJ7xAht8GLutzpv3pAXnO_x002B_Os3bzPttditqgLkn0CKmbt2969KZ7FrmsUZkaaMWhMpOJhy5PWfPm_x002F_hB_x002F_BpmnZ7_x002F_RqGfiXTjXCr4PR3o_x002B_5wye44an0KY6eCLkPXSX9e7Ej85f4srdowZrusS9P_x002F_Aa3CY3vuhcO_x002F_9_x002F_9XVpBc_x002F_YYlY7DpGFPomVG03mb4RyFpZZurxHJW_x002B__x002B_gsU2N80Asa4g1jgKYTTOxyMwRKaRJbqLrkc1xS2tN_x002F_2o1UrnORx0xKnH_x002B_xrjv4QtMzfexAJ7kGySeouIyMJs3RAsDd1n_x002F_5k_x002B_fHaMhELwWJtEGUt3YmOAM4zx961ZA5aPmbQDiWpUlkdR5iTDvco3OjYbETSLnlk9LlfZdNympYTKag_x002F_bcxb7dBsIUm9Ni1yVJeznohf7sqW8I9M_x002F_w2M8b7O7TIhC013TQhXf3xrvaOR9SRFcMxeLIpKr7MebMUj39xXTkvsmFTGj1StEJdCyLDXH_x002F_9K_x002F_Dt98M7NpmRC7aiKnrjHLtP1JjljDTCWm2yY2Ul8xBHqxKvGBgp_x002F_hFTwovVGL9vC3gUdeO6i4esd3PRGWXBWHBasGBYu2Mva7g_x002B_ksfoQ4G7i6mocT1_x002F_KGvhHN1PnrTFXrv34Qq5TVHpfz36Dv55dEXCWcAXEYYoMBQcGZauHC2gZetaq8kjFshPXECoEaYmKpo5Mkvl0furbPnXxvaqzfbCkPc6A8o516TM4OQqTSSZlKZKaReWF9krYXWJi4hWlsk3Oq94Mn2durzAXKUF1bC53hU36XokP87hUadTI2cmn1QK7f7rJBBRdmXXB74w3K7SsvIYAHUGZzt9PPN2YuJuob7HDPcV_x002F_a81T2SFU6BiOX2H85ETl7UFc3nfZcM1Z_x002B_hjfEDnbmjBsH3ketaiFiHpUIWUaW_x002F_KzXzt461BIgt2OSNkjrqSjRNI6Pw_x002F_Ed5j1Lh4oTyPhOFAEPkGHkqp9qd_x002F_b3NftbwHHDN48hSkxfLziHhEk65hctt_x002B_6Tm9t7jAl8ZlwC2Gk6BPQ2PzFWNYEoJiXrYiBx8HOr7SqvPOBLwr5bU1RaRSKP97Sb8wcZ5z9lv8Wg3cnoBV39ESMAGTIPZ_x002B_xT89wGjhn7_x002B_fd9E1ZOYckC8CnhXltHKQo20ClFwW7iM5_x002F_9vKTjmjlg34LZCUx5N4_x002F__x002B_XHkYCz6_x002F_9J_x002B_BmfKxqyEy1HeCi1S4aoQcAqn9EHKbWtS7ZD4DZrU0x7lT39XRlWSHdmWRiNmlbIbqGOK2chNEe3OLSHfU_x002B_0_x002F_v0AbEDrfFbk4L9VwBAaLnG7eKFaco88X5cfooUI_x002B__x002B_sMb7igcboTQVBUU_x002F_q18zDGiSUP75j6a8cmfLQmvM9PNnp5ztKKR4sl8_x002F_6hL7zsEm5rpHEqXqu_x002F_5Dx2moaNOsjFtxCC9ouDO5myJ_x002B_lqKJpCX5k3Xdd_x002F_YoFz_x002F_fhHulYpmarVw0zcasm5647EoqoZLdHPYo4hxGmRsyzEBNDbelPDE5GZAw2MZrOHY_x002B_ahkwHhrvWmtR92sFihOAw_x002B_RVEQ8U7izrT5SdtqLtRNidY_x002B_sfWmMUwL2eCvOj9OJLMrhO_x002B_A8Pr5c620tfOLYnBrM1rq8DLnAUz3OkAD3nE_x002F_SiZq7tisnmq_x002F_jQlusF0qnuqlPUmV9lpfFn_x002B_yJ6rGqWiWepMl98xTFPTJFc16_x002F_DW6lvEtsIFzkttASnulXzDT4TwCUfmxWjYhNZl_x002B_WqUuGiHmPuvvwtZmEXX_x002F_BRwl3qcEUONU_x002B_5ayv9PzMGQRVwfq9W_x002F_8naZuErhMCLX7o_x002B_ZeyWGwRYfve64WD_x002B_vx4Ks2QL71Vph750_x002F_zQKeFWItnDQQD75u4KAwKpvNF2WD830GyIQUDcs61hs4_x002B_A9RYaHaS_x002F_Bp6e9O6ERjsdf4wp775VpF9MacLZ9hUaNtJHxGvQnPOW5UL_x002F_R_x002F_qZS68a_x002F_2W60lMsyg8gYieHGJ80MLZQ8kIg9IQ1vnnhxuq8w_x002B_g0N_x002F_qtwkDKo5_x002B_MXRFEIRMFgBIkEYgfXv5ZK4I0YzIVGSdSl7VtTx71Sf6Jheobfo0eWCk1KPcj0Yve_x002B_nzscL24zlNWS3vMO4gLLXkF4G9ZvPhwpwYSXZr6VFmx9F8BZdd1NqwYyZ_x002F_XGdgvBepTkJ8rmOprtirfPMOBvmvoyiL1U0TJWZEPnhPAW5WPCs6SHVZ_x002F_633UMtqmq45OMzBPGex_x002B_c6XY2GVNN0quPbPKdRMfLdOwQEMHl_x002F_7EPmOtBqZ8xNJCLqNYggZWM_x002B_Z8d2W2_x002B_CrFbWi4_x002F_EFyKIaD87p_x002F_md9B_x002B_Gzq6RrP_x002B_QJhwXQdNDmWKYHgG5Ywaf9MNh7TOFYd7obaU2Fubv3Jqokf83l60NyCau7_x002F_u7XWSYbSvviBtBXG0YEVI4_x002F_fdv2mVztaYcDuabA5bKQa2rNMCTuL9u_x002F_bQYMIwNB2kRbtmUk88tHwEx_x002B_ujwBwpdCqOgpXu_x002B_U5dYZ64TOGPcbA1bXJLE0Fq9sEhO43RG6JU77otXViy1Q7u7ssOfJj3c4odUnmjSVCZnlyUu0E14m0afVELq5TdjtH_x002B_retV7wkIR1p8vw7rYd0nzcjW5_x002F_6lJrR_x002F_GKcrwzgPzBenkpZMQp_x002B_DSEL1EifHSDxm6MRgskWaAjeDNGR_x002F_MHJiV85UC3MSqT6wIgVCOkVQjs0b2p_x002B_Ws6FgYm1a6kUaWPiW1j_x002B_h10bsJlfxwsNBTwWugz27nhPaJXe0NIKQ28_x002F_U1VJBhdTRjKCNtoGpuRS8L2xK0JTA6ldr1ckxh0SbUQZefwT_x002F_M3UIsse7_x002F_LuaUtHe0uq5L2EbZO_x002B_QMimPu3wYS1os1XNbekoS1bL31hWe58U_x002B_u_x002F_DROfl9p_x002B_MlYNoJKIAUSgCBVzPIVY6aEGmX1SDvA6IKWVgcmOdWhS8fQEOZini64dDzzq3YbDkNPHPgwmK3ifRZxfOeksDAR9Ymf1muRIShQB9DvMV_x002B_jwbCDssGQ0ppbDew7NXga75Kp_x002F_2deFJpdzlOdlFyTB0X0od7UxbTEbSDitDMoqqVYGjUiSn1vcgfKDGXQv3TcFNqJbz9rdM3D_x002B_QIgDPqL8RY02owZUdvnVGf08Q3bmwywfc6NDStKhgcWzD7ah0U71t00LvSBGv_x002F__x002F_cbZB8JPf5zmIFz_x002F_SI7N8961dGWjAJyi3t_x002F_TfoQ_x002B_L3bva21FZJ48ywzxLShx0g_x002B_F9YQj4wxHjSm5o43BAJ3yQm23dqTbJIBGX_x002B_2maERGCGOgja2FUkRaTV25oNJaMKoOHny_x002F_AEdS1Co56G_x002F__x002B_nswdpch69BrQrJEGNLyrlo2cS_x002F_QSsTA6JEWjWmSGjFO3xAaI_x002B_ep76DyZYilPvyGa8Rqo0dx4i296pq58ifl2e1X8rdJ0dZ7BFk9rUSuIC9HQuuj9Rv8FStVhlCAnvyaE9kE88X62SBtNKVaKXEiYkbDvrpPj0Kowz0t0ELb4WSCB0P79sabwl6LNYdlXLJHqYyRH6Uvg2mmqNjk_x002B_tYr9Zt3AWGHq4sHUhEVD_x002B_1Uko5xT0uLaLnPRWaOCVwTVSzrRlkaY1GFEK6aQHyiJwckj8t8q3yNHk_x002B_o57DphoV9vGnl8XGbKodipZeQT7jz2CUo3987QeiHmM2RXOJd443l2IS9Tt3m_x002B_wvvY35foBXJqj8_x002B_6SywjcQ2eRlNePMvIB8IGcq6yGuz2Xi9n0en8D7YZaT_x002B_cbMzPjqpEQ7Mq9vnuiXcMHehQOmIeRmQKF87NL50pH_x002B_tNZKFb6RPoE_x002F_J97P5pslial7HZ2nWI1PTt0DdKs_x002B_gmWjjz4qUjJKWnnT8FAnguyjuiS7z4fS0Ax_x002B_gT3tj2FEDTsPQGMTcRppGOmXZ2n7oZMJKg8uLzPJgo9PFwlR9yZAYzdetAx_x002F_4sYtyJ8hCB12ZNmxVeGVsGprf7VO_x002F_BdJe4eCUyoGjVFo7AAUjw9r2oxHrUubwbtDeNhToDLpS_x002B_GdA1MHj3oAfKxrOa_x002F_D8kcDg6MyGl1rFSwwgI5xYW6G18TOy54Inbw7RqC8cA9dmbA3NABdYjlN92Kd60n_x002B__x002F__x002F_YG1thQcAxOINlJv5_x002B_cv_x002F_YoIWJgvKbNCPrv8r2g6uC7X8qAfiY91rISEdac5QnU58zwKTQqSWf7MxlsRiEcUrxgTJgfMbtvjbQheTnxXe4V8_x002B_4PzYf8ayWAuHhi3RKc5fw4AavH7Pt94BWtGTn0XxC43_x002B_hC621szgYdQSh6yoZLn2YwQ1krQ_x002B_0p0mxYnmrfKak6g_x002F_Mdkp6zZTdel7U_x002B_qi68CUsgXvaRxIwONkqSi8FpF3pAz5atlGKhgLSCXfP_x002F_Oz5onQU2s7m_x002B_TcLdWCWObQwPvijK5kpJ0odHr_x002B_bG4lXr4YkUzhu7XrSnGziFoJG1SVw6qkYa375PzSne2tWE2h8JxrpxdvK0_x002F_7FWd3Avp58D1yd2zjOqxlOs2oyWkq7sZftp3RPxkPbBvdhC_x002F_705pWDlo_x002F_na2qHXKJ6YMe28iUsZqx11TkMERKsOpgPd3yycv_x002B_FP63ty42ZUzXgtX5EP5OJoXxODyoTFF8We2kp020oMDfSkN7k4cSEM37lxi3_x002F_tQbQTGc_x002B_3LTh_x002B_AIEbuMbjqdpQoXCvQ68Bp1mq_x002B_sElzPETz71D5_x002B_piR3ff2ANIn_x002B_zDWZEgM8ZOPbRNLGeebWrH8VhpTsqtjVebds8A0wZO5yA963b5U_x002F_tshWgS0rW2ogOz9vWahidlsEuiUwEaQgl3QqAFpMlCkCL0wtIITzuloj_x002B_V2cFvUwClpbp3A5HCHJ8KZesNo5BII6ObcKC6hVr2wvGWfqA_x002F_5LGIz2_x002F_shAyZOvNDtmI_x002B_aEoAznDmLPMpJ2MAvIneteOMZ2tvVo4hckz0BQyaXhi2EFyJ1K36F1XRKd8xCbgT53FQSPIrwBzEZCvkHYuOkpyzvEOCfegjDBIhpU4yFvVABLjVD8iwpMUe9wuJhgxEe0f2gDqPHAhvLp_x002F_VM9sQzzzsC5ypS_x002F_FfegJiYgNVp9_x002B_9xBiiwpRZHg914HYDQbpvfNz_x002B_D8appS73wL3PkCaQOfIwJge5fvlN7YCdM_x002F_gwP2XvseLCMXNNLbSIXVIekCkHUftQOgOQCdHimv7WubOpjKVAx2HpJe9wrK2L6_x002B_H_x002F_8oXdkdYe1ulGl_x002B_0Z8ScuVYmb2Urk_x002F_Uxgl7BYY89pFmhTI2J5CVP3QCT_x002B_Y1ceP06L_x002B_8M4a0aICoXIeOD8cJgkdKxuPgPAgLPJi3Tce_x002F_I65ZMUmNXpPP_x002B_uF_x002F_XNnMKLc1DFJ_x002F_BmKCXyk86vflwz_x002B_ub9QxqsDKfKSr51J0gNwN2oIgfU0jfCX8agHUTd9pcJNlbFXRLak8Al8zcxQJjgh6idn4Luoy7_x002F_5nPvVK2OzxRH3mqlhpufEjbIKiyCRC6Pgn9uvG_x002F_NhlIAH4gaFTeAbKlNixmHonyZFMMzdP9RIPzqIXLWX_x002B_PSgd0VskzeguvMKCNj_x002F_NJHdb1K9_x002B_W_x002F_2ZBzQIlKTV9elWAk8o_x002B_KMpHa7SHEyIgp3oFtvgGplAOOb9ayzDf0CPhY_x002B_LP71p3U29VTkbV3hKzDbVgCHD9KgfWhcFvXbwaMkK9jdIYJV4Jw6gALR5anzqAfRdH_x002B_9mmI30W9979VFp2oswuA9Q_x002B_9LD9ielMh3zZyLujf8BdmdUIo_x002F_fYo4pzmaYNFSAjF7ka7hxHAXD8fjfwHLp74pmfMpU4PDVfebIJEVvoxyrgiGdPDCN4tji4SbPRof24bg0R_x002F_tDI6NSSrKLnZdPxI0tWPwKvn_x002F_B0RnRMWHZX9x9XvGYNkSu2R7yiVfkcOxGrYBAajMhp3jY05_x002B_0vr7x4xwvDApsumv8GSQidHMUmrubVci_x002F_HZ7JO8dZ1TG3LhUonNBcVpACA8_x002B_S5LRhj72B_x002F_cZior9OAtvAy07JLqUIRmU1utoSWpOyeE93ks1atqwcNxvs9OPOJZS45rvAp_x002B_kEKdHjrOxNex7DUsNTAl1MKjN6MCwNfGTafeMlNYtRvxtQZNZL8hYJocb_x002F_gAjoxdJUGjt64b7A41dAZ90iKpsSRjGdjxyUYuy8QZt9N29djQAGIahiej6e9EHG0czlh8EFdRHUHl7pTZqWYxg2mP7Do2lOC_x002B_B3zCGVRbbzdazI2d4bTAXUjz0KtOlMqcb0H_x002F_D_x002B_6kh738LHvqsRPKfppOtmYRUQDNezfzrsYHG3umeVRC_x002F_TxD34YkwT4loyQBVQXGemr8fy1cZ8XHWs7H0LY4Oa7puaL8wwsuvlEMYXB8ntewI_x002F_Vjd0SHp5POD9Wej4inlwzYd3DRBIIaEz_x002F_Vu7vgzLUgO3f6sEagllQDe5004FN6XU_x002B_2SeE_x002F_iUZJMnEddaZooVfIV7tr1fiO_x002B_V3YiJI4dzQEhyCxvfsc1BCgYQGvj2Am_x002B_mm8eSMJSew_x002F_lmkZ2U_x002F_NFxKvRbOr9LlAcALxW4PBbZ4Wx0AFMcryPuXkeP8LB0RvRnKFXsWjtQ444QudQ8rrIPexEG0XgGn_x002F_nRQ5iMmUsOhmiATTunZs7tRCciefsaxmyk1zdTzzPVMW836FMfEjrFcuMvzIb2ScgVmVAPvNbQVkGmDBazI8mPTZEEyivVsK62a3xgXYEmFYGEGX1q3p1ZXa1vQm2FhjHZMmQI1YICyhcSZJN3CR1EhlInLbkzt6Jecr2v327A20yKX3yhy775Tc_x002F_0tQ8Tp0lp7iqrpzCgVSKN1SrF7FB32AYvTjRQx4HTWscLx1ne3WuegC72QbVMm7YWUxmSebN7tVBHyDFdLIqI2CCnOKoXs9icOd8DeOAsae2cTqK_x002F_Z4B_x002B_eREVstai5w91GvmAkuWT2lZJRUoPirI5fb1E_x002B_ulsjJpwb_x002B_cOrsZA_x002B_XOJroZIp9nxHXpYC5BDDIdVfMt_x002B_LS_x002F_e0sH36Mta3w_x002F_9sI0hQrScKbaMuta3KSn4zsOhoSYk3j9g_x002B_0IkKKHttg3cvylesfAjN5uQFk7Txc4szGc_x002B_q3RZOSrxaCHSPYfTf7N7sy4xmVQ_x002F_mCtQc07_x002F_XwL74lXcmrIXbUeE2xXHPlAJtp2ZSI7Y5_x002F_knwDi0qeIV7PWvB5awiEFzEVIVX1elraGyTHPEo0iAUV03jwZP_x002B_49YdF5fVL_x002B_DY5_x002B_q_x002B_Q6WnUt60SiR_x002F_e75kkxmO7PXgAVFAhGdFBEjbsvnjSOHcWR9zWZEccu_x002F_iyAjXQCxwpbSh9nGw3c5YekogV92l97mV1uV3E166mVqmU4tNbANhlF3XvvcNP_x002F_qqcxdwzXURIr0krCPspQ7LdE_x002B__x002F_lmzTYozIdDnSzeL40clgZEnNDRDUVakJGXQgA0qwAzTruIz_x002F_sRAF_x002F__x002B_xEiFKPNXeY_x002B_iJ89gU75IYzlIYHuCG5Wpb36f7fEE0NZFAdvG45koV9w3jUnFXKPpuYUSSQzj7PrbEquFQQ1OXd5v0kTBHHu_x002F_pAE5KP3fM7VK5Lvg5E6met2uhkJ8O0_x002F_QZSD9VC9XZhx1Y_x002F_6iGjuwQ_x002F_17MkWtBQuUuOtAQXOolqPp6w2XOw8lZXR_x002B_quRlNQItlQyCgDBW4Q_x002F_UPGDVknVc3isp7qef_x002B_0EwZH9qHg50pi0gnqHkIrma_x002F_aVRxm8wtGnM3qCPmOjKOjJSEMoCqnH17aTldDUDdWjFJk5s5lu_x002B_350_x002B_S_x002F_KZxttVXvz0M76xNMjLcdyTHn7VSbO5gmnmbmyS1jUZ_x002F__x002B_F6mQp_x002F_WPpG0OhZcnk7XFxEwpGYVf5v_x002F_nAUp8BzTPfIMUlUNZimbVL_x002B_MvErygrmEjHSYhtfL_x002B_D1ezKwnZ7IJstUwPX_x002F_au63Ra4D01h0_x002B_dRD2CWgOtMcRde7NWJSaWex4xNJNDHvA74_x002F_ZwpO_x002F_IxNkbEuEPae3anecwjslpDtBJoE3Z0pXJzw_x002F_sudQcGwo8_x002B_5ZEq4pZY3zX2eXZY8Pg5Jih_x002B_AF9a_x002B_S_x002B_JiI4tXAlq4XQMyymp41nx27_x002B_thQR82rp6oMdiFu1PWmVYQI97IaCLn2oV5ksfNT9XXo7RzJzrRuYi8muX0evzGQJCADoc_x002F_COzrLEl1rZfuKPIbubnsJyJG9rGmICbNP46paBbaQofRXx15fsp0XNbrbL8L5S0OhTCK4ge_x002F_YKFEevaWQitMv_x002F_9ioA83UOxYzo5tTUFUGFlCzL5evClLO4tscE3piW0BswP2JRyj6Mh8o98ppY9Pqd8lamt08hNwQalGVtiHXmVmkaD69SbOvJZuRfQqJm324fPurLolPgB2Hy0xJTraiJrDQEY4ARkbgM_x002F_WEr2xQot4wEIDDLQvhiNvsZ6Clcb8OVjono0hwVy_x002B_dLDXJrIkqu_x002B_7KPOOvVLDLJsSnI7WI5_x002B_wSMRqt5U49d9d9J8Oi0SvEEGlrS9vcrUppkA49bBXu3Bhk56ay2rZzovH5j7jI_x002F_FQJy_x002B_1LBnwYpIEO69MMsqfSSXduiCkxBThr5XupKh7MON3Hr7mDWvGsQtQEGr_x002B_SRhOs_x002F_zP_x002B_O2Y5DiKdkuTOoPenZ3JgWiCVBT9Wx4yBtUe7OUuCZ5enbflXHAXm36BM1RtpbvyldRb3r_x002F_NC1pVrSPHrnL1Wx9cw85NHo63u03aXaKJaLoZ59BmWpLBLZ3JDKkJDkoi74Y8FtBhTjeI3Xm8qibP_x002F_Gz7BT9OaOejxfM8ispFUyugLv_x002F_I4pgAJqAcobJQI7_x002B_4CR_x002B_NQxCsjIocvU_x002B_t5CbLKjWnZONIR_x002F_D29yU1PKPOt75vJyotnuDSObKQK4f1jYoO6_x002B_KRpdX4CBcGVQLU0o0Bojlyb1FOmIk97yLnkDEeVp4SFKkxdW9O5BRfZS35W9K69xyI45JycjrI1Qs042hnVDfVAENGGZiOj5mvUwmLWJw653ieEu3PeY_x002F_nKtsd_x002F_ITpOgKp_x002B_1SKgMRDL5kYuF9TwSKZiKWiS8K3IQDgKF8P_x002F_polN4TMmfOpCXePiEIULwJac6dco9qQho9Is7xhlvP95NujvitMbHOER_x002B_wrGPLbbUUTgrW8PwKFqj96i4c5UCGHu6ar2qIGyLRUEPNIoPiqwxoZH2YcQbSi423ocAAxidhcfaMK6T3h2jijQyBA2q0UZYxyWr1Q2hkyqLWYlKRPL0sRdglazRiXBuHBy8WlGOzOUEiSI18xW1c5O4i_x002F_i9Y8YELDtedA4U_x002B_QioVYct8kRvjH5srmbOc9d8b4Y0YvWO0VN4bTQIPKaPN6sX9qp9KmHNLwj290vCyIHs_x002F_YbJw3cAi5I4Wq_x002F_jDdAvWSxGj3ElwXl6VA8Mt1nd5efN4tK5NxqgMJCAOHH9gftf2OUGo8oeOf0NxQYSh_x002F_iR7GXk96snLuJdvCssrVATq6JbTqC6NDaQ6S3YVGhVcuSvqNuyFw_x002F_0ez4zJXuSOIvNpdfluMm0TLKysQwxzV1RXf1C4Ljr1i8yZwCWsMwDolcHwbViKDWg4S4Ck0vcOq0usj7T_x002F_5feszUrfqSoCLrO4FVefz1aa5zs8BIin2alp_x002B_KB5Lo1x0yTvHkdm_x002B_i7p5yBvpyzGTWwRLxN6WmtvneYpMouUgV_x002B_naSQDKFCTvIHYe9tFye8vYQZVHv9P7XPUHIotFOZ1w_x002F_bPdN_x002B_GF0oIlBWXcKcO3HdIC7P6dbW8xKZPB9F9DbOF4E97rXegqSd0X952_x002B_ZqyzTkagPZIsoWkTTOEuM_x002B_U8_x002F_uqAj8fBcaZET_x002B_PzE1aO6SWUncPqDakPzAyUrgIVSs6MS_x002B_exrSyHIonRgHyAoDYta9k0X3FsRtc70ae0NQ4J1Z1xpSeI99BqK1uztM5Ay52HlQ2EIpDsorJxhXjP7EdzSedEEq6mfjfn6vmv_x002F_SuOD6WQMyh93qCPYKtLyid7eEi_x002B_YIWG6eZNu58MJcIM54LnTwYDaBxf0AoqGJgu_x002B_QTHYFlVlWcBq_x002F_82IPJnViUDgExkwslLoBRu9laznc9V35jsCK9KkqrMRVjbuHk3ZdTOXYCEHe3uOM7XR6t7GwjjvkdgSblg4AiUTBpFs4WDcR_x002F_KvGNAZNJbc6sipzA9SaWCfAF_x002F_MMUEyhYaF_x002B_JBj_x002B_5Uymy0hLN7VkCR2Wd_x002F_Fs3NN7uHXqOBXbFecXtEiQ_x002F_4F3erA1s_x002B_FGeWIB_x002B_EzfygKmvCVu8yEwQNmW_x002F_QAtdKEij50Crt20mQNzSFKZ2RH27EWyXGBHHJ3sCLDEfJPLROvXniLy3pzAoCEiYtRGJ73WNtFMUBgcX2D8XhFn_x002F_uPstS5ZJStA07EFbBUChm_x002F_vhHEX8oQ2HfjJNEJFWWJZWkeK8KaOS3D_x002F_IPSnvZcY_x002B_QLiZgF1bqI5YxAxCk5H6wz1OwLrILIjRh1z0NL3AAz2rdALZTGim9D6527bqU6hB7LoV8xcnwiOdtUxU8tAb5e2gLGlDgEmo0bUi4mEHGJEOQo83oqOmkeAWjFDQwnmMcCgBVd5avH6Cf6Gt8_x002F_1qDnJxE1sClxRH1FrqimAS7kobg1eePO5CJQXv12ENEYSC14jrR1YXbFjOGwc_x002F_SAIn1EZhGi4EsYO5XRYhB4bX287epXQhNLtMAplbZGCEhvKQ3XuVrYnnKhk_x002B_18crkzLO3xUDzVXhF4q_x002F_IBlQDYFF7tHXer6gUd0c7ijodcNS7qBu_x002F_DytIQPQ3iUwC_x002F_OG_x002B_VCZnBTSJ9pH_x002F_G86jGEPgV2748okm5iBa7Y5ZLdMRSAImu_x002B_gsqmte52quE_x002B_k_x002B_OEJJ0MJ6jj5LYl7eZz2C9KtgIAIW0RzHvinNp881j73t7iA_x002F_jYSr6LAPfsbwuKy0LN8_x002B_pARCBTRSuMQde9Z7cvCfwqNRosPyGXZIj_x002B_WPhRtbT_x002F_epBCitYNJmv9MGIcoLE6BXMDSNi0DeIJp9WEVunlk7dkcUsBrCCwfb_x002F_2Ee_x002B_IMn3gonnN6oRIl8M0riaOw7ro_x002B_bVFWlxFLXGJN1is2EB5_x002F_jy6W6kvblrBJHf97kRqtMW9KWF2GZOW3KVeq8zY5h8_x002F_MzAwVj_x002B_zSLG0V6E1F1YwC2jMYyuLIuVWcp8Bwce9eMS38cxSe_x002B_l6Kh5NMY2qsKts80u1EPkn6eLgWVXLhouYsmRMRgLAfIev_x002F_kh3DK_x002F_vaq8mDzpCdnmF33U35r_x002B_C2TAHbOnsibXTig9KQ95lceixx4V15ak6KnLNMSMNA0_x002F_Zk_x002B_6xQs5Ra6Ka3lqABUPuaR5pNcajXDKEe5saz6qZs0tOATFi3hwNe9cdYl_x002F_DF4WIlgNaGDb0MZI9u1j8j4jVAhki2abrihsXO9u838RGOZEQy5twQiRDmEGOrdcAc0xneoBAqHUMoiyluc4mlEBGwe_x002B_ilyu134QvluO_x002F_ch_x002F_5WXPMZ8QBHVFGC5HRZDNle7eLkWlATBZRR_x002F_Pu3W3tCWEuby6hiQqw_x002F_PrAZYwmP_x002B_zMo5DDF_x002F_U3ihuMAFLEt_x002F__x002F_YfyD4SfcwK3g66JZH9rNn8qvnQkuoI0IfDpbc9LxYlbV7KeDcT2cpkKv_x002B_R_x002F_icVOecN1JfGom9bssJ0eMa2upG9F_x002B_dL9X9hagieRJMqWtnLZE8P_x002B_Q9JIXLxImCwM9DfiSPXl0hS1O9dMpSoJgpA8ZVKQVja2yUFljFCj3M238hTCpzAMglOZG2cPeb1AI05y3GPae7mSPR52LG_x002B_IJ5X1Qb_x002B_DyvM9O5X_x002B_Wl3FYKmnz_x002F_tAD5H8FfJWNILZ8uOtvU0y7TvtakxFT_x002F_HCydgyi7O77zBlR_x002B_RldurOULx1W7r64H9GVYZGfSBPbDP77xYqgK27Hn_x002F_P_x002B_bm_x002F_6G6Aqb5BXJ2m7w2NwAGYT_x002F__x002B_tPfUrqRv2BSXAUo2Y4M43Z2kQbuGW_x002F_5y7xxhOuR2ztV6r2Y9SeT4Iz9QViBcePD6bnfLGgIwstuKJTZCaqXheGX1XYl7UQF_x002B_UUwY8pU0NBW6IIib25oas5h3scWxt6_x002B_66Oy_x002B_C1oSgJYRxeI6iNP5pymuBnPXVe32L40V9_x002F_4hoDeXB_x002B_mKP_x002B_S4sehY4vtHfobwE5hLPtruXfNA85QAFH_x002B_OLHs2CbHpi_x002B_kbRXtmwLj6hFuCd2iD_x002F_i_x002F_iL_x002B_pNvac1q0IgIRO3_x002B_HNwmI1SszpsK54yPSoIdq_x002B_Bq554eWUW4IkYjgNKLfqAHd_x002B_OpV7L1H9urybc7Tr5yoTmYz3IengqK9nMJg4Al1gjjSmnLsmr6XY8FOyHYrn98uvKKNrt5b_x002B_F_x002B_nniu3cO1v6drO2u_x002F_nx8F4qXn7NqGhXWTFmYISbEXDJX74ypUJ9NOzGDQzGrFyVsjofsup44i5pACuCEDL3OSMq7OQjzlpG2bsGKyGztKLt9264kfau1x_x002B_4CYN5GOdal9peBC76FFwBZvWNVIbl_x002F_O_x002F__x002F_7X1i5atPxVrE5c0PRau4IB6UNKsrsCxXQfjThvDqb2pkSGP46PImc5G1Y8r4sw00WIT81ZSxqI67g_x002F_CVnkJZ1vjBWrR_x002F_YZhbPO6kR4Wpe01NO5nWxxdomKEmKmolT9UIMaBcmO22Rw16skRMQxcrQUCkwUq9DHsi_x002F_gqgCbgmUI6MiolfDkIXxTQHp9Jzij4dk7tsGpA8q8SNUS25RaL_x002B_9PGJE_x002F_q4bldcSS3kp9jtyR9zjswif46YBXXWO70qI0kVAQZxumIVPWLMi7cIHBExR1_x002F_FCDn8P3pyOcejNiyQFEjtt7ex_x002F_LInCWuRRYzBFifqErb3dcgbl_x002F_X14WzSYOQ_x002F_LK1N_x002F_iwzPcJSAKxZa1XAX8OZAx0ITVXjTp7zJHW1loJ9j0AiW9_x002F_OoKNnJOoxs1G6sj78rZnOP302GQ7KhAQuFxDO79s6LyGXoQfdgMxRzlzBeTnp99SDySGBcSeHFvNYeopa2wWa2gvKI0kMEGcvAz_x002B_GOL_x002B_U8A8qGrUSmWQS6dkwr5AeVG_x002F_c0B7T7qirYmm93t5uC37cBOaXa5Fq6Jl5SK_x002F_nlxdaDyFYnsccmgKgZmWMizMWIfUcFf6JQAOVF0CdVipjRFKPsacTvlVk_x002B_Na0URQeTPgB9QLMShpS6jZ5DGA3jHgS1wBako9vGSgyCdDXuE2R66VM6giq9QkOc7bLRomoz0dDDEgo2Bb7dPmj_x002B_gPB3TvGxBkItt3jbCFRrzsuFADRq_x002F_kuC7FnTJedVqGCctTmxy8VShZCBRWKuvTncL8wkNyZub570cj7Azx498_x002F_9M8NRJOff3niSxhLpGmkLw47tcmEQK58bfV_x002F_mTG6OWcPbyE0bG6GuTzxDTpttTssgK9OHEhkYk2nOEiW89jCuMAz96lMfHeo2lRVaXB_x002F_ie0PmAH_x002B_wNlbIblh0Ui9ZtutTwt7_x002B_NtDN6K8qKbVKqfU58_x002F_Ios5qH1u3kezP4oKX1Jo3r8UB3J7B3563etZRWpYfqDD5wRxPuFyzaWGa6P1TXx0I_x002F_G2VSnwHUmRrPUryD9lXYM31syw7CTSQrlIgnLn2IU_x002F_6lc_x002F_TFs4uQTSho5yfhpUwGz8MIdNYLaPjX7sNejLac2nTcZBztJYMSnvRHR_x002B_6cOy0IB_x002F_vKLLU2uACqyXUjjvZ1kLt5NkOoDrXuqTsZjT0ENW1a66Y2R6bgBDjwJIJsQhK_x002F_6nk4KfAvFqpSRRNw6IvOI759uXG0ukD_x002B_M97XC3E0JNYlNl64YyKMsR5wDen1GFbzlDPJS6P1uFszwkPAlHdlsrK_x002B_3Mb5waifMyN2pclP1SoakFI_x002F_lHsBKmehy7eAUDJ_x002F__x002F_08lkNITQpc4JD7bUxfv_x002B_CjoNi_x002F_EXm5XSljMcPXne2RyXa4OsHN2paL45_x002F_YShL0MN8G0AiEBylo5F6N5Rq9wqNH_x002B_ovV0Dynu_x002B_paCVhhHSGMqlB1W2fJv3WuzMt00uyoMFmlULrlZYAkKEfwHgInqO_x002B_qTQRiTKEZb8sXZYgZ7yI951Cul3oA4f2JTrRI2TNlnb88GtN_x002B_oKubGpmR_x002B_Rwq5de14evdc10un66kQmFYKcQgOEgHwjEpEthyv7yFx64yHOw8sIN0WTYaEtFQEfuUtEeaPbYpj1GGYOzRyQ2T0tQzX9DKy4ugujffnUtMZhLJLXQIaGHJSb1Zjj2qNOpHLMhJUtvr0T2O26gbCR1Z_x002F_AiRYjDuE_x002F_KJW_x002F_gm60qJMQsOSEhgk3BYIoClu2Qw3K2NgOLYVZE5_x002F_lOCjHACfUJRp4FUEraOjDGhZH3ho1w5Ni_x002F_JU6iNbv3UVw5xAmaBhSHBjLahvlwYDsCwudzLxKiucW9V_x002F_IcZoYbWaSNvPDloCmayy96HVRIINOJv5LvdzG8O9CHr_x002F_WpEIkfIRZ5REUSnSaOKQJbWfCTjJ1nQnpAgqYxXDaCKS6QPqRqLGn3b6MssoGKlaMQ_x002B_XCYqXwKxD9MwpWJsp_x002B_ZmjbCIHGAB6VffEqJ29knvtDogppdEIkZKyJTnpZaFuCm8dQUbDHvmmuNjmWAjLL8jCFeN0K0_x002B_Pp4l_x002F_Tfch5yM_x002F_z5WRv2t8s_x002F_mdq1sTCGxVoRdjBYP8nesVfGYiawhIexGvie7N_x002F_wKH3uGkBiqv1w2Q5Z8IGGEMKoBcSUyaPOt8o1bXE2Tg47l6FiPpUj5DG3vL568fYhEsUIzf7JXcOlQSrIQ_x002F_JAOjZKCXSBJgmaYpZPiwShuW_x002F_GAHT5tj8whoEiUuRkzihGJnFgYNsXFnrcVFwcn_x002B_O4AdIPnk7b5Qk9aFqMrygRin97NoCdRZ8m9mmPw_x002B_gyCMPzj_x002F_KQ6INjEJnQd_x002B_vCsl6_x002B_cc5sThL4UNsCnpXMF5CBety_x002F_OVDPa9vOVmGtxD_x002F_1l1IQc_x002F_Q9JWVJg5uhTF7FBKemnxgHPXXStfbE7ZVhpJEGJKmQQpZsLVvacQ286OGYUxQHgxrsOqW49o7PdFl_x002F_qU2nxB1DK1OkP7a8wdUVCWa1EWM1DQKKdMFSE7Fiu0ahcuRn0Igk9DlwrmuEXKhf140OfPrBH5XdEH05JSGwz0wdptwqax_x002B_dgcWhyLB2ZIG8oK_x002B_6NKYCYF1PtaZOJINXtSQw_x002B_qRY2NvvQtdZSY_x002F_GkJiwAcPPavSD1aCD9IkycKxNxlORSlt4aE3FeljKIFwkyKb19msu9Ln_x002B_HpUOCZhOuScGu0QUhQfOlfFc5nGbjpiklEbQrjCTY55q8r8SW8AhyMHFEsY9DK5K9_x002B_6jCUVQMwBaYu6Y10OABtYp_x002F_VpjdRCE3gFkPB3q8CFAWiAUX2MUsBaLR95B9LshweYSI53iIP1QsXj_x002B_JJ3quayC7WBImQw_x002F_xmVtb4cAF07Rf1znDvHfPerktaFlR3cFXdB_x002F_p0CEWxCYFp0DPKQCe6wG_x002B_5zbQou5bjusZdhIY9UnRJFmRy9SXK69_x002B_BiuqIrPcfPGgbhgiWStVVHImS7e2Ts89r_x002B_YWCoKOsfSUwIG_x002F_Fc5irXE_x002F_YJWYtoYOJ_x002F_0DBWNsvvGt_x002F_7Lf_x002F_voof5mPQBdwoOM6p1GZ5JDF2sQgBf_x002B_8xge_x002F_N4RGXlsWk6uGO51AD5nCVHzi2Ga_x002B_ZWLyxo6bwCR_x002B_wXPww8zC1aX0QO8XYpE5xnRhS3yPb32N_x002F_sXR9nk2AhZps4_x002F_35YJshsb5toFOBKa_x002B_LjGhCWs4Q6xF2_x002B_YTiz05YDBjpxgPxfWhC2xx8r7yhfnPaxeswSgGCRpBXaTggeCtMyspHTpi6cX7hGdjVytnY_x002B_0nmPoeUDdtfVL6jIsMm7q0rxA6Vg5Ya2hzBZ3S9vpHIJz7_x002B_I9R3_x002F_a4EEemTky9Fsn6NRmfTrzV1PxniUfMtqDyHZ4FH_x002B_ximkKrArNwKeMVJ2RK4hA1X2TK_x002B_M1kZCIiIFxEens7XmKmsScV0R5oyz8Fsr_x002B_1G_x002F_IMkOebOrzftGZqaQUKKJk_x002B_FVozUgLMUglit_x002F_UPMt1Vgm9pKzpiTZAlwLXg3Tq8Z1YwTYx70_x002F_qUnzeSm5wTO98HBaEiFo2w_x002B__x002F_75w80piU2KOn4p_x002B_gV_x002F_W1OR9n67n9JqEuGD0vVHvlgtx7JSkzcHSl5dtR1RoMouCtimVEWx9kil8rjsd_x002F_300ujCh4EJdmpwwLU_x002B_WB5n6YQiIWx8iXe29kAAP8_x002B_xe8PlHkLTWpi5vr5Rl0P2a1a_x002F_mnlKNUC0h49mgLIZkzvD9g6E6EM57Vg08cNrtLx_x002F_ehoCgq1z6H4l6huDaK_x002F_xplvyrqVUnbeCaGqkX1iqADPXW2abylyLONaaYG03lBjxnfTbRSuPOf4J59FjmOVylCRWWiXkjkVaJv5xw1aKAxeYs6wzFgVpbUhFYxooTXiJezEfTx42ORKJnx1fYXsNxeUl2yqOGQ2nMtEFdUocafiSKkG9f_x002F_6HcAQVjVPtMWN9ifVpgOdT1f08Nh8D2JP_x002F_alLiHAr5F7XzvCJgsuHR_x002B_WsdgGy7ndHLwrr4r3h6tfQiLsqdP8SJvj3t8XdXkjtjPrhiNDw2sHT8X2jDurjOyXeZgrulzGPtKiw3265hRzBaQw9uV4qk0p978WAPbbyPM55rzUJg0XzRcbThrmAdrlA6yUqq8pERTLpKeTPTsdC9kUBc60sFWBurQjA5MYS8vSUQ0ppweyiWQ6p7rO7x9eocqC3xmvImgSjgn00aAdm4egEYJfWH8tmB4O5HkjV8_x002F_cgf354WgQh2SX8jW43lrMddw9hfVcqTL5usyo6LX38rTUnA0wfY3f6Suix2OoQyJRk_x002F_yWCzFuDvCDsRtKvq45Z2j4v7Q5a6zf9pe8smlSrPMlACPiZDdBEJxWoQdF55Th_x002B_JYPVNGonn8kyXDzSk9Vy97oktfktVt8FxB50IpV5Nsvg0HLlIZc_x002F_ZLulTaJsmPgFtUDY5f86VgKgDITcra3eJqu7_x002B_16jHA8pNNUYaYdNITaOfwU1kolYmS9HKw938QUXwZb6O8ssWI_x002B_hWuBcLMyGObzKQYzgH1ev2eJrG_x002F_6WTKIVvnG8mU72X5LEOS_x002F_JLKqG9dnD2NK4tgMisV0BnwwaM5wnOZZHlEagr7m3iuo2sbJ3LuO1oA3Yv4AKURcAN_x002F_BByrasAb_x002B_n2mCc1nxF5PzqDh51a03UYTk9dxkU5Kcj_x002F_aE2mIkLXBJ6mY6_x002F_fhkHpYL3ooPlc6ilnJej5OonkPlJaR7EHHQOl7Wj1Hy7kDmEUKMNAXs3GoOdlD1lu1GP3VDA4h_x002F_szZhB586Ar26ZExcD8IQvzx0kfB7zvFIng2d_x002F_1ZWN1gb8mpI1nA_x002B_pwgDmAmTfseS84hDmLi795RgARy_x002F_gGgn8Q0PGmVhui_x002F_qu5w6na7qwHrr6b11zmimnlvBVmuPAl_x002B_bGIhIy7Fu25CtBiVENS_x002B_9ru_x002B_Janv2KPQiNnPZunSgbdVClYsn6gBaBsK0jTpx_x002B_mM30bsK0Yf_x002B_Np_x002B_rZyI0dPWh7ZkKdf13LEpzOhLCIahJhI82801Q9eMYSBbX4bhda0A6M2ENYxEofD5lY5GdtESfkutCRxpGxLFSGStwplniJolp2NqmvCUwlJSHNCjOc1aQbS5fNbWG2Y77CjoESvkQVO3kBpyCFFTboJumWQlO1vmqmDv0pStvyARx_x002B_PV_x002F_dcGPtUQYpcJAU2XFuXjZUQvpaevfFLF40MzedAlLAnTR8VQm_x002B_18GOvkInM85EEq7nMmIDPZ5E_x002F_BsPCo9qjQro1M80lfc4N5H0AxoZjglYIuwk_x002B_JmTvaCdn5ri8Q_x003D__x003D_</value>
+    </Resources>
+    <Variables isList="true" count="0" />
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <Key>f4a6d6f163a9429cab01533acd5b1952</Key>
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="6">
+    <Page1 Ref="6" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="5">
+        <PageFooterBand1 Ref="7" type="PageFooterBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,1071,749,20</ClientRectangle>
+          <Components isList="true" count="1">
+            <Text6 Ref="8" type="Text" isKey="true">
+              <Border>None;[191:191:191];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,749,20</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,9.75,Regular,Point,False,0</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text6</Name>
+              <Page isRef="6" />
+              <Parent isRef="7" />
+              <Text>Page {PageNumber} of {TotalPageCount}</Text>
+              <TextBrush>[158:158:158]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text6>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Guid>7b3c3f12c617432ebc86ffd7fb2d6a65</Guid>
+          <Name>PageFooterBand1</Name>
+          <Page isRef="6" />
+          <Parent isRef="6" />
+        </PageFooterBand1>
+        <ReportTitleBand2 Ref="9" type="ReportTitleBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,20,749,90</ClientRectangle>
+          <Components isList="true" count="4">
+            <Text20 Ref="10" type="Text" isKey="true">
+              <Border>Bottom;[158:158:158];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>570,0,179,40</ClientRectangle>
+              <ComponentStyle>Header2</ComponentStyle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,21.75,Bold,Point,False,204</Font>
+              <Guid>821f1dda78a34eb0a90a214cc7dd1feb</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text20</Name>
+              <Page isRef="6" />
+              <Parent isRef="9" />
+              <Text>Stimulsoft</Text>
+              <TextBrush>[158:158:158]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text20>
+            <Text23 Ref="11" type="Text" isKey="true">
+              <Border>Bottom;[158:158:158];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,570,40</ClientRectangle>
+              <ComponentStyle>Header2</ComponentStyle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,21.75,Bold,Point,False,204</Font>
+              <Guid>4e8efa876f794beaa14d74d271717439</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text23</Name>
+              <Page isRef="6" />
+              <Parent isRef="9" />
+              <Text>Top Countries by GDP in 2019</Text>
+              <TextBrush>[158:158:158]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text23>
+            <Text17 Ref="12" type="Text" isKey="true">
+              <Border>None;[58:78:94];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>0,40,570,20</ClientRectangle>
+              <ComponentStyle>Footer2</ComponentStyle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,9.75,Regular,Point,False,0</Font>
+              <Guid>ab83fb97578d47aab10671348b7ba56a</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text17</Name>
+              <Page isRef="6" />
+              <Parent isRef="9" />
+              <Text>{ReportDescription}</Text>
+              <TextBrush>[158:158:158]</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+            </Text17>
+            <Text18 Ref="13" type="Text" isKey="true">
+              <Border>None;[58:78:94];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>570,40,179,20</ClientRectangle>
+              <ComponentStyle>Footer2</ComponentStyle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,9.75,Regular,Point,False,0</Font>
+              <Guid>16f24b7ead1b424b99e0cb6615154564</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text18</Name>
+              <Page isRef="6" />
+              <Parent isRef="9" />
+              <Text>Date: {Today.ToString("Y")}</Text>
+              <TextBrush>[158:158:158]</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+            </Text18>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Guid>0e923adf1f7d4bdb938822b2b3d1eebd</Guid>
+          <Name>ReportTitleBand2</Name>
+          <Page isRef="6" />
+          <Parent isRef="6" />
+        </ReportTitleBand2>
+        <HeaderGDP2019 Ref="14" type="HeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,150,749,40</ClientRectangle>
+          <Components isList="true" count="3">
+            <HeaderGDP2019_Country Ref="15" type="Text" isKey="true">
+              <Border>Left;White;1;Solid;False;4;Black</Border>
+              <Brush>[77:182:172]</Brush>
+              <ClientRectangle>0,0,260,40</ClientRectangle>
+              <ComponentStyle>Header3</ComponentStyle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,12,Bold,Point,False,204</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Interaction Ref="16" type="Stimulsoft.Report.Components.StiInteraction" isKey="true">
+                <SortingColumn>DataGDP2019.Country</SortingColumn>
+              </Interaction>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderGDP2019_Country</Name>
+              <Page isRef="6" />
+              <Parent isRef="14" />
+              <Text>Country</Text>
+              <TextBrush>[255:255:255]</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderGDP2019_Country>
+            <HeaderGDP2019_GDP Ref="17" type="Text" isKey="true">
+              <Border>Left;White;1;Solid;False;4;Black</Border>
+              <Brush>[77:182:172]</Brush>
+              <ClientRectangle>260,0,270,40</ClientRectangle>
+              <ComponentStyle>Header3</ComponentStyle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,12,Bold,Point,False,204</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Interaction Ref="18" type="Stimulsoft.Report.Components.StiInteraction" isKey="true">
+                <SortingColumn>DataGDP2019.GDP</SortingColumn>
+              </Interaction>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderGDP2019_GDP</Name>
+              <Page isRef="6" />
+              <Parent isRef="14" />
+              <Text>GDP</Text>
+              <TextBrush>[255:255:255]</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderGDP2019_GDP>
+            <Text2 Ref="19" type="Text" isKey="true">
+              <Border>Left;White;1;Solid;False;4;Black</Border>
+              <Brush>[77:182:172]</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>530,0,219,40</ClientRectangle>
+              <ComponentStyle>Header3</ComponentStyle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,12,Bold,Point,False,204</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text2</Name>
+              <Page isRef="6" />
+              <Parent isRef="14" />
+              <Text>Data Bar</Text>
+              <TextBrush>[255:255:255]</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text2>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>HeaderGDP2019</Name>
+          <Page isRef="6" />
+          <Parent isRef="6" />
+        </HeaderGDP2019>
+        <DataGDP2019 Ref="20" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,230,749,30</ClientRectangle>
+          <Components isList="true" count="3">
+            <DataGDP2019_Country Ref="21" type="Text" isKey="true">
+              <Border>None;[182:182:182];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>0,0,260,30</ClientRectangle>
+              <ComponentStyle>Data1</ComponentStyle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,9.75,Regular,Point,False,0</Font>
+              <Margins>5,0,0,0</Margins>
+              <Name>DataGDP2019_Country</Name>
+              <Page isRef="6" />
+              <Parent isRef="20" />
+              <Text>{Statistics.Country}</Text>
+              <TextBrush>[74:74:74]</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </DataGDP2019_Country>
+            <DataGDP2019_GDP Ref="22" type="Text" isKey="true">
+              <Border>None;[182:182:182];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>260,0,270,30</ClientRectangle>
+              <ComponentStyle>Data1</ComponentStyle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,9.75,Regular,Point,False,0</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,5,0,0</Margins>
+              <Name>DataGDP2019_GDP</Name>
+              <Page isRef="6" />
+              <Parent isRef="20" />
+              <Text>{Statistics.GDP}</Text>
+              <TextBrush>[74:74:74]</TextBrush>
+              <TextFormat Ref="23" type="CurrencyFormat" isKey="true">
+                <DecimalDigits>2</DecimalDigits>
+                <GroupSeparator>,</GroupSeparator>
+                <NegativePattern>0</NegativePattern>
+                <PositivePattern>0</PositivePattern>
+                <State>DecimalDigits, CurrencySymbol, Abbreviation</State>
+              </TextFormat>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </DataGDP2019_GDP>
+            <Text1 Ref="24" type="Text" isKey="true">
+              <Border>None;[182:182:182];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>530,0,219,30</ClientRectangle>
+              <ComponentStyle>Data1</ComponentStyle>
+              <Conditions isList="true" count="1">
+                <value>DataBar,Statistics.GDP,Gradient,[58:143:135],Red,False,DarkGreen,DarkRed,Default,Auto,0,Auto,100</value>
+              </Conditions>
+              <Font>Segoe UI,9.75,Regular,Point,False,0</Font>
+              <Margins>15,0,0,0</Margins>
+              <Name>Text1</Name>
+              <Page isRef="6" />
+              <Parent isRef="20" />
+              <TextBrush>[74:74:74]</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text1>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName>Statistics</DataSourceName>
+          <EvenStyle>Data2</EvenStyle>
+          <Filters isList="true" count="0" />
+          <Interaction Ref="25" type="Stimulsoft.Report.Components.StiBandInteraction" isKey="true">
+            <CollapsingEnabled>True</CollapsingEnabled>
+          </Interaction>
+          <Name>DataGDP2019</Name>
+          <Page isRef="6" />
+          <Parent isRef="6" />
+          <Sort isList="true" count="0" />
+        </DataGDP2019>
+        <FooterBand1 Ref="26" type="FooterBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,300,749,80</ClientRectangle>
+          <Components isList="true" count="5">
+            <Text30 Ref="27" type="Text" isKey="true">
+              <Border>None;[191:191:191];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>710,10,39,30</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,9.75,Regular,Point,False,0</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,5,0,0</Margins>
+              <Name>Text30</Name>
+              <Page isRef="6" />
+              <Parent isRef="26" />
+              <Text>{Sum(DataGDP2019,Statistics.GDP)}</Text>
+              <TextBrush>[158:158:158]</TextBrush>
+              <TextFormat Ref="28" type="CurrencyFormat" isKey="true">
+                <DecimalDigits>0</DecimalDigits>
+                <GroupSeparator>,</GroupSeparator>
+                <NegativePattern>0</NegativePattern>
+                <PositivePattern>0</PositivePattern>
+                <State>DecimalDigits, CurrencySymbol, Abbreviation</State>
+              </TextFormat>
+              <Type>Totals</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text30>
+            <Text31 Ref="29" type="Text" isKey="true">
+              <Border>None;[191:191:191];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>660,10,50,30</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,9.75,Regular,Point,False,0</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text31</Name>
+              <Page isRef="6" />
+              <Parent isRef="26" />
+              <Text>Total:</Text>
+              <TextBrush>[158:158:158]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text31>
+            <Text29 Ref="30" type="Text" isKey="true">
+              <Border>None;[58:78:94];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>230,51,269,20</ClientRectangle>
+              <ComponentStyle>Hyperlink</ComponentStyle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,9.75,Underline,Point,False,0</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Interaction Ref="31" type="Stimulsoft.Report.Components.StiInteraction" isKey="true">
+                <DrillDownEnabled>True</DrillDownEnabled>
+                <DrillDownPageGuid>5caef30894324480bbd089a852a4c34f</DrillDownPageGuid>
+              </Interaction>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text29</Name>
+              <Page isRef="6" />
+              <Parent isRef="26" />
+              <Text>Click to Show Chart of GDP (PPP) per Capita</Text>
+              <TextBrush>Blue</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text29>
+            <Text3 Ref="32" type="Text" isKey="true">
+              <Border>None;[58:78:94];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>511,51,238,20</ClientRectangle>
+              <ComponentStyle>Hyperlink</ComponentStyle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,9.75,Underline,Point,False,0</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Interaction Ref="33" type="Stimulsoft.Report.Components.StiInteraction" isKey="true">
+                <DrillDownEnabled>True</DrillDownEnabled>
+                <DrillDownPageGuid>27a3514cffd54a83bbdddaab2489125a</DrillDownPageGuid>
+              </Interaction>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text3</Name>
+              <Page isRef="6" />
+              <Parent isRef="26" />
+              <Text>Click to Show Chart of GDP per Capita</Text>
+              <TextBrush>Blue</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text3>
+            <Text34 Ref="34" type="Text" isKey="true">
+              <Border>None;[58:78:94];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>29,51,190,20</ClientRectangle>
+              <ComponentStyle>Hyperlink</ComponentStyle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,9.75,Underline,Point,False,0</Font>
+              <Interaction Ref="35" type="Stimulsoft.Report.Components.StiInteraction" isKey="true">
+                <DrillDownEnabled>True</DrillDownEnabled>
+                <DrillDownPageGuid>a8611538fa724ce1b4e6b62508649c0b</DrillDownPageGuid>
+              </Interaction>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text34</Name>
+              <Page isRef="6" />
+              <Parent isRef="26" />
+              <Text>Click to Show Countries Stats</Text>
+              <TextBrush>Blue</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text34>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>FooterBand1</Name>
+          <Page isRef="6" />
+          <Parent isRef="6" />
+        </FooterBand1>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>ca796b33cc8043b9a8ff9e61c89afaf3</Guid>
+      <Margins>39,39,39,39</Margins>
+      <Name>Page1</Name>
+      <PaperSize>A4</PaperSize>
+      <Report isRef="0" />
+    </Page1>
+    <Page2 Ref="36" type="Page" isKey="true">
+      <Alias>GDP per Capita</Alias>
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="2">
+        <ReportTitleBand1 Ref="37" type="ReportTitleBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,20,749,90</ClientRectangle>
+          <Components isList="true" count="4">
+            <Text4 Ref="38" type="Text" isKey="true">
+              <Border>Bottom;[158:158:158];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>570,0,179,40</ClientRectangle>
+              <ComponentStyle>Header2</ComponentStyle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,21.75,Bold,Point,False,204</Font>
+              <Guid>cfef9b8e59d0443d86e813e0213c772f</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text4</Name>
+              <Page isRef="36" />
+              <Parent isRef="37" />
+              <Text>Stimulsoft</Text>
+              <TextBrush>[158:158:158]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text4>
+            <Text5 Ref="39" type="Text" isKey="true">
+              <Border>Bottom;[158:158:158];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,570,40</ClientRectangle>
+              <ComponentStyle>Header2</ComponentStyle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,21.75,Bold,Point,False,204</Font>
+              <Guid>5d5ddc515fdf4545a17e0f0e91e0cb74</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text5</Name>
+              <Page isRef="36" />
+              <Parent isRef="37" />
+              <Text>GDP per Capita in 2019</Text>
+              <TextBrush>[158:158:158]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text5>
+            <Text7 Ref="40" type="Text" isKey="true">
+              <Border>None;[58:78:94];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>0,40,570,20</ClientRectangle>
+              <ComponentStyle>Footer2</ComponentStyle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,9.75,Regular,Point,False,0</Font>
+              <Guid>ef0d98f79a2d4391871b6f75637c2bc9</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text7</Name>
+              <Page isRef="36" />
+              <Parent isRef="37" />
+              <Text>{ReportDescription}</Text>
+              <TextBrush>[158:158:158]</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+            </Text7>
+            <Text8 Ref="41" type="Text" isKey="true">
+              <Border>None;[58:78:94];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>570,40,179,20</ClientRectangle>
+              <ComponentStyle>Footer2</ComponentStyle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,9.75,Regular,Point,False,0</Font>
+              <Guid>e18a87c8e8a14854a8f4ead3e2f842ba</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text8</Name>
+              <Page isRef="36" />
+              <Parent isRef="37" />
+              <Text>Date: {Today.ToString("Y")}</Text>
+              <TextBrush>[158:158:158]</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+            </Text8>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Guid>f8f047d745db466fbf323a67b6237439</Guid>
+          <Name>ReportTitleBand1</Name>
+          <Page isRef="36" />
+          <Parent isRef="36" />
+        </ReportTitleBand1>
+        <ReportSummaryBand1 Ref="42" type="ReportSummaryBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,150,749,590</ClientRectangle>
+          <Components isList="true" count="1">
+            <Chart1 Ref="43" type="Stimulsoft.Report.Chart.StiChart" isKey="true">
+              <Area Ref="44" type="Stimulsoft.Report.Chart.StiClusteredColumnArea" isKey="true">
+                <AllowApplyStyle>False</AllowApplyStyle>
+                <BorderColor>Transparent</BorderColor>
+                <Brush>[255:255:255]</Brush>
+                <Chart isRef="43" />
+                <ColorEach>True</ColorEach>
+                <GridLinesHor Ref="45" type="Stimulsoft.Report.Chart.StiGridLinesHor" isKey="true">
+                  <AllowApplyStyle>False</AllowApplyStyle>
+                  <Area isRef="44" />
+                  <Color>Transparent</Color>
+                  <MinorColor>Transparent</MinorColor>
+                </GridLinesHor>
+                <GridLinesHorRight Ref="46" type="Stimulsoft.Report.Chart.StiGridLinesHor" isKey="true">
+                  <Area isRef="44" />
+                  <Color>Silver</Color>
+                  <MinorColor>Gainsboro</MinorColor>
+                  <Visible>False</Visible>
+                </GridLinesHorRight>
+                <GridLinesVert Ref="47" type="Stimulsoft.Report.Chart.StiGridLinesVert" isKey="true">
+                  <AllowApplyStyle>False</AllowApplyStyle>
+                  <Area isRef="44" />
+                  <Color>Transparent</Color>
+                  <MinorColor>Transparent</MinorColor>
+                </GridLinesVert>
+                <InterlacingHor Ref="48" type="Stimulsoft.Report.Chart.StiInterlacingHor" isKey="true">
+                  <AllowApplyStyle>False</AllowApplyStyle>
+                  <Area isRef="44" />
+                  <InterlacedBrush>[10:155:155:235]</InterlacedBrush>
+                </InterlacingHor>
+                <InterlacingVert Ref="49" type="Stimulsoft.Report.Chart.StiInterlacingVert" isKey="true">
+                  <AllowApplyStyle>False</AllowApplyStyle>
+                  <Area isRef="44" />
+                  <InterlacedBrush>[10:155:155:235]</InterlacedBrush>
+                </InterlacingVert>
+                <XAxis Ref="50" type="Stimulsoft.Report.Chart.StiXBottomAxis" isKey="true">
+                  <Area isRef="44" />
+                  <DateTimeStep Ref="51" type="Stimulsoft.Report.Chart.StiAxisDateTimeStep" isKey="true" />
+                  <Interaction Ref="52" type="Stimulsoft.Report.Chart.StiAxisInteraction" isKey="true" />
+                  <Labels Ref="53" type="Stimulsoft.Report.Chart.StiAxisLabels" isKey="true">
+                    <Angle>45</Angle>
+                    <Color>140, 140, 140</Color>
+                    <Font>Tahoma,8</Font>
+                  </Labels>
+                  <LineColor>140, 140, 140</LineColor>
+                  <Range Ref="54" type="Stimulsoft.Report.Chart.StiAxisRange" isKey="true" />
+                  <Ticks Ref="55" type="Stimulsoft.Report.Chart.StiAxisTicks" isKey="true" />
+                  <Title Ref="56" type="Stimulsoft.Report.Chart.StiAxisTitle" isKey="true">
+                    <Color>140, 140, 140</Color>
+                    <Font>Tahoma,12,Bold</Font>
+                  </Title>
+                </XAxis>
+                <XTopAxis Ref="57" type="Stimulsoft.Report.Chart.StiXTopAxis" isKey="true">
+                  <Area isRef="44" />
+                  <Interaction Ref="58" type="Stimulsoft.Report.Chart.StiAxisInteraction" isKey="true" />
+                  <Labels Ref="59" type="Stimulsoft.Report.Chart.StiAxisLabels" isKey="true">
+                    <Color>140, 140, 140</Color>
+                    <Font>Tahoma,8</Font>
+                  </Labels>
+                  <LineColor>140, 140, 140</LineColor>
+                  <Ticks Ref="60" type="Stimulsoft.Report.Chart.StiAxisTicks" isKey="true" />
+                  <Title Ref="61" type="Stimulsoft.Report.Chart.StiAxisTitle" isKey="true">
+                    <Color>140, 140, 140</Color>
+                    <Font>Tahoma,12,Bold</Font>
+                  </Title>
+                </XTopAxis>
+                <YAxis Ref="62" type="Stimulsoft.Report.Chart.StiYLeftAxis" isKey="true">
+                  <Area isRef="44" />
+                  <Interaction Ref="63" type="Stimulsoft.Report.Chart.StiAxisInteraction" isKey="true" />
+                  <Labels Ref="64" type="Stimulsoft.Report.Chart.StiAxisLabels" isKey="true">
+                    <Color>140, 140, 140</Color>
+                    <Font>Tahoma,8</Font>
+                    <Format>C0</Format>
+                  </Labels>
+                  <LineColor>140, 140, 140</LineColor>
+                  <Range Ref="65" type="Stimulsoft.Report.Chart.StiAxisRange" isKey="true" />
+                  <Ticks Ref="66" type="Stimulsoft.Report.Chart.StiAxisTicks" isKey="true" />
+                  <Title Ref="67" type="Stimulsoft.Report.Chart.StiAxisTitle" isKey="true">
+                    <Color>140, 140, 140</Color>
+                    <Direction>BottomToTop</Direction>
+                    <Font>Tahoma,12,Bold</Font>
+                  </Title>
+                </YAxis>
+                <YRightAxis Ref="68" type="Stimulsoft.Report.Chart.StiYRightAxis" isKey="true">
+                  <Area isRef="44" />
+                  <Interaction Ref="69" type="Stimulsoft.Report.Chart.StiAxisInteraction" isKey="true" />
+                  <Labels Ref="70" type="Stimulsoft.Report.Chart.StiAxisLabels" isKey="true">
+                    <Color>140, 140, 140</Color>
+                    <Font>Tahoma,8</Font>
+                    <TextAlignment>Left</TextAlignment>
+                  </Labels>
+                  <LineColor>140, 140, 140</LineColor>
+                  <Range Ref="71" type="Stimulsoft.Report.Chart.StiAxisRange" isKey="true" />
+                  <Ticks Ref="72" type="Stimulsoft.Report.Chart.StiAxisTicks" isKey="true" />
+                  <Title Ref="73" type="Stimulsoft.Report.Chart.StiAxisTitle" isKey="true">
+                    <Color>140, 140, 140</Color>
+                    <Direction>TopToBottom</Direction>
+                    <Font>Tahoma,12,Bold</Font>
+                  </Title>
+                </YRightAxis>
+              </Area>
+              <Border>None;Transparent;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,740,580</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <ConstantLines isList="true" count="0" />
+              <CustomStyleName>Chart</CustomStyleName>
+              <Filters isList="true" count="0" />
+              <Legend Ref="74" type="Stimulsoft.Report.Chart.StiLegend" isKey="true">
+                <BorderColor>Transparent</BorderColor>
+                <Brush>White</Brush>
+                <Chart isRef="43" />
+                <Font>Arial,8</Font>
+                <LabelsColor>140, 140, 140</LabelsColor>
+                <MarkerSize>10, 10</MarkerSize>
+                <ShowShadow>False</ShowShadow>
+                <TitleColor>DimGray</TitleColor>
+                <TitleFont>Arial,14,Bold</TitleFont>
+                <Visible>False</Visible>
+              </Legend>
+              <Name>Chart1</Name>
+              <Page isRef="36" />
+              <Parent isRef="42" />
+              <Series isList="true" count="1">
+                <Item35 Ref="75" type="Stimulsoft.Report.Chart.StiClusteredColumnSeries" isKey="true">
+                  <ArgumentDataColumn>Statistics.Country</ArgumentDataColumn>
+                  <BorderColor>Transparent</BorderColor>
+                  <Brush>[142:195:167]</Brush>
+                  <BrushNegative>Firebrick</BrushNegative>
+                  <Chart isRef="43" />
+                  <Conditions isList="true" count="0" />
+                  <DrillDownEnabled>True</DrillDownEnabled>
+                  <DrillDownPageGuid>22dbd95b3a4f42faba4f0a76fbe9e533</DrillDownPageGuid>
+                  <Filters isList="true" count="0" />
+                  <SeriesLabels Ref="76" type="Stimulsoft.Report.Chart.StiCenterAxisLabels" isKey="true">
+                    <BorderColor>Transparent</BorderColor>
+                    <Brush>Transparent</Brush>
+                    <Chart isRef="43" />
+                    <Font>Arial,7</Font>
+                    <LabelColor>90, 90, 90</LabelColor>
+                    <MarkerSize>8, 6</MarkerSize>
+                    <ValueTypeSeparator>-</ValueTypeSeparator>
+                    <Width>0</Width>
+                  </SeriesLabels>
+                  <ShowShadow>False</ShowShadow>
+                  <TagDataColumn>Statistics.Country</TagDataColumn>
+                  <Title>GDP per Capita of</Title>
+                  <TopN Ref="77" type="Stimulsoft.Report.Chart.StiSeriesTopN" isKey="true" />
+                  <TrendLine Ref="78" type="Stimulsoft.Report.Chart.StiTrendLineNone" isKey="true">
+                    <Font>Arial,7</Font>
+                    <LineColor>Transparent</LineColor>
+                    <Position>LeftBottom</Position>
+                    <ShowShadow>False</ShowShadow>
+                  </TrendLine>
+                  <ValueDataColumn>Statistics.GDP_per_Capita</ValueDataColumn>
+                </Item35>
+              </Series>
+              <SeriesLabels Ref="79" type="Stimulsoft.Report.Chart.StiOutsideEndAxisLabels" isKey="true">
+                <BorderColor>Transparent</BorderColor>
+                <Brush>Transparent</Brush>
+                <Chart isRef="43" />
+                <Font>Arial,7</Font>
+                <Format>C0</Format>
+                <LabelColor>90, 90, 90</LabelColor>
+                <MarkerSize>8, 6</MarkerSize>
+                <ValueTypeSeparator>-</ValueTypeSeparator>
+                <Width>0</Width>
+              </SeriesLabels>
+              <SeriesLabelsConditions isList="true" count="0" />
+              <Sort isList="true" count="0" />
+              <Strips isList="true" count="0" />
+              <Style Ref="80" type="Stimulsoft.Report.Chart.StiCustomStyle" isKey="true">
+                <Conditions isList="true" count="0" />
+                <Name>Chart</Name>
+              </Style>
+              <Table Ref="81" type="Stimulsoft.Report.Chart.StiChartTable" isKey="true">
+                <DataCells Ref="82" type="Stimulsoft.Report.Chart.StiChartTableDataCells" isKey="true">
+                  <Font>Arial,8</Font>
+                  <TextColor>140, 140, 140</TextColor>
+                </DataCells>
+                <GridLineColor>Transparent</GridLineColor>
+                <Header Ref="83" type="Stimulsoft.Report.Chart.StiChartTableHeader" isKey="true">
+                  <Brush>White</Brush>
+                  <Font>Arial,8</Font>
+                  <TextColor>DarkGray</TextColor>
+                </Header>
+              </Table>
+              <Title Ref="84" type="Stimulsoft.Report.Chart.StiChartTitle" isKey="true">
+                <Brush>[140:140:140]</Brush>
+                <Font>Tahoma,12,Bold</Font>
+              </Title>
+            </Chart1>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>ReportSummaryBand1</Name>
+          <Page isRef="36" />
+          <Parent isRef="36" />
+        </ReportSummaryBand1>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>27a3514cffd54a83bbdddaab2489125a</Guid>
+      <Margins>39,39,39,39</Margins>
+      <Name>Page2</Name>
+      <PaperSize>A4</PaperSize>
+      <Report isRef="0" />
+    </Page2>
+    <Page3 Ref="85" type="Page" isKey="true">
+      <Alias>GDP (PPP) per Capita</Alias>
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="2">
+        <ReportTitleBand3 Ref="86" type="ReportTitleBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,20,749,90</ClientRectangle>
+          <Components isList="true" count="4">
+            <Text9 Ref="87" type="Text" isKey="true">
+              <Border>Bottom;[158:158:158];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>570,0,179,40</ClientRectangle>
+              <ComponentStyle>Header2</ComponentStyle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,21.75,Bold,Point,False,204</Font>
+              <Guid>cfef9b8e59d0443d86e813e0213c772f</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text9</Name>
+              <Page isRef="85" />
+              <Parent isRef="86" />
+              <Text>Stimulsoft</Text>
+              <TextBrush>[158:158:158]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text9>
+            <Text10 Ref="88" type="Text" isKey="true">
+              <Border>Bottom;[158:158:158];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,570,40</ClientRectangle>
+              <ComponentStyle>Header2</ComponentStyle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,21.75,Bold,Point,False,204</Font>
+              <Guid>5d5ddc515fdf4545a17e0f0e91e0cb74</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text10</Name>
+              <Page isRef="85" />
+              <Parent isRef="86" />
+              <Text>GDP (PPP) per Capita in 2019</Text>
+              <TextBrush>[158:158:158]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text10>
+            <Text11 Ref="89" type="Text" isKey="true">
+              <Border>None;[58:78:94];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>0,40,570,20</ClientRectangle>
+              <ComponentStyle>Footer2</ComponentStyle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,9.75,Regular,Point,False,0</Font>
+              <Guid>ef0d98f79a2d4391871b6f75637c2bc9</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text11</Name>
+              <Page isRef="85" />
+              <Parent isRef="86" />
+              <Text>{ReportDescription}</Text>
+              <TextBrush>[158:158:158]</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+            </Text11>
+            <Text12 Ref="90" type="Text" isKey="true">
+              <Border>None;[58:78:94];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>570,40,179,20</ClientRectangle>
+              <ComponentStyle>Footer2</ComponentStyle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,9.75,Regular,Point,False,0</Font>
+              <Guid>e18a87c8e8a14854a8f4ead3e2f842ba</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text12</Name>
+              <Page isRef="85" />
+              <Parent isRef="86" />
+              <Text>Date: {Today.ToString("Y")}</Text>
+              <TextBrush>[158:158:158]</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+            </Text12>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Guid>f8f047d745db466fbf323a67b6237439</Guid>
+          <Name>ReportTitleBand3</Name>
+          <Page isRef="85" />
+          <Parent isRef="85" />
+        </ReportTitleBand3>
+        <ReportSummaryBand2 Ref="91" type="ReportSummaryBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,150,749,590</ClientRectangle>
+          <Components isList="true" count="1">
+            <Chart2 Ref="92" type="Stimulsoft.Report.Chart.StiChart" isKey="true">
+              <Area Ref="93" type="Stimulsoft.Report.Chart.StiClusteredColumnArea" isKey="true">
+                <AllowApplyStyle>False</AllowApplyStyle>
+                <BorderColor>Transparent</BorderColor>
+                <Brush>[255:255:255]</Brush>
+                <Chart isRef="92" />
+                <ColorEach>True</ColorEach>
+                <GridLinesHor Ref="94" type="Stimulsoft.Report.Chart.StiGridLinesHor" isKey="true">
+                  <AllowApplyStyle>False</AllowApplyStyle>
+                  <Area isRef="93" />
+                  <Color>Transparent</Color>
+                  <MinorColor>Transparent</MinorColor>
+                </GridLinesHor>
+                <GridLinesHorRight Ref="95" type="Stimulsoft.Report.Chart.StiGridLinesHor" isKey="true">
+                  <Area isRef="93" />
+                  <Color>Silver</Color>
+                  <MinorColor>Gainsboro</MinorColor>
+                  <Visible>False</Visible>
+                </GridLinesHorRight>
+                <GridLinesVert Ref="96" type="Stimulsoft.Report.Chart.StiGridLinesVert" isKey="true">
+                  <AllowApplyStyle>False</AllowApplyStyle>
+                  <Area isRef="93" />
+                  <Color>Transparent</Color>
+                  <MinorColor>Transparent</MinorColor>
+                </GridLinesVert>
+                <InterlacingHor Ref="97" type="Stimulsoft.Report.Chart.StiInterlacingHor" isKey="true">
+                  <AllowApplyStyle>False</AllowApplyStyle>
+                  <Area isRef="93" />
+                  <InterlacedBrush>[10:155:155:235]</InterlacedBrush>
+                </InterlacingHor>
+                <InterlacingVert Ref="98" type="Stimulsoft.Report.Chart.StiInterlacingVert" isKey="true">
+                  <AllowApplyStyle>False</AllowApplyStyle>
+                  <Area isRef="93" />
+                  <InterlacedBrush>[10:155:155:235]</InterlacedBrush>
+                </InterlacingVert>
+                <XAxis Ref="99" type="Stimulsoft.Report.Chart.StiXBottomAxis" isKey="true">
+                  <Area isRef="93" />
+                  <DateTimeStep Ref="100" type="Stimulsoft.Report.Chart.StiAxisDateTimeStep" isKey="true" />
+                  <Interaction Ref="101" type="Stimulsoft.Report.Chart.StiAxisInteraction" isKey="true" />
+                  <Labels Ref="102" type="Stimulsoft.Report.Chart.StiAxisLabels" isKey="true">
+                    <Angle>45</Angle>
+                    <Color>140, 140, 140</Color>
+                    <Font>Tahoma,8</Font>
+                  </Labels>
+                  <LineColor>140, 140, 140</LineColor>
+                  <Range Ref="103" type="Stimulsoft.Report.Chart.StiAxisRange" isKey="true" />
+                  <Ticks Ref="104" type="Stimulsoft.Report.Chart.StiAxisTicks" isKey="true" />
+                  <Title Ref="105" type="Stimulsoft.Report.Chart.StiAxisTitle" isKey="true">
+                    <Color>140, 140, 140</Color>
+                    <Font>Tahoma,12,Bold</Font>
+                  </Title>
+                </XAxis>
+                <XTopAxis Ref="106" type="Stimulsoft.Report.Chart.StiXTopAxis" isKey="true">
+                  <Area isRef="93" />
+                  <Interaction Ref="107" type="Stimulsoft.Report.Chart.StiAxisInteraction" isKey="true" />
+                  <Labels Ref="108" type="Stimulsoft.Report.Chart.StiAxisLabels" isKey="true">
+                    <Color>140, 140, 140</Color>
+                    <Font>Tahoma,8</Font>
+                  </Labels>
+                  <LineColor>140, 140, 140</LineColor>
+                  <Ticks Ref="109" type="Stimulsoft.Report.Chart.StiAxisTicks" isKey="true" />
+                  <Title Ref="110" type="Stimulsoft.Report.Chart.StiAxisTitle" isKey="true">
+                    <Color>140, 140, 140</Color>
+                    <Font>Tahoma,12,Bold</Font>
+                  </Title>
+                </XTopAxis>
+                <YAxis Ref="111" type="Stimulsoft.Report.Chart.StiYLeftAxis" isKey="true">
+                  <Area isRef="93" />
+                  <Interaction Ref="112" type="Stimulsoft.Report.Chart.StiAxisInteraction" isKey="true" />
+                  <Labels Ref="113" type="Stimulsoft.Report.Chart.StiAxisLabels" isKey="true">
+                    <Color>140, 140, 140</Color>
+                    <Font>Tahoma,8</Font>
+                    <Format>C0</Format>
+                  </Labels>
+                  <LineColor>140, 140, 140</LineColor>
+                  <Range Ref="114" type="Stimulsoft.Report.Chart.StiAxisRange" isKey="true" />
+                  <Ticks Ref="115" type="Stimulsoft.Report.Chart.StiAxisTicks" isKey="true" />
+                  <Title Ref="116" type="Stimulsoft.Report.Chart.StiAxisTitle" isKey="true">
+                    <Color>140, 140, 140</Color>
+                    <Direction>BottomToTop</Direction>
+                    <Font>Tahoma,12,Bold</Font>
+                  </Title>
+                </YAxis>
+                <YRightAxis Ref="117" type="Stimulsoft.Report.Chart.StiYRightAxis" isKey="true">
+                  <Area isRef="93" />
+                  <Interaction Ref="118" type="Stimulsoft.Report.Chart.StiAxisInteraction" isKey="true" />
+                  <Labels Ref="119" type="Stimulsoft.Report.Chart.StiAxisLabels" isKey="true">
+                    <Color>140, 140, 140</Color>
+                    <Font>Tahoma,8</Font>
+                    <TextAlignment>Left</TextAlignment>
+                  </Labels>
+                  <LineColor>140, 140, 140</LineColor>
+                  <Range Ref="120" type="Stimulsoft.Report.Chart.StiAxisRange" isKey="true" />
+                  <Ticks Ref="121" type="Stimulsoft.Report.Chart.StiAxisTicks" isKey="true" />
+                  <Title Ref="122" type="Stimulsoft.Report.Chart.StiAxisTitle" isKey="true">
+                    <Color>140, 140, 140</Color>
+                    <Direction>TopToBottom</Direction>
+                    <Font>Tahoma,12,Bold</Font>
+                  </Title>
+                </YRightAxis>
+              </Area>
+              <Border>None;Transparent;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,740,580</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <ConstantLines isList="true" count="0" />
+              <CustomStyleName>Chart</CustomStyleName>
+              <Filters isList="true" count="0" />
+              <Legend Ref="123" type="Stimulsoft.Report.Chart.StiLegend" isKey="true">
+                <BorderColor>Transparent</BorderColor>
+                <Brush>White</Brush>
+                <Chart isRef="92" />
+                <Font>Arial,8</Font>
+                <LabelsColor>140, 140, 140</LabelsColor>
+                <MarkerSize>10, 10</MarkerSize>
+                <ShowShadow>False</ShowShadow>
+                <TitleColor>DimGray</TitleColor>
+                <TitleFont>Arial,14,Bold</TitleFont>
+                <Visible>False</Visible>
+              </Legend>
+              <Name>Chart2</Name>
+              <Page isRef="85" />
+              <Parent isRef="91" />
+              <Series isList="true" count="1">
+                <Item44 Ref="124" type="Stimulsoft.Report.Chart.StiClusteredColumnSeries" isKey="true">
+                  <ArgumentDataColumn>Statistics.Country</ArgumentDataColumn>
+                  <BorderColor>Transparent</BorderColor>
+                  <Brush>[142:195:167]</Brush>
+                  <BrushNegative>Firebrick</BrushNegative>
+                  <Chart isRef="92" />
+                  <Conditions isList="true" count="0" />
+                  <DrillDownEnabled>True</DrillDownEnabled>
+                  <DrillDownPageGuid>22dbd95b3a4f42faba4f0a76fbe9e533</DrillDownPageGuid>
+                  <Filters isList="true" count="0" />
+                  <SeriesLabels Ref="125" type="Stimulsoft.Report.Chart.StiCenterAxisLabels" isKey="true">
+                    <BorderColor>Transparent</BorderColor>
+                    <Brush>Transparent</Brush>
+                    <Chart isRef="92" />
+                    <Font>Arial,7</Font>
+                    <LabelColor>90, 90, 90</LabelColor>
+                    <MarkerSize>8, 6</MarkerSize>
+                    <ValueTypeSeparator>-</ValueTypeSeparator>
+                    <Width>0</Width>
+                  </SeriesLabels>
+                  <ShowShadow>False</ShowShadow>
+                  <TagDataColumn>Statistics.Country</TagDataColumn>
+                  <Title>GDP per Capita of</Title>
+                  <TopN Ref="126" type="Stimulsoft.Report.Chart.StiSeriesTopN" isKey="true" />
+                  <TrendLine Ref="127" type="Stimulsoft.Report.Chart.StiTrendLineNone" isKey="true">
+                    <Font>Arial,7</Font>
+                    <LineColor>Transparent</LineColor>
+                    <Position>LeftBottom</Position>
+                    <ShowShadow>False</ShowShadow>
+                  </TrendLine>
+                  <ValueDataColumn>Statistics.GDP__PPP__per_Capita</ValueDataColumn>
+                </Item44>
+              </Series>
+              <SeriesLabels Ref="128" type="Stimulsoft.Report.Chart.StiOutsideEndAxisLabels" isKey="true">
+                <BorderColor>Transparent</BorderColor>
+                <Brush>Transparent</Brush>
+                <Chart isRef="92" />
+                <Font>Arial,7</Font>
+                <Format>C0</Format>
+                <LabelColor>90, 90, 90</LabelColor>
+                <MarkerSize>8, 6</MarkerSize>
+                <ValueTypeSeparator>-</ValueTypeSeparator>
+                <Width>0</Width>
+              </SeriesLabels>
+              <SeriesLabelsConditions isList="true" count="0" />
+              <Sort isList="true" count="0" />
+              <Strips isList="true" count="0" />
+              <Style Ref="129" type="Stimulsoft.Report.Chart.StiCustomStyle" isKey="true">
+                <Conditions isList="true" count="0" />
+                <Name>Chart</Name>
+              </Style>
+              <Table Ref="130" type="Stimulsoft.Report.Chart.StiChartTable" isKey="true">
+                <DataCells Ref="131" type="Stimulsoft.Report.Chart.StiChartTableDataCells" isKey="true">
+                  <Font>Arial,8</Font>
+                  <TextColor>140, 140, 140</TextColor>
+                </DataCells>
+                <GridLineColor>Transparent</GridLineColor>
+                <Header Ref="132" type="Stimulsoft.Report.Chart.StiChartTableHeader" isKey="true">
+                  <Brush>White</Brush>
+                  <Font>Arial,8</Font>
+                  <TextColor>DarkGray</TextColor>
+                </Header>
+              </Table>
+              <Title Ref="133" type="Stimulsoft.Report.Chart.StiChartTitle" isKey="true">
+                <Brush>[140:140:140]</Brush>
+                <Font>Tahoma,12,Bold</Font>
+              </Title>
+            </Chart2>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>ReportSummaryBand2</Name>
+          <Page isRef="85" />
+          <Parent isRef="85" />
+        </ReportSummaryBand2>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>5caef30894324480bbd089a852a4c34f</Guid>
+      <Margins>39,39,39,39</Margins>
+      <Name>Page3</Name>
+      <PaperSize>A4</PaperSize>
+      <Report isRef="0" />
+    </Page3>
+    <Page4 Ref="134" type="Page" isKey="true">
+      <Alias>Countries GDP Full Stats</Alias>
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="4">
+        <PageFooterBand2 Ref="135" type="PageFooterBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,1071,749,20</ClientRectangle>
+          <Components isList="true" count="3">
+            <Text13 Ref="136" type="Text" isKey="true">
+              <Border>None;[58:78:94];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>310,0,129,20</ClientRectangle>
+              <ComponentStyle>Footer2</ComponentStyle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,9.75,Regular,Point,False,0</Font>
+              <Guid>00d3ba5aef464dea8327d699df30962c</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text13</Name>
+              <Page isRef="134" />
+              <Parent isRef="135" />
+              <Text>Page {PageNumber} from {TotalPageCount}</Text>
+              <TextBrush>[158:158:158]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text13>
+            <Text21 Ref="137" type="Text" isKey="true">
+              <Border>None;[58:78:94];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,309,20</ClientRectangle>
+              <ComponentStyle>Hyperlink</ComponentStyle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,9.75,Underline,Point,False,0</Font>
+              <Interaction Ref="138" type="Stimulsoft.Report.Components.StiInteraction" isKey="true">
+                <DrillDownEnabled>True</DrillDownEnabled>
+                <DrillDownPageGuid>5caef30894324480bbd089a852a4c34f</DrillDownPageGuid>
+              </Interaction>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text21</Name>
+              <Page isRef="134" />
+              <Parent isRef="135" />
+              <Text>Click to Show Chart of GDP (PPP) per Capita</Text>
+              <TextBrush>Blue</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text21>
+            <Text22 Ref="139" type="Text" isKey="true">
+              <Border>None;[58:78:94];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>441,0,308,20</ClientRectangle>
+              <ComponentStyle>Hyperlink</ComponentStyle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,9.75,Underline,Point,False,0</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Interaction Ref="140" type="Stimulsoft.Report.Components.StiInteraction" isKey="true">
+                <DrillDownEnabled>True</DrillDownEnabled>
+                <DrillDownPageGuid>27a3514cffd54a83bbdddaab2489125a</DrillDownPageGuid>
+              </Interaction>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text22</Name>
+              <Page isRef="134" />
+              <Parent isRef="135" />
+              <Text>Click to Show Chart of GDP per Capita</Text>
+              <TextBrush>Blue</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text22>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Guid>312ca8007a3f49989ef73c04da2f48ee</Guid>
+          <Name>PageFooterBand2</Name>
+          <Page isRef="134" />
+          <Parent isRef="134" />
+        </PageFooterBand2>
+        <ReportTitleBand4 Ref="141" type="ReportTitleBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,20,749,90</ClientRectangle>
+          <Components isList="true" count="4">
+            <Text14 Ref="142" type="Text" isKey="true">
+              <Border>Bottom;[158:158:158];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>570,0,179,40</ClientRectangle>
+              <ComponentStyle>Header2</ComponentStyle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,21.75,Bold,Point,False,204</Font>
+              <Guid>821f1dda78a34eb0a90a214cc7dd1feb</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text14</Name>
+              <Page isRef="134" />
+              <Parent isRef="141" />
+              <Text>Stimulsoft</Text>
+              <TextBrush>[158:158:158]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text14>
+            <Text15 Ref="143" type="Text" isKey="true">
+              <Border>Bottom;[158:158:158];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,570,40</ClientRectangle>
+              <ComponentStyle>Header2</ComponentStyle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,21.75,Bold,Point,False,204</Font>
+              <Guid>4e8efa876f794beaa14d74d271717439</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text15</Name>
+              <Page isRef="134" />
+              <Parent isRef="141" />
+              <Text>Countries GDP Full Stats</Text>
+              <TextBrush>[158:158:158]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text15>
+            <Text16 Ref="144" type="Text" isKey="true">
+              <Border>None;[58:78:94];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>0,40,570,20</ClientRectangle>
+              <ComponentStyle>Footer2</ComponentStyle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,9.75,Regular,Point,False,0</Font>
+              <Guid>ab83fb97578d47aab10671348b7ba56a</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text16</Name>
+              <Page isRef="134" />
+              <Parent isRef="141" />
+              <Text>{ReportDescription}</Text>
+              <TextBrush>[158:158:158]</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+            </Text16>
+            <Text19 Ref="145" type="Text" isKey="true">
+              <Border>None;[58:78:94];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>570,40,179,20</ClientRectangle>
+              <ComponentStyle>Footer2</ComponentStyle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,9.75,Regular,Point,False,0</Font>
+              <Guid>16f24b7ead1b424b99e0cb6615154564</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text19</Name>
+              <Page isRef="134" />
+              <Parent isRef="141" />
+              <Text>Date: {Today.ToString("Y")}</Text>
+              <TextBrush>[158:158:158]</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+            </Text19>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Guid>0e923adf1f7d4bdb938822b2b3d1eebd</Guid>
+          <Name>ReportTitleBand4</Name>
+          <Page isRef="134" />
+          <Parent isRef="134" />
+        </ReportTitleBand4>
+        <HeaderStatistics Ref="146" type="HeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,150,749,40</ClientRectangle>
+          <Components isList="true" count="6">
+            <HeaderStatistics_Country Ref="147" type="Text" isKey="true">
+              <Border>Left;White;1;Solid;False;4;Black</Border>
+              <Brush>[77:182:172]</Brush>
+              <ClientRectangle>0,0,120,40</ClientRectangle>
+              <ComponentStyle>Header3</ComponentStyle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,12,Bold,Point,False,204</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderStatistics_Country</Name>
+              <Page isRef="134" />
+              <Parent isRef="146" />
+              <Text>Country</Text>
+              <TextBrush>[255:255:255]</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderStatistics_Country>
+            <HeaderStatistics_Population Ref="148" type="Text" isKey="true">
+              <Border>Left;White;1;Solid;False;4;Black</Border>
+              <Brush>[77:182:172]</Brush>
+              <ClientRectangle>120,0,120,40</ClientRectangle>
+              <ComponentStyle>Header3</ComponentStyle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,12,Bold,Point,False,204</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderStatistics_Population</Name>
+              <Page isRef="134" />
+              <Parent isRef="146" />
+              <Text>Population</Text>
+              <TextBrush>[255:255:255]</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderStatistics_Population>
+            <HeaderStatistics_GDP Ref="149" type="Text" isKey="true">
+              <Border>Left;White;1;Solid;False;4;Black</Border>
+              <Brush>[77:182:172]</Brush>
+              <ClientRectangle>240,0,90,40</ClientRectangle>
+              <ComponentStyle>Header3</ComponentStyle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,12,Bold,Point,False,204</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderStatistics_GDP</Name>
+              <Page isRef="134" />
+              <Parent isRef="146" />
+              <Text>GDP</Text>
+              <TextBrush>[255:255:255]</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderStatistics_GDP>
+            <HeaderStatistics_GDP_PPP_ Ref="150" type="Text" isKey="true">
+              <Border>Left;White;1;Solid;False;4;Black</Border>
+              <Brush>[77:182:172]</Brush>
+              <ClientRectangle>330,0,90,40</ClientRectangle>
+              <ComponentStyle>Header3</ComponentStyle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,12,Bold,Point,False,204</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderStatistics_GDP_PPP_</Name>
+              <Page isRef="134" />
+              <Parent isRef="146" />
+              <Text>GDP(PPP)</Text>
+              <TextBrush>[255:255:255]</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderStatistics_GDP_PPP_>
+            <HeaderStatistics_GDP_per_Capita Ref="151" type="Text" isKey="true">
+              <Border>Left;White;1;Solid;False;4;Black</Border>
+              <Brush>[77:182:172]</Brush>
+              <ClientRectangle>420,0,150,40</ClientRectangle>
+              <ComponentStyle>Header3</ComponentStyle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,12,Bold,Point,False,204</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderStatistics_GDP_per_Capita</Name>
+              <Page isRef="134" />
+              <Parent isRef="146" />
+              <Text>GDP per Capita</Text>
+              <TextBrush>[255:255:255]</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderStatistics_GDP_per_Capita>
+            <HeaderStatistics_GDP__PPP__per_Capita Ref="152" type="Text" isKey="true">
+              <Border>Left;White;1;Solid;False;4;Black</Border>
+              <Brush>[77:182:172]</Brush>
+              <ClientRectangle>570,0,179,40</ClientRectangle>
+              <ComponentStyle>Header3</ComponentStyle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,12,Bold,Point,False,204</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderStatistics_GDP__PPP__per_Capita</Name>
+              <Page isRef="134" />
+              <Parent isRef="146" />
+              <Text>GDP (PPP) per Capita</Text>
+              <TextBrush>[255:255:255]</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderStatistics_GDP__PPP__per_Capita>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>HeaderStatistics</Name>
+          <Page isRef="134" />
+          <Parent isRef="134" />
+        </HeaderStatistics>
+        <DataStatistics Ref="153" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,230,749,30</ClientRectangle>
+          <Components isList="true" count="6">
+            <DataStatistics_Country Ref="154" type="Text" isKey="true">
+              <Border>None;[182:182:182];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>0,0,120,30</ClientRectangle>
+              <ComponentStyle>Data1</ComponentStyle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,9.75,Regular,Point,False,0</Font>
+              <Interaction Ref="155" type="Stimulsoft.Report.Components.StiInteraction" isKey="true">
+                <DrillDownEnabled>True</DrillDownEnabled>
+                <DrillDownPageGuid>b87157a375d149fc9f5db01432f23888</DrillDownPageGuid>
+                <DrillDownParameter1 Ref="156" type="Stimulsoft.Report.Components.StiDrillDownParameter" isKey="true">
+                  <Expression>Statistics.Country</Expression>
+                  <Name>CountryName</Name>
+                </DrillDownParameter1>
+              </Interaction>
+              <Margins>3,0,0,0</Margins>
+              <Name>DataStatistics_Country</Name>
+              <Page isRef="134" />
+              <Parent isRef="153" />
+              <Text>{Statistics.Country}</Text>
+              <TextBrush>[74:74:74]</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <ToolTip>Click to Show {Statistics.Country} Charts </ToolTip>
+              <VertAlignment>Center</VertAlignment>
+            </DataStatistics_Country>
+            <DataStatistics_Population Ref="157" type="Text" isKey="true">
+              <Border>None;[182:182:182];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>120,0,120,30</ClientRectangle>
+              <ComponentStyle>Data1</ComponentStyle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,9.75,Regular,Point,False,0</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,3,0,0</Margins>
+              <Name>DataStatistics_Population</Name>
+              <Page isRef="134" />
+              <Parent isRef="153" />
+              <Text>{Statistics.Population}</Text>
+              <TextBrush>[74:74:74]</TextBrush>
+              <TextFormat Ref="158" type="NumberFormat" isKey="true">
+                <DecimalDigits>2</DecimalDigits>
+                <GroupSeparator>,</GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <State>DecimalDigits, Abbreviation</State>
+              </TextFormat>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataStatistics_Population>
+            <DataStatistics_GDP Ref="159" type="Text" isKey="true">
+              <Border>None;[182:182:182];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>240,0,90,30</ClientRectangle>
+              <ComponentStyle>Data1</ComponentStyle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,9.75,Regular,Point,False,0</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,3,0,0</Margins>
+              <Name>DataStatistics_GDP</Name>
+              <Page isRef="134" />
+              <Parent isRef="153" />
+              <Text>{Statistics.GDP}</Text>
+              <TextBrush>[74:74:74]</TextBrush>
+              <TextFormat Ref="160" type="CurrencyFormat" isKey="true">
+                <DecimalDigits>2</DecimalDigits>
+                <GroupSeparator>,</GroupSeparator>
+                <NegativePattern>0</NegativePattern>
+                <PositivePattern>0</PositivePattern>
+                <State>DecimalDigits, CurrencySymbol, Abbreviation</State>
+              </TextFormat>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataStatistics_GDP>
+            <DataStatistics_GDP_PPP_ Ref="161" type="Text" isKey="true">
+              <Border>None;[182:182:182];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>330,0,90,30</ClientRectangle>
+              <ComponentStyle>Data1</ComponentStyle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,9.75,Regular,Point,False,0</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,3,0,0</Margins>
+              <Name>DataStatistics_GDP_PPP_</Name>
+              <Page isRef="134" />
+              <Parent isRef="153" />
+              <Text>{Statistics.GDP_PPP_}</Text>
+              <TextBrush>[74:74:74]</TextBrush>
+              <TextFormat Ref="162" type="CurrencyFormat" isKey="true">
+                <DecimalDigits>2</DecimalDigits>
+                <GroupSeparator>,</GroupSeparator>
+                <NegativePattern>0</NegativePattern>
+                <PositivePattern>0</PositivePattern>
+                <State>DecimalDigits, CurrencySymbol, Abbreviation</State>
+              </TextFormat>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataStatistics_GDP_PPP_>
+            <DataStatistics_GDP_per_Capita Ref="163" type="Text" isKey="true">
+              <Border>None;[182:182:182];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>420,0,150,30</ClientRectangle>
+              <ComponentStyle>Data1</ComponentStyle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,9.75,Regular,Point,False,0</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,3,0,0</Margins>
+              <Name>DataStatistics_GDP_per_Capita</Name>
+              <Page isRef="134" />
+              <Parent isRef="153" />
+              <Text>{Statistics.GDP_per_Capita}</Text>
+              <TextBrush>[74:74:74]</TextBrush>
+              <TextFormat Ref="164" type="CurrencyFormat" isKey="true">
+                <DecimalDigits>2</DecimalDigits>
+                <GroupSeparator>,</GroupSeparator>
+                <NegativePattern>0</NegativePattern>
+                <PositivePattern>0</PositivePattern>
+                <State>DecimalDigits, CurrencySymbol, Abbreviation</State>
+              </TextFormat>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataStatistics_GDP_per_Capita>
+            <DataStatistics_GDP__PPP__per_Capita Ref="165" type="Text" isKey="true">
+              <Border>None;[182:182:182];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>570,0,179,30</ClientRectangle>
+              <ComponentStyle>Data1</ComponentStyle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,9.75,Regular,Point,False,0</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,3,0,0</Margins>
+              <Name>DataStatistics_GDP__PPP__per_Capita</Name>
+              <Page isRef="134" />
+              <Parent isRef="153" />
+              <Text>{Statistics.GDP__PPP__per_Capita}</Text>
+              <TextBrush>[74:74:74]</TextBrush>
+              <TextFormat Ref="166" type="CurrencyFormat" isKey="true">
+                <DecimalDigits>2</DecimalDigits>
+                <GroupSeparator>,</GroupSeparator>
+                <NegativePattern>0</NegativePattern>
+                <PositivePattern>0</PositivePattern>
+                <State>DecimalDigits, CurrencySymbol, Abbreviation</State>
+              </TextFormat>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataStatistics_GDP__PPP__per_Capita>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName>Statistics</DataSourceName>
+          <EvenStyle>Data2</EvenStyle>
+          <FilterOn>False</FilterOn>
+          <Filters isList="true" count="0" />
+          <Name>DataStatistics</Name>
+          <Page isRef="134" />
+          <Parent isRef="134" />
+          <Sort isList="true" count="0" />
+        </DataStatistics>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>a8611538fa724ce1b4e6b62508649c0b</Guid>
+      <Margins>39,39,39,39</Margins>
+      <Name>Page4</Name>
+      <PaperSize>A4</PaperSize>
+      <Report isRef="0" />
+    </Page4>
+    <Page5 Ref="167" type="Page" isKey="true">
+      <Alias>Countries GDP Full Stats</Alias>
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="3">
+        <Chart3 Ref="168" type="Stimulsoft.Report.Chart.StiChart" isKey="true">
+          <Area Ref="169" type="Stimulsoft.Report.Chart.StiClusteredColumnArea" isKey="true">
+            <AllowApplyStyle>False</AllowApplyStyle>
+            <BorderColor>Transparent</BorderColor>
+            <Brush>[255:255:255]</Brush>
+            <Chart isRef="168" />
+            <GridLinesHor Ref="170" type="Stimulsoft.Report.Chart.StiGridLinesHor" isKey="true">
+              <AllowApplyStyle>False</AllowApplyStyle>
+              <Area isRef="169" />
+              <Color>Transparent</Color>
+              <MinorColor>Transparent</MinorColor>
+            </GridLinesHor>
+            <GridLinesHorRight Ref="171" type="Stimulsoft.Report.Chart.StiGridLinesHor" isKey="true">
+              <Area isRef="169" />
+              <Color>Silver</Color>
+              <MinorColor>Gainsboro</MinorColor>
+              <Visible>False</Visible>
+            </GridLinesHorRight>
+            <GridLinesVert Ref="172" type="Stimulsoft.Report.Chart.StiGridLinesVert" isKey="true">
+              <AllowApplyStyle>False</AllowApplyStyle>
+              <Area isRef="169" />
+              <Color>Transparent</Color>
+              <MinorColor>Transparent</MinorColor>
+            </GridLinesVert>
+            <InterlacingHor Ref="173" type="Stimulsoft.Report.Chart.StiInterlacingHor" isKey="true">
+              <Area isRef="169" />
+              <InterlacedBrush>[10:155:155:155]</InterlacedBrush>
+            </InterlacingHor>
+            <InterlacingVert Ref="174" type="Stimulsoft.Report.Chart.StiInterlacingVert" isKey="true">
+              <Area isRef="169" />
+              <InterlacedBrush>[10:155:155:155]</InterlacedBrush>
+            </InterlacingVert>
+            <XAxis Ref="175" type="Stimulsoft.Report.Chart.StiXBottomAxis" isKey="true">
+              <Area isRef="169" />
+              <DateTimeStep Ref="176" type="Stimulsoft.Report.Chart.StiAxisDateTimeStep" isKey="true" />
+              <Interaction Ref="177" type="Stimulsoft.Report.Chart.StiAxisInteraction" isKey="true" />
+              <Labels Ref="178" type="Stimulsoft.Report.Chart.StiAxisLabels" isKey="true">
+                <Color>140, 140, 140</Color>
+                <Font>Tahoma,8</Font>
+              </Labels>
+              <LineColor>140, 140, 140</LineColor>
+              <Range Ref="179" type="Stimulsoft.Report.Chart.StiAxisRange" isKey="true" />
+              <Ticks Ref="180" type="Stimulsoft.Report.Chart.StiAxisTicks" isKey="true" />
+              <Title Ref="181" type="Stimulsoft.Report.Chart.StiAxisTitle" isKey="true">
+                <Color>140, 140, 140</Color>
+                <Font>Tahoma,12,Bold</Font>
+              </Title>
+            </XAxis>
+            <XTopAxis Ref="182" type="Stimulsoft.Report.Chart.StiXTopAxis" isKey="true">
+              <Area isRef="169" />
+              <Interaction Ref="183" type="Stimulsoft.Report.Chart.StiAxisInteraction" isKey="true" />
+              <Labels Ref="184" type="Stimulsoft.Report.Chart.StiAxisLabels" isKey="true">
+                <Color>140, 140, 140</Color>
+                <Font>Tahoma,8</Font>
+              </Labels>
+              <LineColor>140, 140, 140</LineColor>
+              <Ticks Ref="185" type="Stimulsoft.Report.Chart.StiAxisTicks" isKey="true" />
+              <Title Ref="186" type="Stimulsoft.Report.Chart.StiAxisTitle" isKey="true">
+                <Color>140, 140, 140</Color>
+                <Font>Tahoma,12,Bold</Font>
+              </Title>
+            </XTopAxis>
+            <YAxis Ref="187" type="Stimulsoft.Report.Chart.StiYLeftAxis" isKey="true">
+              <Area isRef="169" />
+              <Interaction Ref="188" type="Stimulsoft.Report.Chart.StiAxisInteraction" isKey="true" />
+              <Labels Ref="189" type="Stimulsoft.Report.Chart.StiAxisLabels" isKey="true">
+                <Color>140, 140, 140</Color>
+                <Font>Tahoma,8</Font>
+                <Format>C0</Format>
+              </Labels>
+              <LineColor>140, 140, 140</LineColor>
+              <Range Ref="190" type="Stimulsoft.Report.Chart.StiAxisRange" isKey="true" />
+              <Ticks Ref="191" type="Stimulsoft.Report.Chart.StiAxisTicks" isKey="true" />
+              <Title Ref="192" type="Stimulsoft.Report.Chart.StiAxisTitle" isKey="true">
+                <Color>140, 140, 140</Color>
+                <Direction>BottomToTop</Direction>
+                <Font>Tahoma,12,Bold</Font>
+              </Title>
+            </YAxis>
+            <YRightAxis Ref="193" type="Stimulsoft.Report.Chart.StiYRightAxis" isKey="true">
+              <Area isRef="169" />
+              <Interaction Ref="194" type="Stimulsoft.Report.Chart.StiAxisInteraction" isKey="true" />
+              <Labels Ref="195" type="Stimulsoft.Report.Chart.StiAxisLabels" isKey="true">
+                <Color>140, 140, 140</Color>
+                <Font>Tahoma,8</Font>
+                <TextAlignment>Left</TextAlignment>
+              </Labels>
+              <LineColor>140, 140, 140</LineColor>
+              <Range Ref="196" type="Stimulsoft.Report.Chart.StiAxisRange" isKey="true" />
+              <Ticks Ref="197" type="Stimulsoft.Report.Chart.StiAxisTicks" isKey="true" />
+              <Title Ref="198" type="Stimulsoft.Report.Chart.StiAxisTitle" isKey="true">
+                <Color>140, 140, 140</Color>
+                <Direction>TopToBottom</Direction>
+                <Font>Tahoma,12,Bold</Font>
+              </Title>
+            </YRightAxis>
+          </Area>
+          <Border>None;Transparent;1;Solid;False;4;Black</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>20,130,720,470</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <ConstantLines isList="true" count="0" />
+          <CustomStyleName>Chart</CustomStyleName>
+          <Filters isList="true" count="0" />
+          <Legend Ref="199" type="Stimulsoft.Report.Chart.StiLegend" isKey="true">
+            <AllowApplyStyle>False</AllowApplyStyle>
+            <BorderColor>Transparent</BorderColor>
+            <Brush>[255:255:255]</Brush>
+            <Chart isRef="168" />
+            <Font>Arial,8</Font>
+            <HorAlignment>Center</HorAlignment>
+            <LabelsColor>140, 140, 140</LabelsColor>
+            <MarkerSize>10, 10</MarkerSize>
+            <ShowShadow>False</ShowShadow>
+            <TitleColor>DimGray</TitleColor>
+            <TitleFont>Arial,14,Bold</TitleFont>
+            <VertAlignment>TopOutside</VertAlignment>
+          </Legend>
+          <Name>Chart3</Name>
+          <Page isRef="167" />
+          <Parent isRef="167" />
+          <Series isList="true" count="2">
+            <Item71 Ref="200" type="Stimulsoft.Report.Chart.StiClusteredColumnSeries" isKey="true">
+              <ArgumentDataColumn>Statistics.Country</ArgumentDataColumn>
+              <BorderColor>Transparent</BorderColor>
+              <Brush>[142:195:167]</Brush>
+              <BrushNegative>Firebrick</BrushNegative>
+              <Chart isRef="168" />
+              <Conditions isList="true" count="0" />
+              <Filters isList="true" count="1">
+                <value>Expression,String,EqualTo,Statistics.Country_x0020__x003D__x003D__x0020_this_x005B__x0022_CountryName_x0022__x005D_</value>
+              </Filters>
+              <SeriesLabels Ref="201" type="Stimulsoft.Report.Chart.StiCenterAxisLabels" isKey="true">
+                <BorderColor>Transparent</BorderColor>
+                <Brush>Transparent</Brush>
+                <Chart isRef="168" />
+                <Font>Arial,7</Font>
+                <LabelColor>90, 90, 90</LabelColor>
+                <MarkerSize>8, 6</MarkerSize>
+                <ValueTypeSeparator>-</ValueTypeSeparator>
+                <Width>0</Width>
+              </SeriesLabels>
+              <ShowShadow>False</ShowShadow>
+              <Title>GDP</Title>
+              <TopN Ref="202" type="Stimulsoft.Report.Chart.StiSeriesTopN" isKey="true" />
+              <TrendLine Ref="203" type="Stimulsoft.Report.Chart.StiTrendLineNone" isKey="true">
+                <Font>Arial,7</Font>
+                <LineColor>Transparent</LineColor>
+                <Position>LeftBottom</Position>
+                <ShowShadow>False</ShowShadow>
+              </TrendLine>
+              <ValueDataColumn>Statistics.GDP</ValueDataColumn>
+            </Item71>
+            <Item72 Ref="204" type="Stimulsoft.Report.Chart.StiClusteredColumnSeries" isKey="true">
+              <ArgumentDataColumn>Statistics.Country</ArgumentDataColumn>
+              <BorderColor>Transparent</BorderColor>
+              <Brush>[240:203:105]</Brush>
+              <BrushNegative>Firebrick</BrushNegative>
+              <Chart isRef="168" />
+              <Conditions isList="true" count="0" />
+              <Filters isList="true" count="1">
+                <value>Expression,String,EqualTo,Statistics.Country_x0020__x003D__x003D__x0020_this_x005B__x0022_CountryName_x0022__x005D_</value>
+              </Filters>
+              <SeriesLabels Ref="205" type="Stimulsoft.Report.Chart.StiCenterAxisLabels" isKey="true">
+                <BorderColor>Transparent</BorderColor>
+                <Brush>Transparent</Brush>
+                <Chart isRef="168" />
+                <Font>Arial,7</Font>
+                <LabelColor>90, 90, 90</LabelColor>
+                <MarkerSize>8, 6</MarkerSize>
+                <ValueTypeSeparator>-</ValueTypeSeparator>
+                <Width>0</Width>
+              </SeriesLabels>
+              <ShowShadow>False</ShowShadow>
+              <Title>GDP(PPP)</Title>
+              <TopN Ref="206" type="Stimulsoft.Report.Chart.StiSeriesTopN" isKey="true" />
+              <TrendLine Ref="207" type="Stimulsoft.Report.Chart.StiTrendLineNone" isKey="true">
+                <Font>Arial,7</Font>
+                <LineColor>Transparent</LineColor>
+                <Position>LeftBottom</Position>
+                <ShowShadow>False</ShowShadow>
+              </TrendLine>
+              <ValueDataColumn>Statistics.GDP_PPP_</ValueDataColumn>
+            </Item72>
+          </Series>
+          <SeriesLabels Ref="208" type="Stimulsoft.Report.Chart.StiCenterAxisLabels" isKey="true">
+            <BorderColor>Transparent</BorderColor>
+            <Brush>Transparent</Brush>
+            <Chart isRef="168" />
+            <Font>Arial,7</Font>
+            <Format>C0</Format>
+            <LabelColor>90, 90, 90</LabelColor>
+            <MarkerSize>8, 6</MarkerSize>
+            <ValueTypeSeparator>-</ValueTypeSeparator>
+            <Width>0</Width>
+          </SeriesLabels>
+          <SeriesLabelsConditions isList="true" count="0" />
+          <Sort isList="true" count="0" />
+          <Strips isList="true" count="0" />
+          <Style Ref="209" type="Stimulsoft.Report.Chart.StiCustomStyle" isKey="true">
+            <Conditions isList="true" count="0" />
+            <Name>Chart</Name>
+          </Style>
+          <Table Ref="210" type="Stimulsoft.Report.Chart.StiChartTable" isKey="true">
+            <DataCells Ref="211" type="Stimulsoft.Report.Chart.StiChartTableDataCells" isKey="true">
+              <Font>Arial,8</Font>
+              <TextColor>140, 140, 140</TextColor>
+            </DataCells>
+            <GridLineColor>Transparent</GridLineColor>
+            <Header Ref="212" type="Stimulsoft.Report.Chart.StiChartTableHeader" isKey="true">
+              <Brush>White</Brush>
+              <Font>Arial,8</Font>
+              <TextColor>DarkGray</TextColor>
+            </Header>
+          </Table>
+          <Title Ref="213" type="Stimulsoft.Report.Chart.StiChartTitle" isKey="true">
+            <Brush>[140:140:140]</Brush>
+            <Font>Tahoma,12,Bold</Font>
+          </Title>
+        </Chart3>
+        <Chart4 Ref="214" type="Stimulsoft.Report.Chart.StiChart" isKey="true">
+          <Area Ref="215" type="Stimulsoft.Report.Chart.StiPieArea" isKey="true">
+            <AllowApplyStyle>False</AllowApplyStyle>
+            <BorderColor>Transparent</BorderColor>
+            <Brush>[255:255:255]</Brush>
+            <Chart isRef="214" />
+          </Area>
+          <Border>None;Transparent;1;Solid;False;4;Black</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>20,610,720,470</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <ConstantLines isList="true" count="0" />
+          <CustomStyleName>Chart</CustomStyleName>
+          <Filters isList="true" count="0" />
+          <Legend Ref="216" type="Stimulsoft.Report.Chart.StiLegend" isKey="true">
+            <AllowApplyStyle>False</AllowApplyStyle>
+            <BorderColor>Transparent</BorderColor>
+            <Brush>[255:255:255]</Brush>
+            <Chart isRef="214" />
+            <Font>Arial,8</Font>
+            <HorAlignment>Center</HorAlignment>
+            <LabelsColor>140, 140, 140</LabelsColor>
+            <MarkerSize>10, 10</MarkerSize>
+            <ShowShadow>False</ShowShadow>
+            <TitleColor>DimGray</TitleColor>
+            <TitleFont>Arial,14,Bold</TitleFont>
+            <VertAlignment>TopOutside</VertAlignment>
+          </Legend>
+          <Name>Chart4</Name>
+          <Page isRef="167" />
+          <Parent isRef="167" />
+          <Series isList="true" count="2">
+            <Item74 Ref="217" type="Stimulsoft.Report.Chart.StiPieSeries" isKey="true">
+              <ArgumentDataColumn>Statistics.Country</ArgumentDataColumn>
+              <BorderColor>Transparent</BorderColor>
+              <Brush>[142:195:167]</Brush>
+              <Chart isRef="214" />
+              <Conditions isList="true" count="0" />
+              <DrillDownEnabled>True</DrillDownEnabled>
+              <DrillDownPageGuid>22dbd95b3a4f42faba4f0a76fbe9e533</DrillDownPageGuid>
+              <Filters isList="true" count="1">
+                <value>Expression,String,EqualTo,Statistics.Country_x0020__x003D__x003D__x0020_this_x005B__x0022_CountryName_x0022__x005D_</value>
+              </Filters>
+              <Lighting>False</Lighting>
+              <SeriesLabels Ref="218" type="Stimulsoft.Report.Chart.StiCenterAxisLabels" isKey="true">
+                <BorderColor>Transparent</BorderColor>
+                <Brush>Transparent</Brush>
+                <Chart isRef="214" />
+                <Font>Arial,7</Font>
+                <LabelColor>90, 90, 90</LabelColor>
+                <MarkerSize>8, 6</MarkerSize>
+                <ValueTypeSeparator>-</ValueTypeSeparator>
+                <Width>0</Width>
+              </SeriesLabels>
+              <ShowShadow>False</ShowShadow>
+              <TagDataColumn>Statistics.Country</TagDataColumn>
+              <Title>GDP per Capita</Title>
+              <TopN Ref="219" type="Stimulsoft.Report.Chart.StiSeriesTopN" isKey="true" />
+              <ValueDataColumn>Statistics.GDP_per_Capita</ValueDataColumn>
+            </Item74>
+            <Item75 Ref="220" type="Stimulsoft.Report.Chart.StiPieSeries" isKey="true">
+              <ArgumentDataColumn>Statistics.Country</ArgumentDataColumn>
+              <BorderColor>Transparent</BorderColor>
+              <Brush>[240:203:105]</Brush>
+              <Chart isRef="214" />
+              <Conditions isList="true" count="0" />
+              <DrillDownEnabled>True</DrillDownEnabled>
+              <DrillDownPageGuid>22dbd95b3a4f42faba4f0a76fbe9e533</DrillDownPageGuid>
+              <Filters isList="true" count="1">
+                <value>Expression,String,EqualTo,Statistics.Country_x0020__x003D__x003D__x0020_this_x005B__x0022_CountryName_x0022__x005D_</value>
+              </Filters>
+              <Lighting>False</Lighting>
+              <SeriesLabels Ref="221" type="Stimulsoft.Report.Chart.StiCenterAxisLabels" isKey="true">
+                <BorderColor>Transparent</BorderColor>
+                <Brush>Transparent</Brush>
+                <Chart isRef="214" />
+                <Font>Arial,7</Font>
+                <LabelColor>90, 90, 90</LabelColor>
+                <MarkerSize>8, 6</MarkerSize>
+                <ValueTypeSeparator>-</ValueTypeSeparator>
+                <Width>0</Width>
+              </SeriesLabels>
+              <ShowShadow>False</ShowShadow>
+              <TagDataColumn>Statistics.Country</TagDataColumn>
+              <Title>GDP (PPP) per Capita</Title>
+              <TopN Ref="222" type="Stimulsoft.Report.Chart.StiSeriesTopN" isKey="true" />
+              <ValueDataColumn>Statistics.GDP__PPP__per_Capita</ValueDataColumn>
+            </Item75>
+          </Series>
+          <SeriesLabels Ref="223" type="Stimulsoft.Report.Chart.StiCenterPieLabels" isKey="true">
+            <BorderColor>Transparent</BorderColor>
+            <Brush>Transparent</Brush>
+            <Chart isRef="214" />
+            <Font>Arial,7</Font>
+            <Format>C0</Format>
+            <LabelColor>90, 90, 90</LabelColor>
+            <LegendValueType>SeriesTitle</LegendValueType>
+            <MarkerSize>8, 6</MarkerSize>
+            <ValueTypeSeparator>-</ValueTypeSeparator>
+            <Width>0</Width>
+          </SeriesLabels>
+          <SeriesLabelsConditions isList="true" count="0" />
+          <Sort isList="true" count="0" />
+          <Strips isList="true" count="0" />
+          <Style Ref="224" type="Stimulsoft.Report.Chart.StiCustomStyle" isKey="true">
+            <Conditions isList="true" count="0" />
+            <Name>Chart</Name>
+          </Style>
+          <Table Ref="225" type="Stimulsoft.Report.Chart.StiChartTable" isKey="true">
+            <DataCells Ref="226" type="Stimulsoft.Report.Chart.StiChartTableDataCells" isKey="true">
+              <Font>Arial,8</Font>
+              <TextColor>140, 140, 140</TextColor>
+            </DataCells>
+            <GridLineColor>Transparent</GridLineColor>
+            <Header Ref="227" type="Stimulsoft.Report.Chart.StiChartTableHeader" isKey="true">
+              <Brush>White</Brush>
+              <Font>Arial,8</Font>
+              <TextColor>DarkGray</TextColor>
+            </Header>
+          </Table>
+          <Title Ref="228" type="Stimulsoft.Report.Chart.StiChartTitle" isKey="true">
+            <Brush>[140:140:140]</Brush>
+            <Font>Tahoma,12,Bold</Font>
+          </Title>
+        </Chart4>
+        <ReportTitleBand5 Ref="229" type="ReportTitleBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,20,749,90</ClientRectangle>
+          <Components isList="true" count="4">
+            <Text27 Ref="230" type="Text" isKey="true">
+              <Border>Bottom;[158:158:158];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>570,0,179,40</ClientRectangle>
+              <ComponentStyle>Header2</ComponentStyle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,21.75,Bold,Point,False,204</Font>
+              <Guid>821f1dda78a34eb0a90a214cc7dd1feb</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text27</Name>
+              <Page isRef="167" />
+              <Parent isRef="229" />
+              <Text>Stimulsoft</Text>
+              <TextBrush>[158:158:158]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text27>
+            <Text28 Ref="231" type="Text" isKey="true">
+              <Border>Bottom;[158:158:158];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,570,40</ClientRectangle>
+              <ComponentStyle>Header2</ComponentStyle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,21.75,Bold,Point,False,204</Font>
+              <Guid>4e8efa876f794beaa14d74d271717439</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text28</Name>
+              <Page isRef="167" />
+              <Parent isRef="229" />
+              <Text>{this["CountryName"]} GDP Full Stats</Text>
+              <TextBrush>[158:158:158]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text28>
+            <Text32 Ref="232" type="Text" isKey="true">
+              <Border>None;[58:78:94];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>0,40,570,20</ClientRectangle>
+              <ComponentStyle>Footer2</ComponentStyle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,9.75,Regular,Point,False,0</Font>
+              <Guid>ab83fb97578d47aab10671348b7ba56a</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text32</Name>
+              <Page isRef="167" />
+              <Parent isRef="229" />
+              <Text>{ReportDescription}</Text>
+              <TextBrush>[158:158:158]</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+            </Text32>
+            <Text33 Ref="233" type="Text" isKey="true">
+              <Border>None;[58:78:94];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>570,40,179,20</ClientRectangle>
+              <ComponentStyle>Footer2</ComponentStyle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,9.75,Regular,Point,False,0</Font>
+              <Guid>16f24b7ead1b424b99e0cb6615154564</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text33</Name>
+              <Page isRef="167" />
+              <Parent isRef="229" />
+              <Text>Date: {Today.ToString("Y")}</Text>
+              <TextBrush>[158:158:158]</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+            </Text33>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Guid>0e923adf1f7d4bdb938822b2b3d1eebd</Guid>
+          <Name>ReportTitleBand5</Name>
+          <Page isRef="167" />
+          <Parent isRef="167" />
+        </ReportTitleBand5>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>b87157a375d149fc9f5db01432f23888</Guid>
+      <Margins>39,39,39,39</Margins>
+      <Name>Page5</Name>
+      <PaperSize>A4</PaperSize>
+      <Report isRef="0" />
+    </Page5>
+    <Page6 Ref="234" type="Page" isKey="true">
+      <Alias>GDP per Capita by Year</Alias>
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="2">
+        <ReportTitleBand6 Ref="235" type="ReportTitleBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,20,749,90</ClientRectangle>
+          <Components isList="true" count="4">
+            <Text24 Ref="236" type="Text" isKey="true">
+              <Border>Bottom;[158:158:158];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>570,0,179,40</ClientRectangle>
+              <ComponentStyle>Header2</ComponentStyle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,21.75,Bold,Point,False,204</Font>
+              <Guid>cfef9b8e59d0443d86e813e0213c772f</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text24</Name>
+              <Page isRef="234" />
+              <Parent isRef="235" />
+              <Text>Stimulsoft</Text>
+              <TextBrush>[158:158:158]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text24>
+            <Text25 Ref="237" type="Text" isKey="true">
+              <Border>Bottom;[158:158:158];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,570,40</ClientRectangle>
+              <ComponentStyle>Header2</ComponentStyle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,21.75,Bold,Point,False,204</Font>
+              <Guid>5d5ddc515fdf4545a17e0f0e91e0cb74</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text25</Name>
+              <Page isRef="234" />
+              <Parent isRef="235" />
+              <Text>GDP per Capita of {this["SeriesTag"]}</Text>
+              <TextBrush>[158:158:158]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text25>
+            <Text26 Ref="238" type="Text" isKey="true">
+              <Border>None;[58:78:94];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>0,40,570,20</ClientRectangle>
+              <ComponentStyle>Footer2</ComponentStyle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,9.75,Regular,Point,False,0</Font>
+              <Guid>ef0d98f79a2d4391871b6f75637c2bc9</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text26</Name>
+              <Page isRef="234" />
+              <Parent isRef="235" />
+              <Text>This sample demonstrates historical data of GDP per Capita.</Text>
+              <TextBrush>[158:158:158]</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+            </Text26>
+            <Text35 Ref="239" type="Text" isKey="true">
+              <Border>None;[58:78:94];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>570,40,179,20</ClientRectangle>
+              <ComponentStyle>Footer2</ComponentStyle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,9.75,Regular,Point,False,0</Font>
+              <Guid>e18a87c8e8a14854a8f4ead3e2f842ba</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text35</Name>
+              <Page isRef="234" />
+              <Parent isRef="235" />
+              <Text>Date: {Today.ToString("Y")}</Text>
+              <TextBrush>[158:158:158]</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+            </Text35>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Guid>f8f047d745db466fbf323a67b6237439</Guid>
+          <Name>ReportTitleBand6</Name>
+          <Page isRef="234" />
+          <Parent isRef="234" />
+        </ReportTitleBand6>
+        <ReportSummaryBand3 Ref="240" type="ReportSummaryBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,150,749,590</ClientRectangle>
+          <Components isList="true" count="1">
+            <Chart5 Ref="241" type="Stimulsoft.Report.Chart.StiChart" isKey="true">
+              <Area Ref="242" type="Stimulsoft.Report.Chart.StiClusteredColumnArea" isKey="true">
+                <AllowApplyStyle>False</AllowApplyStyle>
+                <BorderColor>Transparent</BorderColor>
+                <Brush>[255:255:255]</Brush>
+                <Chart isRef="241" />
+                <ColorEach>True</ColorEach>
+                <GridLinesHor Ref="243" type="Stimulsoft.Report.Chart.StiGridLinesHor" isKey="true">
+                  <AllowApplyStyle>False</AllowApplyStyle>
+                  <Area isRef="242" />
+                  <Color>Transparent</Color>
+                  <MinorColor>Transparent</MinorColor>
+                </GridLinesHor>
+                <GridLinesHorRight Ref="244" type="Stimulsoft.Report.Chart.StiGridLinesHor" isKey="true">
+                  <Area isRef="242" />
+                  <Color>Silver</Color>
+                  <MinorColor>Gainsboro</MinorColor>
+                  <Visible>False</Visible>
+                </GridLinesHorRight>
+                <GridLinesVert Ref="245" type="Stimulsoft.Report.Chart.StiGridLinesVert" isKey="true">
+                  <AllowApplyStyle>False</AllowApplyStyle>
+                  <Area isRef="242" />
+                  <Color>Transparent</Color>
+                  <MinorColor>Transparent</MinorColor>
+                </GridLinesVert>
+                <InterlacingHor Ref="246" type="Stimulsoft.Report.Chart.StiInterlacingHor" isKey="true">
+                  <AllowApplyStyle>False</AllowApplyStyle>
+                  <Area isRef="242" />
+                  <InterlacedBrush>[10:155:155:235]</InterlacedBrush>
+                </InterlacingHor>
+                <InterlacingVert Ref="247" type="Stimulsoft.Report.Chart.StiInterlacingVert" isKey="true">
+                  <AllowApplyStyle>False</AllowApplyStyle>
+                  <Area isRef="242" />
+                  <InterlacedBrush>[10:155:155:235]</InterlacedBrush>
+                </InterlacingVert>
+                <XAxis Ref="248" type="Stimulsoft.Report.Chart.StiXBottomAxis" isKey="true">
+                  <Area isRef="242" />
+                  <DateTimeStep Ref="249" type="Stimulsoft.Report.Chart.StiAxisDateTimeStep" isKey="true" />
+                  <Interaction Ref="250" type="Stimulsoft.Report.Chart.StiAxisInteraction" isKey="true" />
+                  <Labels Ref="251" type="Stimulsoft.Report.Chart.StiAxisLabels" isKey="true">
+                    <Angle>45</Angle>
+                    <Color>140, 140, 140</Color>
+                    <Font>Tahoma,8</Font>
+                  </Labels>
+                  <LineColor>140, 140, 140</LineColor>
+                  <Range Ref="252" type="Stimulsoft.Report.Chart.StiAxisRange" isKey="true" />
+                  <Ticks Ref="253" type="Stimulsoft.Report.Chart.StiAxisTicks" isKey="true" />
+                  <Title Ref="254" type="Stimulsoft.Report.Chart.StiAxisTitle" isKey="true">
+                    <Color>140, 140, 140</Color>
+                    <Font>Tahoma,12,Bold</Font>
+                  </Title>
+                </XAxis>
+                <XTopAxis Ref="255" type="Stimulsoft.Report.Chart.StiXTopAxis" isKey="true">
+                  <Area isRef="242" />
+                  <Interaction Ref="256" type="Stimulsoft.Report.Chart.StiAxisInteraction" isKey="true" />
+                  <Labels Ref="257" type="Stimulsoft.Report.Chart.StiAxisLabels" isKey="true">
+                    <Color>140, 140, 140</Color>
+                    <Font>Tahoma,8</Font>
+                  </Labels>
+                  <LineColor>140, 140, 140</LineColor>
+                  <Ticks Ref="258" type="Stimulsoft.Report.Chart.StiAxisTicks" isKey="true" />
+                  <Title Ref="259" type="Stimulsoft.Report.Chart.StiAxisTitle" isKey="true">
+                    <Color>140, 140, 140</Color>
+                    <Font>Tahoma,12,Bold</Font>
+                  </Title>
+                </XTopAxis>
+                <YAxis Ref="260" type="Stimulsoft.Report.Chart.StiYLeftAxis" isKey="true">
+                  <AllowApplyStyle>False</AllowApplyStyle>
+                  <Area isRef="242" />
+                  <Interaction Ref="261" type="Stimulsoft.Report.Chart.StiAxisInteraction" isKey="true" />
+                  <Labels Ref="262" type="Stimulsoft.Report.Chart.StiAxisLabels" isKey="true">
+                    <Color>140, 140, 140</Color>
+                    <Font>Tahoma,8</Font>
+                    <Format>C0</Format>
+                  </Labels>
+                  <LineColor>140, 140, 140</LineColor>
+                  <Range Ref="263" type="Stimulsoft.Report.Chart.StiAxisRange" isKey="true">
+                    <Auto>False</Auto>
+                    <Maximum>100000</Maximum>
+                  </Range>
+                  <Ticks Ref="264" type="Stimulsoft.Report.Chart.StiAxisTicks" isKey="true" />
+                  <Title Ref="265" type="Stimulsoft.Report.Chart.StiAxisTitle" isKey="true">
+                    <Color>140, 140, 140</Color>
+                    <Direction>BottomToTop</Direction>
+                    <Font>Tahoma,12,Bold</Font>
+                  </Title>
+                </YAxis>
+                <YRightAxis Ref="266" type="Stimulsoft.Report.Chart.StiYRightAxis" isKey="true">
+                  <Area isRef="242" />
+                  <Interaction Ref="267" type="Stimulsoft.Report.Chart.StiAxisInteraction" isKey="true" />
+                  <Labels Ref="268" type="Stimulsoft.Report.Chart.StiAxisLabels" isKey="true">
+                    <Color>140, 140, 140</Color>
+                    <Font>Tahoma,8</Font>
+                    <TextAlignment>Left</TextAlignment>
+                  </Labels>
+                  <LineColor>140, 140, 140</LineColor>
+                  <Range Ref="269" type="Stimulsoft.Report.Chart.StiAxisRange" isKey="true">
+                    <Auto>False</Auto>
+                  </Range>
+                  <Ticks Ref="270" type="Stimulsoft.Report.Chart.StiAxisTicks" isKey="true" />
+                  <Title Ref="271" type="Stimulsoft.Report.Chart.StiAxisTitle" isKey="true">
+                    <Color>140, 140, 140</Color>
+                    <Direction>TopToBottom</Direction>
+                    <Font>Tahoma,12,Bold</Font>
+                  </Title>
+                </YRightAxis>
+              </Area>
+              <Border>None;Transparent;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,740,580</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <ConstantLines isList="true" count="0" />
+              <CustomStyleName>Chart</CustomStyleName>
+              <Filters isList="true" count="0" />
+              <Legend Ref="272" type="Stimulsoft.Report.Chart.StiLegend" isKey="true">
+                <BorderColor>Transparent</BorderColor>
+                <Brush>White</Brush>
+                <Chart isRef="241" />
+                <Font>Arial,8</Font>
+                <LabelsColor>140, 140, 140</LabelsColor>
+                <MarkerSize>10, 10</MarkerSize>
+                <ShowShadow>False</ShowShadow>
+                <TitleColor>DimGray</TitleColor>
+                <TitleFont>Arial,14,Bold</TitleFont>
+                <Visible>False</Visible>
+              </Legend>
+              <Name>Chart5</Name>
+              <Page isRef="234" />
+              <Parent isRef="240" />
+              <Series isList="true" count="1">
+                <Item89 Ref="273" type="Stimulsoft.Report.Chart.StiLineSeries" isKey="true">
+                  <ArgumentDataColumn>Historical_Data.Year</ArgumentDataColumn>
+                  <Chart isRef="241" />
+                  <Conditions isList="true" count="0" />
+                  <Filters isList="true" count="1">
+                    <value>Expression,String,EqualTo,Historical_Data.Country_x0020__x003D__x003D__x0020_this_x005B__x0022_SeriesTag_x0022__x005D_</value>
+                  </Filters>
+                  <Lighting>False</Lighting>
+                  <LineColor>142, 195, 167</LineColor>
+                  <LineColorNegative>Firebrick</LineColorNegative>
+                  <LineMarker Ref="274" type="Stimulsoft.Report.Chart.StiLineMarker" isKey="true">
+                    <BorderColor>0, 45, 17</BorderColor>
+                    <Brush>[192:245:217]</Brush>
+                  </LineMarker>
+                  <Marker Ref="275" type="Stimulsoft.Report.Chart.StiMarker" isKey="true">
+                    <BorderColor>42, 95, 67</BorderColor>
+                    <Brush>[242:255:255]</Brush>
+                  </Marker>
+                  <SeriesLabels Ref="276" type="Stimulsoft.Report.Chart.StiOutsideEndAxisLabels" isKey="true">
+                    <BorderColor>Transparent</BorderColor>
+                    <Brush>Transparent</Brush>
+                    <Chart isRef="241" />
+                    <Font>Arial,7</Font>
+                    <LabelColor>90, 90, 90</LabelColor>
+                    <MarkerSize>8, 6</MarkerSize>
+                    <ValueTypeSeparator>-</ValueTypeSeparator>
+                    <Width>0</Width>
+                  </SeriesLabels>
+                  <ShowShadow>False</ShowShadow>
+                  <Title>GDP per Capita of</Title>
+                  <TopN Ref="277" type="Stimulsoft.Report.Chart.StiSeriesTopN" isKey="true" />
+                  <TrendLine Ref="278" type="Stimulsoft.Report.Chart.StiTrendLineNone" isKey="true">
+                    <Font>Arial,7</Font>
+                    <LineColor>Transparent</LineColor>
+                    <Position>LeftBottom</Position>
+                    <ShowShadow>False</ShowShadow>
+                  </TrendLine>
+                  <ValueDataColumn>Historical_Data.GDP_per_Capita</ValueDataColumn>
+                </Item89>
+              </Series>
+              <SeriesLabels Ref="279" type="Stimulsoft.Report.Chart.StiOutsideEndAxisLabels" isKey="true">
+                <BorderColor>Transparent</BorderColor>
+                <Brush>Transparent</Brush>
+                <Chart isRef="241" />
+                <Font>Arial,7</Font>
+                <Format>C0</Format>
+                <LabelColor>90, 90, 90</LabelColor>
+                <MarkerSize>8, 6</MarkerSize>
+                <PreventIntersection>True</PreventIntersection>
+                <ValueTypeSeparator>-</ValueTypeSeparator>
+                <Width>0</Width>
+              </SeriesLabels>
+              <SeriesLabelsConditions isList="true" count="0" />
+              <Sort isList="true" count="0" />
+              <Strips isList="true" count="0" />
+              <Style Ref="280" type="Stimulsoft.Report.Chart.StiCustomStyle" isKey="true">
+                <Conditions isList="true" count="0" />
+                <Name>Chart</Name>
+              </Style>
+              <Table Ref="281" type="Stimulsoft.Report.Chart.StiChartTable" isKey="true">
+                <DataCells Ref="282" type="Stimulsoft.Report.Chart.StiChartTableDataCells" isKey="true">
+                  <Font>Arial,8</Font>
+                  <TextColor>140, 140, 140</TextColor>
+                </DataCells>
+                <GridLineColor>Transparent</GridLineColor>
+                <Header Ref="283" type="Stimulsoft.Report.Chart.StiChartTableHeader" isKey="true">
+                  <Brush>White</Brush>
+                  <Font>Arial,8</Font>
+                  <TextColor>DarkGray</TextColor>
+                </Header>
+              </Table>
+              <Title Ref="284" type="Stimulsoft.Report.Chart.StiChartTitle" isKey="true">
+                <Brush>[140:140:140]</Brush>
+                <Font>Tahoma,12,Bold</Font>
+              </Title>
+            </Chart5>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>ReportSummaryBand3</Name>
+          <Page isRef="234" />
+          <Parent isRef="234" />
+        </ReportSummaryBand3>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>22dbd95b3a4f42faba4f0a76fbe9e533</Guid>
+      <Margins>39,39,39,39</Margins>
+      <Name>Page6</Name>
+      <PaperSize>A4</PaperSize>
+      <Report isRef="0" />
+    </Page6>
+  </Pages>
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>TopCountriesByGDPIn2019</ReportAlias>
+  <ReportAuthor>Stimulsoft</ReportAuthor>
+  <ReportChanged>4/24/2020 10:30:12 AM</ReportChanged>
+  <ReportCreated>1/19/2012 7:27:11 PM</ReportCreated>
+  <ReportDescription>This sample demonstrates top-20 countries by GDP in 2019 year.</ReportDescription>
+  <ReportFile>D:\Work\Cnina\China Reports\TopCountriesByGDPIn2019.mrt</ReportFile>
+  <ReportGuid>028d4427c8d144bc8c9f73f718b096f1</ReportGuid>
+  <ReportImage>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</ReportImage>
+  <ReportName>TopCountriesByGDPIn2019</ReportName>
+  <ReportUnit>HundredthsOfInch</ReportUnit>
+  <ReportVersion>2020.2.2.0</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Top_Countries_by_GDP_in_2019 : Stimulsoft.Report.StiReport
+    {
+        public Top_Countries_by_GDP_in_2019()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="7">
+    <Header2 Ref="285" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>Bottom;[158:158:158];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Conditions isList="true" count="0" />
+      <Font>Segoe UI,21.75,Bold,Point,False,204</Font>
+      <HorAlignment>Center</HorAlignment>
+      <Name>Header2</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[158:158:158]</TextBrush>
+      <VertAlignment>Center</VertAlignment>
+    </Header2>
+    <Header3 Ref="286" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <AllowUseBorderFormatting>False</AllowUseBorderFormatting>
+      <Border>Left;White;1;Solid;False;4;Black</Border>
+      <Brush>[77:182:172]</Brush>
+      <Conditions isList="true" count="0" />
+      <Font>Segoe UI,12,Bold,Point,False,204</Font>
+      <HorAlignment>Center</HorAlignment>
+      <Name>Header3</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[255:255:255]</TextBrush>
+      <VertAlignment>Center</VertAlignment>
+    </Header3>
+    <Data1 Ref="287" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[182:182:182];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Conditions isList="true" count="0" />
+      <Font>Segoe UI,9.75,Regular,Point,False,0</Font>
+      <Name>Data1</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[74:74:74]</TextBrush>
+      <VertAlignment>Center</VertAlignment>
+    </Data1>
+    <Data2 Ref="288" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[255:255:255];1;Solid;False;4;Black</Border>
+      <Brush>[224:242:241]</Brush>
+      <Conditions isList="true" count="0" />
+      <Font>Segoe UI,9.75,Regular,Point,False,0</Font>
+      <Name>Data2</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[74:74:74]</TextBrush>
+    </Data2>
+    <Footer2 Ref="289" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <AllowUseBorderSides>False</AllowUseBorderSides>
+      <Border>None;[58:78:94];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Conditions isList="true" count="0" />
+      <Font>Segoe UI,9.75,Regular,Point,False,0</Font>
+      <HorAlignment>Right</HorAlignment>
+      <Name>Footer2</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[158:158:158]</TextBrush>
+      <VertAlignment>Center</VertAlignment>
+    </Footer2>
+    <Chart Ref="290" type="Stimulsoft.Report.StiChartStyle" isKey="true">
+      <AxisLabelsColor>140, 140, 140</AxisLabelsColor>
+      <AxisLineColor>140, 140, 140</AxisLineColor>
+      <AxisTitleColor>140, 140, 140</AxisTitleColor>
+      <BasicStyleColor>WhiteSmoke</BasicStyleColor>
+      <Border>None;Transparent;1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <ChartAreaBorderColor>Transparent</ChartAreaBorderColor>
+      <ChartAreaBrush>White</ChartAreaBrush>
+      <Conditions isList="true" count="0" />
+      <GridLinesHorColor>Transparent</GridLinesHorColor>
+      <GridLinesVertColor>Transparent</GridLinesVertColor>
+      <InterlacingHorBrush>[10:155:155:155]</InterlacingHorBrush>
+      <InterlacingVertBrush>[10:155:155:155]</InterlacingVertBrush>
+      <LegendBorderColor>Transparent</LegendBorderColor>
+      <LegendBrush>White</LegendBrush>
+      <LegendLabelsColor>140, 140, 140</LegendLabelsColor>
+      <LegendTitleColor>DimGray</LegendTitleColor>
+      <Name>Chart</Name>
+      <SeriesLabelsBorderColor>Transparent</SeriesLabelsBorderColor>
+      <SeriesLabelsBrush>Transparent</SeriesLabelsBrush>
+      <SeriesLabelsColor>90, 90, 90</SeriesLabelsColor>
+      <SeriesLabelsLineColor>140, 140, 140</SeriesLabelsLineColor>
+      <StyleColors>[142:195:167], [240:203:105], [95:183:229], [220:83:86], [171:145:197], [109:83:220]</StyleColors>
+      <TrendLineColor>Transparent</TrendLineColor>
+    </Chart>
+    <Hyperlink Ref="291" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[58:78:94];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Conditions isList="true" count="0" />
+      <Font>Segoe UI,9.75,Underline,Point,False,0</Font>
+      <HorAlignment>Right</HorAlignment>
+      <Name>Hyperlink</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>Blue</TextBrush>
+      <VertAlignment>Center</VertAlignment>
+    </Hyperlink>
+  </Styles>
+</StiSerializer>

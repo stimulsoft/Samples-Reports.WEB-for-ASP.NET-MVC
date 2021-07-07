@@ -22,33 +22,7 @@ namespace Web_Demo.Controllers
         {
             // Create the report object and load data from xml file
             var report = new StiReport();
-
-            // Load report from MDZ document file
-            // If not found - load from MRT template
-            switch (id)
-            {
-                // Interactive Reports
-                case "DrillDownSorting":
-
-                // Parameters
-                case "ParametersDetailedCategories":
-                case "ParametersDetailedOrders":
-                case "ParametersHighlightCondition":
-                case "ParametersSelectingCountry":
-                case "ParametersInvoice":
-
-                // {Today} function is used
-                case "MultiColumnListContainers":
-                    var data = new DataSet("Demo");
-                    data.ReadXml(Server.MapPath("~/Content/Data/Demo.xml"));
-                    report.Load(Server.MapPath("~/Content/ReportTemplates/" + id + ".mrt"));
-                    report.RegData(data);
-                    break;
-
-                default:
-                    report.LoadPackedDocument(Server.MapPath("~/Content/ReportSnapshots/" + id + ".mdz"));
-                    break;
-            }
+            report.Load(Server.MapPath("~/Content/Reports/" + id + ".mrt"));
 
             return StiMvcViewer.GetReportResult(report);
         }

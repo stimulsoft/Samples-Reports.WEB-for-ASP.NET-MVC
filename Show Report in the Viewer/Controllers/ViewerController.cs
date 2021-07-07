@@ -1,6 +1,6 @@
 ﻿using Stimulsoft.Report;
 using Stimulsoft.Report.Mvc;
-using StiReports;
+using Reports;
 using System;
 using System.Data;
 using System.Web.Mvc;
@@ -40,7 +40,7 @@ namespace HTML_Samples.Controllers
                     report.Load(Server.MapPath("~/Content/Reports/TwoSimpleLists.mrt"));
                     break;
 
-                // Load compiled report class
+                // Load compiled report library
                 case 3:
                     report = new StiMasterDetail();
                     break;

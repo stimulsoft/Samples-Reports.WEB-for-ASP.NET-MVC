@@ -37,8 +37,8 @@ namespace Change_Viewer_Options_from_the_Controller.Controllers
             // Create the report object
             var report = new StiReport();
 
-            // Load report snapshot
-            report.LoadDocument(Server.MapPath("~/Content/Reports/SimpleList.mdc"));
+            // Load report template
+            report.Load(Server.MapPath("~/Content/Reports/SimpleList.mrt"));
 
             return StiMvcViewer.GetReportResult(report);
         }

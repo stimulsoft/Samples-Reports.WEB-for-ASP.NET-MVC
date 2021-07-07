@@ -1,0 +1,689 @@
+{
+  "ReportVersion": "2019.2.1.0",
+  "ReportGuid": "44daa50ff5c644608611156ad1dca459",
+  "ReportName": "PanelsMultiPanels",
+  "ReportAlias": "PanelsMultiPanels",
+  "ReportAuthor": "Stimulsoft",
+  "ReportDescription": "This sample demonstrates how to create a report with multiple containers on a page.",
+  "ReportCreated": "/Date(-21600000+0200)/",
+  "ReportChanged": "/Date(1550343333085+0300)/",
+  "EngineVersion": "EngineV2",
+  "CalculationMode": "Interpretation",
+  "ReportUnit": "HundredthsOfInch",
+  "Script": "using System;\r\nusing System.Drawing;\r\nusing System.Windows.Forms;\r\nusing System.Data;\r\nusing Stimulsoft.Controls;\r\nusing Stimulsoft.Base.Drawing;\r\nusing Stimulsoft.Report;\r\nusing Stimulsoft.Report.Dialogs;\r\nusing Stimulsoft.Report.Components;\r\n\r\nnamespace Reports\r\n{\r\n    public class PanelsMultiPanels : Stimulsoft.Report.StiReport\r\n    {\r\n        public PanelsMultiPanels()        {\r\n            this.InitializeComponent();\r\n        }\r\n\r\n        #region StiReport Designer generated code - do not modify\r\n\t\t#endregion StiReport Designer generated code - do not modify\r\n    }\r\n}\r\n",
+  "Styles": {
+    "0": {
+      "Ident": "StiStyle",
+      "Name": "Header2",
+      "HorAlignment": "Center",
+      "VertAlignment": "Center",
+      "Font": "Segoe UI;21.75;Bold;",
+      "Border": "Bottom;158,158,158;;;;;;solid:Black",
+      "Brush": "solid:",
+      "TextBrush": "solid:158,158,158",
+      "NegativeTextBrush": "solid:Red"
+    },
+    "1": {
+      "Ident": "StiStyle",
+      "Name": "Header3",
+      "HorAlignment": "Center",
+      "VertAlignment": "Center",
+      "Font": "Segoe UI;12;Bold;",
+      "Border": ";White;;;;;;solid:Black",
+      "Brush": "solid:77,182,172",
+      "TextBrush": "solid:255,255,255",
+      "NegativeTextBrush": "solid:Red"
+    },
+    "2": {
+      "Ident": "StiStyle",
+      "Name": "Data2",
+      "Font": "Segoe UI;9.75;;",
+      "Border": "Top, Bottom;White;;;;;;solid:Black",
+      "Brush": "solid:224,242,241",
+      "TextBrush": "solid:74,74,74",
+      "NegativeTextBrush": "solid:Red"
+    },
+    "3": {
+      "Ident": "StiStyle",
+      "Name": "Footer2",
+      "HorAlignment": "Right",
+      "VertAlignment": "Center",
+      "Font": "Segoe UI;9.75;;",
+      "Border": ";58,78,94;;;;;;solid:Black",
+      "Brush": "solid:",
+      "TextBrush": "solid:158,158,158",
+      "NegativeTextBrush": "solid:Red",
+      "AllowUseBorderSides": false
+    }
+  },
+  "ReferencedAssemblies": {
+    "0": "System.Dll",
+    "1": "System.Drawing.Dll",
+    "2": "System.Windows.Forms.Dll",
+    "3": "System.Data.Dll",
+    "4": "System.Xml.Dll",
+    "5": "Stimulsoft.Controls.Dll",
+    "6": "Stimulsoft.Base.Dll",
+    "7": "Stimulsoft.Report.Dll"
+  },
+  "Pages": {
+    "0": {
+      "Ident": "StiPage",
+      "Name": "Page1",
+      "Guid": "02383fc279be454eb38723e95bec1051",
+      "Interaction": {
+        "Ident": "StiInteraction"
+      },
+      "Border": ";;2;;;;;solid:Black",
+      "Brush": "solid:",
+      "Components": {
+        "0": {
+          "Ident": "StiPanel",
+          "Name": "Panel3",
+          "MinSize": "0,0",
+          "MaxSize": "0,0",
+          "ClientRectangle": "0,340,510,210",
+          "Interaction": {
+            "Ident": "StiInteraction"
+          },
+          "Border": "Top, Bottom;White;;;;;;solid:Black",
+          "Brush": "solid:",
+          "Components": {
+            "0": {
+              "Ident": "StiHeaderBand",
+              "Name": "HeaderBand3",
+              "ClientRectangle": "0,20,510,30",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:",
+              "Components": {
+                "0": {
+                  "Ident": "StiText",
+                  "Name": "Text5",
+                  "Guid": "d670b250cc784643a2e75576ea793415",
+                  "MinSize": "0,0",
+                  "MaxSize": "0,0",
+                  "ClientRectangle": "0,0,510,30",
+                  "ComponentStyle": "Header3",
+                  "Interaction": {
+                    "Ident": "StiInteraction"
+                  },
+                  "Text": {
+                    "Value": "Table 2"
+                  },
+                  "HorAlignment": "Center",
+                  "VertAlignment": "Center",
+                  "Font": "Segoe UI;12;Bold;",
+                  "Border": ";White;;;;;;solid:Black",
+                  "Brush": "solid:77,182,172",
+                  "TextBrush": "solid:255,255,255",
+                  "Type": "Expression"
+                }
+              }
+            },
+            "1": {
+              "Ident": "StiDataBand",
+              "Name": "DataBand3",
+              "ClientRectangle": "0,90,510,20",
+              "Interaction": {
+                "Ident": "StiBandInteraction"
+              },
+              "Border": ";77,182,172;;;;;;solid:Black",
+              "Brush": "solid:",
+              "Components": {
+                "0": {
+                  "Ident": "StiText",
+                  "Name": "Text8",
+                  "MinSize": "0,0",
+                  "MaxSize": "0,0",
+                  "ClientRectangle": "0,0,510,20",
+                  "ComponentStyle": "Data2",
+                  "Interaction": {
+                    "Ident": "StiInteraction"
+                  },
+                  "Text": {
+                    "Value": "{Line}"
+                  },
+                  "VertAlignment": "Center",
+                  "Font": "Segoe UI;9.75;;",
+                  "Border": "Top, Bottom;White;;;;;;solid:Black",
+                  "Brush": "solid:224,242,241",
+                  "TextBrush": "solid:74,74,74",
+                  "Margins": {
+                    "Left": 3.0,
+                    "Right": 0.0,
+                    "Top": 0.0,
+                    "Bottom": 0.0
+                  }
+                }
+              },
+              "EvenStyle": "Data2",
+              "CountData": 7
+            },
+            "2": {
+              "Ident": "StiFooterBand",
+              "Name": "FooterBand3",
+              "Guid": "47c109a0bb114e688280eb4ec7635808",
+              "ClientRectangle": "0,150,510,10",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Border": ";77,182,172;;;;;;solid:Black",
+              "Brush": "solid:",
+              "PrintIfEmpty": true
+            }
+          }
+        },
+        "1": {
+          "Ident": "StiPanel",
+          "Name": "Panel5",
+          "MinSize": "0,0",
+          "MaxSize": "0,0",
+          "ClientRectangle": "0,560,420,190",
+          "Interaction": {
+            "Ident": "StiInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:",
+          "Components": {
+            "0": {
+              "Ident": "StiHeaderBand",
+              "Name": "HeaderBand4",
+              "ClientRectangle": "0,20,420,30",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:",
+              "Components": {
+                "0": {
+                  "Ident": "StiText",
+                  "Name": "Text6",
+                  "Guid": "d53cf596cdbc46edb1d5cdaef77e3dc3",
+                  "MinSize": "0,0",
+                  "MaxSize": "0,0",
+                  "ClientRectangle": "0,0,420,30",
+                  "ComponentStyle": "Header3",
+                  "Interaction": {
+                    "Ident": "StiInteraction"
+                  },
+                  "Text": {
+                    "Value": "Table 4"
+                  },
+                  "HorAlignment": "Center",
+                  "VertAlignment": "Center",
+                  "Font": "Segoe UI;12;Bold;",
+                  "Border": ";White;;;;;;solid:Black",
+                  "Brush": "solid:77,182,172",
+                  "TextBrush": "solid:255,255,255",
+                  "Type": "Expression"
+                }
+              }
+            },
+            "1": {
+              "Ident": "StiDataBand",
+              "Name": "DataBand4",
+              "ClientRectangle": "0,90,420,20",
+              "Interaction": {
+                "Ident": "StiBandInteraction"
+              },
+              "Border": ";77,182,172;;;;;;solid:Black",
+              "Brush": "solid:",
+              "Components": {
+                "0": {
+                  "Ident": "StiText",
+                  "Name": "Text9",
+                  "MinSize": "0,0",
+                  "MaxSize": "0,0",
+                  "ClientRectangle": "0,0,420,20",
+                  "ComponentStyle": "Data2",
+                  "Interaction": {
+                    "Ident": "StiInteraction"
+                  },
+                  "Text": {
+                    "Value": "{Line}"
+                  },
+                  "VertAlignment": "Center",
+                  "Font": "Segoe UI;9.75;;",
+                  "Border": "Top, Bottom;White;;;;;;solid:Black",
+                  "Brush": "solid:224,242,241",
+                  "TextBrush": "solid:74,74,74",
+                  "Margins": {
+                    "Left": 3.0,
+                    "Right": 0.0,
+                    "Top": 0.0,
+                    "Bottom": 0.0
+                  }
+                }
+              },
+              "EvenStyle": "Data2",
+              "CountData": 6
+            },
+            "2": {
+              "Ident": "StiFooterBand",
+              "Name": "FooterBand5",
+              "ClientRectangle": "0,150,420,10",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Border": ";77,182,172;;;;;;solid:Black",
+              "Brush": "solid:",
+              "PrintIfEmpty": true
+            }
+          }
+        },
+        "2": {
+          "Ident": "StiPanel",
+          "Name": "Panel4",
+          "MinSize": "0,0",
+          "MaxSize": "0,0",
+          "ClientRectangle": "440,560,650,190",
+          "Interaction": {
+            "Ident": "StiInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:",
+          "Components": {
+            "0": {
+              "Ident": "StiHeaderBand",
+              "Name": "HeaderBand5",
+              "ClientRectangle": "0,20,650,30",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:",
+              "Components": {
+                "0": {
+                  "Ident": "StiText",
+                  "Name": "Text7",
+                  "Guid": "f4e4e9c2e13c4cdf9bd5557eeff00614",
+                  "MinSize": "0,0",
+                  "MaxSize": "0,0",
+                  "ClientRectangle": "0,0,650,30",
+                  "ComponentStyle": "Header3",
+                  "Interaction": {
+                    "Ident": "StiInteraction"
+                  },
+                  "Text": {
+                    "Value": "Table 5"
+                  },
+                  "HorAlignment": "Center",
+                  "VertAlignment": "Center",
+                  "Font": "Segoe UI;12;Bold;",
+                  "Border": ";White;;;;;;solid:Black",
+                  "Brush": "solid:77,182,172",
+                  "TextBrush": "solid:255,255,255",
+                  "Type": "Expression"
+                }
+              }
+            },
+            "1": {
+              "Ident": "StiDataBand",
+              "Name": "DataBand5",
+              "ClientRectangle": "0,90,650,20",
+              "Interaction": {
+                "Ident": "StiBandInteraction"
+              },
+              "Border": ";77,182,172;;;;;;solid:Black",
+              "Brush": "solid:",
+              "Components": {
+                "0": {
+                  "Ident": "StiText",
+                  "Name": "Text10",
+                  "MinSize": "0,0",
+                  "MaxSize": "0,0",
+                  "ClientRectangle": "0,0,650,20",
+                  "ComponentStyle": "Data2",
+                  "Interaction": {
+                    "Ident": "StiInteraction"
+                  },
+                  "Text": {
+                    "Value": "{Line}"
+                  },
+                  "VertAlignment": "Center",
+                  "Font": "Segoe UI;9.75;;",
+                  "Border": "Top, Bottom;White;;;;;;solid:Black",
+                  "Brush": "solid:224,242,241",
+                  "TextBrush": "solid:74,74,74",
+                  "Margins": {
+                    "Left": 3.0,
+                    "Right": 0.0,
+                    "Top": 0.0,
+                    "Bottom": 0.0
+                  }
+                }
+              },
+              "EvenStyle": "Data2",
+              "CountData": 6
+            },
+            "2": {
+              "Ident": "StiFooterBand",
+              "Name": "FooterBand4",
+              "Guid": "23f876fb16304280b115844cd731eb82",
+              "ClientRectangle": "0,150,650,10",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Border": ";77,182,172;;;;;;solid:Black",
+              "Brush": "solid:",
+              "PrintIfEmpty": true
+            }
+          }
+        },
+        "3": {
+          "Ident": "StiPanel",
+          "Name": "Panel2",
+          "MinSize": "0,0",
+          "MaxSize": "0,0",
+          "ClientRectangle": "530,90,560,440",
+          "Interaction": {
+            "Ident": "StiInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:",
+          "Components": {
+            "0": {
+              "Ident": "StiHeaderBand",
+              "Name": "HeaderBand2",
+              "ClientRectangle": "0,20,560,30",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:",
+              "Components": {
+                "0": {
+                  "Ident": "StiText",
+                  "Name": "Text3",
+                  "Guid": "a876e3d92c8045869cbe6d66d5bd9736",
+                  "MinSize": "0,0",
+                  "MaxSize": "0,0",
+                  "ClientRectangle": "0,0,560,30",
+                  "ComponentStyle": "Header3",
+                  "Interaction": {
+                    "Ident": "StiInteraction"
+                  },
+                  "Text": {
+                    "Value": "Table 3"
+                  },
+                  "HorAlignment": "Center",
+                  "VertAlignment": "Center",
+                  "Font": "Segoe UI;12;Bold;",
+                  "Border": ";White;;;;;;solid:Black",
+                  "Brush": "solid:77,182,172",
+                  "TextBrush": "solid:255,255,255",
+                  "Type": "Expression"
+                }
+              }
+            },
+            "1": {
+              "Ident": "StiDataBand",
+              "Name": "DataBand2",
+              "ClientRectangle": "0,90,560,20",
+              "Interaction": {
+                "Ident": "StiBandInteraction"
+              },
+              "Border": ";77,182,172;;;;;;solid:Black",
+              "Brush": "solid:",
+              "Components": {
+                "0": {
+                  "Ident": "StiText",
+                  "Name": "Text4",
+                  "MinSize": "0,0",
+                  "MaxSize": "0,0",
+                  "ClientRectangle": "0,0,560,20",
+                  "ComponentStyle": "Data2",
+                  "Interaction": {
+                    "Ident": "StiInteraction"
+                  },
+                  "Text": {
+                    "Value": "{Line}"
+                  },
+                  "VertAlignment": "Center",
+                  "Font": "Segoe UI;9.75;;",
+                  "Border": "Top, Bottom;White;;;;;;solid:Black",
+                  "Brush": "solid:224,242,241",
+                  "TextBrush": "solid:74,74,74",
+                  "Margins": {
+                    "Left": 3.0,
+                    "Right": 0.0,
+                    "Top": 0.0,
+                    "Bottom": 0.0
+                  }
+                }
+              },
+              "EvenStyle": "Data2",
+              "CountData": 18
+            },
+            "2": {
+              "Ident": "StiFooterBand",
+              "Name": "FooterBand2",
+              "Guid": "46796eb5a1134a33a4d08101f5452652",
+              "ClientRectangle": "0,150,560,10",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Border": ";77,182,172;;;;;;solid:Black",
+              "Brush": "solid:",
+              "PrintIfEmpty": true
+            }
+          }
+        },
+        "4": {
+          "Ident": "StiPanel",
+          "Name": "Panel1",
+          "CanGrow": true,
+          "MinSize": "0,0",
+          "MaxSize": "0,0",
+          "ClientRectangle": "0,90,510,220",
+          "Interaction": {
+            "Ident": "StiInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:",
+          "Components": {
+            "0": {
+              "Ident": "StiHeaderBand",
+              "Name": "HeaderBand1",
+              "ClientRectangle": "0,20,510,30",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:",
+              "Components": {
+                "0": {
+                  "Ident": "StiText",
+                  "Name": "Text2",
+                  "MinSize": "0,0",
+                  "MaxSize": "0,0",
+                  "ClientRectangle": "0,0,510,30",
+                  "ComponentStyle": "Header3",
+                  "Interaction": {
+                    "Ident": "StiInteraction"
+                  },
+                  "Text": {
+                    "Value": "Table 1"
+                  },
+                  "HorAlignment": "Center",
+                  "VertAlignment": "Center",
+                  "Font": "Segoe UI;12;Bold;",
+                  "Border": ";White;;;;;;solid:Black",
+                  "Brush": "solid:77,182,172",
+                  "TextBrush": "solid:255,255,255",
+                  "Type": "Expression"
+                }
+              }
+            },
+            "1": {
+              "Ident": "StiDataBand",
+              "Name": "DataBand1",
+              "ClientRectangle": "0,90,510,20",
+              "ComponentStyle": "Data2",
+              "Interaction": {
+                "Ident": "StiBandInteraction"
+              },
+              "Border": "Top, Bottom;White;;;;;;solid:Black",
+              "Brush": "solid:224,242,241",
+              "Components": {
+                "0": {
+                  "Ident": "StiText",
+                  "Name": "Text1",
+                  "MinSize": "0,0",
+                  "MaxSize": "0,0",
+                  "ClientRectangle": "0,0,510,20",
+                  "ComponentStyle": "Data2",
+                  "Interaction": {
+                    "Ident": "StiInteraction"
+                  },
+                  "Text": {
+                    "Value": "{Line}"
+                  },
+                  "VertAlignment": "Center",
+                  "Font": "Segoe UI;9.75;;",
+                  "Border": "Top, Bottom;White;;;;;;solid:Black",
+                  "Brush": "solid:224,242,241",
+                  "TextBrush": "solid:74,74,74",
+                  "Margins": {
+                    "Left": 3.0,
+                    "Right": 0.0,
+                    "Top": 0.0,
+                    "Bottom": 0.0
+                  }
+                }
+              },
+              "EvenStyle": "Data2",
+              "CountData": 8
+            },
+            "2": {
+              "Ident": "StiFooterBand",
+              "Name": "FooterBand1",
+              "ClientRectangle": "0,150,510,10",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Border": ";77,182,172;;;;;;solid:Black",
+              "Brush": "solid:",
+              "PrintIfEmpty": true
+            }
+          }
+        },
+        "5": {
+          "Ident": "StiReportTitleBand",
+          "Name": "ReportTitleBand2",
+          "Guid": "3a7ea85b3b7941a8bc1e3d88f4439158",
+          "ClientRectangle": "0,20,1091,60",
+          "Interaction": {
+            "Ident": "StiInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text20",
+              "Guid": "fc995c5070134055b428781a3542aae9",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "910,0,179,40",
+              "ComponentStyle": "Header2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "Stimulsoft"
+              },
+              "HorAlignment": "Right",
+              "VertAlignment": "Center",
+              "Font": "Segoe UI;21.75;Bold;",
+              "Border": "Bottom;158,158,158;;;;;;solid:Black",
+              "Brush": "solid:",
+              "TextBrush": "solid:158,158,158",
+              "Type": "Expression"
+            },
+            "1": {
+              "Ident": "StiText",
+              "Name": "Text23",
+              "Guid": "5eae97f661ec4156aa3795031a625e2f",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "0,0,910,40",
+              "ComponentStyle": "Header2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "Multi-Container Report"
+              },
+              "VertAlignment": "Center",
+              "Font": "Segoe UI;21.75;Bold;",
+              "Border": "Bottom;158,158,158;;;;;;solid:Black",
+              "Brush": "solid:",
+              "TextBrush": "solid:158,158,158",
+              "Type": "Expression"
+            },
+            "2": {
+              "Ident": "StiText",
+              "Name": "Text17",
+              "Guid": "7480ca0a27a9478faca7666b49e3b642",
+              "CanGrow": true,
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "0,40,910,20",
+              "ComponentStyle": "Footer2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{ReportDescription}"
+              },
+              "Font": "Segoe UI;9.75;;",
+              "Border": ";58,78,94;;;;;;solid:Black",
+              "Brush": "solid:",
+              "TextBrush": "solid:158,158,158",
+              "TextOptions": {
+                "WordWrap": true
+              },
+              "Type": "Expression"
+            },
+            "3": {
+              "Ident": "StiText",
+              "Name": "Text18",
+              "Guid": "205ba729b07941b19872986f6652ccb5",
+              "CanGrow": true,
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "910,40,179,20",
+              "ComponentStyle": "Footer2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "Date: {Today.ToString(\"Y\")}"
+              },
+              "HorAlignment": "Right",
+              "Font": "Segoe UI;9.75;;",
+              "Border": ";58,78,94;;;;;;solid:Black",
+              "Brush": "solid:",
+              "TextBrush": "solid:158,158,158",
+              "TextOptions": {
+                "WordWrap": true
+              },
+              "Type": "Expression"
+            }
+          }
+        }
+      },
+      "PaperSize": "A4",
+      "Orientation": "Landscape",
+      "PageWidth": 1169.0,
+      "PageHeight": 827.0,
+      "Watermark": {
+        "TextBrush": "solid:50,0,0,0"
+      }
+    }
+  }
+}

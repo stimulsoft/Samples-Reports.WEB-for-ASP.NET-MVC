@@ -18,7 +18,7 @@ namespace Web_Demo.Controllers
         {
             // Create the report object and load data from xml file
             var report = new StiReport();
-            report.Load(Server.MapPath($"~/Content/ReportTemplates/{id}.mrt"));
+            report.Load(Server.MapPath($"~/Content/Reports/{id}.mrt"));
 
             return StiMvcDesigner.GetReportResult(report);
         }
@@ -34,21 +34,6 @@ namespace Web_Demo.Controllers
 
             // Completion of the report saving without dialog box
             return StiMvcDesigner.SaveReportResult();
-        }
-
-        public ActionResult PreviewReport()
-        {
-            // Get the report template
-            var report = StiMvcDesigner.GetActionReportObject();
-
-            // Register data, if necessary
-            var data = new DataSet("Demo");
-            data.ReadXml(Server.MapPath("~/Content/Data/Demo.xml"));
-            report.Dictionary.Databases.Clear();
-            report.RegData(data);
-
-            // Return the report snapshot result to the client
-            return StiMvcDesigner.PreviewReportResult(report);
         }
 
         public ActionResult DesignerEvent()
