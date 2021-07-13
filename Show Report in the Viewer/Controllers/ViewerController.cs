@@ -40,13 +40,8 @@ namespace HTML_Samples.Controllers
                     report.Load(Server.MapPath("~/Content/Reports/TwoSimpleLists.mrt"));
                     break;
 
-                // Load compiled report library
-                case 3:
-                    report = new StiMasterDetail();
-                    break;
-
                 // Load compiled report class
-                case 4:
+                case 3:
                     report = new StiParametersSelectingCountryReport();
                     break;
             }
