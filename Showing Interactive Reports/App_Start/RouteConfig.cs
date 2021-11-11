@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace HTML_Samples
+namespace Showing_Interactive_Reports
 {
     public class RouteConfig
     {

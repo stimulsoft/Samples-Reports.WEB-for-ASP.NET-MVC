@@ -1,0 +1,22 @@
+﻿@using Stimulsoft.Report.Mvc;
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Sending a Report by Email</h2>
+<br />
+
+@Html.Stimulsoft().StiMvcViewer(new StiMvcViewerOptions()
+{
+    Actions =
+    {
+        GetReport = "GetReport",
+        EmailReport = "EmailReport",
+        ViewerEvent = "ViewerEvent"
+    },
+    Toolbar =
+    {
+        ShowSendEmailButton = true
+    }
+})

@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Reflection;
 using System.Web.Mvc;
 
-namespace HTML_Samples.Controllers
+namespace Using_Business_Objects_in_the_Report.Controllers
 {
     public class ViewerController : Controller
     {

@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace HTML_Samples
+namespace Using_Business_Objects_in_the_Report
 {
     public class BundleConfig
     {

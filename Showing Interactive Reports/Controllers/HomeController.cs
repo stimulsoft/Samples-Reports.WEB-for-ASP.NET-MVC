@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace HTML_Samples.Controllers
+namespace Showing_Interactive_Reports.Controllers
 {
     public class HomeController : Controller
     {

@@ -4,7 +4,7 @@ using System;
 using System.Data;
 using System.Web.Mvc;
 
-namespace HTML_Samples.Controllers
+namespace Showing_Interactive_Reports.Controllers
 {
     public class ViewerController : Controller
     {

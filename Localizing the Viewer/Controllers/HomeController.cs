@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace HTML_Samples.Controllers
+namespace Localizing_the_Viewer.Controllers
 {
     public class HomeController : Controller
     {

@@ -6,7 +6,7 @@ using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 
-namespace HTML_Samples
+namespace Showing_Interactive_Reports
 {
     public class MvcApplication : System.Web.HttpApplication
     {

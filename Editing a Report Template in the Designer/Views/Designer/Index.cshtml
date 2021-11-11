@@ -1,0 +1,16 @@
+﻿@using Stimulsoft.Report.Mvc;
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Editing a Report Template in the Designer</h2>
+
+@Html.Stimulsoft().StiMvcDesigner(new StiMvcDesignerOptions()
+{
+    Actions =
+    {
+        GetReport = "GetReport",
+        DesignerEvent = "DesignerEvent"
+    }
+})

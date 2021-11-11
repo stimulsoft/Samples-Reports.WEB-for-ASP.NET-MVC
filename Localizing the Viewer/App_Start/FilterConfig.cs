@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace HTML_Samples
+namespace Localizing_the_Viewer
 {
     public class FilterConfig
     {

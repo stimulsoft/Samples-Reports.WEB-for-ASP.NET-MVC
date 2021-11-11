@@ -3,7 +3,7 @@ using Stimulsoft.Report.Mvc;
 using System;
 using System.Web.Mvc;
 
-namespace HTML_Samples.Controllers
+namespace Localizing_the_Viewer.Controllers
 {
     public class ViewerController : Controller
     {

@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace HTML_Samples
+namespace Showing_Interactive_Reports
 {
     public class BundleConfig
     {
