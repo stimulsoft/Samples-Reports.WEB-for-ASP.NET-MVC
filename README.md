@@ -4,21 +4,21 @@
 
 # Overview
 This repository has some examples (Visual Studio Projects) each in different folders:
-* Add Custom Function to the Designer
-* Change the Viewer Theme
-* Change Viewer Options from the Controller
-* Connect to Data from the Code
-* Edit Report in the Designer
-* Export and Print Report from Code
-* Full Screen Mode in Viewer
+* Adding a Custom Function to the Designer
+* Changing the Viewer Theme
+* Changing the Viewer Options from the Controller
+* Connecting to Data from Code
+* Editing a Report Template in the Designer
+* Exporting and Printing a Report from Code
+* Using the Full-Screen Mode in the Viewer
 * Localizing the Viewer
-* Manage Report Printing and Exporting
-* Save Report Template in the Designer
-* Send Report by Email
-* Show Report in the Viewer
+* Managing Report Printing and Exporting
+* Saving a Report Template in the Designer
+* Sending a Report by Email
+* Showing a Report in the Viewer
 * Showing Interactive Reports
 * Using Business Objects in the Report
-* Using the Viewer and Designer in One Project
+* Using the Viewer and Designer in the One Project
 * Web Demo
 
 They are all combined in a Visual Studio solution (.sln-file).
