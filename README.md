@@ -18,6 +18,7 @@ This repository has some examples (Visual Studio Projects) each in different fol
 * Sending a Report by Email
 * Showing a Report in the Viewer
 * Showing Interactive Reports
+* Using a Custom Data Adapter
 * Using Business Objects in the Report
 * Using the Viewer and Designer in the One Project
 * Web Demo
