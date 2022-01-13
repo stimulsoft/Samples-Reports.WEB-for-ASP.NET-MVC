@@ -9,6 +9,7 @@ This repository has some examples (Visual Studio Projects) each in different fol
 * Changing the Viewer Theme
 * Changing the Viewer Options from the Controller
 * Connecting to Data from Code
+* Creating a Custom Parameter Panel for the Viewer
 * Editing a Report Template in the Designer
 * Exporting and Printing a Report from Code
 * Using the Full-Screen Mode in the Viewer
