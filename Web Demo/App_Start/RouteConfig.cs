@@ -16,7 +16,7 @@ namespace Web_Demo
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "View", action = "Reports", id = "SimpleList" }
+                defaults: new { controller = "Home", action = "Index", id = "SimpleList" }
             );
         }
     }

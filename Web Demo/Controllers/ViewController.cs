@@ -22,7 +22,7 @@ namespace Web_Demo.Controllers
         {
             // Create the report object and load data from xml file
             var report = new StiReport();
-            report.Load(Server.MapPath("~/Content/Reports/" + id + ".mrt"));
+            report.Load(Server.MapPath("/Content/Reports/" + id + ".mrt"));
 
             return StiMvcViewer.GetReportResult(report);
         }

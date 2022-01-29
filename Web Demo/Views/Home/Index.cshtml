@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "Stimulsoft Reports.Web Demo";
+}
+
+<div class="stiLeftPanel" id="MainLeftPanel">
+    <div class="stiLogo" style="overflow: hidden; width: 100%;">
+        <table cellspacing="0" cellpadding="0" style="border-spacing: 0; width: 100%; height: 100%">
+            <tr>
+                <td id="stiLogo" style="vertical-align: middle; text-align: center;" onclick="window.open('https://www.stimulsoft.com/en')">
+                    STIMULSOFT
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="stiReportsContainer" style="width: 100%" class="stiReportsContainer">
+        <script type="text/javascript">createReportsButtons();</script>
+    </div>
+    <div class="stiLeftPanelItemSeparator"></div>
+</div>
+<div id="RightPanel" class="stiRightPanel">
+    <iframe src="~/View/Reports/SimpleList" id="stiMainFrame" class="stiMainFrame" onload="mainFrameLoadComplete()"></iframe>
+</div>
+

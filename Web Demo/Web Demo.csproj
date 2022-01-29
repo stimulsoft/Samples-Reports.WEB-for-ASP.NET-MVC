@@ -226,43 +226,27 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\BundleConfig2.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
-    <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\DesignController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ViewController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\dtree.css" />
-    <Content Include="Content\Images\hyperlink.png" />
-    <Content Include="Content\Images\line.png" />
-    <Content Include="Content\Images\logoweb.png" />
-    <Content Include="Content\Images\Tree\empty.gif" />
-    <Content Include="Content\Images\Tree\folder.gif" />
-    <Content Include="Content\Images\Tree\folderopen.gif" />
-    <Content Include="Content\Images\Tree\join.gif" />
-    <Content Include="Content\Images\Tree\joinbottom.gif" />
-    <Content Include="Content\Images\Tree\line.gif" />
-    <Content Include="Content\Images\Tree\minus.gif" />
-    <Content Include="Content\Images\Tree\minusbottom.gif" />
-    <Content Include="Content\Images\Tree\nolines_minus.gif" />
-    <Content Include="Content\Images\Tree\nolines_plus.gif" />
-    <Content Include="Content\Images\Tree\plus.gif" />
-    <Content Include="Content\Images\Tree\plusbottom.gif" />
-    <Content Include="Content\Images\Tree\report.gif" />
+    <Content Include="Content\Images\Report_x2.png" />
+    <Content Include="Content\Styles\demo.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Site.css" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -427,7 +411,6 @@
     <Content Include="Content\Reports\Watermark.mrt" />
     <Content Include="Content\Reports\WrappedCrossTabs.mrt" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="Scripts\dtree.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -436,7 +419,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
-    <Content Include="Scripts\reports.js" />
+    <Content Include="Scripts\demo.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
@@ -452,18 +435,6 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Design\Reports.cshtml" />
-    <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
-    <Content Include="Views\Account\ConfirmEmail.cshtml" />
-    <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
-    <Content Include="Views\Account\ExternalLoginFailure.cshtml" />
-    <Content Include="Views\Account\ForgotPassword.cshtml" />
-    <Content Include="Views\Account\ForgotPasswordConfirmation.cshtml" />
-    <Content Include="Views\Account\Login.cshtml" />
-    <Content Include="Views\Account\Register.cshtml" />
-    <Content Include="Views\Account\ResetPassword.cshtml" />
-    <Content Include="Views\Account\ResetPasswordConfirmation.cshtml" />
-    <Content Include="Views\Account\SendCode.cshtml" />
-    <Content Include="Views\Account\VerifyCode.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\View\Reports.cshtml" />
@@ -505,9 +476,11 @@
     <Content Include="Localization\vi.xml" />
     <Content Include="Localization\zh-CHS.xml" />
     <Content Include="Localization\zh-CHT.xml" />
+    <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Data\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
