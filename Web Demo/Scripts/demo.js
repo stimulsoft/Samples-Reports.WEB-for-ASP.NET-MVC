@@ -110,19 +110,43 @@ function createReportsButtons() {
             }
         },
         {
+            category: "Real-life Charts",
+            reports: {
+                "GlobalGrowth2015-2017": "Global Growth 2015-2017",
+                "Population": "Population",
+                "ProductsChartByCategories": "Products Chart By Categories",
+                "GDPGrowth2007-2017": "GDP Growth 2007-2017",
+                "GlobalGrowth2017": "Global Growth 2017",
+                "TasksByDate": "Tasks By Date",
+                "ForeignOfficialReserves": "Foreigh Official Reserves",
+                "MigrationByDecadeInUSA": "Migration By Decade In USA",
+                "NaturalGasProduction": "Natural Gas Production",
+                "TopSellersOfCars": "Top Sellers Of Cars",
+                "TopAutoSalesInUSA16": "Top Auto Sales In USA 16"
+            }
+        },
+        {
             category: "Charts",
             reports: {
-                "SimpleChart": "Simple Chart",
-                "MultipleSeries": "Multiple Series",
-                "ChartOnDataband": "Chart on Databand",
-                "ChartsWithNegatives": "Charts with Negatives",
-                "PieChart": "Pie Chart",
-                "GanttChart": "Gantt Chart",
-                "SteppedChart": "Stepped Chart",
-                "LineChart": "Line Chart",
-                "AreaChart": "Area Chart",
-                "CombinedCharts": "Combined Charts",
-                "TreeMapChart": "Tree-Map Chart"
+                "Area": "Area",
+                "Bubble": "Bubble",
+                "ClusteredBar": "Clustered Bar",
+                "ClusteredColumn": "Clustered Column",
+                "Doughnut": "Doughnut",
+                "Financial": "Financial",
+                "Funnel": "Funnel",
+                "Gantt": "Gantt",
+                "Histogram": "Histogram",
+                "Line": "Line",
+                "Pareto": "Pareto",
+                "Pictorial": "Pictorial",
+                "Pie": "Pie",
+                "Radar": "Radar",
+                "Range": "Range",
+                "Scatter": "Scatter",
+                "Sunburst": "Sunburst",
+                "Treemap": "Treemap",
+                "Waterfall": "Waterfall",
             }
         },
         {
@@ -161,6 +185,18 @@ function createReportsButtons() {
                 "SubReportsSideBySideListsOnDataBand": "Side-by-Side Lists on DataBand",
                 "SubReportsSideBySideGroups": "Side-by-Side Groups",
                 "SubReportsMasterDetail": "Master-Detail"
+            }
+        },
+        {
+            category: "Table Of Contents",
+            reports: {
+                "MasterDetailReportWithTOC": "Master-Detail Report With TOC",
+                "MultiColumnListWithTOC": "Multi-Column List With TOC",
+                "PanelsWithTOC": "Panels With TOC",
+                "SimpleListWithTOC": "Simple List With TOC",
+                "SubReportsWithTOC": "Sub-Reports With TOC",
+                "TableWithTOC": "Table With TOC",
+                "TwoSimpleListsWithTOC": "Two Simple Lists With TOC"
             }
         },
         {
