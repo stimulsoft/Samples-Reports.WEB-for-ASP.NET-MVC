@@ -127,6 +127,31 @@ Stimulsoft.System.dll
 Stimulsoft.System.Web.dll  
 All .xml localization files
 
+**ANGULAR**  
+Stimulsoft.Base.dll  
+Stimulsoft.Blockly.dll  
+Stimulsoft.Dashboard.dll  
+Stimulsoft.Dashboard.Drawing.dll  
+Stimulsoft.Dashboard.Export.dll  
+Stimulsoft.Data.dll  
+Stimulsoft.Drawing.dll  
+Stimulsoft.Map.dll  
+Stimulsoft.MathFX.dll  
+Stimulsoft.Report.Mvc.dll  
+Stimulsoft.Report.dll  
+Stimulsoft.Report.Angular.dll  
+Stimulsoft.Report.Check.dll  
+Stimulsoft.Report.Helper.dll  
+Stimulsoft.Report.Mvc.NetCore.dll  
+Stimulsoft.Report.Web.dll  
+Stimulsoft.Report.WebDesign.dll  
+Stimulsoft.Svg.dll  
+Stimulsoft.System.dll  
+Stimulsoft.System.Web.dll  
+All files in stimulsoft-viewer-angular folder  
+All files in stimulsoft-designer-angular folder  
+All .xml localization files
+
 **WPF**  
 Stimulsoft.Base.dll  
 Stimulsoft.Blockly.dll  
@@ -221,6 +246,31 @@ Stimulsoft.Report.Web.dll
 Stimulsoft.Report.WebDesign.dll  
 Stimulsoft.System.dll  
 Stimulsoft.System.Web.dll  
+All .xml localization files
+
+#### Stimulsoft Reports.ANGULAR
+Stimulsoft.Base.dll  
+Stimulsoft.Blockly.dll  
+Stimulsoft.Dashboard.dll  
+Stimulsoft.Dashboard.Drawing.dll  
+Stimulsoft.Dashboard.Export.dll  
+Stimulsoft.Data.dll  
+Stimulsoft.Drawing.dll  
+Stimulsoft.Map.dll  
+Stimulsoft.MathFX.dll  
+Stimulsoft.Report.Mvc.dll  
+Stimulsoft.Report.dll  
+Stimulsoft.Report.Angular.dll  
+Stimulsoft.Report.Check.dll  
+Stimulsoft.Report.Helper.dll  
+Stimulsoft.Report.Mvc.NetCore.dll  
+Stimulsoft.Report.Web.dll  
+Stimulsoft.Report.WebDesign.dll  
+Stimulsoft.Svg.dll  
+Stimulsoft.System.dll  
+Stimulsoft.System.Web.dll  
+All files in stimulsoft-viewer-angular folder  
+All files in stimulsoft-designer-angular folder  
 All .xml localization files
 
 #### Stimulsoft Reports.WPF
