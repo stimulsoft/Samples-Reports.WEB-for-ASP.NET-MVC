@@ -1,7 +1,6 @@
 ﻿using Stimulsoft.Report;
 using Stimulsoft.Report.Mvc;
 using Stimulsoft.Report.Web;
-using Reports;
 using System;
 using System.Data;
 using System.Web.Mvc;

@@ -1,106 +1,33 @@
 ﻿using Stimulsoft.Report;
 using Stimulsoft.Report.Mvc;
 using Stimulsoft.Report.Web;
-using Reports;
 using System;
 using System.Data;
 using System.Web.Mvc;
-using System.Data.SqlClient;
 
 namespace Configuring_Report_caching.Controllers
 {
-    public class StiMSSQLCacheHelper : StiCacheHelper
+    public class StiDefaultCacheHelper : StiCacheHelper
     {
-        // Please use your own database connection
-        private string connectionString = @"Data Source=192.168.31.32;Initial Catalog=SampleDB;Integrated Security=False;User ID=******;Password=******;";
-
         public override StiReport GetReport(string guid)
         {
-            var connection = new SqlConnection(connectionString);
-            try
-            {
-                connection.Open();
-
-                var query = $"SELECT Guid, Value FROM ReportCache WHERE Guid='{guid}'";
-                var command = new SqlCommand(query, connection);
-                var reader = command.ExecuteReader();
-
-                if (reader.HasRows)
-                {
-                    reader.Read();
-                    var packedReport = reader.GetString(1);
-                    reader.Close();
-
-                    var report = new StiReport();
-                    if (guid.EndsWith(GUID_ReportTemplate)) report.LoadPackedReportFromString(packedReport);
-                    else report.LoadPackedDocumentFromString(packedReport);
-
-                    return report;
-                }
-            }
-            catch (SqlException ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
-            finally
-            {
-                connection.Close();
-            }
-
-            return null;
+            return base.GetReport(guid);
         }
 
         public override void SaveReport(StiReport report, string guid)
         {
-            var connection = new SqlConnection(connectionString);
-            try
-            {
-                connection.Open();
-
-                var query = $"DELETE FROM ReportCache WHERE Guid='{guid}'";
-                var command = new SqlCommand(query, connection);
-                command.ExecuteNonQuery();
-
-                var packedReport = guid.EndsWith(GUID_ReportTemplate) ? report.SavePackedReportToString() : report.SavePackedDocumentToString();
-                query = $"INSERT INTO ReportCache (Guid, Value) VALUES ('{guid}', '{packedReport}')";
-                command = new SqlCommand(query, connection);
-                command.ExecuteNonQuery();
-            }
-            catch (SqlException ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
-            finally
-            {
-                connection.Close();
-            }
+            base.SaveReport(report, guid);
         }
 
         public override void RemoveReport(string guid)
         {
-            var connection = new SqlConnection(connectionString);
-            try
-            {
-                connection.Open();
-
-                var query = $"DELETE FROM ReportCache WHERE Guid='{guid}'";
-                var command = new SqlCommand(query, connection);
-                command.ExecuteNonQuery();
-            }
-            catch (SqlException ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
-            finally
-            {
-                connection.Close();
-            }
+            base.RemoveReport(guid);
         }
     }
 
-    public class MSSQLCacheController : Controller
+    public class DefaultCacheController : Controller
     {
-        static MSSQLCacheController()
+        static DefaultCacheController()
         {
             // How to Activate
             //Stimulsoft.Base.StiLicense.Key = "6vJhGtLLLz2GNviWmUTrhSqnO...";
@@ -108,9 +35,9 @@ namespace Configuring_Report_caching.Controllers
             //Stimulsoft.Base.StiLicense.LoadFromStream(stream);
         }
 
-        public MSSQLCacheController()
+        public DefaultCacheController()
         {
-            StiMvcViewer.CacheHelper = new StiMSSQLCacheHelper();
+            StiMvcViewer.CacheHelper = new StiDefaultCacheHelper();
         }
 
         public ActionResult Index()
