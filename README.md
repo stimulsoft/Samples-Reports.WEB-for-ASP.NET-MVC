@@ -8,6 +8,7 @@ This repository has some examples (Visual Studio Projects) each in different fol
 * Adding a Font to the Resource
 * Changing the Viewer Options from the Controller
 * Changing the Viewer Theme
+* Configuring Report caching
 * Connecting to Data from Code
 * Creating a Custom Parameter Panel for the Viewer
 * Editing a Report Template in the Designer
