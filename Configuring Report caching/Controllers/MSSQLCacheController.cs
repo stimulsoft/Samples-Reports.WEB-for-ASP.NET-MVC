@@ -11,7 +11,7 @@ namespace Configuring_Report_caching.Controllers
     public class StiMSSQLCacheHelper : StiCacheHelper
     {
         // Please use your own database connection
-        private string connectionString = @"Data Source=192.168.31.32;Initial Catalog=SampleDB;Integrated Security=False;User ID=******;Password=******;";
+        private string connectionString = @"Data Source=127.0.0.1;Initial Catalog=SampleDB;Integrated Security=False;User ID=******;Password=******;";
 
         public override StiReport GetReport(string guid)
         {
