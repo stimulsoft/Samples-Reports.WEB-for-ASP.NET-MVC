@@ -110,6 +110,7 @@
     <ForceDelete>Force Delete</ForceDelete>
     <Help>Help</Help>
     <Install>Install</Install>
+    <InvertAll>Invert All</InvertAll>
     <LessOptions>Less Options</LessOptions>
     <LoadDataSet>Load DataSet (*.data)</LoadDataSet>
     <More>More</More>
@@ -122,6 +123,7 @@
     <Ok>&amp;OK</Ok>
     <Open>Open</Open>
     <OpenContainingFolder>Open Containing Folder</OpenContainingFolder>
+    <OpenInSafeMode>Open in Safe Mode</OpenInSafeMode>
     <Print>Print</Print>
     <Publish>Publish</Publish>
     <QuickPrint>Quick Print</QuickPrint>
@@ -478,7 +480,7 @@
     <RequestChangesWhenSavingToCloud>Request Changes when Saving to Stimulsoft Cloud</RequestChangesWhenSavingToCloud>
     <RibbonButtonAddRole>Add Role</RibbonButtonAddRole>
     <RibbonButtonAddUser>Add User</RibbonButtonAddUser>
-	<RibbonButtonAddUserParameter>Add User Parameter</RibbonButtonAddUserParameter>
+    <RibbonButtonAddUserParameter>Add User Parameter</RibbonButtonAddUserParameter>
     <RibbonButtonAddWorkspace>Add Workspace</RibbonButtonAddWorkspace>
     <RibbonButtonFolder>Folder</RibbonButtonFolder>
     <RibbonTabUsers>Users</RibbonTabUsers>
@@ -493,6 +495,7 @@
     <ShareWindowTitleNew>Share</ShareWindowTitleNew>
     <ShowAllFiles>Show All Files</ShowAllFiles>
     <ShowNotificationMessages>Show Notification Messages</ShowNotificationMessages>
+	<Submissions>Submissions</Submissions>
     <Subscriptions>Subscriptions</Subscriptions>
     <TabItemEmbedCode>Embed Code</TabItemEmbedCode>
     <TabItemQRCode>QR Code</TabItemQRCode>
@@ -569,7 +572,7 @@
     <WindowTitleSignUp>Sign Up</WindowTitleSignUp>
     <WindowTitleUserEdit>Edit User</WindowTitleUserEdit>
     <WindowTitleUserNew>New User</WindowTitleUserNew>
-	<WindowTitleUserParameterEdit>Edit User Parameter</WindowTitleUserParameterEdit>
+    <WindowTitleUserParameterEdit>Edit User Parameter</WindowTitleUserParameterEdit>
     <WindowTitleUserParameterNew>New User Parameter</WindowTitleUserParameterNew>
     <WindowTitleWorkspaceEdit>Edit Workspace</WindowTitleWorkspaceEdit>
     <WindowTitleWorkspaceNew>New Workspace</WindowTitleWorkspaceNew>
@@ -1164,18 +1167,19 @@
     <custom04>F</custom04>
     <custom05>yy/MM/dd</custom05>
     <custom06>yyyy/MM/dd</custom06>
-    <custom07>G</custom07>
-    <custom08>$0.00</custom08>
-    <custom09>$0</custom09>
-    <custom10>c</custom10>
-    <custom11>c1</custom11>
-    <custom12>c2</custom12>
-    <custom13>#.00</custom13>
-    <custom14>#.#</custom14>
-    <custom15>n</custom15>
-    <custom16>n1</custom16>
-    <custom17>n2</custom17>
-    <custom18>(###) ### - ####</custom18>
+    <custom07>[green]+0.00;[red]-0.00;[blue](0)</custom07>
+    <custom08>G</custom08>
+    <custom09>$0.00</custom09>
+    <custom10>$0</custom10>
+    <custom11>c</custom11>
+    <custom12>c1</custom12>
+    <custom13>c2</custom13>
+    <custom14>#.00</custom14>
+    <custom15>#.#</custom15>
+    <custom16>n</custom16>
+    <custom17>n1</custom17>
+    <custom18>n2</custom18>
+    <custom19>(###) ### - ####</custom19>
     <date01>*d</date01>
     <date02>*D</date02>
     <date03>M.dd</date03>
@@ -1787,6 +1791,7 @@
     <TickCustomValue>Tick Custom Value</TickCustomValue>
   </Gauge>
   <Gui>
+    <AccentColor>Accent Color</AccentColor>
     <barname_cancel>Cancel</barname_cancel>
     <barname_caption>New Toolbar</barname_caption>
     <barname_msginvalidname>Toolbar name cannot be empty.</barname_msginvalidname>
@@ -1898,6 +1903,7 @@
     <StiCrossTab>The cross-tab component is used for the structured data representation as a table.</StiCrossTab>
     <StiDataBand>The Data band is connected to the data source and is output as many times as there are rows in the data source.</StiDataBand>
     <StiDatePickerElement>The element is used to select the date and time.</StiDatePickerElement>
+    <StiElectronicSignature>This component is used to add a graphic signature, image, initials, and text.</StiElectronicSignature>
     <StiEmptyBand>This band is used to fill free space on the bottom of a page. This band fills free space on each page of a report.</StiEmptyBand>
     <StiFilterCategory>A group of elements used for selecting and filtering values.</StiFilterCategory>
     <StiFooterBand>This band is used to output summary by the Data band. It is placed under the Data band and is output once after all data rows which Data band outputs.</StiFooterBand>
@@ -1922,6 +1928,7 @@
     <StiPageHeaderBand>This band is used to output the page header such as page numbers, dates, and other additional information. It is output on the top of each page.</StiPageHeaderBand>
     <StiPanel>A rectangular region that can contain other components, including bands. When the panel is moved the components in it are moved too. A panel can be placed either on a band or on a page.</StiPanel>
     <StiPanelElement>A rectangular region that can contain other elements. When the panel is moved the elements in it are moved too.</StiPanelElement>
+    <StiPdfDigitalSignature>This component is used to specify a place for the digital signature after the report has been exported to Adobe PDF.</StiPdfDigitalSignature>
     <StiPivotTableElement>The pivot table element is used for the structured data representation as a table.</StiPivotTableElement>
     <StiProgressElement>The element displays the ratio of the input data. It can be presented in different modes - a pie, donut, bars.</StiProgressElement>
     <StiRectanglePrimitive>This component is used to output rectangles.</StiRectanglePrimitive>
@@ -1981,6 +1988,14 @@
     <CenterVertically>Allows you to align a component vertically relative to container edges in what it is placed.</CenterVertically>
     <Close>Close the Report Designer.</Close>
     <Columns>Split a page into columns.</Columns>
+    <CompilationAccess1>This document uses the compilation process. If the document is from a trusted source, you can click the "Open" button to access it.</CompilationAccess1>
+    <CompilationAccess2>If you're unsure about the document's source but still want to view it, you can click the "Open in safe mode" button. In this case, you will use interpretation instead of compilation, which enables you to run the document safely.</CompilationAccess2>
+    <CompilationAccess3>This document uses the compilation process and it can be unsafe. You can't open it.</CompilationAccess3>
+    <CompilationAccessAllow>Allow opening documents with compilation without any warnings or restrictions.</CompilationAccessAllow>
+    <CompilationAccessAsk>If a document uses the compilation process, a warning window with predefined actions will be displayed.</CompilationAccessAsk>
+    <CompilationAccessDeny>Deny opening any document that uses the compilation process. A special window will be displayed.</CompilationAccessDeny>
+    <CompilationAccessForceInterpretation>Documents with compilation will be opened without any prompt but will be automatically converted to interpretation mode, which does not use the compilation process.</CompilationAccessForceInterpretation>
+    <CompilationModeEnabling>You are switching to the compilation mode. This mode allows to runs different code and sometimes it could be harmful. Please, use this mode only if you understand all the risks and agree with them. Click the {0} button to proceed.</CompilationModeEnabling>
     <ComponentSize>Change the size of the selected components.</ComponentSize>
     <CopyStyle>Copy Style</CopyStyle>
     <CopyToClipboard>Copy to Clipboard</CopyToClipboard>
@@ -2129,6 +2144,9 @@
     <CurrentPage>Processing the current page. If this option is selected, then a selected report page will be processed.</CurrentPage>
     <CutEdges>Trim the borders of report pages.</CutEdges>
     <CutLongLines>Trim the long lines (text lines) by the borders of components.</CutLongLines>
+    <DashboardContains1>Sorry, but this report contains a dashboard.</DashboardContains1>
+    <DashboardContains2>You should open this report directly in the designer!</DashboardContains2>
+    <DashboardContains3>You cannot do that from the report viewer!</DashboardContains3>
     <DigitalSignature>The digital signature of the file.</DigitalSignature>
     <DitheringType>Dithering type: None - no dithering, Ordered, FloydSt. - with dithering.</DitheringType>
     <DotMatrixMode>This mode allows you to see how will a report look like if to print it on a dot matrix printer.</DotMatrixMode>
@@ -2191,6 +2209,8 @@
     <TiffCompressionScheme>Compression scheme for TIFF files.</TiffCompressionScheme>
     <ToolEditor>This tool allows you to edit contents of text components directly in the report viewer.</ToolEditor>
     <TypeExport>The file the report will be converted into.</TypeExport>
+    <UnsafeCompilation1>This document uses the compilation process. In some cases, this may not be safe. Therefore, the document will be loaded in safe mode to minimize any potential risks.</UnsafeCompilation1>
+    <UnsafeCompilation2>If you require this document to be used in its original form, please contact your developers.</UnsafeCompilation2>
     <UseDefaultSystemEncoding>Use system coding by default or specify the encoding by standard.</UseDefaultSystemEncoding>
     <UseOnePageHeaderAndFooter>Define the page bands Header and Footer as the header and footer of the Microsoft Word document.</UseOnePageHeaderAndFooter>
     <UsePageHeadersAndFooters>Define the bands Page Header and Footer as the header and footer of the document in Microsoft Word.</UsePageHeadersAndFooters>
@@ -3023,6 +3043,10 @@
     <StiColumnShape3DBox>Box</StiColumnShape3DBox>
     <StiColumnShape3DPartialPyramid>Partial Pyramid</StiColumnShape3DPartialPyramid>
     <StiColumnShape3DPyramid>Pyramid</StiColumnShape3DPyramid>
+    <StiCompilationAccessAllow>Allow</StiCompilationAccessAllow>
+    <StiCompilationAccessAsk>Ask</StiCompilationAccessAsk>
+    <StiCompilationAccessDeny>Deny</StiCompilationAccessDeny>
+    <StiCompilationAccessForceInterpretation>Force Interpretation</StiCompilationAccessForceInterpretation>
     <StiCrossHorAlignmentCenter>Center</StiCrossHorAlignmentCenter>
     <StiCrossHorAlignmentLeft>Left</StiCrossHorAlignmentLeft>
     <StiCrossHorAlignmentNone>None</StiCrossHorAlignmentNone>
@@ -3081,6 +3105,7 @@
     <StiFilterConditionContaining>containing</StiFilterConditionContaining>
     <StiFilterConditionEndingWith>ending with</StiFilterConditionEndingWith>
     <StiFilterConditionEqualTo>equal to</StiFilterConditionEqualTo>
+    <StiFilterConditionEqualToVariableOrVariableIsNull>equal to variable or variable is null</StiFilterConditionEqualToVariableOrVariableIsNull>
     <StiFilterConditionGreaterThan>greater than</StiFilterConditionGreaterThan>
     <StiFilterConditionGreaterThanOrEqualTo>greater than or equal to</StiFilterConditionGreaterThanOrEqualTo>
     <StiFilterConditionIsBlank>is blank</StiFilterConditionIsBlank>
@@ -3327,7 +3352,7 @@
     <StiReportUnitTypeInches>Inches</StiReportUnitTypeInches>
     <StiReportUnitTypeMillimeters>Millimeters</StiReportUnitTypeMillimeters>
     <StiReportUnitTypePixels>Pixels</StiReportUnitTypePixels>
-	<StiReportUnitTypePoints>Points</StiReportUnitTypePoints>
+    <StiReportUnitTypePoints>Points</StiReportUnitTypePoints>
     <StiRestrictionsAll>All</StiRestrictionsAll>
     <StiRestrictionsAllowChange>Allow Change</StiRestrictionsAllowChange>
     <StiRestrictionsAllowDelete>Allow Delete</StiRestrictionsAllowDelete>
@@ -3426,6 +3451,10 @@
     <StiTextSizeModeFit>Fit</StiTextSizeModeFit>
     <StiTextSizeModeTrimming>Trimming</StiTextSizeModeTrimming>
     <StiTextSizeModeWordWrap>Word Wrap</StiTextSizeModeWordWrap>
+    <StiThemeAppearanceAuto>Auto</StiThemeAppearanceAuto>
+    <StiThemeAppearanceDark>Dark</StiThemeAppearanceDark>
+    <StiThemeAppearanceLight>Light</StiThemeAppearanceLight>
+    <StiThemeAppearanceLightGray>Light Gray</StiThemeAppearanceLightGray>
     <StiTimeDateStepDay>Day</StiTimeDateStepDay>
     <StiTimeDateStepHour>Hour</StiTimeDateStepHour>
     <StiTimeDateStepMinute>Minute</StiTimeDateStepMinute>
@@ -3530,6 +3559,7 @@
     <PrintingEvent>Printing</PrintingEvent>
     <ProcessCellEvent>Process Cell</ProcessCellEvent>
     <ProcessChartEvent>Process Chart</ProcessChartEvent>
+    <RefreshingEvent>Refreshing</RefreshingEvent>
     <RenderingEvent>Rendering</RenderingEvent>
     <ReportCacheProcessingEvent>Report Cache Processing</ReportCacheProcessingEvent>
     <SelectedIndexChangedEvent>Selected Index Changed</SelectedIndexChangedEvent>
@@ -3826,6 +3856,7 @@
     <DefaultColor>Default Color</DefaultColor>
     <DefaultHeightCell>Default Height of Cell</DefaultHeightCell>
     <DefaultNamespace>Default Namespace</DefaultNamespace>
+    <DefaultSettings>Default Settings</DefaultSettings>
     <DependentColumn>Dependent Column</DependentColumn>
     <DependentValue>Dependent Value</DependentValue>
     <Description>Description</Description>
@@ -3949,6 +3980,7 @@
     <FullName>Full Name</FullName>
     <Function>Function</Function>
     <Functions>Functions</Functions>
+    <GapAfterLastColumn>Gap After Last Column</GapAfterLastColumn>
     <GisSettings>Gis Settings</GisSettings>
     <GlobalizationStrings>Globalization Strings</GlobalizationStrings>
     <GlobalizedName>Globalized Name</GlobalizedName>
@@ -4023,10 +4055,13 @@
     <Image>Image</Image>
     <ImageAlign>Image Align</ImageAlign>
     <ImageAlignment>Image Alignment</ImageAlignment>
+    <ImageAspectRatio>Image Aspect Ratio</ImageAspectRatio>
     <ImageData>Image Data</ImageData>
+    <ImageEnabled>Image Enabled</ImageEnabled>
     <ImageHorAlignment>Image Horizontal Alignment</ImageHorAlignment>
     <ImageMultipleFactor>Image Multiple Factor</ImageMultipleFactor>
     <ImageRotation>Image Rotation</ImageRotation>
+    <ImageShowBehind>Image Show Behind</ImageShowBehind>
     <ImageStretch>Image Stretch</ImageStretch>
     <ImageTiling>Image Tiling</ImageTiling>
     <ImageTransparency>Image Transparency</ImageTransparency>
@@ -4036,6 +4071,7 @@
     <Increment>Increment</Increment>
     <Indent>Indent</Indent>
     <Indicator>Indicator</Indicator>
+    <IndicatorValue>Indicator Value</IndicatorValue>
     <IndividualColor>Individual Color</IndividualColor>
     <InitBy>Init by</InitBy>
     <Initials>Initials</Initials>
@@ -4261,7 +4297,6 @@
     <PathSchema>Path Schema</PathSchema>
     <Pattern>Pattern</Pattern>
     <PDFPreview>PDF Preview</PDFPreview>
-    <PenColor>Pen Color</PenColor>
     <Placeholder>Placeholder</Placeholder>
     <Placement>Placement</Placement>
     <PlaceOnToolbox>Place on Toolbox</PlaceOnToolbox>
@@ -4364,6 +4399,7 @@
     <Scale>Scale</Scale>
     <ScaleHor>Scale Hor</ScaleHor>
     <ScriptLanguage>Script Language</ScriptLanguage>
+    <ScrollTime>Scroll Time</ScrollTime>
     <Second>Second</Second>
     <SegmentPerHeight>Segment per Height</SegmentPerHeight>
     <SegmentPerWidth>Segment per Width</SegmentPerWidth>
@@ -4413,6 +4449,7 @@
     <ShortValue>Short Value</ShortValue>
     <ShowAllValue>Show All Value</ShowAllValue>
     <ShowBehind>Show Behind</ShowBehind>
+    <ShowBlanks>Show Blanks</ShowBlanks>
     <ShowBubble>Show Bubble</ShowBubble>
     <ShowDialog>Show Dialog</ShowDialog>
     <ShowEdgeValues>Show Edge Values</ShowEdgeValues>
@@ -4530,13 +4567,18 @@
     <TextAfter>Text After</TextAfter>
     <TextAlign>Text Align</TextAlign>
     <TextAlignment>Text Alignment</TextAlignment>
+    <TextAngle>Text Angle</TextAngle>
     <TextBefore>Text Before</TextBefore>
     <TextBrush>Text Brush</TextBrush>
     <TextColor>Text Color</TextColor>
+    <TextEnabled>Text Enabled</TextEnabled>
+    <TextFont>Text Font</TextFont>
     <TextFormat>Text Format</TextFormat>
     <TextOnly>Text Only</TextOnly>
     <TextOptions>Text Options</TextOptions>
     <TextQuality>Text Quality</TextQuality>
+    <TextRightToLeft>Text Right to Left</TextRightToLeft>
+    <TextShowBehind>Text Show Behind</TextShowBehind>
     <Third>Third</Third>
     <TickLabelMajorFont>Tick Label Major Font</TickLabelMajorFont>
     <TickLabelMajorTextBrush>Tick Label Major Text Brush</TickLabelMajorTextBrush>
@@ -4606,6 +4648,7 @@
     <UseSeriesColor>Use Series Color</UseSeriesColor>
     <UseStyleOfSummaryInColumnTotal>Use Style of Summary in Column Total</UseStyleOfSummaryInColumnTotal>
     <UseStyleOfSummaryInRowTotal>Use Style of Summary in Row Total</UseStyleOfSummaryInRowTotal>
+    <UseUserPicture>Use User Picture</UseUserPicture>
     <UseValuesFromTheSpecifiedRange>Use Values From The Specified Range</UseValuesFromTheSpecifiedRange>
     <Value>Value</Value>
     <ValueClose>Value Close</ValueClose>
@@ -4635,7 +4678,16 @@
     <Visible>Visible</Visible>
     <VisualStates>Visual States</VisualStates>
     <Watermark>Watermark</Watermark>
-	<WatermarkStyle>Watermark Style</WatermarkStyle>
+    <WatermarkStyle>Watermark Style</WatermarkStyle>
+    <WeaveAngle>Weave Angle</WeaveAngle>
+    <WeaveDistance>Weave Distance</WeaveDistance>
+    <WeaveEnabled>Weave Enabled</WeaveEnabled>
+    <WeaveMajorColor>Weave Major Color</WeaveMajorColor>
+    <WeaveMajorIcon>Weave Major Icon</WeaveMajorIcon>
+    <WeaveMajorSize>Weave Major Size</WeaveMajorSize>
+    <WeaveMinorColor>Weave Minor Color</WeaveMinorColor>
+    <WeaveMinorIcon>Weave Minor Icon</WeaveMinorIcon>
+    <WeaveMinorSize>Weave Minor Size</WeaveMinorSize>
     <Weight>Weight</Weight>
     <WeightDataColumn>Weight Data Column</WeightDataColumn>
     <Weights>Weights</Weights>
@@ -4809,6 +4861,7 @@
     <ClickForMoreDetails>Click for More Details</ClickForMoreDetails>
     <CollapseAll>Collapse All</CollapseAll>
     <Collection>Collection</Collection>
+    <CompilationAccess>Compilation Access</CompilationAccess>
     <CompilingReport>Compiling Report</CompilingReport>
     <Complete>Complete</Complete>
     <Components>Components</Components>
@@ -4904,6 +4957,7 @@
     <StiGradientBrush>Gradient</StiGradientBrush>
     <StiHatchBrush>Hatch</StiHatchBrush>
     <StiSolidBrush>Solid</StiSolidBrush>
+    <StoreUserNameInReportAuthor>Store 'User Name' in 'Report Author'</StoreUserNameInReportAuthor>
     <StyleBad>Bad</StyleBad>
     <StyleGood>Good</StyleGood>
     <StyleNeutral>Neutral</StyleNeutral>
