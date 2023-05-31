@@ -13,7 +13,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Connecting_to_Data_from_Code</RootNamespace>
     <AssemblyName>Connecting_to_Data_from_Code</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
@@ -58,6 +58,9 @@
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="Stimulsoft.Svg, Version=2023.2.4.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Stimulsoft.Svg.2023.2.4\lib\net472\Stimulsoft.Svg.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -67,6 +70,8 @@
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
     <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.Helpers.dll</HintPath>
     </Reference>
@@ -79,15 +84,13 @@
     <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.9\lib\net45\System.Web.Razor.dll</HintPath>
     </Reference>
+    <Reference Include="System.Web.Routing" />
     <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.WebPages.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
     </Reference>
-    <Reference Include="System.Web" />
-    <Reference Include="System.Web.Abstractions" />
-    <Reference Include="System.Web.Routing" />
     <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
@@ -103,38 +106,35 @@
     <Reference Include="WebGrease, Version=1.6.5135.21930, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
     </Reference>
-    <Reference Include="Stimulsoft.Svg, Version=2023.2.4.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
-      <HintPath>..\packages\Stimulsoft.Svg.2023.2.4\lib\net452\Stimulsoft.Svg.dll</HintPath>
-    </Reference>
     <Reference Include="Stimulsoft.Base, Version=2023.2.5.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
-      <HintPath>..\packages\Stimulsoft.Reports.Engine.2023.2.5\lib\net452\Stimulsoft.Base.dll</HintPath>
+      <HintPath>..\packages\Stimulsoft.Reports.Engine.2023.2.5\lib\net472\Stimulsoft.Base.dll</HintPath>
     </Reference>
     <Reference Include="Stimulsoft.Blockly, Version=2023.2.5.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
-      <HintPath>..\packages\Stimulsoft.Reports.Engine.2023.2.5\lib\net452\Stimulsoft.Blockly.dll</HintPath>
+      <HintPath>..\packages\Stimulsoft.Reports.Engine.2023.2.5\lib\net472\Stimulsoft.Blockly.dll</HintPath>
     </Reference>
     <Reference Include="Stimulsoft.Data, Version=2023.2.5.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
-      <HintPath>..\packages\Stimulsoft.Reports.Engine.2023.2.5\lib\net452\Stimulsoft.Data.dll</HintPath>
+      <HintPath>..\packages\Stimulsoft.Reports.Engine.2023.2.5\lib\net472\Stimulsoft.Data.dll</HintPath>
     </Reference>
     <Reference Include="Stimulsoft.Map, Version=2023.2.5.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
-      <HintPath>..\packages\Stimulsoft.Reports.Engine.2023.2.5\lib\net452\Stimulsoft.Map.dll</HintPath>
+      <HintPath>..\packages\Stimulsoft.Reports.Engine.2023.2.5\lib\net472\Stimulsoft.Map.dll</HintPath>
     </Reference>
     <Reference Include="Stimulsoft.Report.Check, Version=2023.2.5.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
-      <HintPath>..\packages\Stimulsoft.Reports.Engine.2023.2.5\lib\net452\Stimulsoft.Report.Check.dll</HintPath>
+      <HintPath>..\packages\Stimulsoft.Reports.Engine.2023.2.5\lib\net472\Stimulsoft.Report.Check.dll</HintPath>
     </Reference>
     <Reference Include="Stimulsoft.Report, Version=2023.2.5.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
-      <HintPath>..\packages\Stimulsoft.Reports.Engine.2023.2.5\lib\net452\Stimulsoft.Report.dll</HintPath>
+      <HintPath>..\packages\Stimulsoft.Reports.Engine.2023.2.5\lib\net472\Stimulsoft.Report.dll</HintPath>
     </Reference>
     <Reference Include="Stimulsoft.Report.Helper, Version=2023.2.5.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
-      <HintPath>..\packages\Stimulsoft.Reports.Engine.2023.2.5\lib\net452\Stimulsoft.Report.Helper.dll</HintPath>
+      <HintPath>..\packages\Stimulsoft.Reports.Engine.2023.2.5\lib\net472\Stimulsoft.Report.Helper.dll</HintPath>
     </Reference>
     <Reference Include="Stimulsoft.Report.Mvc, Version=2023.2.5.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
-      <HintPath>..\packages\Stimulsoft.Reports.Web.2023.2.5\lib\net452\Stimulsoft.Report.Mvc.dll</HintPath>
+      <HintPath>..\packages\Stimulsoft.Reports.Web.2023.2.5\lib\net472\Stimulsoft.Report.Mvc.dll</HintPath>
     </Reference>
     <Reference Include="Stimulsoft.Report.Web, Version=2023.2.5.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
-      <HintPath>..\packages\Stimulsoft.Reports.Web.2023.2.5\lib\net452\Stimulsoft.Report.Web.dll</HintPath>
+      <HintPath>..\packages\Stimulsoft.Reports.Web.2023.2.5\lib\net472\Stimulsoft.Report.Web.dll</HintPath>
     </Reference>
     <Reference Include="Stimulsoft.Report.WebDesign, Version=2023.2.5.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
-      <HintPath>..\packages\Stimulsoft.Reports.Web.2023.2.5\lib\net452\Stimulsoft.Report.WebDesign.dll</HintPath>
+      <HintPath>..\packages\Stimulsoft.Reports.Web.2023.2.5\lib\net472\Stimulsoft.Report.WebDesign.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
