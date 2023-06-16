@@ -3,7 +3,7 @@
 #### This repository contains the source code of the examples of usage Stimulsoft Reports.WEB reporting tool in the ASP.NET MVC applications, using C# code and HTML5 components. The report generator and examples are fully compatible with .NET Framework 4.5.2, 4.6, 4.7, and 4.8 versions.
 
 ## Overview
-This repository contains a set of examples (Visual Studio projects), each in different folders:
+This repository has a set of examples (Visual Studio projects), each in different folders:
 * [Adding a Custom Function to the Designer](https://github.com/stimulsoft/Samples-Reports.WEB-for-ASP.NET-MVC/tree/master/Adding%20a%20Custom%20Function%20to%20the%20Designer)
 * [Adding a Font to the Resource](https://github.com/stimulsoft/Samples-Reports.WEB-for-ASP.NET-MVC/tree/master/Adding%20a%20Font%20to%20the%20Resource)
 * [Changing the Viewer Options from the Controller](https://github.com/stimulsoft/Samples-Reports.WEB-for-ASP.NET-MVC/tree/master/Changing%20the%20Viewer%20Options%20from%20the%20Controller)
@@ -47,5 +47,5 @@ Stimulsoft Reports.WEB is a cross-platform reporting tool designed to create, bu
 * [Product Page](https://www.stimulsoft.com/en/products/reports-web)
 * [Free Download](https://www.stimulsoft.com/en/downloads)
 * [NuGet](https://www.nuget.org/packages/Stimulsoft.Reports.Web)
-* [Documentation](https://www.stimulsoft.com/en/documentation/online/programming-manual/index.html?reports_web_asp_net_mvc.htm)
+* [Documentation](https://www.stimulsoft.com/en/documentation/online/programming-manual/reports_web_asp_net_mvc.htm)
 * [License](LICENSE.md)
