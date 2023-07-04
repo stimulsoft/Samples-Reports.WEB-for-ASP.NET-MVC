@@ -1,6 +1,7 @@
 ﻿using Stimulsoft.Report;
 using Stimulsoft.Report.Mvc;
 using System;
+using System.Collections.Specialized;
 using System.Data;
 using System.Web.Mvc;
 
@@ -31,12 +32,17 @@ namespace Saving_a_Report_Template_in_the_Designer.Controllers
 
         public ActionResult SaveReport()
         {
+            var requestParams = StiMvcDesigner.GetRequestParams();
             var report = StiMvcDesigner.GetReportObject();
             
             // Save the report template, for example to JSON string
             var json = report.SaveToJsonString();
-            
-            return StiMvcDesigner.SaveReportResult();
+
+            var name1 = report.ReportName; // Original report name
+            var name2 = requestParams.Designer.FileName; // Report name from the Save dialog
+
+            //return StiMvcDesigner.SaveReportResult();
+            return Content($"{{\"infoMessage\":\"Report file saved successfully as {name2}\"}}");
         }
 
         public ActionResult SaveReportAs()
