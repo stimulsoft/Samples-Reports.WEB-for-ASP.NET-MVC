@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <StiSerializer version="1.02" type="Net" application="StiReport">
   <CalculationMode>Interpretation</CalculationMode>
+  <Culture isNull="true" />
   <Dictionary Ref="1" type="Dictionary" isKey="true">
     <BusinessObjects isList="true" count="0" />
     <Databases isList="true" count="1">
@@ -15,14 +16,14 @@
       <USA_China Ref="3" type="DataTableSource" isKey="true">
         <Alias>USA-China</Alias>
         <Columns isList="true" count="5">
-          <value>Year,System.Double</value>
-          <value>USA,System.Double</value>
-          <value>China,System.Double</value>
-          <value>CCUSA,CCUSA,System.String,Format_x0028__x0022__x007B_0:C0_x007D__x0022__x002C__x0020_USA_China.USA_x0029_</value>
           <value>CCChina,CCChina,System.String,Format_x0028__x0022__x007B_0:C0_x007D__x0022__x002C__x0020_USA_China.China_x0029_</value>
+          <value>CCUSA,CCUSA,System.String,Format_x0028__x0022__x007B_0:C0_x007D__x0022__x002C__x0020_USA_China.USA_x0029_</value>
+          <value>China,System.Double</value>
+          <value>USA,System.Double</value>
+          <value>Year,System.Double</value>
         </Columns>
         <Dictionary isRef="1" />
-        <Key>ee56fd18a60a4c4d85c5bd1a82090ff7</Key>
+        <Key>836b7ccd00474bc6a2eb59a961669d52</Key>
         <Name>USA-China</Name>
         <NameInSource>Data.USA-China</NameInSource>
       </USA_China>
@@ -48,13 +49,13 @@
           <ClientRectangle>0,1071,749,20</ClientRectangle>
           <Components isList="true" count="1">
             <Text6 Ref="6" type="Text" isKey="true">
-              <Border>None;[58:78:94];1;Solid;False;4;Black</Border>
+              <Border>None;[58:78:94];1;Solid;False;4;[0:0:0]</Border>
               <Brush>Transparent</Brush>
               <ClientRectangle>0,0,749,20</ClientRectangle>
-              <ComponentStyle>Footer2</ComponentStyle>
+              <ComponentStyle>Footer1</ComponentStyle>
               <Conditions isList="true" count="0" />
               <Expressions isList="true" count="0" />
-              <Font>Segoe UI,9.75,Regular,Point,False,0</Font>
+              <Font>Segoe UI,9.75</Font>
               <Guid>1980672985e34113a3908b28aea27717</Guid>
               <HorAlignment>Right</HorAlignment>
               <Margins>0,0,0,0</Margins>
@@ -76,7 +77,8 @@
         <Chart1 Ref="7" type="Stimulsoft.Report.Chart.StiChart" isKey="true">
           <Area Ref="8" type="Stimulsoft.Report.Chart.StiClusteredColumnArea" isKey="true">
             <BorderColor>Transparent</BorderColor>
-            <Brush>White</Brush>
+            <BorderThickness>1</BorderThickness>
+            <Brush>[255:255:255]</Brush>
             <Chart isRef="7" />
             <GridLinesHorRight Ref="9" type="Stimulsoft.Report.Chart.StiGridLinesHor" isKey="true">
               <Area isRef="8" />
@@ -113,12 +115,12 @@
               </Title>
             </YRightAxis>
           </Area>
-          <Border>None;Transparent;1;Solid;False;4;Black</Border>
+          <Border>None;Transparent;1;Solid;False;4;[0:0:0]</Border>
           <Brush>Transparent</Brush>
           <ClientRectangle>0,90,749,620</ClientRectangle>
           <Conditions isList="true" count="0" />
           <ConstantLines isList="true" count="0" />
-          <CustomStyleName>Treemap</CustomStyleName>
+          <CustomStyleName>Chart</CustomStyleName>
           <Expressions isList="true" count="0" />
           <Filters isList="true" count="0" />
           <Legend Ref="16" type="Stimulsoft.Report.Chart.StiLegend" isKey="true">
@@ -142,21 +144,21 @@
           <Series isList="true" count="2">
             <Item7 Ref="17" type="Stimulsoft.Report.Chart.StiSteppedAreaSeries" isKey="true">
               <ArgumentDataColumn>USA_China.Year</ArgumentDataColumn>
-              <Brush>[200:142:195:167]</Brush>
+              <Brush>[200:255:180:135]</Brush>
               <BrushNegative>Firebrick</BrushNegative>
               <Chart isRef="7" />
               <Conditions isList="true" count="0" />
               <Filters isList="true" count="0" />
               <Lighting>False</Lighting>
-              <LineColor>142, 195, 167</LineColor>
+              <LineColor>255, 180, 135</LineColor>
               <LineColorNegative>Firebrick</LineColorNegative>
               <LineMarker Ref="18" type="Stimulsoft.Report.Chart.StiLineMarker" isKey="true">
-                <BorderColor>0, 45, 17</BorderColor>
-                <Brush>[192:245:217]</Brush>
+                <BorderColor>105, 30, 0</BorderColor>
+                <Brush>[255:230:185]</Brush>
               </LineMarker>
               <Marker Ref="19" type="Stimulsoft.Report.Chart.StiMarker" isKey="true">
-                <BorderColor>42, 95, 67</BorderColor>
-                <Brush>[242:255:255]</Brush>
+                <BorderColor>155, 80, 35</BorderColor>
+                <Brush>[255:255:235]</Brush>
                 <Size>10</Size>
               </Marker>
               <PointAtCenter>True</PointAtCenter>
@@ -165,7 +167,7 @@
                 <Brush>Transparent</Brush>
                 <Chart isRef="7" />
                 <Font>Arial,7</Font>
-                <LabelColor>90, 90, 90</LabelColor>
+                <LabelColor>White</LabelColor>
                 <MarkerSize>8, 6</MarkerSize>
                 <ValueTypeSeparator>-</ValueTypeSeparator>
                 <Width>0</Width>
@@ -184,21 +186,21 @@
             </Item7>
             <Item9 Ref="22" type="Stimulsoft.Report.Chart.StiSteppedAreaSeries" isKey="true">
               <ArgumentDataColumn>USA_China.Year</ArgumentDataColumn>
-              <Brush>[200:240:203:105]</Brush>
+              <Brush>[200:88:166:146]</Brush>
               <BrushNegative>Firebrick</BrushNegative>
               <Chart isRef="7" />
               <Conditions isList="true" count="0" />
               <Filters isList="true" count="0" />
               <Lighting>False</Lighting>
-              <LineColor>240, 203, 105</LineColor>
+              <LineColor>88, 166, 146</LineColor>
               <LineColorNegative>Firebrick</LineColorNegative>
               <LineMarker Ref="23" type="Stimulsoft.Report.Chart.StiLineMarker" isKey="true">
-                <BorderColor>90, 53, 0</BorderColor>
-                <Brush>[255:253:155]</Brush>
+                <BorderColor>0, 16, 0</BorderColor>
+                <Brush>[138:216:196]</Brush>
               </LineMarker>
               <Marker Ref="24" type="Stimulsoft.Report.Chart.StiMarker" isKey="true">
-                <BorderColor>140, 103, 5</BorderColor>
-                <Brush>[255:255:205]</Brush>
+                <BorderColor>0, 66, 46</BorderColor>
+                <Brush>[188:255:246]</Brush>
                 <Size>10</Size>
               </Marker>
               <PointAtCenter>True</PointAtCenter>
@@ -207,7 +209,7 @@
                 <Brush>Transparent</Brush>
                 <Chart isRef="7" />
                 <Font>Arial,7</Font>
-                <LabelColor>90, 90, 90</LabelColor>
+                <LabelColor>White</LabelColor>
                 <MarkerSize>8, 6</MarkerSize>
                 <ValueTypeSeparator>-</ValueTypeSeparator>
                 <Width>0</Width>
@@ -236,7 +238,7 @@
           <Strips isList="true" count="0" />
           <Style Ref="28" type="Stimulsoft.Report.Chart.StiCustomStyle" isKey="true">
             <Conditions isList="true" count="0" />
-            <Name>Treemap</Name>
+            <Name>Chart</Name>
           </Style>
           <Table Ref="29" type="Stimulsoft.Report.Chart.StiChartTable" isKey="true">
             <DataCells Ref="30" type="Stimulsoft.Report.Chart.StiChartTableDataCells" isKey="true">
@@ -251,53 +253,55 @@
           <ClientRectangle>0,20,749,60</ClientRectangle>
           <Components isList="true" count="4">
             <Text20 Ref="32" type="Text" isKey="true">
-              <Border>Bottom;[158:158:158];1;Solid;False;4;Black</Border>
+              <Border>Bottom;[158:158:158];1;Solid;False;4;[0:0:0]</Border>
               <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
               <ClientRectangle>570,0,179,40</ClientRectangle>
-              <ComponentStyle>Header2</ComponentStyle>
+              <ComponentStyle>Header1</ComponentStyle>
               <Conditions isList="true" count="0" />
               <Expressions isList="true" count="0" />
-              <Font>Segoe UI,24,Bold,Point,False,204</Font>
+              <Font>Segoe UI,24,Bold</Font>
               <Guid>32b5f442bd344ff3ac85a35c89502dd5</Guid>
               <HorAlignment>Right</HorAlignment>
               <Margins>0,0,0,0</Margins>
               <Name>Text20</Name>
               <Page isRef="4" />
               <Parent isRef="31" />
-              <Text>Stimulsoft</Text>
-              <TextBrush>[158:158:158]</TextBrush>
-              <Type>Expression</Type>
-              <VertAlignment>Bottom</VertAlignment>
+              <Text>{ReportAuthor}</Text>
+              <TextBrush>[64:64:64]</TextBrush>
+              <Type>SystemVariables</Type>
+              <VertAlignment>Center</VertAlignment>
             </Text20>
             <Text23 Ref="33" type="Text" isKey="true">
-              <Border>Bottom;[158:158:158];1;Solid;False;4;Black</Border>
+              <Border>Bottom;[158:158:158];1;Solid;False;4;[0:0:0]</Border>
               <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
               <ClientRectangle>0,0,570,40</ClientRectangle>
-              <ComponentStyle>Header2</ComponentStyle>
+              <ComponentStyle>Header1</ComponentStyle>
               <Conditions isList="true" count="0" />
               <Expressions isList="true" count="0" />
-              <Font>Segoe UI,24,Bold,Point,False,204</Font>
+              <Font>Segoe UI,24,Bold</Font>
               <Guid>7b0142d9d05843938d20fbae372e0567</Guid>
               <Margins>0,0,0,0</Margins>
               <Name>Text23</Name>
               <Page isRef="4" />
               <Parent isRef="31" />
-              <Text>Foreign official reserves</Text>
-              <TextBrush>[158:158:158]</TextBrush>
-              <Type>Expression</Type>
+              <Text>{ReportName}</Text>
+              <TextBrush>[64:64:64]</TextBrush>
+              <Type>SystemVariables</Type>
               <VertAlignment>Center</VertAlignment>
             </Text23>
             <Text17 Ref="34" type="Text" isKey="true">
-              <Border>None;[58:78:94];1;Solid;False;4;Black</Border>
+              <Border>None;[58:78:94];1;Solid;False;4;[0:0:0]</Border>
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
               <ClientRectangle>0,40,570,20</ClientRectangle>
-              <ComponentStyle>Footer2</ComponentStyle>
+              <ComponentStyle>Footer1</ComponentStyle>
               <Conditions isList="true" count="0" />
               <Expressions isList="true" count="0" />
-              <Font>Segoe UI,9.75,Regular,Point,False,0</Font>
+              <Font>Segoe UI,9.75</Font>
               <Guid>ab2f301a6a0f4bcf9e0dfa628799cf4a</Guid>
-              <Margins>0,0,0,0</Margins>
+              <Margins>5,0,0,0</Margins>
               <Name>Text17</Name>
               <Page isRef="4" />
               <Parent isRef="31" />
@@ -307,14 +311,14 @@
               <Type>Expression</Type>
             </Text17>
             <Text18 Ref="35" type="Text" isKey="true">
-              <Border>None;[58:78:94];1;Solid;False;4;Black</Border>
+              <Border>None;[58:78:94];1;Solid;False;4;[0:0:0]</Border>
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
               <ClientRectangle>570,40,179,20</ClientRectangle>
-              <ComponentStyle>Footer2</ComponentStyle>
+              <ComponentStyle>Footer1</ComponentStyle>
               <Conditions isList="true" count="0" />
               <Expressions isList="true" count="0" />
-              <Font>Segoe UI,9.75,Regular,Point,False,0</Font>
+              <Font>Segoe UI,9.75</Font>
               <Guid>2ec51eb3570a4482ac3369b53b7efd0c</Guid>
               <HorAlignment>Right</HorAlignment>
               <Margins>0,0,0,0</Margins>
@@ -354,16 +358,280 @@
     <value>Stimulsoft.Base.Dll</value>
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
-  <ReportAlias>ForeignOfficialReserves</ReportAlias>
+  <ReportAlias>Stepped Chart</ReportAlias>
   <ReportAuthor>Stimulsoft</ReportAuthor>
-  <ReportChanged>2/26/2021 4:41:50 PM</ReportChanged>
+  <ReportChanged>5/24/2023 4:35:54 PM</ReportChanged>
   <ReportCreated>1/23/2012 12:52:18 AM</ReportCreated>
   <ReportDescription>This sample demonstrates how to use Stepped Area Series.</ReportDescription>
-  <ReportFile>D:\Reports\Charts\WEB\ForeignOfficialReserves.mrt</ReportFile>
-  <ReportGuid>cf77863c56214335922befe01e9a50ea</ReportGuid>
-  <ReportName>ForeignOfficialReserves</ReportName>
+  <ReportFile>D:\stimulsoft\Stimulsoft.Files.Dashboards\CloudStorage\14.Reports with Charts\Stepped Chart .mrt</ReportFile>
+  <ReportGuid>6d9ebc13c58b43559f6b7e0192d2b7d0</ReportGuid>
+  <ReportIcon>iVBORw0KGgoAAAANSUhEUgAAASAAAAGWCAMAAADvzq7aAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAGAUExURf+8kmGuluS1leLi4vLy8v/Foaa5s9XT1P/Am8rIyPr6+v/o2tzc3a6Md/7s
+4u3t7f/x6v39/ZWwmL+0md3Dssvc6OD0/YOpvvb5+7DRzvr9/0SchdW7oDarlG5wdO3h25e4ztvi
+5v/59IDBsuXe2FaqkP728f/SuJeRi05KSVO7rI/9+f/dyNbOy5l8bP7+/s3O0MjS2i0pK+bt8sCg
+ifDaxdfp8OHTzeW+nuTq7nF+iv+4jtLX2q///2HNw1Opj//+9TFEVeDZ1nFXSe72+bDP5PKrhI+d
+p+jMt/Dr51FldUWhiu3Ru9fW1r7j3Ozl4YVpWR+bhtfb3iaUfuTm52uPpf/i0T9VZvT7/Ug/Oy02
+QPr+///Nrv76+kIxK////Pn14Ofw8xOnkejGrvXkz/+xhMfl9X7t5fv8/VGtlW7j2l2rkWmwl1ql
+jefq7P/8+v+yjPHv7oOli8LAwdnZ2eDg4P77/Orp6fnAnj6zo/f39//Dn//Fofv7+//EoP///4i9
+Cx0AAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAbXElEQVR4Xu2dDV/TyNqH
+WZKfITVLqaDLooLtsqyg2PCivIj7QEGkSE61RgWqVsTd01UWjE1P3QDmqz8zyd02d1sduhZ5u6+z
+x07yT9qZq5MJ7aRti0t8FRIkgAQJIEECSJAAEiSABAkgQQJIkAASJIAECSBBAkiQABIkgAQJqBEU
+d5wQFL/K295rfsHb4Urvn/7SsSLkdEe8wu3e+94toqv3IpR8YuPL0KQg1YLarw+uzV10U/kFWPEl
+Vkaferf9t9bWnl8aH62uQTI/BqWjItY5uLZ2zbXyUffK6E+wMkB1ncdHpy/uqCOwVKJa0K3R6evT
+991Hc5dgxZe4/coTdHttne1wZ3wdPxvsjtaPuk91ji5fn/7J85A1u2FlgE4sKMvbvFljskrQ7Pw6
+32t8bW35IuuD0yPulelzt9jN7d5z13vzvIf1Plhwk9d7r69xQdlH66xbxt3xdbbVRbfvVu/TO27n
+dH76weD6cp1u/T350Wvs0uD682v9t+5nf3zQ2fugcKt3xF1iB1zn9KVWJqirlx1WrE2sheNrc735
+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
+UN0aQIKACAERAiIERAiIEBAhIEJAhICo+YLgfhEQISBCQISACAERAiIERAiIEBAhICJBHIgQEJEg
+DkQIiEgQByIERCSIAxECotMjqN6WECAgQkCEgOi0CNodH/9UuymECIgQECEgOomC6v3O6oV37y6U
+vpkbNmNAiIAIARECopMkCFbstX7caoXi5A9bHn9fvXdv6LJf/utKeR/YCgERAiIERP9GUM77XXhW
++C6CylvuTvq0frxxY6jTL3e++cvn8bv/Pvw/v/ims3zfcAcIiBAQISBqWFBOCeum/3vz30PQ7vjH
+cm95c9XjzRvWWx775at//eDz/smTv7f84tWyINgRAxkCIgREDQtyVNM2JJj2KX+HWbMFff4EfHx3
+Y6vVL1656gvYuvzP0GW/GGAL9AQE1f9N6HoPDAkCIiaoge8wY0RUW/Pgcxx66R36zLPymz/+QImB
+CAERAqLPe5+gg1x9fO/e70/+8sul3vLDw1o/AUqC2FhV7n2l9rIBbLHOQ/shovxbAw1PPcuRnNdv
+WLEys9oUQZ93yzP4k9Bbfrj8+7vLv0K5Qrm31OPqhU/e+NS6dYP1Pq84OVl6j2r896FyBytXIXDF
+QIm9u3fhnNicuflvEgQr9toqz/inkqAfLj/59as6aoH+dvUxO7P9A2PVm60LHh//Yes++uULk1AH
+fiiW6lCic6t0ptw9ekHwJE9+/G/57FQab4JjS8NcHqqMVWDt4dUbN9489Mtv4M+BvdatyhPT6TM+
+dO/G31DuOmJBnz+98U9Pbx7fYOONV7z6pjzefAuXa8aqrYePHz8sne0uTF7hdHqHolecvABnysdD
+9+49hmoNla42ODJBlbPT75ff++XmUKf3bb1/X1pZPhTZYce6lg88MawuV0Hk+1/+B34OT1C9QfBz
++YVBebzZevikqX4OyuWhfy7XqHxY+rPq/S8vwc+hCQp+BByO9b22Cx87YU1lQP6G8eabuPwQCgHK
+Vfn18ASBi71PH4culBb8MZgNyO9u/DLuFysD8lHx1eel2T2ISQA/u3AW6Pz7v/d+/whlGASvPqkM
+yJU/AI8lTe5Be63jH3xDbGwBnjBBVTK2Hv7z+8PaPwCPI83tQXutQ++2fEOfP5Vk/H35ap3z7ZPy
+6eR405we5P783n8zhh067574xa3y2en931AKcFQDcsM0pwe5Pz/034x5/PuNoct+8XgPLQemWT2o
+NKBcflL7N8WJplk96P/g/k6XHUazelBJ0Kmj2T3o1EE9SAD1IAH/qgfl4o53pT31oC+gS7adw4Ie
+/gq8h9sg37KuHnW2+4Zdv77u73/zfpCiGwXHlfS8Ahj5cyUuwG2Qb1hXb7ODbtecdeVGKio/bAJ8
+WZCtSRK7idT5tI+lQSGAU2e7Iv/AWRUyn42swuS/kVNFuM5jFMJQCGDySlZh8y9fq6KwDYUARjcU
+Ahj8J7ECfFkQzDHG61Q+V2WZs8+/dLGK/TrbOXW2C1X3a4ZcR4azD4UAVlWDOE717B8jXEeaU/5q
+wwrbB+5BhEfjgtg45rAuJAcnseVQyNl3HCv4DPN13pYBZLYR3xIWPdi6UCTnfTatjJxj6yKR4N3F
+5Qhf551ZS+TkuLMfich4Hds7F4kHO+W+ty4uBztRiK2L7Mfx49ahcUGWohmGbaMhIsxW2EpRCXb3
+sLedgQa9It/T0PXgOlOxNbsgKcEWmYZRsIsF9BiSYWuGKRuBwyKiaYZkhIvB4S/CHkBSLCk41OU0
+TTGVsB4chvYNtq9uKXWOPETjgsJSwVYlVQ3K2JbYw9lFNF4WJUlRJV0N1qDIP+ppa2idWZAM05YM
+vM6WTNMKNjLOtrMlyQoOiTmJr9qWdVjm7EtSQSuw+sEyJyRpmimFteD9hfh2mqRWLl6pT+OCDMnU
+ipplBHpB3GCPxtYF2xhXTEkyC6Yd6Bk5f50VFBnSiwWT3yMscxylqDG/xWCDHD3M1jFxsMyxFMsO
+FyR0Igsrsh3WzFDwXBBm21ls76DcItvO4p/thuUvQYO0ABIkgAQJIEECSJAAEiSABAkgQQJIkAAS
+JIAECSBBAkiQABIkgAQJIEECSJAAEiSABAkgQQJIkAASJIAECSBBAkiQABIkgAQJIEECSJAAEiSA
+BAkgQQJIkAASJIAECSBBAkiQABIkgAQJIEECSJAAEiSABAkgQQJIkAASJIAECSBBAkiQABIkgAQJ
+IEECSJAAEiSABAkgQQJIkAASJIAECSBBAkiQABIkgAQJIEECSJAAEiSABAkgQQJIkAASJIAECSBB
+AkiQABIkgAQJIEECSJAAEiSABAkgQQJIkAASJIAECSBBAkiQABIkgAQJIEECSJAAEiSABAkgQQJI
+kAASJIAECSBBAkiQABIkgAQJIEECSJAAEiSABAkgQQJIkAASJIAECSBBAkiQABIkgAQJIEECSJAA
+EiSABAkgQQJIkAASJIAECSBBAkiQABIkgAQJIEECSJAAEiSABAkgQQJIkAASJIAECSBBAs60oAFj
+CkpuPLXAb5JjbmrDW1HiTAuyJM2SnMKUXFh1E2NurGANj7l9dyD1OdOCOtSppKpvJ3R9jPed/m3N
+WHCT5V7lcaYFyVNuvyJpSiG96iY33KRhFlddawxSn7M+SMcjLxNpNxT3Fvb9G8RZF+S6O3IPlOpC
+ggSQIAEkSAAJEkCCBJAgASRIAAkSQIIEkCABJEgACfoqrvv/BckWMPunqJAAAAAASUVORK5CYII=</ReportIcon>
+  <ReportImage>iVBORw0KGgoAAAANSUhEUgAAASAAAAGWCAMAAADvzq7aAAAABGdBTUEAALGPC/xhBQAAAYBQTFRF
+/7ySYa6W5LWV4uLi8vLy/8Whprmz1dPU/8CbysjI+vr6/+ja3Nzdrox3/uzi7e3t//Hq/f39lbCY
+v7SZ3cOyy9zo4PT9g6m+9vn7sNHO+v3/RJyF1bugNquUbnB07eHbl7jO2+Lm//n0gMGy5d7YVqqQ
+/vbx/9K4l5GLTkpJU7usj/35/93I1s7LmXxs/v7+zc7QyNLaLSkr5u3ywKCJ8NrF1+nw4dPN5b6e
+5OrucX6K/7iO0tfar///Yc3DU6mP//71MURV4NnWcVdJ7vb5sM/k8quEj52n6My38OvnUWV1RaGK
+7dG719bWvuPc7OXhhWlZH5uG19veJpR+5Obna4+l/+LRP1Vm9Pv9SD87LTZA+v7//82u/vr6QjEr
+///8+fXg5/DzE6eR6Mau9eTP/7GEx+X1fu3l+/z9Ua2VbuPaXauRabCXWqWN5+rs//z6/7KM8e/u
+g6WLwsDB2dnZ4ODg/vv86unp+cCePrOj9/f3/8Of/8Wh+/v7/8Sg////iL0LHQAAABl0RVh0U29m
+dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAABtcSURBVHhe7Z0NX9PI2odZkp8hNUupoMuigu2y
+rKDY8KK8iPtAQaRITrVGBapWxN3TVRaMTU/dAOarPzPJ3TZ3Wx26Fnm7r7PHTvJP2pmrkwntpG2L
+S3wVEiSABAkgQQJIkAASJIAECSBBAkiQABIkgAQJIEECSJAAEiSABAmoERR3nBAUv8rb3mt+wdvh
+Su+f/tKxIuR0R7zC7d773i2iq/cilHxi48vQpCDVgtqvD67NXXRT+QVY8SVWRp96t/231taeXxof
+ra5BMj8GpaMi1jm4tnbNtfJR98roT7AyQHWdx0enL+6oI7BUolrQrdHp69P33Udzl2DFl7j9yhN0
+e22d7XBnfB0/G+yO1o+6T3WOLl+f/snzkDW7YWWATiwoy9u8WWOyStDs/Drfa3xtbfki64PTI+6V
+6XO32M3t3nPXe/O8h/U+WHCT13uvr3FB2UfrrFvG3fF1ttVFt+9W79M7bud0fvrB4PpynW79PfnR
+a+zS4Prza/237md/fNDZ+6Bwq3fEXWIHXOf0pVYmqKuXHVasTayF42tzvflHr54/iPu7A9U9aPzV
+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</ReportImage>
+  <ReportName>Stepped Chart</ReportName>
   <ReportUnit>HundredthsOfInch</ReportUnit>
-  <ReportVersion>2021.2.1.0</ReportVersion>
+  <ReportVersion>2023.2.5.0</ReportVersion>
   <Script>using System;
 using System.Drawing;
 using System.Windows.Forms;
@@ -376,9 +644,9 @@ using Stimulsoft.Report.Components;
 
 namespace Reports
 {
-    public class ForeignOfficialReserves : Stimulsoft.Report.StiReport
+    public class Stepped_Chart : Stimulsoft.Report.StiReport
     {
-        public ForeignOfficialReserves()        {
+        public Stepped_Chart()        {
             this.InitializeComponent();
         }
 
@@ -389,54 +657,57 @@ namespace Reports
 </Script>
   <ScriptLanguage>CSharp</ScriptLanguage>
   <Styles isList="true" count="3">
-    <Header2 Ref="36" type="Stimulsoft.Report.StiStyle" isKey="true">
-      <Border>Bottom;[158:158:158];1;Solid;False;4;Black</Border>
+    <Header1 Ref="36" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>Bottom;[158:158:158];1;Solid;False;4;[0:0:0]</Border>
       <Brush>Transparent</Brush>
       <Conditions isList="true" count="0" />
-      <Font>Segoe UI,24,Bold,Point,False,204</Font>
+      <Font>Segoe UI,24,Bold</Font>
       <HorAlignment>Center</HorAlignment>
-      <Name>Header2</Name>
-      <NegativeTextBrush>Red</NegativeTextBrush>
-      <TextBrush>[158:158:158]</TextBrush>
+      <Name>Header1</Name>
+      <NegativeTextBrush>[255:0:0]</NegativeTextBrush>
+      <TextBrush>[64:64:64]</TextBrush>
       <VertAlignment>Center</VertAlignment>
-    </Header2>
-    <Footer2 Ref="37" type="Stimulsoft.Report.StiStyle" isKey="true">
-      <AllowUseBorderSides>False</AllowUseBorderSides>
-      <Border>None;[58:78:94];1;Solid;False;4;Black</Border>
-      <Brush>Transparent</Brush>
-      <Conditions isList="true" count="0" />
-      <Font>Segoe UI,9.75,Regular,Point,False,0</Font>
-      <HorAlignment>Right</HorAlignment>
-      <Name>Footer2</Name>
-      <NegativeTextBrush>Red</NegativeTextBrush>
-      <TextBrush>[158:158:158]</TextBrush>
-      <VertAlignment>Center</VertAlignment>
-    </Footer2>
-    <Treemap Ref="38" type="Stimulsoft.Report.StiChartStyle" isKey="true">
+    </Header1>
+    <Chart Ref="37" type="Stimulsoft.Report.StiChartStyle" isKey="true">
       <AxisLabelsColor>140, 140, 140</AxisLabelsColor>
       <AxisLineColor>140, 140, 140</AxisLineColor>
       <AxisTitleColor>140, 140, 140</AxisTitleColor>
       <BasicStyleColor>WhiteSmoke</BasicStyleColor>
-      <Border>None;Transparent;1;Solid;False;4;Black</Border>
+      <Border>None;Transparent;1;Solid;False;4;[0:0:0]</Border>
       <Brush>Transparent</Brush>
       <ChartAreaBorderColor>Transparent</ChartAreaBorderColor>
-      <ChartAreaBrush>White</ChartAreaBrush>
+      <ChartAreaBrush>[255:255:255]</ChartAreaBrush>
       <Conditions isList="true" count="0" />
       <GridLinesHorColor>Transparent</GridLinesHorColor>
       <GridLinesVertColor>Transparent</GridLinesVertColor>
       <InterlacingHorBrush>[10:155:155:155]</InterlacingHorBrush>
       <InterlacingVertBrush>[10:155:155:155]</InterlacingVertBrush>
       <LegendBorderColor>Transparent</LegendBorderColor>
-      <LegendBrush>White</LegendBrush>
+      <LegendBrush>[255:255:255]</LegendBrush>
       <LegendLabelsColor>140, 140, 140</LegendLabelsColor>
       <LegendTitleColor>DimGray</LegendTitleColor>
-      <Name>Treemap</Name>
+      <Name>Chart</Name>
+      <SeriesBorderColor>Transparent</SeriesBorderColor>
       <SeriesLabelsBorderColor>Transparent</SeriesLabelsBorderColor>
       <SeriesLabelsBrush>Transparent</SeriesLabelsBrush>
-      <SeriesLabelsColor>90, 90, 90</SeriesLabelsColor>
+      <SeriesLabelsColor>White</SeriesLabelsColor>
       <SeriesLabelsLineColor>140, 140, 140</SeriesLabelsLineColor>
-      <StyleColors>[142:195:167], [240:203:105], [95:183:229], [220:83:86], [171:145:197], [109:83:220]</StyleColors>
+      <StyleColors>[255:180:135], [88:166:146], [95:127:167], [239:127:147], [255:209:135], [147:219:116]</StyleColors>
+      <ToolTipBrush>White</ToolTipBrush>
+      <ToolTipTextBrush>Black</ToolTipTextBrush>
       <TrendLineColor>Transparent</TrendLineColor>
-    </Treemap>
+    </Chart>
+    <Footer1 Ref="38" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <AllowUseBorderSides>False</AllowUseBorderSides>
+      <Border>None;[58:78:94];1;Solid;False;4;[0:0:0]</Border>
+      <Brush>Transparent</Brush>
+      <Conditions isList="true" count="0" />
+      <Font>Segoe UI,9.75</Font>
+      <HorAlignment>Right</HorAlignment>
+      <Name>Footer1</Name>
+      <NegativeTextBrush>[255:0:0]</NegativeTextBrush>
+      <TextBrush>[158:158:158]</TextBrush>
+      <VertAlignment>Center</VertAlignment>
+    </Footer1>
   </Styles>
 </StiSerializer>

@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <StiSerializer version="1.02" type="Net" application="StiReport">
   <CalculationMode>Interpretation</CalculationMode>
+  <Culture isNull="true" />
   <Dictionary Ref="1" type="Dictionary" isKey="true">
     <BusinessObjects isList="true" count="0" />
     <Databases isList="true" count="1">
@@ -12,34 +13,34 @@
       </Excel>
     </Databases>
     <DataSources isList="true" count="2">
-      <Model Ref="3" type="DataTableSource" isKey="true">
-        <Alias>Model</Alias>
-        <Columns isList="true" count="7">
-          <value>October,System.Double</value>
-          <value>ModelID,System.Double</value>
-          <value>Model,System.String</value>
-          <value>ID,System.Double</value>
-          <value>Growth,System.Double</value>
-          <value>CC2016,CC2016,System.String,Format_x0028__x0022__x007B_0:N0_x007D__x0022__x002C__x0020_Manufacturer.Models.n2016_x0029_</value>
-          <value>_x0032_016,System.Double</value>
-        </Columns>
-        <Dictionary isRef="1" />
-        <Key>cfbc6d7e0d65468184d4c5eb70ca9346</Key>
-        <Name>Model</Name>
-        <NameInSource>Excel.Model</NameInSource>
-      </Model>
-      <Manufacturer Ref="4" type="DataTableSource" isKey="true">
+      <Manufacturer Ref="3" type="DataTableSource" isKey="true">
         <Alias>Manufacturer</Alias>
         <Columns isList="true" count="3">
-          <value>October_x0020_,System.Double</value>
-          <value>Manufacturer,System.String</value>
           <value>JW,System.Double</value>
+          <value>Manufacturer,System.String</value>
+          <value>October_x0020_,System.Double</value>
         </Columns>
         <Dictionary isRef="1" />
-        <Key>e8c28db6b9ed4a0daf4e872974942f06</Key>
+        <Key>1b7ec4f3c99240dcb82cb749a01a6bcb</Key>
         <Name>Manufacturer</Name>
         <NameInSource>Excel.Manufacturer</NameInSource>
       </Manufacturer>
+      <Model Ref="4" type="DataTableSource" isKey="true">
+        <Alias>Model</Alias>
+        <Columns isList="true" count="7">
+          <value>_x0032_016,System.Double</value>
+          <value>CC2016,CC2016,System.String,Format_x0028__x0022__x007B_0:N0_x007D__x0022__x002C__x0020_Manufacturer.Models.n2016_x0029_</value>
+          <value>Growth,System.Double</value>
+          <value>ID,System.Double</value>
+          <value>Model,System.String</value>
+          <value>ModelID,System.Double</value>
+          <value>October,System.Double</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Key>f57c60aee59943238d259e2c9caf806f</Key>
+        <Name>Model</Name>
+        <NameInSource>Excel.Model</NameInSource>
+      </Model>
     </DataSources>
     <Relations isList="true" count="2">
       <Name Ref="5" type="DataRelation" isKey="true">
@@ -47,28 +48,28 @@
         <ChildColumns isList="true" count="1">
           <value>ID</value>
         </ChildColumns>
-        <ChildSource isRef="3" />
+        <ChildSource isRef="4" />
         <Dictionary isRef="1" />
         <Name>Name</Name>
         <NameInSource>Relation</NameInSource>
         <ParentColumns isList="true" count="1">
           <value>JW</value>
         </ParentColumns>
-        <ParentSource isRef="4" />
+        <ParentSource isRef="3" />
       </Name>
       <Models Ref="6" type="DataRelation" isKey="true">
         <Alias>Models</Alias>
         <ChildColumns isList="true" count="1">
           <value>JW</value>
         </ChildColumns>
-        <ChildSource isRef="4" />
+        <ChildSource isRef="3" />
         <Dictionary isRef="1" />
         <Name>Models</Name>
         <NameInSource>Relation2</NameInSource>
         <ParentColumns isList="true" count="1">
           <value>ID</value>
         </ParentColumns>
-        <ParentSource isRef="3" />
+        <ParentSource isRef="4" />
       </Models>
     </Relations>
     <Report isRef="0" />
@@ -91,13 +92,13 @@
           <ClientRectangle>0,729,1091,20</ClientRectangle>
           <Components isList="true" count="1">
             <Text1 Ref="9" type="Text" isKey="true">
-              <Border>None;[58:78:94];1;Solid;False;4;Black</Border>
+              <Border>None;[58:78:94];1;Solid;False;4;[0:0:0]</Border>
               <Brush>Transparent</Brush>
               <ClientRectangle>0,0,1090,20</ClientRectangle>
-              <ComponentStyle>Footer2</ComponentStyle>
+              <ComponentStyle>Footer1</ComponentStyle>
               <Conditions isList="true" count="0" />
               <Expressions isList="true" count="0" />
-              <Font>Segoe UI,9.75,Regular,Point,False,0</Font>
+              <Font>Segoe UI,9.75</Font>
               <Guid>52029fc4f90b4910890d2d48bf222940</Guid>
               <HorAlignment>Right</HorAlignment>
               <Margins>0,0,0,0</Margins>
@@ -122,50 +123,52 @@
           <ClientRectangle>0,20,1091,70</ClientRectangle>
           <Components isList="true" count="4">
             <Text3 Ref="11" type="Text" isKey="true">
-              <Border>Bottom;[191:191:191];1;Solid;False;4;Black</Border>
+              <Border>Bottom;[158:158:158];1;Solid;False;4;[0:0:0]</Border>
               <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
               <ClientRectangle>0,0,910,40</ClientRectangle>
-              <ComponentStyle>Header2</ComponentStyle>
+              <ComponentStyle>Header1</ComponentStyle>
               <Conditions isList="true" count="0" />
               <Expressions isList="true" count="0" />
-              <Font>Segoe UI,21.75,Bold,Point,False,204</Font>
+              <Font>Segoe UI,24,Bold</Font>
               <Guid>17636e00bdac42e0a06ba6f6e406699c</Guid>
               <Margins>0,0,0,0</Margins>
               <Name>Text3</Name>
               <Page isRef="7" />
               <Parent isRef="10" />
-              <Text>Top Auto Sales in USA'16</Text>
-              <TextBrush>[158:158:158]</TextBrush>
-              <Type>Expression</Type>
+              <Text>{ReportName}</Text>
+              <TextBrush>[64:64:64]</TextBrush>
+              <Type>SystemVariables</Type>
               <VertAlignment>Center</VertAlignment>
             </Text3>
             <Text6 Ref="12" type="Text" isKey="true">
-              <Border>Bottom;[191:191:191];1;Solid;False;4;Black</Border>
+              <Border>Bottom;[158:158:158];1;Solid;False;4;[0:0:0]</Border>
               <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
               <ClientRectangle>910,0,180,40</ClientRectangle>
-              <ComponentStyle>Header2</ComponentStyle>
+              <ComponentStyle>Header1</ComponentStyle>
               <Conditions isList="true" count="0" />
               <Expressions isList="true" count="0" />
-              <Font>Segoe UI,21.75,Bold,Point,False,204</Font>
+              <Font>Segoe UI,24,Bold</Font>
               <Guid>0f3fdb7010084d4cb30983c2f4edecf8</Guid>
               <HorAlignment>Right</HorAlignment>
               <Margins>0,0,0,0</Margins>
               <Name>Text6</Name>
               <Page isRef="7" />
               <Parent isRef="10" />
-              <Text>Stimulsoft</Text>
-              <TextBrush>[158:158:158]</TextBrush>
-              <Type>Expression</Type>
+              <Text>{ReportAuthor}</Text>
+              <TextBrush>[64:64:64]</TextBrush>
+              <Type>SystemVariables</Type>
               <VertAlignment>Center</VertAlignment>
             </Text6>
             <Text4 Ref="13" type="Text" isKey="true">
-              <Border>None;[58:78:94];1;Solid;False;4;Black</Border>
+              <Border>None;[58:78:94];1;Solid;False;4;[0:0:0]</Border>
               <Brush>Transparent</Brush>
               <ClientRectangle>0,40,910,20</ClientRectangle>
-              <ComponentStyle>Footer2</ComponentStyle>
+              <ComponentStyle>Footer1</ComponentStyle>
               <Conditions isList="true" count="0" />
               <Expressions isList="true" count="0" />
-              <Font>Segoe UI,9.75,Regular,Point,False,0</Font>
+              <Font>Segoe UI,9.75</Font>
               <Guid>6fb78e8258dc4659b0a9a44e1fb3ca0d</Guid>
               <Margins>5,0,0,0</Margins>
               <Name>Text4</Name>
@@ -176,13 +179,13 @@
               <Type>Expression</Type>
             </Text4>
             <Text5 Ref="14" type="Text" isKey="true">
-              <Border>None;[58:78:94];1;Solid;False;4;Black</Border>
+              <Border>None;[58:78:94];1;Solid;False;4;[0:0:0]</Border>
               <Brush>Transparent</Brush>
               <ClientRectangle>910,40,180,20</ClientRectangle>
-              <ComponentStyle>Footer2</ComponentStyle>
+              <ComponentStyle>Footer1</ComponentStyle>
               <Conditions isList="true" count="0" />
               <Expressions isList="true" count="0" />
-              <Font>Segoe UI,9.75,Regular,Point,False,0</Font>
+              <Font>Segoe UI,9.75</Font>
               <Guid>bb5f5cdefca04216b7c558735c1ded16</Guid>
               <HorAlignment>Right</HorAlignment>
               <Margins>0,5,0,0</Margins>
@@ -211,21 +214,22 @@
             <Chart1 Ref="17" type="Stimulsoft.Report.Chart.StiChart" isKey="true">
               <Area Ref="18" type="Stimulsoft.Report.Chart.StiTreemapArea" isKey="true">
                 <BorderColor>Transparent</BorderColor>
-                <Brush>White</Brush>
+                <BorderThickness>1</BorderThickness>
+                <Brush>[255:255:255]</Brush>
                 <Chart isRef="17" />
                 <ColorEach>True</ColorEach>
               </Area>
-              <Border>None;Transparent;1;Solid;False;4;Black</Border>
+              <Border>None;Transparent;1;Solid;False;4;[0:0:0]</Border>
               <Brush>Transparent</Brush>
               <ClientRectangle>0,0,1090,490</ClientRectangle>
               <Conditions isList="true" count="0" />
               <ConstantLines isList="true" count="0" />
-              <CustomStyleName>Treemap</CustomStyleName>
+              <CustomStyleName>Chart</CustomStyleName>
               <Expressions isList="true" count="0" />
               <Filters isList="true" count="0" />
               <Legend Ref="19" type="Stimulsoft.Report.Chart.StiLegend" isKey="true">
                 <BorderColor>Transparent</BorderColor>
-                <Brush>White</Brush>
+                <Brush>[255:255:255]</Brush>
                 <Chart isRef="17" />
                 <Font>Arial,8</Font>
                 <LabelsColor>140, 140, 140</LabelsColor>
@@ -244,6 +248,7 @@
                   <AllowApplyStyle>False</AllowApplyStyle>
                   <ArgumentDataColumn>Manufacturer.Manufacturer</ArgumentDataColumn>
                   <BorderColor>Transparent</BorderColor>
+                  <BorderThickness>1</BorderThickness>
                   <Brush>[95:183:229]</Brush>
                   <Chart isRef="17" />
                   <Conditions isList="true" count="0" />
@@ -291,7 +296,7 @@ Click This Area to Show Nissan Sales Staticticks in 2016;</ListOfToolTips>
               <Strips isList="true" count="0" />
               <Style Ref="23" type="Stimulsoft.Report.Chart.StiCustomStyle" isKey="true">
                 <Conditions isList="true" count="0" />
-                <Name>Treemap</Name>
+                <Name>Chart</Name>
               </Style>
             </Chart1>
           </Components>
@@ -324,20 +329,21 @@ Click This Area to Show Nissan Sales Staticticks in 2016;</ListOfToolTips>
           <ClientRectangle>0,20,1022,60</ClientRectangle>
           <Components isList="true" count="1">
             <Text2 Ref="26" type="Text" isKey="true">
-              <Border>None;[182:182:182];1;Solid;False;4;Black</Border>
+              <Border>Bottom;[158:158:158];1;Solid;False;4;[0:0:0]</Border>
               <Brush>Transparent</Brush>
               <ClientRectangle>0,0,1020,50</ClientRectangle>
-              <ComponentStyle>Header3</ComponentStyle>
+              <ComponentStyle>Header1</ComponentStyle>
               <Conditions isList="true" count="0" />
               <Expressions isList="true" count="0" />
-              <Font>Segoe UI,27.75,Bold,Point,False,204</Font>
+              <Font>Segoe UI,24,Bold</Font>
+              <Guid>a59aeaa44b5d45198eed82490c815c39</Guid>
               <HorAlignment>Center</HorAlignment>
               <Margins>0,0,0,0</Margins>
               <Name>Text2</Name>
               <Page isRef="24" />
               <Parent isRef="25" />
               <Text>Sales {this["SeriesArgument"]} Models in 2016</Text>
-              <TextBrush>[77:182:172]</TextBrush>
+              <TextBrush>[64:64:64]</TextBrush>
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </Text2>
@@ -356,66 +362,79 @@ Click This Area to Show Nissan Sales Staticticks in 2016;</ListOfToolTips>
               <Area Ref="29" type="Stimulsoft.Report.Chart.StiClusteredBarArea" isKey="true">
                 <AllowApplyStyle>False</AllowApplyStyle>
                 <BorderColor>Transparent</BorderColor>
+                <BorderThickness>1</BorderThickness>
                 <Brush>Transparent</Brush>
                 <Chart isRef="28" />
                 <ColorEach>True</ColorEach>
-                <GridLinesHorRight Ref="30" type="Stimulsoft.Report.Chart.StiGridLinesHor" isKey="true">
+                <GridLinesHor Ref="30" type="Stimulsoft.Report.Chart.StiGridLinesHor" isKey="true">
+                  <Area isRef="29" />
+                  <Color>Transparent</Color>
+                  <MinorColor>Transparent</MinorColor>
+                  <Visible>False</Visible>
+                </GridLinesHor>
+                <GridLinesHorRight Ref="31" type="Stimulsoft.Report.Chart.StiGridLinesHor" isKey="true">
                   <Area isRef="29" />
                   <Color>Silver</Color>
                   <MinorColor>Gainsboro</MinorColor>
                   <Visible>False</Visible>
                 </GridLinesHorRight>
-                <XAxis Ref="31" type="Stimulsoft.Report.Chart.StiXBottomAxis" isKey="true">
+                <GridLinesVert Ref="32" type="Stimulsoft.Report.Chart.StiGridLinesVert" isKey="true">
+                  <Area isRef="29" />
+                  <Color>Transparent</Color>
+                  <MinorColor>Transparent</MinorColor>
+                  <Visible>False</Visible>
+                </GridLinesVert>
+                <XAxis Ref="33" type="Stimulsoft.Report.Chart.StiXBottomAxis" isKey="true">
                   <AllowApplyStyle>False</AllowApplyStyle>
                   <Area isRef="29" />
                   <ArrowStyle>Triangle</ArrowStyle>
-                  <Labels Ref="32" type="Stimulsoft.Report.Chart.StiAxisLabels" isKey="true">
+                  <Labels Ref="34" type="Stimulsoft.Report.Chart.StiAxisLabels" isKey="true">
                     <Color>140, 140, 140</Color>
                     <Font>Tahoma,8</Font>
                     <Format>N0</Format>
                   </Labels>
                   <LineColor>140, 140, 140</LineColor>
                 </XAxis>
-                <YAxis Ref="33" type="Stimulsoft.Report.Chart.StiYLeftAxis" isKey="true">
+                <YAxis Ref="35" type="Stimulsoft.Report.Chart.StiYLeftAxis" isKey="true">
                   <AllowApplyStyle>False</AllowApplyStyle>
                   <Area isRef="29" />
                   <ArrowStyle>Triangle</ArrowStyle>
                   <LineColor>140, 140, 140</LineColor>
-                  <Ticks Ref="34" type="Stimulsoft.Report.Chart.StiAxisTicks" isKey="true">
+                  <Ticks Ref="36" type="Stimulsoft.Report.Chart.StiAxisTicks" isKey="true">
                     <Visible>False</Visible>
                   </Ticks>
-                  <Title Ref="35" type="Stimulsoft.Report.Chart.StiAxisTitle" isKey="true">
+                  <Title Ref="37" type="Stimulsoft.Report.Chart.StiAxisTitle" isKey="true">
                     <Color>140, 140, 140</Color>
                     <Direction>BottomToTop</Direction>
                     <Font>Tahoma,12,Bold</Font>
                   </Title>
                 </YAxis>
-                <YRightAxis Ref="36" type="Stimulsoft.Report.Chart.StiYRightAxis" isKey="true">
+                <YRightAxis Ref="38" type="Stimulsoft.Report.Chart.StiYRightAxis" isKey="true">
                   <Area isRef="29" />
-                  <Labels Ref="37" type="Stimulsoft.Report.Chart.StiAxisLabels" isKey="true">
+                  <Labels Ref="39" type="Stimulsoft.Report.Chart.StiAxisLabels" isKey="true">
                     <Color>140, 140, 140</Color>
                     <Font>Tahoma,8</Font>
                     <TextAlignment>Left</TextAlignment>
                   </Labels>
                   <LineColor>140, 140, 140</LineColor>
-                  <Title Ref="38" type="Stimulsoft.Report.Chart.StiAxisTitle" isKey="true">
+                  <Title Ref="40" type="Stimulsoft.Report.Chart.StiAxisTitle" isKey="true">
                     <Color>140, 140, 140</Color>
                     <Direction>TopToBottom</Direction>
                     <Font>Tahoma,12,Bold</Font>
                   </Title>
                 </YRightAxis>
               </Area>
-              <Border>None;Transparent;1;Solid;False;4;Black</Border>
+              <Border>None;Transparent;1;Solid;False;4;[0:0:0]</Border>
               <Brush>Transparent</Brush>
               <ClientRectangle>0,0,1020,460</ClientRectangle>
               <Conditions isList="true" count="0" />
               <ConstantLines isList="true" count="0" />
-              <CustomStyleName>Detail_Chart</CustomStyleName>
+              <CustomStyleName>Chart</CustomStyleName>
               <Expressions isList="true" count="0" />
               <Filters isList="true" count="0" />
-              <Legend Ref="39" type="Stimulsoft.Report.Chart.StiLegend" isKey="true">
+              <Legend Ref="41" type="Stimulsoft.Report.Chart.StiLegend" isKey="true">
                 <BorderColor>Transparent</BorderColor>
-                <Brush>White</Brush>
+                <Brush>[255:255:255]</Brush>
                 <Chart isRef="28" />
                 <Font>Arial,8</Font>
                 <LabelsColor>140, 140, 140</LabelsColor>
@@ -429,10 +448,11 @@ Click This Area to Show Nissan Sales Staticticks in 2016;</ListOfToolTips>
               <Page isRef="24" />
               <Parent isRef="27" />
               <Series isList="true" count="1">
-                <Item22 Ref="40" type="Stimulsoft.Report.Chart.StiClusteredBarSeries" isKey="true">
+                <Item22 Ref="42" type="Stimulsoft.Report.Chart.StiClusteredBarSeries" isKey="true">
                   <AllowApplyStyle>False</AllowApplyStyle>
                   <ArgumentDataColumn>Model.Model</ArgumentDataColumn>
                   <BorderColor>Transparent</BorderColor>
+                  <BorderThickness>1</BorderThickness>
                   <Brush>[220:83:86]</Brush>
                   <BrushNegative>Firebrick</BrushNegative>
                   <Chart isRef="28" />
@@ -440,7 +460,7 @@ Click This Area to Show Nissan Sales Staticticks in 2016;</ListOfToolTips>
                   <Filters isList="true" count="1">
                     <value>Expression,String,EqualTo,Model.Name.JW_x0020__x003D__x003D__x0020_System.Convert.ToInt32_x0028_this_x005B__x0022_SeriesTag_x0022__x005D__x0029_</value>
                   </Filters>
-                  <SeriesLabels Ref="41" type="Stimulsoft.Report.Chart.StiCenterAxisLabels" isKey="true">
+                  <SeriesLabels Ref="43" type="Stimulsoft.Report.Chart.StiCenterAxisLabels" isKey="true">
                     <BorderColor>Transparent</BorderColor>
                     <Brush>Transparent</Brush>
                     <Chart isRef="28" />
@@ -453,7 +473,7 @@ Click This Area to Show Nissan Sales Staticticks in 2016;</ListOfToolTips>
                   <ShowShadow>False</ShowShadow>
                   <Title>Series 1</Title>
                   <TrendLines isList="true" count="1">
-                    <Item23 Ref="42" type="Stimulsoft.Report.Chart.StiTrendLineNone" isKey="true">
+                    <Item23 Ref="44" type="Stimulsoft.Report.Chart.StiTrendLineNone" isKey="true">
                       <Font>Arial,7</Font>
                       <LineColor>Transparent</LineColor>
                       <ShowShadow>False</ShowShadow>
@@ -462,7 +482,7 @@ Click This Area to Show Nissan Sales Staticticks in 2016;</ListOfToolTips>
                   <ValueDataColumn>Model.n2016</ValueDataColumn>
                 </Item22>
               </Series>
-              <SeriesLabels Ref="43" type="Stimulsoft.Report.Chart.StiInsideEndAxisLabels" isKey="true">
+              <SeriesLabels Ref="45" type="Stimulsoft.Report.Chart.StiInsideEndAxisLabels" isKey="true">
                 <AllowApplyStyle>False</AllowApplyStyle>
                 <BorderColor>Transparent</BorderColor>
                 <Brush>Transparent</Brush>
@@ -477,9 +497,9 @@ Click This Area to Show Nissan Sales Staticticks in 2016;</ListOfToolTips>
               <SeriesLabelsConditions isList="true" count="0" />
               <Sort isList="true" count="0" />
               <Strips isList="true" count="0" />
-              <Style Ref="44" type="Stimulsoft.Report.Chart.StiCustomStyle" isKey="true">
+              <Style Ref="46" type="Stimulsoft.Report.Chart.StiCustomStyle" isKey="true">
                 <Conditions isList="true" count="0" />
-                <Name>Detail_Chart</Name>
+                <Name>Chart</Name>
               </Style>
             </Chart2>
           </Components>
@@ -512,16 +532,170 @@ Click This Area to Show Nissan Sales Staticticks in 2016;</ListOfToolTips>
     <value>Stimulsoft.Base.Dll</value>
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
-  <ReportAlias>TopAutoSalesInUSA16</ReportAlias>
+  <ReportAlias>Top Auto Sales</ReportAlias>
   <ReportAuthor>Stimulsoft</ReportAuthor>
-  <ReportChanged>2/26/2021 4:42:51 PM</ReportChanged>
+  <ReportChanged>5/24/2023 4:37:55 PM</ReportChanged>
   <ReportCreated>2/16/2017 3:18:53 AM</ReportCreated>
   <ReportDescription>This report demonstrates auto sales in USA 2016.</ReportDescription>
-  <ReportFile>D:\Reports\Charts\WEB\TopAutoSalesInUSA16.mrt</ReportFile>
-  <ReportGuid>c73d76850ad4474c9b8e72d5a4da2e4f</ReportGuid>
-  <ReportName>TopAutoSalesInUSA16</ReportName>
+  <ReportFile>D:\stimulsoft\Stimulsoft.Files.Dashboards\CloudStorage\14.Reports with Charts\Top Auto Sales.mrt</ReportFile>
+  <ReportGuid>98df964f52434d0c8ffe6bd547de8efd</ReportGuid>
+  <ReportIcon>iVBORw0KGgoAAAANSUhEUgAAAZYAAAEgCAMAAACgtaXMAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAGAUExURf/Rgf+ygf/46//QsuLi4tnZ2v/hzV+MspSyyQCmkP/p1f/r7tTm7rGxsf+L
+lP/XkbfK3NHe50R+qx2amvTy8VC4qP/bxUdNUSexnf94jvf7+v/jsvj4+Imqwu7i2P+Yqnubtv+q
+t+ry9y0rLImQkO78/0d9qP9+lMGjjvDu6sXX4v/68W5UQ2trbODd3P/En//9+v/K1Nejk/7+/OXu
+8/+xfXhiU9nHuf++lMS7tltFOMDk3U9uhGB7jO3ZykFVabSahqqNdlBhbzREU//T28nLy/+4hY54
+aI6tjvL2+HHEtj14pP/WguSAmv+4xMDP3fDq5P/d4vf+/3CDkObq7Ek5LwCljvn28+jm4//w3Ka/
+0//BzP/QfdHR0bfAycyznrHe1jI4PuDm6eW/jtfU0muKof+5jPr6+gCnlP/Nd/f6/QChiv779/+A
+lIfNwf/3+JnTyfn5+UR6pqPYz/z69/j5+j19rPn8/E5+q6Wiof+Alf+1hv/ShACokk2Aqv///79G
+1JEAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAPCUlEQVR4Xu3c/18S2R7H
+cZEBlRXR3ckyUZEpWRRHWxDRTApML7mrZBBfzC+whHfN26Zr16uY86/fzxlm+6I9Rk4acx7r+1XI
+fMPa8/TMgX7YFg0JGFiEDCxCBhYhA4uQgUXIwCJkYBEysAgZWIQMLEIGFiEDi5CBRcium2UyHzG2
+kBb0GxufCuczxtbffXXAzrE8ToyPjycGjL3P20rcM7ZYe++NDdbY1njihfE3cM0+qm/c2NKPEwnf
+kaaltHR2bs04+LHWUOKLY8ElZY5de65zLD+/iCrjS0Vj77PGQkqy09gmo/inbS38hF4SH63vuLI3
+nKU1qjxaStwfW3qtjR1fHMjzLFuKr6dA157rwk3sF6WbvgZn3J1aePpp2r1RPzyfvZcd0CanNzV5
+pmcwqvgkLTfj7mGnxkJJv7bnDQ+63ZE6S8VNSHR6VX/pzWowSz/9uf2tbGIz9bQSnllN0yjNbN4P
+T2+u5WZGx4hlTB+Z9AwN1+BSyaduKYnNc9PqAsvPChFPz5ZKyaIWKiVKSrt++HFJCs1pY7Pxo3nF
+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</ReportIcon>
+  <ReportImage>iVBORw0KGgoAAAANSUhEUgAAAZYAAAEgCAMAAACgtaXMAAAABGdBTUEAALGPC/xhBQAAAYBQTFRF
+/9GB/7KB//jr/9Cy4uLi2dna/+HNX4yylLLJAKaQ/+nV/+vu1ObusbGx/4uU/9eRt8rc0d7nRH6r
+HZqa9PLxULio/9vFR01RJ7Gd/3iO9/v6/+Oy+Pj4iarC7uLY/5iqe5u2/6q36vL3LSssiZCQ7vz/
+R32o/36UwaOO8O7qxdfi//rxblRDa2ts4N3c/8Sf//36/8rU16OT/v785e7z/7F9eGJT2ce5/76U
+xLu2W0U4wOTdT26EYHuM7dnKQVVptJqGqo12UGFvNERT/9PbycvL/7iFjnhojq2O8vb4ccS2PXik
+/9aC5ICa/7jEwM/d8Ork/93i9/7/cIOQ5ursSTkvAKWO+fbz6Obj//Dcpr/T/8HM/9B90dHRt8DJ
+zLOesd7WMjg+4Obp5b+O19TSa4qh/7mM+vr6AKeU/8139/r9AKGK/vv3/4CUh83B//f4mdPJ+fn5
+RHqmo9jP/Pr3+Pn6PX2s+fz8Tn6rpaKh/4CV/7WG/9KEAKiSTYCq////v0bUkQAAABl0RVh0U29m
+dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAA8JSURBVHhe7dz/XxLZHsdxkQGVFdHdyTJRkSlZ
+FEdbENFMCkwvuatkEF/ML7CEd83bpmvXq5jzr9/PGWb7oj1GThpzHuv7Vch8w9rz9MyBftgWDQkY
+WIQMLEIGFiEDi5CBRcjAImRgETKwCBlYhAwsQgYWIQOLkIFFyK6bZTIfMbaQFvQbG58K5zPG1t99
+dcDOsTxOjI+PJwaMvc/bStwztlh7740N1tjWeOKF8TdwzT6qb9zY0o8TCd+RpqW0dHZuzTj4sdZQ
+4otjwSVljl17rnMsP7+IKuNLRWPvs8ZCSrLT2Caj+KdtLfyEXhIfre+4sjecpTWqPFpK3B9beq2N
+HV8cyPMsW4qvp0DXnuvCTewXpZu+BmfcnVp4+mnavVE/PJ+9lx3QJqc3NXmmZzCq+CQtN+PuYafG
+Qkm/tucND7rdkTpLxU1IdHpVf+nNajBLP/25/a1sYjP1tBKeWU3TKM1s3g9Pb67lZkbHiGVMH5n0
+DA3X4FLJp24pic1z0+oCy88KEU/PlkrJohYqJUpKu374cUkKzWljs/GjecW3VcqW2gdDpVKJnQwv
+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
+0/4PeGknfUOUvOkAAAAASUVORK5CYII=</ReportImage>
+  <ReportName>Top Auto Sales</ReportName>
   <ReportUnit>HundredthsOfInch</ReportUnit>
-  <ReportVersion>2021.2.1.0</ReportVersion>
+  <ReportVersion>2023.2.5.0</ReportVersion>
   <Script>using System;
 using System.Drawing;
 using System.Windows.Forms;
@@ -534,9 +708,9 @@ using Stimulsoft.Report.Components;
 
 namespace Reports
 {
-    public class TopAutoSalesInUSA16 : Stimulsoft.Report.StiReport
+    public class Tree_Map_Chart : Stimulsoft.Report.StiReport
     {
-        public TopAutoSalesInUSA16()        {
+        public Tree_Map_Chart()        {
             this.InitializeComponent();
         }
 
@@ -546,224 +720,58 @@ namespace Reports
 }
 </Script>
   <ScriptLanguage>CSharp</ScriptLanguage>
-  <Styles isList="true" count="15">
-    <Header2 Ref="45" type="Stimulsoft.Report.StiStyle" isKey="true">
-      <AllowUseBorderFormatting>False</AllowUseBorderFormatting>
-      <AllowUseBorderSides>False</AllowUseBorderSides>
-      <AllowUseBorderSidesFromLocation>True</AllowUseBorderSidesFromLocation>
+  <Styles isList="true" count="3">
+    <Header1 Ref="47" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>Bottom;[158:158:158];1;Solid;False;4;[0:0:0]</Border>
       <Brush>Transparent</Brush>
       <Conditions isList="true" count="0" />
-      <Font>Segoe UI,21.75,Bold,Point,False,204</Font>
+      <Font>Segoe UI,24,Bold</Font>
       <HorAlignment>Center</HorAlignment>
-      <Name>Header2</Name>
-      <NegativeTextBrush>Red</NegativeTextBrush>
-      <TextBrush>[158:158:158]</TextBrush>
+      <Name>Header1</Name>
+      <NegativeTextBrush>[255:0:0]</NegativeTextBrush>
+      <TextBrush>[64:64:64]</TextBrush>
       <VertAlignment>Center</VertAlignment>
-    </Header2>
-    <Header3 Ref="46" type="Stimulsoft.Report.StiStyle" isKey="true">
-      <Border>None;[182:182:182];1;Solid;False;4;Black</Border>
-      <Brush>Transparent</Brush>
-      <Conditions isList="true" count="0" />
-      <Font>Segoe UI,27.75,Bold,Point,False,204</Font>
-      <HorAlignment>Center</HorAlignment>
-      <Name>Header3</Name>
-      <NegativeTextBrush>Red</NegativeTextBrush>
-      <TextBrush>[77:182:172]</TextBrush>
-      <VertAlignment>Center</VertAlignment>
-    </Header3>
-    <Footer2 Ref="47" type="Stimulsoft.Report.StiStyle" isKey="true">
-      <AllowUseBorderSides>False</AllowUseBorderSides>
-      <Border>None;[58:78:94];1;Solid;False;4;Black</Border>
-      <Brush>Transparent</Brush>
-      <Conditions isList="true" count="0" />
-      <Font>Segoe UI,9.75,Regular,Point,False,0</Font>
-      <HorAlignment>Right</HorAlignment>
-      <Name>Footer2</Name>
-      <NegativeTextBrush>Red</NegativeTextBrush>
-      <TextBrush>[158:158:158]</TextBrush>
-      <VertAlignment>Center</VertAlignment>
-    </Footer2>
-    <Treemap Ref="48" type="Stimulsoft.Report.StiChartStyle" isKey="true">
+    </Header1>
+    <Chart Ref="48" type="Stimulsoft.Report.StiChartStyle" isKey="true">
       <AxisLabelsColor>140, 140, 140</AxisLabelsColor>
       <AxisLineColor>140, 140, 140</AxisLineColor>
       <AxisTitleColor>140, 140, 140</AxisTitleColor>
       <BasicStyleColor>WhiteSmoke</BasicStyleColor>
-      <Border>None;Transparent;1;Solid;False;4;Black</Border>
+      <Border>None;Transparent;1;Solid;False;4;[0:0:0]</Border>
       <Brush>Transparent</Brush>
       <ChartAreaBorderColor>Transparent</ChartAreaBorderColor>
-      <ChartAreaBrush>White</ChartAreaBrush>
+      <ChartAreaBrush>[255:255:255]</ChartAreaBrush>
       <Conditions isList="true" count="0" />
       <GridLinesHorColor>Transparent</GridLinesHorColor>
       <GridLinesVertColor>Transparent</GridLinesVertColor>
       <InterlacingHorBrush>[10:155:155:155]</InterlacingHorBrush>
       <InterlacingVertBrush>[10:155:155:155]</InterlacingVertBrush>
       <LegendBorderColor>Transparent</LegendBorderColor>
-      <LegendBrush>White</LegendBrush>
+      <LegendBrush>[255:255:255]</LegendBrush>
       <LegendLabelsColor>140, 140, 140</LegendLabelsColor>
       <LegendTitleColor>DimGray</LegendTitleColor>
-      <Name>Treemap</Name>
-      <SeriesLabelsBorderColor>Transparent</SeriesLabelsBorderColor>
-      <SeriesLabelsBrush>Transparent</SeriesLabelsBrush>
-      <SeriesLabelsColor>90, 90, 90</SeriesLabelsColor>
-      <SeriesLabelsLineColor>140, 140, 140</SeriesLabelsLineColor>
-      <StyleColors>[95:183:229], [171:145:197], [142:195:167], [220:83:86], [240:203:105], [109:83:220]</StyleColors>
-      <TrendLineColor>Transparent</TrendLineColor>
-    </Treemap>
-    <Detail_Chart Ref="49" type="Stimulsoft.Report.StiChartStyle" isKey="true">
-      <AxisLabelsColor>140, 140, 140</AxisLabelsColor>
-      <AxisLineColor>140, 140, 140</AxisLineColor>
-      <AxisTitleColor>140, 140, 140</AxisTitleColor>
-      <BasicStyleColor>WhiteSmoke</BasicStyleColor>
-      <Border>None;Transparent;1;Solid;False;4;Black</Border>
-      <Brush>Transparent</Brush>
-      <ChartAreaBorderColor>Transparent</ChartAreaBorderColor>
-      <ChartAreaBrush>Transparent</ChartAreaBrush>
-      <Conditions isList="true" count="0" />
-      <GridLinesHorColor>Transparent</GridLinesHorColor>
-      <GridLinesVertColor>Transparent</GridLinesVertColor>
-      <InterlacingHorBrush>Transparent</InterlacingHorBrush>
-      <InterlacingVertBrush>Transparent</InterlacingVertBrush>
-      <LegendBorderColor>Transparent</LegendBorderColor>
-      <LegendBrush>White</LegendBrush>
-      <LegendLabelsColor>140, 140, 140</LegendLabelsColor>
-      <LegendTitleColor>DimGray</LegendTitleColor>
-      <Name>Detail_Chart</Name>
+      <Name>Chart</Name>
+      <SeriesBorderColor>Transparent</SeriesBorderColor>
       <SeriesLabelsBorderColor>Transparent</SeriesLabelsBorderColor>
       <SeriesLabelsBrush>Transparent</SeriesLabelsBrush>
       <SeriesLabelsColor>White</SeriesLabelsColor>
       <SeriesLabelsLineColor>140, 140, 140</SeriesLabelsLineColor>
-      <StyleColors>[220:83:86], [142:195:167], [240:203:105], [95:183:229], [171:145:197], [109:83:220]</StyleColors>
+      <StyleColors>[255:180:135], [88:166:146], [95:127:167], [239:127:147], [255:209:135], [147:219:116]</StyleColors>
+      <ToolTipBrush>White</ToolTipBrush>
+      <ToolTipTextBrush>Black</ToolTipTextBrush>
       <TrendLineColor>Transparent</TrendLineColor>
-    </Detail_Chart>
-    <GMC Ref="50" type="Stimulsoft.Report.StiStyle" isKey="true">
-      <AllowUseBorderFormatting>False</AllowUseBorderFormatting>
+    </Chart>
+    <Footer1 Ref="49" type="Stimulsoft.Report.StiStyle" isKey="true">
       <AllowUseBorderSides>False</AllowUseBorderSides>
-      <AllowUseFont>False</AllowUseFont>
-      <Border>None;[182:182:182];1;Solid;False;4;Black</Border>
-      <Brush>[142:195:167]</Brush>
+      <Border>None;[58:78:94];1;Solid;False;4;[0:0:0]</Border>
+      <Brush>Transparent</Brush>
       <Conditions isList="true" count="0" />
-      <Font>Segoe UI,9.75,Regular,Point,False,0</Font>
-      <Name>GMC</Name>
-      <NegativeTextBrush>Red</NegativeTextBrush>
-      <TextBrush>White</TextBrush>
+      <Font>Segoe UI,9.75</Font>
+      <HorAlignment>Right</HorAlignment>
+      <Name>Footer1</Name>
+      <NegativeTextBrush>[255:0:0]</NegativeTextBrush>
+      <TextBrush>[158:158:158]</TextBrush>
       <VertAlignment>Center</VertAlignment>
-    </GMC>
-    <GMCTotals Ref="51" type="Stimulsoft.Report.StiStyle" isKey="true">
-      <AllowUseBorderFormatting>False</AllowUseBorderFormatting>
-      <AllowUseBorderSides>False</AllowUseBorderSides>
-      <AllowUseFont>False</AllowUseFont>
-      <Border>None;[182:182:182];1;Solid;False;4;Black</Border>
-      <Brush>[115:172:142]</Brush>
-      <Conditions isList="true" count="0" />
-      <Font>Segoe UI,9.75,Regular,Point,False,0</Font>
-      <Name>GMCTotals</Name>
-      <NegativeTextBrush>Red</NegativeTextBrush>
-      <TextBrush>White</TextBrush>
-      <VertAlignment>Center</VertAlignment>
-    </GMCTotals>
-    <Nissan Ref="52" type="Stimulsoft.Report.StiStyle" isKey="true">
-      <AllowUseBorderFormatting>False</AllowUseBorderFormatting>
-      <AllowUseBorderSides>False</AllowUseBorderSides>
-      <AllowUseFont>False</AllowUseFont>
-      <Border>None;[182:182:182];1;Solid;False;4;Black</Border>
-      <Brush>[220:83:86]</Brush>
-      <Conditions isList="true" count="0" />
-      <Font>Segoe UI,9.75,Regular,Point,False,0</Font>
-      <Name>Nissan</Name>
-      <NegativeTextBrush>Red</NegativeTextBrush>
-      <TextBrush>White</TextBrush>
-      <VertAlignment>Center</VertAlignment>
-    </Nissan>
-    <NissanTotals Ref="53" type="Stimulsoft.Report.StiStyle" isKey="true">
-      <AllowUseBorderFormatting>False</AllowUseBorderFormatting>
-      <AllowUseBorderSides>False</AllowUseBorderSides>
-      <AllowUseFont>False</AllowUseFont>
-      <Border>None;[182:182:182];1;Solid;False;4;Black</Border>
-      <Brush>[201:63:66]</Brush>
-      <Conditions isList="true" count="0" />
-      <Font>Segoe UI,9.75,Regular,Point,False,0</Font>
-      <Name>NissanTotals</Name>
-      <NegativeTextBrush>Red</NegativeTextBrush>
-      <TextBrush>White</TextBrush>
-      <VertAlignment>Center</VertAlignment>
-    </NissanTotals>
-    <Toyota Ref="54" type="Stimulsoft.Report.StiStyle" isKey="true">
-      <AllowUseBorderFormatting>False</AllowUseBorderFormatting>
-      <AllowUseBorderSides>False</AllowUseBorderSides>
-      <AllowUseFont>False</AllowUseFont>
-      <Border>None;[182:182:182];1;Solid;False;4;Black</Border>
-      <Brush>[240:203:105]</Brush>
-      <Conditions isList="true" count="0" />
-      <Font>Segoe UI,9.75,Regular,Point,False,0</Font>
-      <Name>Toyota</Name>
-      <NegativeTextBrush>Red</NegativeTextBrush>
-      <TextBrush>White</TextBrush>
-      <VertAlignment>Center</VertAlignment>
-    </Toyota>
-    <ToyotaTotals Ref="55" type="Stimulsoft.Report.StiStyle" isKey="true">
-      <AllowUseBorderFormatting>False</AllowUseBorderFormatting>
-      <AllowUseBorderSides>False</AllowUseBorderSides>
-      <AllowUseFont>False</AllowUseFont>
-      <Border>None;[182:182:182];1;Solid;False;4;Black</Border>
-      <Brush>[226:189:90]</Brush>
-      <Conditions isList="true" count="0" />
-      <Font>Segoe UI,9.75,Regular,Point,False,0</Font>
-      <Name>ToyotaTotals</Name>
-      <NegativeTextBrush>Red</NegativeTextBrush>
-      <TextBrush>White</TextBrush>
-      <VertAlignment>Center</VertAlignment>
-    </ToyotaTotals>
-    <Chrysler_x0020_Group Ref="56" type="Stimulsoft.Report.StiStyle" isKey="true">
-      <AllowUseBorderFormatting>False</AllowUseBorderFormatting>
-      <AllowUseBorderSides>False</AllowUseBorderSides>
-      <AllowUseFont>False</AllowUseFont>
-      <Border>None;[182:182:182];1;Solid;False;4;Black</Border>
-      <Brush>[95:183:229]</Brush>
-      <Conditions isList="true" count="0" />
-      <Font>Segoe UI,9.75,Regular,Point,False,0</Font>
-      <Name>Chrysler Group</Name>
-      <NegativeTextBrush>Red</NegativeTextBrush>
-      <TextBrush>White</TextBrush>
-      <VertAlignment>Center</VertAlignment>
-    </Chrysler_x0020_Group>
-    <CGTotals Ref="57" type="Stimulsoft.Report.StiStyle" isKey="true">
-      <AllowUseBorderFormatting>False</AllowUseBorderFormatting>
-      <AllowUseBorderSides>False</AllowUseBorderSides>
-      <AllowUseFont>False</AllowUseFont>
-      <Border>None;[182:182:182];1;Solid;False;4;Black</Border>
-      <Brush>[68:160:208]</Brush>
-      <Conditions isList="true" count="0" />
-      <Font>Segoe UI,9.75,Regular,Point,False,0</Font>
-      <Name>CGTotals</Name>
-      <NegativeTextBrush>Red</NegativeTextBrush>
-      <TextBrush>White</TextBrush>
-      <VertAlignment>Center</VertAlignment>
-    </CGTotals>
-    <Ford Ref="58" type="Stimulsoft.Report.StiStyle" isKey="true">
-      <AllowUseBorderFormatting>False</AllowUseBorderFormatting>
-      <AllowUseBorderSides>False</AllowUseBorderSides>
-      <AllowUseFont>False</AllowUseFont>
-      <Border>None;[182:182:182];1;Solid;False;4;Black</Border>
-      <Brush>[171:145:197]</Brush>
-      <Conditions isList="true" count="0" />
-      <Font>Segoe UI,9.75,Regular,Point,False,0</Font>
-      <Name>Ford</Name>
-      <NegativeTextBrush>Red</NegativeTextBrush>
-      <TextBrush>White</TextBrush>
-      <VertAlignment>Center</VertAlignment>
-    </Ford>
-    <FordTotals Ref="59" type="Stimulsoft.Report.StiStyle" isKey="true">
-      <AllowUseBorderFormatting>False</AllowUseBorderFormatting>
-      <AllowUseBorderSides>False</AllowUseBorderSides>
-      <AllowUseFont>False</AllowUseFont>
-      <Border>None;[182:182:182];1;Solid;False;4;Black</Border>
-      <Brush>[147:119:175]</Brush>
-      <Conditions isList="true" count="0" />
-      <Font>Segoe UI,9.75,Regular,Point,False,0</Font>
-      <Name>FordTotals</Name>
-      <NegativeTextBrush>Red</NegativeTextBrush>
-      <TextBrush>White</TextBrush>
-      <VertAlignment>Center</VertAlignment>
-    </FordTotals>
+    </Footer1>
   </Styles>
 </StiSerializer>
