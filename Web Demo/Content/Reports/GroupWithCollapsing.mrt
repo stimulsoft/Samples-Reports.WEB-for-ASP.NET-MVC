@@ -1,849 +1,670 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<StiSerializer version="1.02" type="Net" application="StiReport">
-  <CalculationMode>Interpretation</CalculationMode>
-  <Culture isNull="true" />
-  <Dictionary Ref="1" type="Dictionary" isKey="true">
-    <BusinessObjects isList="true" count="0" />
-    <Databases isList="true" count="1">
-      <Demo Ref="2" type="Stimulsoft.Report.Dictionary.StiXmlDatabase" isKey="true">
-        <Alias>Demo</Alias>
-        <Key />
-        <Name>Demo</Name>
-        <PathData>resource://Demo2</PathData>
-        <PathSchema>resource://Demo</PathSchema>
-      </Demo>
-    </Databases>
-    <DataSources isList="true" count="1">
-      <Customers Ref="3" type="DataTableSource" isKey="true">
-        <Alias>Customers</Alias>
-        <Columns isList="true" count="11">
-          <value>Address,System.String</value>
-          <value>City,System.String</value>
-          <value>CompanyName,System.String</value>
-          <value>ContactName,System.String</value>
-          <value>ContactTitle,System.String</value>
-          <value>Country,System.String</value>
-          <value>CustomerID,System.String</value>
-          <value>Fax,System.String</value>
-          <value>Phone,System.String</value>
-          <value>PostalCode,System.String</value>
-          <value>Region,System.String</value>
-        </Columns>
-        <Dictionary isRef="1" />
-        <Key>fa8bc7e62c1e424cb04785c0d768d2c0</Key>
-        <Name>Customers</Name>
-        <NameInSource>Demo.Customers</NameInSource>
-      </Customers>
-    </DataSources>
-    <Relations isList="true" count="0" />
-    <Report isRef="0" />
-    <Resources isList="true" count="2">
-      <value>Name=Demo, Alias=Demo, Type=Xsd, Content=BrQPKmKtxHOudUqTiXXPZiPnHHR73eKd8TMa3qO39EfC9L_x002F_TMeiTKvQ7yhbIxOY6wg1_x002F_3Tk9zGdG4ulkhA4DDJeD0GD7AHyczl4w8_x002F_BPtKvZ_x002F_wiIpwg_x002B_RjqEeoSHyj1VBSA9F1TUeYxl2jGP_x002F_SPuWvZb4Mtm70r_x002B_MzhK1HEu13vsubM2yApiFYZE3FHq8u98m0DjJsHs_x002B_bERTkr_x002B_bkJwRSB4Yf700ZFTKOi30GybEar_x002B_Fv9rr5oNRwGFdZJP4dg1YPPvSeTVUMBmRrz8seMaqVbw4pek9oyCQYmQ8P2Jtg4ny5wgJuur3ThG9LXGJt9jYfvWyZ2vdfn8hetfdQbARtQOa5YSPvS0nU3Fc1c4u7xHX1bUrxWWtGEOs1b3R4ZY2xRCi3FTAUgYCGuCRP2wS0TSs_x002F_HPDfSyyJ8RZq3lvPF66krTs0dW_x002F_gAQP6ccDYzC0wWqBFuEf79YW6Qx_x002B_CAiZcjZM8iEtnIlzazSgk_x002F_skbBLU08YSVbB_x002B_qiOuXInGAG6LEpAbnLGfQ_x003D__x003D_</value>
-      <value>Name=Demo2, Alias=Demo2, Type=Xml, Content=N3qBmXxMZz_x002B_JyQjhQLE9Boz_x002F_JvqYZjCPyd2DMIuuFvaD4KhH0YVzNTqRjoxKR8V5gij72bk5FkKJ_x002F__x002B_ByhR0E_x002F_6uat5R1ELyHZG_x002F_WG1vGzBzx7_x002F_ziu8JHd1Bt8PeUjmvuGR9SC45m1G9BO0q_x002B_6DsfIFYtaKlJyM5f5BmHADxWcY_x002F_LSkfCPhzoH_x002F_lae6pPI7Svo9HbckTEr1SKaKrH2gz4nprjEZF113ZJGi1QHdwB213GdHq8jwamc1Tmjf1_x002B_c_x002F_mDcW54p0WSogelP7vVPoLChlNm_x002F_uo6thx2CZDQqSC4t5XI4SB_x002B_a6pP8TQz5T662pL0l7V9QDLZNB4_x002B_Snoc0tdTDmBu8nq1zfKOI0Bf8018DBgnmDagpAdPHINVDjdb5smLD_x002F_DrHwFzO0nkgZY6G6SIronnCfppavISe9DompPzL8SGb7mGwtZLrepr6AvyjrRuJFrINuFjokL8pTuP_x002B_5F8RzRs7VsbQhd84RQijisKpOm7gP6xv9vOCYF3x5uYSEYxZNUArdssk8E4ZtoN0mpmM8yTUpft0uoiiH_x002B_mu7Th0OD3AX9lVhZWjNrIFW7KJMfgk9EUdQq94Ns7_x002B_FRQQjxztZ1Y7ScFcuE11KJjmJcVFwZtB3Xxny_x002B_2L_x002B_oT_x002F_HKoDyp4a70680cv6G_x002B_mOSB98pzyBpXzTXmAHDKaX_x002B_UZvAKhBuaASaI7SIKRgtFTv7yZaAofJ8s3_x002F_RaN6jmm1fztlgxGaIIJW93ixaRpo1V4nxDk5oyQRmi8E4OtL3HXfjLCl3_x002F_oReXstU4Le9VO6VY4FrlJCyTCfTfQUKeH_x002B_duLCXAJvSgOaHPmahl8kIU_x002B__x002B_XWmlfRp9ZSg_x002F_EQ7BoojIGbEyCAQDjA4rdOlhPIzJkmjnMsjU7xpiqb1hz9uY7qox5HYlLzp3UXVQxg42Fr3l0obiRwDWN03J7ALI6EBiOemj0hys9_x002F_y9VbPvZjRAVD4WufI_x002B_QAZfwHTtYKj9e5gE3aplb_x002F_fMBMXVApwhEJwWRcS3EP2fv1Px_x002F_A9a3eLO_x002B_1tBaE8byVWGSrMSgoRHL3YVnkVC1uQQlT2mshswWCTnUKE2rjX_x002F__x002B_LRbIRDXxnl2mmkddl6mTBb52o8ORnyKzTE_x002B_zCNPxun35_x002F_eJTxCHhB6B4RujHdCMVEckrCe0gVEQzQsJpAsPK6aBLCg7mn9VMbU4EnOGdO_x002F_oGF2lUutM7_x002B_nWnd78rVo2DKvu2S1B89Zh4W2RxJuTJmrVqrvnOiFdg6j7kneQut58xlUwxeMZCgI6QSOnInPL59G9IurqMjDSzEAQlSBjtkdp9MHMDa7QI36I25kTl9nLQl6cKel3pRai1zhdVMW6hR56qUeZcrsEsjy3xS8Q4xxNR_x002F_4rCaCZzaLXo80gxm9D6TiPPzv_x002F_oJXHPtBDDpdEK15GPXLiq_x002F_Aq1VjmDKVMxW1h_x002F_gPYZf7V9SSmEYuI8B5XevQWmQ4j_x002B_BFFXi7gEKSPbR5ftMZFteVhDqp4SY3a7CGdVQSkPUgKHF7nGgsUX1UYtdgvrtNGpaqdLeIDRgbhCZhStUo9tJhJ1RYg5Zzz3E1VP9Z0cfTxsE_x002F_vCJH2fGGXUD_x002F_ow310uGQcj6HIE_x002F_cicrJ8JOPGCw6_x002F_nGYZx_x002F_KdvELMmAeR3YeIKu1A9oNGAz0ztqYHM3RpXmKxnN_x002B_HlpR4p4RG_x002F_nr3DPRQ_x002F_bCCWD3KYRS49Yr2KKkbuRXLFeplxQv98qmLUkqAVPwzq3TxrfYH5oI90d9kgNVcRnFqnfTidwDrUQaZG_x002B_zlAgy_x002B_SkQt3UFvOIrr418tiSXpYY2q6xoxQT7c_x002B_hNIMpkxaSe6cA8Bs5yogUp13Wwlz1qokDgI5tZwkXzNLGKCAcmUeRPD0GsTk99qNzsoZ2vP0qmK_x002B__x002B_A4JiO6C6cUtiV1xDNmLMmJGZMPidOCpb7U_x002B_LtfRwOLDONheGqqAWyb55lOZsqqqMRr_x002B_vAEghGHj8rC_x002B_rpiFOkc_x002F_p8_x002F_wUWM1uf53PIkFESyMz_x002B_YyE_x002B_QLWzy_x002F_y00estNnwC_x002B_i_x002F__x002B_4k_x002F_BLQ7I587JsETg1Q5T2hBdkbQxCSXCUwOKXJQs5J_x002F_Pfsa_x002B_FRqwEwMgmnVBWPrjD5VbaNwaQK3ZjKK4LSjMyN4aXNZn_x002B_6Do6sO5z2QQLtdlU1_x002B_tJgsIYJFIBcH6u2kkbNHlRkWztstu7d1xxpz24_x002F_Fic3R_x002B_ziMaKE7AwgKzSvh8Z6eJfHI3HDOosc9BhiVO3BD1ua6rBQ_x002F_mPKzMhmZ_x002B_cTbiHO13H3cqb9GbouooDpgMK_x002F_Uas1Or9D313B7pcRpWPD2QFLpfOANETMaKB1_x002F_eEC_x002F_FAGOWq_x002B_b5mnP55b3JYmpn4IwC4U_x002B_G_x002F_y43R4LzNT7HxV0zmPRsaVYXxUgBZa7l_x002B_Nzc0gKCg_x002B_vJaMLMUXoZI3SppcGXKwzbm25_x002B_DKXuv341infT5TwEC_x002B_X8NSAdW_x002F_92Hi3FGoU8d6OUUzAcDA4kans2FUegi6Mh8gObAhzyKKcZIhCfafa1TIV1yMTt_x002B_Iv6dK9RVYYhQlcVXQu1beEowBCFV7FBhnpVfYL4Ob_x002B_uCtYRZIeLXG58wIp5ibGi_x002F_orTkkITj108w9Y_x002F_srvIXvXWzDztYT8_x002F_IeKfinz_x002B_NiQrb_x002F_zSFNbh7NyXNKu_x002B_vG1Vdgxu1XIqmCSb8OI2G8Hi6CVJxnL7E3GEGys_x002B_DUbJDITRNCYi4GuIw0PL3qwZ6Dj3mqRy_x002F_OXFsmEJMaDyXs78SMvP7wzH6XxWi6U0kO0EVNz_x002B_soUcIG2M67eF4WOXJb07qLW9tvHXev4866damqGDehkbjtc_x002F_eE_x002B_glUh79lM1KRA6gu_x002B_1HtQyUcady0D6nkTJ2I0FqaCc1ILX7wl0F8Nv1YlZ6lcNP9guxA_x002F_1gl3c49wIeFCPZw8enUuMUpiY1qkhiwQY67u8VvEdRfeb8PR_x002B_axPTNrETUPzQxeEc8_x002B_TBlMus_x002B_HPzxUIG8geXoYKBE7PqBJuQV4yTGgDOjSDDoR9sBJgvo1kQb_x002F_RcFk_x002F_Qn1aXXszOspQee84Z4oYqPMnmzEoSafdMx7QpjXLcT0i4seSC0pb3GVQMvml_x002F_WtwaTpYXu1cicrmFXWgOqNN3_x002F_hLn00x8HwS21B96MLUBfdM9cp1wu36FNBltjGEahD0sUUjZGf_x002B_OrhKxqcDZdgzJfW3g0NY_x002F_nr0ShwYIXk2pNSFtJZ4_x002F_6CNbqi5LeQwUCXV0xKK2qxSy00L0iTkDURxlIUJngdfbO6GobnDbhQhQrXzEC8VhCDkRB13NsSdSOmYA9f38yb08aYjtCMTaAbbzILUYHPOBjXm2s8OpzWIl84XOOJacgw33rIGqduk5EoLND8FbHSB1y5voU2prK7ZcYDS2BN2yko_x002B_YbtVbZyq84Vwuh781L_x002B_S5SUZdId5Y38glf_x002B_EKeMaQgcysyH5TAfNCW6TpgeZZ5pPMGYsqvtB4hJ5W3TLjdWJ_x002B_dAX0r18XpEmIrB8v0mo422OBmITDWH4MWV1tdsAftN10FCZcZoXW_x002B_2k8y4EYDZxSzsRsmR1MGaSV4KlAJrHHZkbDapiroRibxpS6Hse8j48uWDBrLQAH_x002B_1fJJlMSEAfPOQMXrC0WkkYZUdDu4qx0ia6O14_x002B_UpZzxPaTBZPdo8TsCS1kIFKmKHn8gZ8_x002B_Kf1UICqM_x002B_GT_x002B_RHkVsMgvk_x002F_zJkybiNgOkQnj_x002B_ePKrYFhT9ErP1DutCzfiWlwdhs6U8p6atRCt1kVHNB4RATrbt21U61MvPYvUi9_x002B_npLndFmVe9XAzvLGGBpvIvXo3DF1AEO0lM51uEIQur4VHkDb3YX3y6ahrSje04f4f7n2Xaw4sfDK8p4G5aAMJV1ZiB7tXiFfiTEJYgFNMR_x002F_gwjZrmCkfoBywW3HtE9m1LifMpGfFRmd3wMVnGlMZ_x002F_fM2RYVuNXnljaPuU0szUHxaJ2Nlw5POO0BWfqI1wve42yWaJAvuNih_x002F_bIeYrYavosCi9BGh4YtsfcVXYEoaA9GU6VF5sqtaO9VeEhPfp_x002F_rk8Iy_x002F_zD4SkwnUvI7pwh_x002B_b5MJKNiSXZk63caZbYHSoq7Nshr0FH7N0K9anQS8C0Id2IYYo3ACncLMiNlj4GvqNfEPuQ6Z25NoCWqBXyJ0LUJpROR09hSKgv5vMJFxy_x002F_D3xgkDbp_x002F_03gEG29o4yYntVXV5sObu6eZ4msgA5B2XH2_x002F_k6P5kHeqiPJwroulVhsY7aEMxh_x002F_J_x002B_MKVXJZ0qeQXnIarQC3nQY7qzddZ_x002B_YDgb6PGstKa0sg93NnyKOf_x002B_IgOdDx41aM_x002B_D1sv0BK9nQIGBJ2f7RpvzPGw5Xu3c4Zzjjq9shs8F6FNhbF79keWXKHchvhAjU_x002B_uaziEqdQanSxY1U_x002F_mjEWK1GCtLHvrFCAS8aP5HF8fbMV5YUoIBJBVhNTCNhfec8wjkHPcEQd1qYL4XZjT6uxkIBOhbZWkdpWF9N4p3sRzsg9ghHMUfKQAT29HjIPmSoPasluM5yCLzPGoi8JUjsl57KJ747Taod53H1vlul5XgXUCfZsVBXbv5F4cYP4CpmHs8WTQbJUNggTGJ7mZ8hgKiZrP5Z37iXVKI7ayemFwu8LV7QldzW1W1bvXvkWIwXyl_x002B_NVXvQ7mcVFDFIcnCHWZdiKEArMeEY8gacmkczaFVfPaHB_x002B_QRJymTsFqOlAOjZ68ME8NjHmYdmyT5PwB93HrhOyvDG_x002F_uwSbINWNQe6mn_x002B_Gl0M5I_x002B_RFpFA1bHHRtiOi_x002B_N_x002B_CAx2R9QEJHM4eNMrDXVlflo6lXAaZ788uvE0jQE_x002B_eNs69NnsgOx3pQNt_x002F_VIGWahATSYbG0j2JrArN_x002F_NnNQjw3_x002F_bFDIcOzceGBDNc4SzZKbJZNOCaZQZKl7sK5T2pOKaVyeJmNEVzPa6j6BjwClejTMx2Mm_x002F_I5JQW9DZliEf76Tyu3D2ZQkRaR1c4pwgb4yh5LVm_x002F_jg5B9o2PTHFUJF6H6VHLHwIpxifrC8qenSIhzAOjhSfVso4Rxgo7UPBvuvoSyhEo0_x002B_es4x1wRe24cvPfdceQ1s6IY_x002F_AFRB1_x002B_YJCztZw_x002B_R9oPXWdqQHoBZjRhu5Wwg7WVh3kCKxTUDaKYUgRcyqnejB3onjehjnC8JbsY4QwcPD18Nqb2nwDC3GveApb1F5NmLK76_x002F__x002B_OM8Oh6oTI9on46MQ_x002B_3fqEpBwl4C15F_x002F_FeeMJkD_x002F_dvSs2_x002F_KhDN74qxigeQbqPsucw_x002B_u4tbsGgXn8Qvary6OROkDn540kKLjJpD_x002B_nJLPNgfFnin5lDmh90FtrPyHTj5OseTms7iESWRJn2oIFHaxU_x002F_UYjBHQjC4Rs7BgCHm5L3oidefY71_x002F_vNdxCHrcVqAO9GolP58E9P2ApCcyJCSwK6BTZ_x002B_syJRuX6ls6hV3v2dH_x002B_7OurXINqxCJGV2119lpXdKuvXcCbllZ_x002B_KhzcPg83sN2P10nHWZ6UE_x002B_0jkePA0qO90bl_x002B_VYVUmLzbIfzVRiu6iSvzigJ1nUBepx3R9hGNNysh8SAjKCKSkDhoF9zZtjJSvcVJhGfgr5_x002B_1FV1VAB7WkMiZU9vbPvltHR4hZ32IZtW_x002B_YSO0lxfydENhzD9TpBt9J9ZznBdZlDEQgLC_x002B_2rJmp7JbPCITggnbyvZR0t_x002B_ZdUAjL49cGW_x002B_Ilw6kVBFpvJzpZR8P_x002B_DPQgqSLiSx_x002F_htJp78y297ZgdNrc5V8gdT5QcrrQPFBL5CpUzxwPDchehtUDaNV2y7NQxva47xbmLV6s_x002F_RXPe90Z_x002F_33mLO2gcGZnhUwFMfD1EW4t6HG44PuFocSC52eIIVt3xcznsSESEC9NvPGEiMmAlW6NS2TGJP41MCrwFF5k41Btbu9z6u9gOVHe1Yqc70DbE_x002F_DJ07TSP_x002F_pgJy3ew2LhLxZzMF1JEhXEQWcGoIWr9XSsA5m7mni1XgmL5zho1TqlpyNOqmhC49BR_x002F_z5MX6clH_x002B_LgifIb86h_x002B_yaQ_x002F_Nh40JZT8A8munqvKZCs_x002B_I6n0nZGAcQ3ptgoWNTFTrTnUqJgeaWYMIO13sNnWQaPxxdBfH6b5R5RD2ywzeSE0ws8Cj9EpxYR_x002F_ivvPwoIMUFk4Xzq_x002F_TqoqXkMzqhr347wGZ2B9k3awt76td1a51fovpO1EoQpaFricJ_x002F_2Arfr5EEIc6jjwLs_x002F_2id0H9vHBmttQmiXCcEv7DQUZ1iZrLce5gss_x002B_k2D_x002F_R3H_x002B_SrFfzYoGVb05X8OOve1SkfYU4ZECzW_x002F_LXZoc_x002F_YKJJn6fuKvudMFKOhk0j7TkRk7oAaCvtJx4ELz5TUzuRQOKnxnEP29aiDed5X53vcrWleJnSS4eXH_x002F_SnP_x002B_HGLdGAd8o4g5VTokLLuq28hELrJhBd5bF6W5YBVBf8mTtXF6eB5X915lnFEVbaRb5kkN6Llvlds1dg0DiFPO_x002B_DnjjFlhREmzCE1xu4zd_x002B_xc1HR8g9lS3SjXRUcDjZh9vTaTageI6gvmR4Yn1jdcsPNgaQBoSMCKHNQdKGK1tHC_x002F_HkAqSbKbWqgY1rmBnCGxo_x002B_8UrbqKs7ayv0hqD_x002B_1xAnUnepkHW8zm8inQsAoJDBbURy3Zqlik6OlotWYDa5UdxzKPGUFKna4l1W_x002F_8RsB538StfkhUE8h_x002F_P7EAGDCMB6gkwiFIshGq2P5bKKxZnYtmzum6RtrrwzkrOoiZigQbvYmdF6VY13LTrgXkW8hLsb_x002F__x002F_MnyPhnAeGfusM3LFS_x002F_kk4ucPdoouDMKGdvq5hQTrn0Gq2WVURxM5RYOJ82kRbVdnS96fBdOPN1xywUa9Xjwp9DKzg_x002B_fPhXLQNgWJZZs0PQmvyZI1_x002B_bFXUv0btcmyzIZMID5lh7QMk6SP8xow7aAF83MZgDU1xOF_x002F_ERpSVy_x002B_vs3hwpe16f7hF8u6o3zSx9e0fmp3UxhIaCUGhprdkqStqchj5riTiOL2nIH688NNlEq6Z_x002F_xYtpEiiCG4V_x002F_MKXqAzfq_x002F_mrs3ZhWg1nCJHf4Tg_x002B_gDbAI_x002F_DzeF2iStB_x002F_rJt7c5Gzpa2dWGyGLpi3pu84m7kxX24l_x002F_rzwk6l6buQy1_x002B_1I_x002B_ssNJFMgabgLgaMXPGySRopAO9Op5_x002F_JIztHn31im7sOa1h5yi631rbX8w6ERmY7IxXdhe4TrNbRh_x002B_oOBOJ3NG6f7hMml_x002B_8q8S1PF1eYVoHjbDrd_x002B_uPN_x002F_eE_x002B_fe1BIKfktgT6dl1a8uMSTiBTZsL_x002B_MEosMT8KzD_x002F_5Y_x002F_G1cw2QW0wM65veTok4A3ZDlhR1wf_x002F_ei_x002F_U8vbG1hvGUmnzeltlxMuEFZYommDgVDUmyDcXitU8m6QOEpo6mg_x002F_KfKeLWB_x002B_PC_x002F_zICHGHEON88fiRBFFlDil_x002B__x002F_Ju9ck9xTmi_x002F_RJVy42RDJTq_x002B_arXSH3gPZXn3OqJjwgLxScUtylfzLzUuKl_x002B_dfOpjhx3_x002F_NAD_x002B_PSKfZMk_x002F_Tc4AFYvL4Pmw0mL33ifnBSlCDI2bwNK3N1mQp1EmkovN3P7IRuVhxsiaCVYdzWmOn_x002F_PIuH_x002F_zFL5ApWc63osaGRlYyfEJlWKDsQRZw_x002F_ri9URiwM2xFOlzDfZzsNoZGASvnuX8n6mu0MgEKCj_x002B_zYXJJoVL0uzSoYmz8ICA64Hrvk70vwc_x002B_5ofjDcFQUAxQ_x002B_968kSpBj_x002B_b66N8_x002B_LZemPtL9DaZVM17AqSD9RV1p_x002B_CuuIcwGSceb8ZZuc5pT9h2WNG4KsMBn9mQ4JkHtJxFE4KsXpuQLYk95xxQ4Xp1uS9uFbu49mtr1_x002F_5vcWUTYcvustPxSkNQV8WE2ZCFiMnQTQJ3TK2S5MqymnFacssQxHLmAD3apppGKWsHofzXQBGdpb_x002F_aLQ2Z79fb72ei1qf0_x002B_xmii9RkxyeLav2A15RftgnJ942Iik53OsThhSSHeWKYppfUkOS_x002F_LtqUceaunkUjvlVNoh5r9KKhZ1oaw5kDL5sZ1XwYKYRM8BZgZXXLsdtbQz7bpcvvwLY7lz9XizZd1_x002B_dpaWR25Qd8dptuwrX2s937CXVYLDb89KCqZIZhV5j56ltIB_x002B_7qQqculGqf2gX3IN5_x002F_wh_x002B_oOkx3cEGbuMGicf69DId1qbdNgyuyPCsdzvsBF_x002F_pCDSPLa2YKtNAuGE8KwQAFd3cbik_x002F_vrHv07SgHrt8Nd3K9yv_x002F_LHCYUrtTMxiKKfjzZFx66ek5e_x002B_rP_x002B_zFW0zalDChrIogdtqCtmAHyK_x002F_Di7z0EWBO7V0vq_x002F_pamJYNse6Jb24aYlE9hxXPctO_x002F_t8yFYmV3SCZFNfTYApbPCmXb_x002B_NkTXACht24fukmhhtYmA7rhpqn_x002F_2XybAgVkf9LXMc0pInrlhjuIsLXHV7XVfLG5lIOEI92cHm5mHb1ZmATuewWcK71QnGUxMWkpVhGqOyPqj3t027LZR2HnpMLNeFJ90ePGVFhBbWls_x002F_UEcu_x002B_sOw5WGI4LsC6YBh4EOekDSNuA7VnRYQiu5VnIJ7nHW8V3ZsyUdr_x002B_KtxK34oFhVw3muyShElY8_x002B_cjkw3ETYk5vQemMMatOZW0zMdmZo0Pr5yqHGxZjGACCabGYhBV8_x002F_BuWElCz_x002F_DegtmSmG6J_x002B_CBhHdKRvcesfDIc_x002B_ids52Ln2YCkkr3mN0Gq0CS43_x002B_s62TkozzrDQ2hJX4_x002B_jjywXd4xBHop8wo4f7at6Lvy8wiqZvTX1FerNwJo1YnRGLKTTctCPqfU_x002F__x002B_2NN6R37mt6hqnml2aa1QzCbv4yF0KIwY3omFDvOK_x002F_8deUu1xVsrm_x002B_ApwLWkZTxA_x002F_rYO7lXExn_x002F_US3oyNI3pAlIZY7Th6lNdrrhC2bVZJe3mNLDT05iiIBAPgoeHxNyGKiH_x002F_j4v0_x002F_SO0OToJswEskHnsszz6x5xNLthL3_x002B_mokIYXxjeUnnCVVtkvDikL7iOcJ0iAvdXdomGyjthwiByFP_x002B_4d5O_x002B_qcL9i7WrHhTZLxfPjpA3Jkc3o1WmYmpv_x002B_r_x002B_V5_x002B__x002B_dRpsL8NHtK3PFq_x002B_uF5Hmi_x002B_QQS3RW9b_x002B_TRswIDtP0UYKWEZVub1KXEZkOVmEHMtS9H0jZPE7LQrltbCU0S31DLi6ugoRv9lQ5qJ_x002F_jc8CjOQzOwYCW7nJ1fIV1aXF53qqVIfO5_x002F_GJOR3fW3qpkAFfwoUrxRckcHTNREanrWEwMHPG_x002B_9AtjO1BDGzQ_x002F_8a5lsDu0SDRtM35U4QSOeKvMXi9MKx6PnUfTuoe_x002F_EGJTk_x002B_3NCDw4umk51bkvb1xq0VV5YDmjKiCT03Jzz3ni0Etkgbk_x002F_4ejh3M7opTdQPBLROMt_x002F_iM_x002F_jWDDq3Z_x002F_f_x002F_d5NdQ2WyFQNXg_x002F_2fUtr5nELNPuwSy_x002F_hEp5gc6FN2f5d_x002B_WMY_x002B__x002F_W0NBpP21_x002F_kOW8fHq8W8hbYtqG4LqTjyJ8OgtujJP5hPUDKCTa66dTcOrHctQaJp9XKNATr6_x002B_0qC_x002B_5vjEUa3ghjDCk16u7pv3KWqmYbpwAsa_x002F_7z6LeATDG_x002B_lDu_x002F_usfd7ldHn4Gl2lG79NcwN3f8k6f2N_x002B_0Cq1pdTtU6b0Y_x002B_LfjHmET6zhkG08pODjO2ExY_x002B_CWByaiW_x002F_BAxs6g3PWfUd2TvMmGdgq2NgKf0rLeQRHnKYl8fgYOa12eEBSanwXosd0dhkbC9LdHVGPJ8T2mRUe1VNNzzTfQ62my2ZFQ3afU6j_x002F_whIsTO0ahWmHfM4NMCuKOYvsH2zsu_x002F_zG6lf7J2W5GaMl1hF4KFVv2C32h5qHNEMaUXIHcsZKgLn3Lj_x002F_x7m_x002F_N02XZX8212Ar_x002B_jTm4ziANH1yqjuXZBcQ0jAZFIz4SNiVn6Jnf4_x002F_lZLNE00YCRDV4W8cWIaL_x002B_yyje7tLceFu1AmDijzqaToypg0CkkWSX1k1XjCOGs0ySyXoO4B3_x002F_FUORH0iK2WOGfV09ik9K_x002F_arpkJLzipMy4OoD0Mwy1nWvU3fVSa_x002B_ngLstXdTM5MniWSzWbjZ1r869ootUtSH7qz1n0EYPyG4NJcboX9D1uNxTntUIolzvxpS36Kyy41kJKUqj7ETHOGHALHqY7q6_x002F_GhlQQeVEVX8v</value>
-    </Resources>
-    <Variables isList="true" count="0" />
-  </Dictionary>
-  <EngineVersion>EngineV2</EngineVersion>
-  <GlobalizationStrings isList="true" count="0" />
-  <Key>e40776f0ea1c44e79eb0ff354326d1d5</Key>
-  <MetaTags isList="true" count="0" />
-  <Pages isList="true" count="1">
-    <Page1 Ref="4" type="Page" isKey="true">
-      <Border>None;Black;2;Solid;False;4;Black</Border>
-      <Brush>Transparent</Brush>
-      <Components isList="true" count="7">
-        <PageFooterBand1 Ref="5" type="PageFooterBand" isKey="true">
-          <Brush>Transparent</Brush>
-          <ClientRectangle>0,1071,749,20</ClientRectangle>
-          <Components isList="true" count="1">
-            <Text6 Ref="6" type="Text" isKey="true">
-              <Border>None;[58:78:94];1;Solid;False;4;Black</Border>
-              <Brush>Transparent</Brush>
-              <ClientRectangle>0,0,749,20</ClientRectangle>
-              <ComponentStyle>Footer1</ComponentStyle>
-              <Conditions isList="true" count="0" />
-              <Expressions isList="true" count="0" />
-              <Font>Segoe UI,9.75,Regular,Point,False,0</Font>
-              <Guid>ca0ccd005d374f10b0c98b9338e6837c</Guid>
-              <HorAlignment>Right</HorAlignment>
-              <Margins>0,0,0,0</Margins>
-              <Name>Text6</Name>
-              <Page isRef="4" />
-              <Parent isRef="5" />
-              <Text>{PageNofM}</Text>
-              <TextBrush>[166:166:166]</TextBrush>
-              <VertAlignment>Center</VertAlignment>
-            </Text6>
-          </Components>
-          <Conditions isList="true" count="0" />
-          <Expressions isList="true" count="0" />
-          <Guid>c607af5d0380447d9e3870573828b9c1</Guid>
-          <Name>PageFooterBand1</Name>
-          <Page isRef="4" />
-          <Parent isRef="4" />
-        </PageFooterBand1>
-        <ReportTitleBand2 Ref="7" type="ReportTitleBand" isKey="true">
-          <Brush>Transparent</Brush>
-          <ClientRectangle>0,20,749,80</ClientRectangle>
-          <Components isList="true" count="4">
-            <Text20 Ref="8" type="Text" isKey="true">
-              <Border>Bottom;[166:166:166];1;Solid;False;4;Black</Border>
-              <Brush>Transparent</Brush>
-              <CanGrow>True</CanGrow>
-              <ClientRectangle>570,0,179,40</ClientRectangle>
-              <ComponentStyle>Header1</ComponentStyle>
-              <Conditions isList="true" count="0" />
-              <Expressions isList="true" count="0" />
-              <Font>Segoe UI,21.75,Bold,Point,False,204</Font>
-              <Guid>b5a5314daf2944c1badfdfc75484b222</Guid>
-              <HorAlignment>Right</HorAlignment>
-              <Margins>0,3,0,0</Margins>
-              <Name>Text20</Name>
-              <Page isRef="4" />
-              <Parent isRef="7" />
-              <Text>{ReportAuthor}</Text>
-              <TextBrush>[64:64:64]</TextBrush>
-              <Type>SystemVariables</Type>
-              <VertAlignment>Center</VertAlignment>
-            </Text20>
-            <Text23 Ref="9" type="Text" isKey="true">
-              <Border>Bottom;[166:166:166];1;Solid;False;4;Black</Border>
-              <Brush>Transparent</Brush>
-              <CanGrow>True</CanGrow>
-              <ClientRectangle>0,0,570,40</ClientRectangle>
-              <ComponentStyle>Header1</ComponentStyle>
-              <Conditions isList="true" count="0" />
-              <Expressions isList="true" count="0" />
-              <Font>Segoe UI,21.75,Bold,Point,False,204</Font>
-              <Guid>7d4b04a878a14739be5ff29d1322e532</Guid>
-              <Margins>2,0,0,0</Margins>
-              <Name>Text23</Name>
-              <Page isRef="4" />
-              <Parent isRef="7" />
-              <Text>{ReportName}</Text>
-              <TextBrush>[64:64:64]</TextBrush>
-              <Type>SystemVariables</Type>
-              <VertAlignment>Center</VertAlignment>
-            </Text23>
-            <Text17 Ref="10" type="Text" isKey="true">
-              <Border>None;[58:78:94];1;Solid;False;4;Black</Border>
-              <Brush>Transparent</Brush>
-              <CanGrow>True</CanGrow>
-              <ClientRectangle>0,40,570,20</ClientRectangle>
-              <ComponentStyle>Footer1</ComponentStyle>
-              <Conditions isList="true" count="0" />
-              <Expressions isList="true" count="0" />
-              <Font>Segoe UI,9.75,Regular,Point,False,0</Font>
-              <Guid>430d8a387ff14d648d3547b637fa192a</Guid>
-              <Margins>6,0,0,0</Margins>
-              <Name>Text17</Name>
-              <Page isRef="4" />
-              <Parent isRef="7" />
-              <Text>{ReportDescription}</Text>
-              <TextBrush>[166:166:166]</TextBrush>
-              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
-              <Type>Expression</Type>
-            </Text17>
-            <Text18 Ref="11" type="Text" isKey="true">
-              <Border>None;[58:78:94];1;Solid;False;4;Black</Border>
-              <Brush>Transparent</Brush>
-              <CanGrow>True</CanGrow>
-              <ClientRectangle>570,40,179,20</ClientRectangle>
-              <ComponentStyle>Footer1</ComponentStyle>
-              <Conditions isList="true" count="0" />
-              <Expressions isList="true" count="0" />
-              <Font>Segoe UI,9.75,Regular,Point,False,0</Font>
-              <Guid>6e715fb01bdf42aea59b99ad5ca30f7d</Guid>
-              <HorAlignment>Right</HorAlignment>
-              <Margins>0,4,0,0</Margins>
-              <Name>Text18</Name>
-              <Page isRef="4" />
-              <Parent isRef="7" />
-              <Text>Date: {Today.ToString("Y")}</Text>
-              <TextBrush>[166:166:166]</TextBrush>
-              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
-              <Type>Expression</Type>
-            </Text18>
-          </Components>
-          <Conditions isList="true" count="0" />
-          <Expressions isList="true" count="0" />
-          <Guid>559a0d9004f34f538dd317c28e27dfb7</Guid>
-          <Name>ReportTitleBand2</Name>
-          <Page isRef="4" />
-          <Parent isRef="4" />
-        </ReportTitleBand2>
-        <GroupHeaderBand1 Ref="12" type="GroupHeaderBand" isKey="true">
-          <Border>None;[182:182:182];1;Solid;False;4;Black</Border>
-          <Brush>Transparent</Brush>
-          <ClientRectangle>0,140,749,40</ClientRectangle>
-          <Collapsed>{GroupLine!=1}</Collapsed>
-          <Components isList="true" count="1">
-            <Text8 Ref="13" type="Text" isKey="true">
-              <Brush>Transparent</Brush>
-              <ClientRectangle>30,0,719,40</ClientRectangle>
-              <ComponentStyle>Header2</ComponentStyle>
-              <Conditions isList="true" count="0" />
-              <Expressions isList="true" count="0" />
-              <Font>Segoe UI,15.75,Bold,Point,False,204</Font>
-              <Margins>0,0,0,0</Margins>
-              <Name>Text8</Name>
-              <Page isRef="4" />
-              <Parent isRef="12" />
-              <Text>{Customers.CompanyName.Substring(0, 1)}</Text>
-              <TextBrush>[64:64:64]</TextBrush>
-            </Text8>
-          </Components>
-          <ComponentStyle>Data1</ComponentStyle>
-          <Condition>{Customers.CompanyName.Substring(0, 1)}</Condition>
-          <Conditions isList="true" count="0" />
-          <Expressions isList="true" count="0" />
-          <Interaction Ref="14" type="Stimulsoft.Report.Components.StiBandInteraction" isKey="true">
-            <CollapseGroupFooter>True</CollapseGroupFooter>
-            <CollapsingEnabled>True</CollapsingEnabled>
-          </Interaction>
-          <KeepGroupTogether>True</KeepGroupTogether>
-          <Name>GroupHeaderBand1</Name>
-          <Page isRef="4" />
-          <Parent isRef="4" />
-        </GroupHeaderBand1>
-        <GroupHeaderBand2 Ref="15" type="GroupHeaderBand" isKey="true">
-          <Brush>Transparent</Brush>
-          <ClientRectangle>0,220,749,40</ClientRectangle>
-          <Components isList="true" count="4">
-            <Text11 Ref="16" type="Text" isKey="true">
-              <Border>Left, Right;White;1;Solid;False;4;Black</Border>
-              <Brush>[255:179:135]</Brush>
-              <ClientRectangle>270,0,200,40</ClientRectangle>
-              <ComponentStyle>Header3</ComponentStyle>
-              <Conditions isList="true" count="0" />
-              <Expressions isList="true" count="0" />
-              <Font>Segoe UI,12,Bold,Point,False,204</Font>
-              <HorAlignment>Center</HorAlignment>
-              <Margins>0,0,0,0</Margins>
-              <Name>Text11</Name>
-              <Page isRef="4" />
-              <Parent isRef="15" />
-              <Text>Address</Text>
-              <TextBrush>[255:255:255]</TextBrush>
-              <VertAlignment>Center</VertAlignment>
-            </Text11>
-            <Text10 Ref="17" type="Text" isKey="true">
-              <Border>Right;White;1;Solid;False;4;Black</Border>
-              <Brush>[255:179:135]</Brush>
-              <ClientRectangle>0,0,270,40</ClientRectangle>
-              <ComponentStyle>Header3</ComponentStyle>
-              <Conditions isList="true" count="0" />
-              <Expressions isList="true" count="0" />
-              <Font>Segoe UI,12,Bold,Point,False,204</Font>
-              <HorAlignment>Center</HorAlignment>
-              <Margins>0,0,0,0</Margins>
-              <Name>Text10</Name>
-              <Page isRef="4" />
-              <Parent isRef="15" />
-              <Text>Company</Text>
-              <TextBrush>[255:255:255]</TextBrush>
-              <VertAlignment>Center</VertAlignment>
-            </Text10>
-            <Text12 Ref="18" type="Text" isKey="true">
-              <Border>Left, Right;White;1;Solid;False;4;Black</Border>
-              <Brush>[255:179:135]</Brush>
-              <ClientRectangle>470,0,120,40</ClientRectangle>
-              <ComponentStyle>Header3</ComponentStyle>
-              <Conditions isList="true" count="0" />
-              <Expressions isList="true" count="0" />
-              <Font>Segoe UI,12,Bold,Point,False,204</Font>
-              <HorAlignment>Center</HorAlignment>
-              <Margins>0,0,0,0</Margins>
-              <Name>Text12</Name>
-              <Page isRef="4" />
-              <Parent isRef="15" />
-              <Text>Phone</Text>
-              <TextBrush>[255:255:255]</TextBrush>
-              <VertAlignment>Center</VertAlignment>
-            </Text12>
-            <Text13 Ref="19" type="Text" isKey="true">
-              <Border>Left;White;1;Solid;False;4;Black</Border>
-              <Brush>[255:179:135]</Brush>
-              <ClientRectangle>590,0,159,40</ClientRectangle>
-              <ComponentStyle>Header3</ComponentStyle>
-              <Conditions isList="true" count="0" />
-              <Expressions isList="true" count="0" />
-              <Font>Segoe UI,12,Bold,Point,False,204</Font>
-              <HorAlignment>Center</HorAlignment>
-              <Margins>0,0,0,0</Margins>
-              <Name>Text13</Name>
-              <Page isRef="4" />
-              <Parent isRef="15" />
-              <Text>Contact</Text>
-              <TextBrush>[255:255:255]</TextBrush>
-              <VertAlignment>Center</VertAlignment>
-            </Text13>
-          </Components>
-          <Condition>1</Condition>
-          <Conditions isList="true" count="0" />
-          <Expressions isList="true" count="0" />
-          <Name>GroupHeaderBand2</Name>
-          <Page isRef="4" />
-          <Parent isRef="4" />
-        </GroupHeaderBand2>
-        <DataBand1 Ref="20" type="DataBand" isKey="true">
-          <Border>None;[182:182:182];1;Solid;False;4;Black</Border>
-          <Brush>Transparent</Brush>
-          <BusinessObjectGuid isNull="true" />
-          <ClientRectangle>0,300,749,20</ClientRectangle>
-          <Components isList="true" count="4">
-            <Text2 Ref="21" type="Text" isKey="true">
-              <Border>None;[182:182:182];1;Solid;False;4;Black</Border>
-              <Brush>Transparent</Brush>
-              <CanGrow>True</CanGrow>
-              <ClientRectangle>270,0,200,20</ClientRectangle>
-              <ComponentStyle>Data1</ComponentStyle>
-              <Conditions isList="true" count="0" />
-              <Expressions isList="true" count="0" />
-              <Font>Segoe UI,9.75,Regular,Point,False,0</Font>
-              <GrowToHeight>True</GrowToHeight>
-              <Margins>3,3,3,3</Margins>
-              <Name>Text2</Name>
-              <Page isRef="4" />
-              <Parent isRef="20" />
-              <Text>{Customers.Address}</Text>
-              <TextBrush>[64:64:64]</TextBrush>
-              <TextOptions>,,,Trimming=Character,,A=0</TextOptions>
-              <VertAlignment>Center</VertAlignment>
-            </Text2>
-            <Text4 Ref="22" type="Text" isKey="true">
-              <Border>None;[182:182:182];1;Solid;False;4;Black</Border>
-              <Brush>Transparent</Brush>
-              <CanGrow>True</CanGrow>
-              <ClientRectangle>470,0,120,20</ClientRectangle>
-              <ComponentStyle>Data1</ComponentStyle>
-              <Conditions isList="true" count="0" />
-              <Expressions isList="true" count="0" />
-              <Font>Segoe UI,9.75,Regular,Point,False,0</Font>
-              <GrowToHeight>True</GrowToHeight>
-              <Margins>3,3,3,3</Margins>
-              <Name>Text4</Name>
-              <Page isRef="4" />
-              <Parent isRef="20" />
-              <Text>{Customers.Phone}</Text>
-              <TextBrush>[64:64:64]</TextBrush>
-              <TextOptions>,,,Trimming=Character,,A=0</TextOptions>
-              <VertAlignment>Center</VertAlignment>
-            </Text4>
-            <Text3 Ref="23" type="Text" isKey="true">
-              <Border>None;[182:182:182];1;Solid;False;4;Black</Border>
-              <Brush>Transparent</Brush>
-              <CanGrow>True</CanGrow>
-              <ClientRectangle>590,0,159,20</ClientRectangle>
-              <ComponentStyle>Data1</ComponentStyle>
-              <Conditions isList="true" count="0" />
-              <Expressions isList="true" count="0" />
-              <Font>Segoe UI,9.75,Regular,Point,False,0</Font>
-              <GrowToHeight>True</GrowToHeight>
-              <Margins>3,3,3,3</Margins>
-              <Name>Text3</Name>
-              <Page isRef="4" />
-              <Parent isRef="20" />
-              <Text>{Customers.ContactTitle}</Text>
-              <TextBrush>[64:64:64]</TextBrush>
-              <TextOptions>,,,Trimming=Character,,A=0</TextOptions>
-              <VertAlignment>Center</VertAlignment>
-            </Text3>
-            <Text1 Ref="24" type="Text" isKey="true">
-              <Border>None;[182:182:182];1;Solid;False;4;Black</Border>
-              <Brush>Transparent</Brush>
-              <CanGrow>True</CanGrow>
-              <ClientRectangle>0,0,270,20</ClientRectangle>
-              <ComponentStyle>Data1</ComponentStyle>
-              <Conditions isList="true" count="0" />
-              <Expressions isList="true" count="0" />
-              <Font>Segoe UI,9.75,Regular,Point,False,0</Font>
-              <GrowToHeight>True</GrowToHeight>
-              <Margins>3,3,3,3</Margins>
-              <Name>Text1</Name>
-              <Page isRef="4" />
-              <Parent isRef="20" />
-              <Text>{Customers.CompanyName}</Text>
-              <TextBrush>[64:64:64]</TextBrush>
-              <TextOptions>,,,Trimming=Character,,A=0</TextOptions>
-              <VertAlignment>Center</VertAlignment>
-            </Text1>
-          </Components>
-          <ComponentStyle>Data1</ComponentStyle>
-          <Conditions isList="true" count="0" />
-          <DataSourceName>Customers</DataSourceName>
-          <EvenStyle>Data2</EvenStyle>
-          <Expressions isList="true" count="0" />
-          <Filters isList="true" count="0" />
-          <Name>DataBand1</Name>
-          <Page isRef="4" />
-          <Parent isRef="4" />
-          <Sort isList="true" count="2">
-            <value>ASC</value>
-            <value>CompanyName</value>
-          </Sort>
-        </DataBand1>
-        <GroupFooterBand2 Ref="25" type="GroupFooterBand" isKey="true">
-          <Brush>Transparent</Brush>
-          <ClientRectangle>0,360,749,0</ClientRectangle>
-          <Components isList="true" count="0" />
-          <Conditions isList="true" count="0" />
-          <Expressions isList="true" count="0" />
-          <Name>GroupFooterBand2</Name>
-          <Page isRef="4" />
-          <Parent isRef="4" />
-        </GroupFooterBand2>
-        <GroupFooterBand1 Ref="26" type="GroupFooterBand" isKey="true">
-          <Border>None;[58:78:94];1;Solid;False;4;Black</Border>
-          <Brush>Transparent</Brush>
-          <ClientRectangle>0,400,749,20</ClientRectangle>
-          <Components isList="true" count="1">
-            <Text9 Ref="27" type="Text" isKey="true">
-              <Border>None;[58:78:94];1;Solid;False;4;Black</Border>
-              <Brush>Transparent</Brush>
-              <ClientRectangle>0,0,749,20</ClientRectangle>
-              <ComponentStyle>Footer1</ComponentStyle>
-              <Conditions isList="true" count="0" />
-              <Expressions isList="true" count="0" />
-              <Font>Segoe UI,9.75,Regular,Point,False,0</Font>
-              <HorAlignment>Right</HorAlignment>
-              <Margins>0,3,0,0</Margins>
-              <Name>Text9</Name>
-              <Page isRef="4" />
-              <Parent isRef="26" />
-              <Text>Count: {Count()}</Text>
-              <TextBrush>[166:166:166]</TextBrush>
-              <VertAlignment>Center</VertAlignment>
-            </Text9>
-          </Components>
-          <ComponentStyle>Footer1</ComponentStyle>
-          <Conditions isList="true" count="0" />
-          <Expressions isList="true" count="0" />
-          <Name>GroupFooterBand1</Name>
-          <Page isRef="4" />
-          <Parent isRef="4" />
-        </GroupFooterBand1>
-      </Components>
-      <Conditions isList="true" count="0" />
-      <Expressions isList="true" count="0" />
-      <Guid>1bbc1ab1b607416bad7fa7eb3b60df7a</Guid>
-      <Margins>39,39,39,39</Margins>
-      <Name>Page1</Name>
-      <PaperSize>A4</PaperSize>
-      <Report isRef="0" />
-    </Page1>
-  </Pages>
-  <ReferencedAssemblies isList="true" count="8">
-    <value>System.Dll</value>
-    <value>System.Drawing.Dll</value>
-    <value>System.Windows.Forms.Dll</value>
-    <value>System.Data.Dll</value>
-    <value>System.Xml.Dll</value>
-    <value>Stimulsoft.Base.Dll</value>
-    <value>Stimulsoft.Controls.Dll</value>
-    <value>Stimulsoft.Report.Dll</value>
-  </ReferencedAssemblies>
-  <ReportAlias>Group with Collapsing</ReportAlias>
-  <ReportAuthor>Stimulsoft</ReportAuthor>
-  <ReportChanged>9/13/2022 4:25:57 PM</ReportChanged>
-  <ReportCreated>5/29/2004 10:59:00 AM</ReportCreated>
-  <ReportDescription>This sample demonstrates how to use a GroupHeaderBand with collapsing.</ReportDescription>
-  <ReportFile>D:\stimulsoft\Stimulsoft.Files.Dashboards\CloudStorage\12.Interactive Reports\Group with Collapsing.mrt</ReportFile>
-  <ReportGuid>04cb33754b79437096e2270e554ce400</ReportGuid>
-  <ReportIcon>iVBORw0KGgoAAAANSUhEUgAAASAAAAGWCAMAAADvzq7aAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
-jwv8YQUAAAGAUExURdzc3cfHyKC7z/Dy9srb59Xk7v/26f7+/rq4u/+0hv/gzLjEz+/x9tDFvtO9
-q//p2+Pj4//Wvfn6/JSSlP7u5qmoq+ju8/X5/U1JSuzs7GuJovX2+ebe2Ovi3P/IqMPM1P/68vL0
-+P+vfaeJc8XU3YupvnyYr/n5+dTMx76lj/f19aSttWxucaqzvdLT1JV4Y9zSy2dXS//kze/bx+Lm
-6lh3kf++lbHQ5bSbhvb+/+jz+fz28vDq5UVUZ+Pq8P/++X1lV8a/xU9meLWtp9LV2y0rMb60r//O
-sVpEN/Hx8eLa1NTZ3s2xmf/Ene3m4bqvuP+4jTREWdzW1P+xgPLz9v+xgkc3MNjN1yk2R//g1dfv
-/OrTvPv7+ef5/9/g5Pjx7d3W2+/z+Pb08eTLs/+9jPP3+6Kipu/3/NDOzv/RrOXv+Pv7/Onp6b2+
-v/r9++3v8dra2fT4+P/v4PTv6+Xn5vXz9Pf39+Df3/++oP/Txq+xsouFgT8+QXp8fpudnf///1L6
-4xsAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAfh0lEQVR4Xu2dC0PayNqA
-iVySimhEEREVqVQoCEJLW1EKIqgFWm1ZtDcWiz1YKkRQEHapJX/9e3ORSxCG1u1+55R5bMkwJJPJ
-w2SSNwmJjMX0BQtCgAUhwIIQYEEIsCAEWBACLAgBFoQAC0KABSHAghBgQQiwIARYEAIsCEG3oGDJ
-FdGL6T4E1538cLfh44fAgstlFlKqKfXS1IiQbsP/zSKm/j38LtcMN9xc76qP+5tSTPEcr8+dick2
-ugQ93rqeve5eti6WtubYGMxh682fQoZquTXhxNGc6uiJkG7j8axaTP1rvJydvX7Ajk/5VFsrYlaT
-lzvPxBTP2vVKoduiVNCjF8+V7ObMEpF2nbExKsKy84R+kwj4QwUN//W7LewCoZ8mzDaFam3nQXXt
-uSwU4D5Ye6cmywH2OMRsgKAV1Ys5dpphztjpUMFm8rGbGiqwyZxthrzcuyWNKQGDX87li23fkuHx
-izdqq0YRtMVjoS/zzAy3BJvEGScoRkE1FriXjy+24y93nnQ0KkAq6OHOs2CptvH4aPb62cNrz/Uc
-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</ReportIcon>
-  <ReportImage>iVBORw0KGgoAAAANSUhEUgAAASAAAAGWCAMAAADvzq7aAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
-jwv8YQUAAAGAUExURdzc3cfHyKC7z/Dy9srb59Xk7v/26f7+/rq4u/+0hv/gzLjEz+/x9tDFvtO9
-q//p2+Pj4//Wvfn6/JSSlP7u5qmoq+ju8/X5/U1JSuzs7GuJovX2+ebe2Ovi3P/IqMPM1P/68vL0
-+P+vfaeJc8XU3YupvnyYr/n5+dTMx76lj/f19aSttWxucaqzvdLT1JV4Y9zSy2dXS//kze/bx+Lm
-6lh3kf++lbHQ5bSbhvb+/+jz+fz28vDq5UVUZ+Pq8P/++X1lV8a/xU9meLWtp9LV2y0rMb60r//O
-sVpEN/Hx8eLa1NTZ3s2xmf/Ene3m4bqvuP+4jTREWdzW1P+xgPLz9v+xgkc3MNjN1yk2R//g1dfv
-/OrTvPv7+ef5/9/g5Pjx7d3W2+/z+Pb08eTLs/+9jPP3+6Kipu/3/NDOzv/RrOXv+Pv7/Onp6b2+
-v/r9++3v8dra2fT4+P/v4PTv6+Xn5vXz9Pf39+Df3/++oP/Txq+xsouFgT8+QXp8fpudnf///1L6
-4xsAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAfh0lEQVR4Xu2dC0PayNqA
-iVySimhEEREVqVQoCEJLW1EKIqgFWm1ZtDcWiz1YKkRQEHapJX/9e3ORSxCG1u1+55R5bMkwJJPJ
-w2SSNwmJjMX0BQtCgAUhwIIQYEEIsCAEWBACLAgBFoQAC0KABSHAghBgQQiwIARYEAIsCEG3oGDJ
-FdGL6T4E1538cLfh44fAgstlFlKqKfXS1IiQbsP/zSKm/j38LtcMN9xc76qP+5tSTPEcr8+dick2
-ugQ93rqeve5eti6WtubYGMxh682fQoZquTXhxNGc6uiJkG7j8axaTP1rvJydvX7Ajk/5VFsrYlaT
-lzvPxBTP2vVKoduiVNCjF8+V7ObMEpF2nbExKsKy84R+kwj4QwUN//W7LewCoZ8mzDaFam3nQXXt
-uSwU4D5Ye6cmywH2OMRsgKAV1Ys5dpphztjpUMFm8rGbGiqwyZxthrzcuyWNKQGDX87li23fkuHx
-izdqq0YRtMVjoS/zzAy3BJvEGScoRkE1FriXjy+24y93nnQ0KkAq6OHOs2CptvH4aPb62cNrz/Uc
-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</ReportImage>
-  <ReportName>Group with Collapsing</ReportName>
-  <ReportUnit>HundredthsOfInch</ReportUnit>
-  <ReportVersion>2022.3.5.0</ReportVersion>
-  <Script>using System;
-using System.Drawing;
-using System.Windows.Forms;
-using System.Data;
-using Stimulsoft.Report;
-using Stimulsoft.Report.Components;
-using Stimulsoft.Base.Drawing;
-
-namespace StiReports
 {
-    
-    public class Group_with_Collapsing : Stimulsoft.Report.StiReport
-    {
-        
-        public Group_with_Collapsing()
-        {
-            this.InitializeComponent();
-        }
-        
-        #region StiReport Designer generated code - do not modify
-		#endregion StiReport Designer generated code - do not modify
+  "ReportVersion": "2025.1.1",
+  "ReportGuid": "04cb33754b79437096e2270e554ce400",
+  "ReportName": "Group with Collapsing",
+  "ReportAlias": "Group with Collapsing",
+  "ReportFile": "d:\\stimulsoft\\Stimulsoft.Files.Dashboards\\SamplesStorage\\WebDemoReports\\All\\GroupWithCollapsing.mrt",
+  "ReportAuthor": "Stimulsoft",
+  "ReportDescription": "This sample demonstrates how to use a GroupHeaderBand with collapsing.",
+  "ReportCreated": "/Date(0+0100)/",
+  "ReportChanged": "/Date(0+0100)/",
+  "EngineVersion": "EngineV2",
+  "ReportUnit": "HundredthsOfInch",
+  "ScriptLanguage": "CSharp",
+  "ReportIcon": "iVBORw0KGgoAAAANSUhEUgAAASAAAAGWCAMAAADvzq7aAAAAAXNSR0IArs4c6QAAAARnQU1BAACx\njwv8YQUAAAGAUExURdzc3cfHyKC7z/Dy9srb59Xk7v/26f7+/rq4u/+0hv/gzLjEz+/x9tDFvtO9\nq//p2+Pj4//Wvfn6/JSSlP7u5qmoq+ju8/X5/U1JSuzs7GuJovX2+ebe2Ovi3P/IqMPM1P/68vL0\n+P+vfaeJc8XU3YupvnyYr/n5+dTMx76lj/f19aSttWxucaqzvdLT1JV4Y9zSy2dXS//kze/bx+Lm\n6lh3kf++lbHQ5bSbhvb+/+jz+fz28vDq5UVUZ+Pq8P/++X1lV8a/xU9meLWtp9LV2y0rMb60r//O\nsVpEN/Hx8eLa1NTZ3s2xmf/Ene3m4bqvuP+4jTREWdzW1P+xgPLz9v+xgkc3MNjN1yk2R//g1dfv\n/OrTvPv7+ef5/9/g5Pjx7d3W2+/z+Pb08eTLs/+9jPP3+6Kipu/3/NDOzv/RrOXv+Pv7/Onp6b2+\nv/r9++3v8dra2fT4+P/v4PTv6+Xn5vXz9Pf39+Df3/++oP/Txq+xsouFgT8+QXp8fpudnf///1L6\n4xsAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAfh0lEQVR4Xu2dC0PayNqA\niVySimhEEREVqVQoCEJLW1EKIqgFWm1ZtDcWiz1YKkRQEHapJX/9e3ORSxCG1u1+55R5bMkwJJPJ\nw2SSNwmJjMX0BQtCgAUhwIIQYEEIsCAEWBACLAgBFoQAC0KABSHAghBgQQiwIARYEAIsCEG3oGDJ\nFdGL6T4E1538cLfh44fAgstlFlKqKfXS1IiQbsP/zSKm/j38LtcMN9xc76qP+5tSTPEcr8+dick2\nugQ93rqeve5eti6WtubYGMxh682fQoZquTXhxNGc6uiJkG7j8axaTP1rvJydvX7Ajk/5VFsrYlaT\nlzvPxBTP2vVKoduiVNCjF8+V7ObMEpF2nbExKsKy84R+kwj4QwUN//W7LewCoZ8mzDaFam3nQXXt\nuSwU4D5Ye6cmywH2OMRsgKAV1Ys5dpphztjpUMFm8rGbGiqwyZxthrzcuyWNKQGDX87li23fkuHx\nizdqq0YRtMVjoS/zzAy3BJvEGScoRkE1FriXjy+24y93nnQ0KkAq6OHOs2CptvH4aPb62cNrz/Uc\n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",
+  "ReportImage": "iVBORw0KGgoAAAANSUhEUgAAASAAAAGWCAMAAADvzq7aAAAAAXNSR0IArs4c6QAAAARnQU1BAACx\njwv8YQUAAAGAUExURdzc3cfHyKC7z/Dy9srb59Xk7v/26f7+/rq4u/+0hv/gzLjEz+/x9tDFvtO9\nq//p2+Pj4//Wvfn6/JSSlP7u5qmoq+ju8/X5/U1JSuzs7GuJovX2+ebe2Ovi3P/IqMPM1P/68vL0\n+P+vfaeJc8XU3YupvnyYr/n5+dTMx76lj/f19aSttWxucaqzvdLT1JV4Y9zSy2dXS//kze/bx+Lm\n6lh3kf++lbHQ5bSbhvb+/+jz+fz28vDq5UVUZ+Pq8P/++X1lV8a/xU9meLWtp9LV2y0rMb60r//O\nsVpEN/Hx8eLa1NTZ3s2xmf/Ene3m4bqvuP+4jTREWdzW1P+xgPLz9v+xgkc3MNjN1yk2R//g1dfv\n/OrTvPv7+ef5/9/g5Pjx7d3W2+/z+Pb08eTLs/+9jPP3+6Kipu/3/NDOzv/RrOXv+Pv7/Onp6b2+\nv/r9++3v8dra2fT4+P/v4PTv6+Xn5vXz9Pf39+Df3/++oP/Txq+xsouFgT8+QXp8fpudnf///1L6\n4xsAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAfh0lEQVR4Xu2dC0PayNqA\niVySimhEEREVqVQoCEJLW1EKIqgFWm1ZtDcWiz1YKkRQEHapJX/9e3ORSxCG1u1+55R5bMkwJJPJ\nw2SSNwmJjMX0BQtCgAUhwIIQYEEIsCAEWBACLAgBFoQAC0KABSHAghBgQQiwIARYEAIsCEG3oGDJ\nFdGL6T4E1538cLfh44fAgstlFlKqKfXS1IiQbsP/zSKm/j38LtcMN9xc76qP+5tSTPEcr8+dick2\nugQ93rqeve5eti6WtubYGMxh682fQoZquTXhxNGc6uiJkG7j8axaTP1rvJydvX7Ajk/5VFsrYlaT\nlzvPxBTP2vVKoduiVNCjF8+V7ObMEpF2nbExKsKy84R+kwj4QwUN//W7LewCoZ8mzDaFam3nQXXt\nuSwU4D5Ye6cmywH2OMRsgKAV1Ys5dpphztjpUMFm8rGbGiqwyZxthrzcuyWNKQGDX87li23fkuHx\nizdqq0YRtMVjoS/zzAy3BJvEGScoRkE1FriXjy+24y93nnQ0KkAq6OHOs2CptvH4aPb62cNrz/Uc\n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",
+  "CalculationMode": "Interpretation",
+  "Styles": {
+    "0": {
+      "Ident": "StiStyle",
+      "Name": "Header1",
+      "HorAlignment": "Center",
+      "VertAlignment": "Center",
+      "Font": "Segoe UI;21.75;Bold;",
+      "Border": "Bottom;166,166,166;;;;;;solid:Black",
+      "Brush": "solid:",
+      "TextBrush": "solid:64,64,64",
+      "NegativeTextBrush": "solid:Red"
+    },
+    "1": {
+      "Ident": "StiStyle",
+      "Name": "Header2",
+      "VertAlignment": "Center",
+      "Font": "Segoe UI;15.75;Bold;",
+      "Border": ";;;;;;;solid:Black",
+      "Brush": "solid:",
+      "TextBrush": "solid:64,64,64",
+      "NegativeTextBrush": "solid:Red",
+      "AllowUseBorderSides": false
+    },
+    "2": {
+      "Ident": "StiStyle",
+      "Name": "Header3",
+      "HorAlignment": "Center",
+      "VertAlignment": "Center",
+      "Font": "Segoe UI;12;Bold;",
+      "Border": "Left, Right;White;;;;;;solid:Black",
+      "Brush": "solid:255,179,135",
+      "TextBrush": "solid:255,255,255",
+      "NegativeTextBrush": "solid:Red",
+      "AllowUseBorderFormatting": false,
+      "AllowUseBorderSides": false
+    },
+    "3": {
+      "Ident": "StiStyle",
+      "Name": "Data1",
+      "VertAlignment": "Center",
+      "Font": "Segoe UI;9.75;;",
+      "Border": ";182,182,182;;;;;;solid:Black",
+      "Brush": "solid:",
+      "TextBrush": "solid:64,64,64",
+      "NegativeTextBrush": "solid:Red"
+    },
+    "4": {
+      "Ident": "StiStyle",
+      "Name": "Data2",
+      "Font": "Segoe UI;9.75;;",
+      "Border": ";255,255,255;;;;;;solid:Black",
+      "Brush": "solid:240,242,246",
+      "TextBrush": "solid:64,64,64",
+      "NegativeTextBrush": "solid:Red"
+    },
+    "5": {
+      "Ident": "StiStyle",
+      "Name": "Footer1",
+      "HorAlignment": "Right",
+      "VertAlignment": "Center",
+      "Font": "Segoe UI;9.75;;",
+      "Border": ";58,78,94;;;;;;solid:Black",
+      "Brush": "solid:",
+      "TextBrush": "solid:166,166,166",
+      "NegativeTextBrush": "solid:Red",
+      "AllowUseBorderSides": false
     }
-}</Script>
-  <ScriptLanguage>CSharp</ScriptLanguage>
-  <Styles isList="true" count="6">
-    <Header1 Ref="28" type="Stimulsoft.Report.StiStyle" isKey="true">
-      <Border>Bottom;[166:166:166];1;Solid;False;4;Black</Border>
-      <Brush>Transparent</Brush>
-      <Conditions isList="true" count="0" />
-      <Font>Segoe UI,21.75,Bold,Point,False,204</Font>
-      <HorAlignment>Center</HorAlignment>
-      <Name>Header1</Name>
-      <NegativeTextBrush>Red</NegativeTextBrush>
-      <TextBrush>[64:64:64]</TextBrush>
-      <VertAlignment>Center</VertAlignment>
-    </Header1>
-    <Header2 Ref="29" type="Stimulsoft.Report.StiStyle" isKey="true">
-      <AllowUseBorderSides>False</AllowUseBorderSides>
-      <Brush>Transparent</Brush>
-      <Conditions isList="true" count="0" />
-      <Font>Segoe UI,15.75,Bold,Point,False,204</Font>
-      <Name>Header2</Name>
-      <NegativeTextBrush>Red</NegativeTextBrush>
-      <TextBrush>[64:64:64]</TextBrush>
-      <VertAlignment>Center</VertAlignment>
-    </Header2>
-    <Header3 Ref="30" type="Stimulsoft.Report.StiStyle" isKey="true">
-      <AllowUseBorderFormatting>False</AllowUseBorderFormatting>
-      <AllowUseBorderSides>False</AllowUseBorderSides>
-      <Border>Left, Right;White;1;Solid;False;4;Black</Border>
-      <Brush>[255:179:135]</Brush>
-      <Conditions isList="true" count="0" />
-      <Font>Segoe UI,12,Bold,Point,False,204</Font>
-      <HorAlignment>Center</HorAlignment>
-      <Name>Header3</Name>
-      <NegativeTextBrush>Red</NegativeTextBrush>
-      <TextBrush>[255:255:255]</TextBrush>
-      <VertAlignment>Center</VertAlignment>
-    </Header3>
-    <Data1 Ref="31" type="Stimulsoft.Report.StiStyle" isKey="true">
-      <Border>None;[182:182:182];1;Solid;False;4;Black</Border>
-      <Brush>Transparent</Brush>
-      <Conditions isList="true" count="0" />
-      <Font>Segoe UI,9.75,Regular,Point,False,0</Font>
-      <Name>Data1</Name>
-      <NegativeTextBrush>Red</NegativeTextBrush>
-      <TextBrush>[64:64:64]</TextBrush>
-      <VertAlignment>Center</VertAlignment>
-    </Data1>
-    <Data2 Ref="32" type="Stimulsoft.Report.StiStyle" isKey="true">
-      <Border>None;[255:255:255];1;Solid;False;4;Black</Border>
-      <Brush>[240:242:246]</Brush>
-      <Conditions isList="true" count="0" />
-      <Font>Segoe UI,9.75,Regular,Point,False,0</Font>
-      <Name>Data2</Name>
-      <NegativeTextBrush>Red</NegativeTextBrush>
-      <TextBrush>[64:64:64]</TextBrush>
-    </Data2>
-    <Footer1 Ref="33" type="Stimulsoft.Report.StiStyle" isKey="true">
-      <AllowUseBorderSides>False</AllowUseBorderSides>
-      <Border>None;[58:78:94];1;Solid;False;4;Black</Border>
-      <Brush>Transparent</Brush>
-      <Conditions isList="true" count="0" />
-      <Font>Segoe UI,9.75,Regular,Point,False,0</Font>
-      <HorAlignment>Right</HorAlignment>
-      <Name>Footer1</Name>
-      <NegativeTextBrush>Red</NegativeTextBrush>
-      <TextBrush>[166:166:166]</TextBrush>
-      <VertAlignment>Center</VertAlignment>
-    </Footer1>
-  </Styles>
-</StiSerializer>
+  },
+  "Dictionary": {
+    "Resources": {
+      "0": {
+        "Name": "Demo",
+        "Alias": "Demo",
+        "Type": "Xsd",
+        "Image": "BrQPKmKtxHOudUqTiXXPZiPnHHR73eKd8TMa3qO39EfC9L/TMeiTKvQ7yhbIxOY6wg1/3Tk9zGdG4ulkhA4DDJeD0GD7AHyczl4w8/BPtKvZ/wiIpwg+RjqEeoSHyj1VBSA9F1TUeYxl2jGP/SPuWvZb4Mtm70r+MzhK1HEu13vsubM2yApiFYZE3FHq8u98m0DjJsHs+bERTkr+bkJwRSB4Yf700ZFTKOi30GybEar+Fv9rr5oNRwGFdZJP4dg1YPPvSeTVUMBmRrz8seMaqVbw4pek9oyCQYmQ8P2Jtg4ny5wgJuur3ThG9LXGJt9jYfvWyZ2vdfn8hetfdQbARtQOa5YSPvS0nU3Fc1c4u7xHX1bUrxWWtGEOs1b3R4ZY2xRCi3FTAUgYCGuCRP2wS0TSs/HPDfSyyJ8RZq3lvPF66krTs0dW/gAQP6ccDYzC0wWqBFuEf79YW6Qx+CAiZcjZM8iEtnIlzazSgk/skbBLU08YSVbB+qiOuXInGAG6LEpAbnLGfQ=="
+      },
+      "1": {
+        "Name": "Demo2",
+        "Alias": "Demo2",
+        "Type": "Xml",
+        "Image": "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"
+      }
+    },
+    "DataSources": {
+      "0": {
+        "Ident": "StiDataTableSource",
+        "Name": "Customers",
+        "Alias": "Customers",
+        "Key": "fa8bc7e62c1e424cb04785c0d768d2c0",
+        "Columns": {
+          "0": {
+            "Name": "Address",
+            "NameInSource": "Address",
+            "Alias": "Address",
+            "Type": "System.String"
+          },
+          "1": {
+            "Name": "City",
+            "NameInSource": "City",
+            "Alias": "City",
+            "Type": "System.String"
+          },
+          "2": {
+            "Name": "CompanyName",
+            "NameInSource": "CompanyName",
+            "Alias": "CompanyName",
+            "Type": "System.String"
+          },
+          "3": {
+            "Name": "ContactName",
+            "NameInSource": "ContactName",
+            "Alias": "ContactName",
+            "Type": "System.String"
+          },
+          "4": {
+            "Name": "ContactTitle",
+            "NameInSource": "ContactTitle",
+            "Alias": "ContactTitle",
+            "Type": "System.String"
+          },
+          "5": {
+            "Name": "Country",
+            "NameInSource": "Country",
+            "Alias": "Country",
+            "Type": "System.String"
+          },
+          "6": {
+            "Name": "CustomerID",
+            "NameInSource": "CustomerID",
+            "Alias": "CustomerID",
+            "Type": "System.String"
+          },
+          "7": {
+            "Name": "Fax",
+            "NameInSource": "Fax",
+            "Alias": "Fax",
+            "Type": "System.String"
+          },
+          "8": {
+            "Name": "Phone",
+            "NameInSource": "Phone",
+            "Alias": "Phone",
+            "Type": "System.String"
+          },
+          "9": {
+            "Name": "PostalCode",
+            "NameInSource": "PostalCode",
+            "Alias": "PostalCode",
+            "Type": "System.String"
+          },
+          "10": {
+            "Name": "Region",
+            "NameInSource": "Region",
+            "Alias": "Region",
+            "Type": "System.String"
+          }
+        },
+        "NameInSource": "Demo.Customers"
+      }
+    },
+    "Databases": {
+      "0": {
+        "Ident": "StiXmlDatabase",
+        "Name": "Demo",
+        "Alias": "Demo",
+        "PathSchema": "resource://Demo",
+        "PathData": "resource://Demo2"
+      }
+    }
+  },
+  "Pages": {
+    "0": {
+      "Ident": "StiPage",
+      "Name": "Page1",
+      "Guid": "1bbc1ab1b607416bad7fa7eb3b60df7a",
+      "Interaction": {
+        "Ident": "StiInteraction"
+      },
+      "Border": ";;2;;;;;solid:Black",
+      "Brush": "solid:",
+      "Components": {
+        "0": {
+          "Ident": "StiPageFooterBand",
+          "Name": "PageFooterBand1",
+          "Guid": "c607af5d0380447d9e3870573828b9c1",
+          "CanGrow": true,
+          "ClientRectangle": "0,1071,749,20",
+          "Interaction": {
+            "Ident": "StiInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text6",
+              "Guid": "ca0ccd005d374f10b0c98b9338e6837c",
+              "ClientRectangle": "0,0,749,20",
+              "ComponentStyle": "Footer1",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{PageNofM}"
+              },
+              "HorAlignment": "Right",
+              "VertAlignment": "Center",
+              "Font": "Segoe UI;9.75;;",
+              "Border": ";58,78,94;;;;;;solid:Black",
+              "Brush": "solid:",
+              "TextBrush": "solid:166,166,166"
+            }
+          }
+        },
+        "1": {
+          "Ident": "StiReportTitleBand",
+          "Name": "ReportTitleBand2",
+          "Guid": "559a0d9004f34f538dd317c28e27dfb7",
+          "CanGrow": true,
+          "ClientRectangle": "0,20,749,80",
+          "Interaction": {
+            "Ident": "StiInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text20",
+              "Guid": "b5a5314daf2944c1badfdfc75484b222",
+              "CanGrow": true,
+              "ClientRectangle": "570,0,179,40",
+              "ComponentStyle": "Header1",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{ReportAuthor}"
+              },
+              "HorAlignment": "Right",
+              "VertAlignment": "Center",
+              "Font": "Segoe UI;21.75;Bold;",
+              "Border": "Bottom;166,166,166;;;;;;solid:Black",
+              "Brush": "solid:",
+              "TextBrush": "solid:64,64,64",
+              "Margins": {
+                "Left": 0,
+                "Right": 3,
+                "Top": 0,
+                "Bottom": 0
+              },
+              "Type": "SystemVariables"
+            },
+            "1": {
+              "Ident": "StiText",
+              "Name": "Text23",
+              "Guid": "7d4b04a878a14739be5ff29d1322e532",
+              "CanGrow": true,
+              "ClientRectangle": "0,0,570,40",
+              "ComponentStyle": "Header1",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{ReportName}"
+              },
+              "VertAlignment": "Center",
+              "Font": "Segoe UI;21.75;Bold;",
+              "Border": "Bottom;166,166,166;;;;;;solid:Black",
+              "Brush": "solid:",
+              "TextBrush": "solid:64,64,64",
+              "Margins": {
+                "Left": 2,
+                "Right": 0,
+                "Top": 0,
+                "Bottom": 0
+              },
+              "Type": "SystemVariables"
+            },
+            "2": {
+              "Ident": "StiText",
+              "Name": "Text17",
+              "Guid": "430d8a387ff14d648d3547b637fa192a",
+              "CanGrow": true,
+              "ClientRectangle": "0,40,570,20",
+              "ComponentStyle": "Footer1",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{ReportDescription}"
+              },
+              "Font": "Segoe UI;9.75;;",
+              "Border": ";58,78,94;;;;;;solid:Black",
+              "Brush": "solid:",
+              "TextBrush": "solid:166,166,166",
+              "TextOptions": {
+                "WordWrap": true
+              },
+              "Margins": {
+                "Left": 6,
+                "Right": 0,
+                "Top": 0,
+                "Bottom": 0
+              },
+              "Type": "Expression"
+            },
+            "3": {
+              "Ident": "StiText",
+              "Name": "Text18",
+              "Guid": "6e715fb01bdf42aea59b99ad5ca30f7d",
+              "CanGrow": true,
+              "ClientRectangle": "570,40,179,20",
+              "ComponentStyle": "Footer1",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "Date: {Today.ToString(\"Y\")}"
+              },
+              "HorAlignment": "Right",
+              "Font": "Segoe UI;9.75;;",
+              "Border": ";58,78,94;;;;;;solid:Black",
+              "Brush": "solid:",
+              "TextBrush": "solid:166,166,166",
+              "TextOptions": {
+                "WordWrap": true
+              },
+              "Margins": {
+                "Left": 0,
+                "Right": 4,
+                "Top": 0,
+                "Bottom": 0
+              },
+              "Type": "Expression"
+            }
+          }
+        },
+        "2": {
+          "Ident": "StiGroupHeaderBand",
+          "Name": "GroupHeaderBand1",
+          "CanGrow": true,
+          "ClientRectangle": "0,140,749,40",
+          "ComponentStyle": "Data1",
+          "Interaction": {
+            "Ident": "StiBandInteraction",
+            "CollapsingEnabled": true,
+            "CollapseGroupFooter": true
+          },
+          "Border": ";182,182,182;;;;;;solid:Black",
+          "Brush": "solid:",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text8",
+              "ClientRectangle": "30,0,719,40",
+              "ComponentStyle": "Header2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Customers.CompanyName.Substring(0, 1)}"
+              },
+              "Font": "Segoe UI;15.75;Bold;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:",
+              "TextBrush": "solid:64,64,64"
+            }
+          },
+          "KeepGroupTogether": true,
+          "Condition": {
+            "Value": "{Customers.CompanyName.Substring(0, 1)}"
+          },
+          "Collapsed": {
+            "Value": "{GroupLine!=1}"
+          }
+        },
+        "3": {
+          "Ident": "StiGroupHeaderBand",
+          "Name": "GroupHeaderBand2",
+          "CanGrow": true,
+          "ClientRectangle": "0,220,749,40",
+          "Interaction": {
+            "Ident": "StiBandInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text11",
+              "ClientRectangle": "270,0,200,40",
+              "ComponentStyle": "Header3",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "Address"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": "Segoe UI;12;Bold;",
+              "Border": "Left, Right;White;;;;;;solid:Black",
+              "Brush": "solid:255,179,135",
+              "TextBrush": "solid:255,255,255"
+            },
+            "1": {
+              "Ident": "StiText",
+              "Name": "Text10",
+              "ClientRectangle": "0,0,270,40",
+              "ComponentStyle": "Header3",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "Company"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": "Segoe UI;12;Bold;",
+              "Border": "Right;White;;;;;;solid:Black",
+              "Brush": "solid:255,179,135",
+              "TextBrush": "solid:255,255,255"
+            },
+            "2": {
+              "Ident": "StiText",
+              "Name": "Text12",
+              "ClientRectangle": "470,0,120,40",
+              "ComponentStyle": "Header3",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "Phone"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": "Segoe UI;12;Bold;",
+              "Border": "Left, Right;White;;;;;;solid:Black",
+              "Brush": "solid:255,179,135",
+              "TextBrush": "solid:255,255,255"
+            },
+            "3": {
+              "Ident": "StiText",
+              "Name": "Text13",
+              "ClientRectangle": "590,0,159,40",
+              "ComponentStyle": "Header3",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "Contact"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": "Segoe UI;12;Bold;",
+              "Border": "Left;White;;;;;;solid:Black",
+              "Brush": "solid:255,179,135",
+              "TextBrush": "solid:255,255,255"
+            }
+          },
+          "Condition": {
+            "Value": "1"
+          }
+        },
+        "4": {
+          "Ident": "StiDataBand",
+          "Name": "DataBand1",
+          "CanGrow": true,
+          "ClientRectangle": "0,300,749,20",
+          "ComponentStyle": "Data1",
+          "Interaction": {
+            "Ident": "StiBandInteraction"
+          },
+          "Border": ";182,182,182;;;;;;solid:Black",
+          "Brush": "solid:",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text2",
+              "CanGrow": true,
+              "GrowToHeight": true,
+              "ClientRectangle": "270,0,200,20",
+              "ComponentStyle": "Data1",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Customers.Address}"
+              },
+              "VertAlignment": "Center",
+              "Font": "Segoe UI;9.75;;",
+              "Border": ";182,182,182;;;;;;solid:Black",
+              "Brush": "solid:",
+              "TextBrush": "solid:64,64,64",
+              "TextOptions": {
+                "Trimming": "Character"
+              },
+              "Margins": {
+                "Left": 3,
+                "Right": 3,
+                "Top": 3,
+                "Bottom": 3
+              }
+            },
+            "1": {
+              "Ident": "StiText",
+              "Name": "Text4",
+              "CanGrow": true,
+              "GrowToHeight": true,
+              "ClientRectangle": "470,0,120,20",
+              "ComponentStyle": "Data1",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Customers.Phone}"
+              },
+              "VertAlignment": "Center",
+              "Font": "Segoe UI;9.75;;",
+              "Border": ";182,182,182;;;;;;solid:Black",
+              "Brush": "solid:",
+              "TextBrush": "solid:64,64,64",
+              "TextOptions": {
+                "Trimming": "Character"
+              },
+              "Margins": {
+                "Left": 3,
+                "Right": 3,
+                "Top": 3,
+                "Bottom": 3
+              }
+            },
+            "2": {
+              "Ident": "StiText",
+              "Name": "Text3",
+              "CanGrow": true,
+              "GrowToHeight": true,
+              "ClientRectangle": "590,0,159,20",
+              "ComponentStyle": "Data1",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Customers.ContactTitle}"
+              },
+              "VertAlignment": "Center",
+              "Font": "Segoe UI;9.75;;",
+              "Border": ";182,182,182;;;;;;solid:Black",
+              "Brush": "solid:",
+              "TextBrush": "solid:64,64,64",
+              "TextOptions": {
+                "Trimming": "Character"
+              },
+              "Margins": {
+                "Left": 3,
+                "Right": 3,
+                "Top": 3,
+                "Bottom": 3
+              }
+            },
+            "3": {
+              "Ident": "StiText",
+              "Name": "Text1",
+              "CanGrow": true,
+              "GrowToHeight": true,
+              "ClientRectangle": "0,0,270,20",
+              "ComponentStyle": "Data1",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Customers.CompanyName}"
+              },
+              "VertAlignment": "Center",
+              "Font": "Segoe UI;9.75;;",
+              "Border": ";182,182,182;;;;;;solid:Black",
+              "Brush": "solid:",
+              "TextBrush": "solid:64,64,64",
+              "TextOptions": {
+                "Trimming": "Character"
+              },
+              "Margins": {
+                "Left": 3,
+                "Right": 3,
+                "Top": 3,
+                "Bottom": 3
+              }
+            }
+          },
+          "DataSourceName": "Customers",
+          "EvenStyle": "Data2",
+          "Sort": {
+            "0": "ASC",
+            "1": "CompanyName"
+          }
+        },
+        "5": {
+          "Ident": "StiGroupFooterBand",
+          "Name": "GroupFooterBand2",
+          "CanGrow": true,
+          "ClientRectangle": "0,360,749,0",
+          "Interaction": {
+            "Ident": "StiInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:"
+        },
+        "6": {
+          "Ident": "StiGroupFooterBand",
+          "Name": "GroupFooterBand1",
+          "CanGrow": true,
+          "ClientRectangle": "0,400,749,20",
+          "ComponentStyle": "Footer1",
+          "Interaction": {
+            "Ident": "StiInteraction"
+          },
+          "Border": ";58,78,94;;;;;;solid:Black",
+          "Brush": "solid:",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text9",
+              "ClientRectangle": "0,0,749,20",
+              "ComponentStyle": "Footer1",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "Count: {Count()}"
+              },
+              "HorAlignment": "Right",
+              "VertAlignment": "Center",
+              "Font": "Segoe UI;9.75;;",
+              "Border": ";58,78,94;;;;;;solid:Black",
+              "Brush": "solid:",
+              "TextBrush": "solid:166,166,166",
+              "Margins": {
+                "Left": 0,
+                "Right": 3,
+                "Top": 0,
+                "Bottom": 0
+              }
+            }
+          }
+        }
+      },
+      "PaperSize": "A4",
+      "Watermark": {
+        "TextBrush": "solid:50,0,0,0"
+      }
+    }
+  }
+}
