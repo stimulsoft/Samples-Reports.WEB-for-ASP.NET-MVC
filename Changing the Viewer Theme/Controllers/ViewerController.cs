@@ -11,7 +11,7 @@ namespace Changing_the_Viewer_Theme.Controllers
         {
             // How to Activate
             //Stimulsoft.Base.StiLicense.Key = "6vJhGtLLLz2GNviWmUTrhSqnO...";
-            //Stimulsoft.Base.StiLicense.LoadFromFile("license.key");
+            //Stimulsoft.Base.StiLicense.LoadFromFile("stimulsoft.key");
             //Stimulsoft.Base.StiLicense.LoadFromStream(stream);
         }
 
@@ -24,7 +24,7 @@ namespace Changing_the_Viewer_Theme.Controllers
         {
             var report = new StiReport();
             report.Load(Server.MapPath("~/Content/Reports/SimpleList.mrt"));
-            
+
             return StiMvcViewer.GetReportResult(report);
         }
 

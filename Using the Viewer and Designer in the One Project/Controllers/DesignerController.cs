@@ -12,7 +12,7 @@ namespace Using_the_Viewer_and_Designer_in_the_One_Project.Controllers
         {
             // How to Activate
             //Stimulsoft.Base.StiLicense.Key = "6vJhGtLLLz2GNviWmUTrhSqnO...";
-            //Stimulsoft.Base.StiLicense.LoadFromFile("license.key");
+            //Stimulsoft.Base.StiLicense.LoadFromFile("stimulsoft.key");
             //Stimulsoft.Base.StiLicense.LoadFromStream(stream);
         }
 
@@ -26,7 +26,7 @@ namespace Using_the_Viewer_and_Designer_in_the_One_Project.Controllers
             var report = new StiReport();
             report.Load(Server.MapPath("~/Content/Reports/TwoSimpleLists.mrt"));
             report.Dictionary.Databases.Clear();
-            
+
             return StiMvcDesigner.GetReportResult(report);
         }
 
@@ -45,10 +45,10 @@ namespace Using_the_Viewer_and_Designer_in_the_One_Project.Controllers
         {
             var report = StiMvcDesigner.GetReportObject();
             report.Save(Server.MapPath("~/Content/Reports/TwoSimpleLists.mrt"));
-            
+
             return StiMvcDesigner.SaveReportResult();
         }
-        
+
         public ActionResult DesignerEvent()
         {
             return StiMvcDesigner.DesignerEventResult();

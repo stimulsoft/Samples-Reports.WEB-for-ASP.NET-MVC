@@ -13,7 +13,7 @@ namespace Managing_Report_Printing_and_Exporting.Controllers
         {
             // How to Activate
             //Stimulsoft.Base.StiLicense.Key = "6vJhGtLLLz2GNviWmUTrhSqnO...";
-            //Stimulsoft.Base.StiLicense.LoadFromFile("license.key");
+            //Stimulsoft.Base.StiLicense.LoadFromFile("stimulsoft.key");
             //Stimulsoft.Base.StiLicense.LoadFromStream(stream);
         }
 
@@ -27,7 +27,7 @@ namespace Managing_Report_Printing_and_Exporting.Controllers
             // Create the report object
             var report = new StiReport();
             report.Load(Server.MapPath("~/Content/Reports/TwoSimpleLists.mrt"));
-            
+
             return StiMvcViewer.GetReportResult(report);
         }
 
@@ -54,7 +54,7 @@ namespace Managing_Report_Printing_and_Exporting.Controllers
             {
                 // Some actions with report when exporting to PDF
             }
-            
+
             return StiMvcViewer.ExportReportResult(report);
         }
     }
